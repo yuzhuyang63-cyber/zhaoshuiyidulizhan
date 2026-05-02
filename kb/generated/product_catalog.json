@@ -1,0 +1,38 @@
+[
+  {
+    "product_id": "admt_android_screen",
+    "product_name": "ADMT安卓屏系列",
+    "aliases": [
+      "ADMT安卓屏系列",
+      "ADMT安卓屏",
+      "ADMT",
+      "安卓屏系列"
+    ],
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "source_file": "ADMT安卓屏系列产品操作手册（中英文版）(2).docx",
+    "source_path": "D:\\微信\\微信缓存\\xwechat_files\\wxid_50kxn9pxve3l22_dfda\\msg\\file\\2026-03\\ADMT安卓屏系列产品操作手册（中英文版）(2).docx",
+    "chunk_count": 90,
+    "faq_seed_count": 65
+  },
+  {
+    "product_id": "golden_rod",
+    "product_name": "找水金箍棒",
+    "aliases": [
+      "找水金箍棒",
+      "金箍棒",
+      "找水棒",
+      "Water-seeking Golden Rod"
+    ],
+    "languages": [
+      "en",
+      "zh"
+    ],
+    "source_file": "找水金箍棒操作手册中英文版V20240711.docx",
+    "source_path": "D:\\微信\\微信缓存\\xwechat_files\\wxid_50kxn9pxve3l22_dfda\\msg\\file\\2026-03\\找水金箍棒操作手册中英文版V20240711.docx",
+    "chunk_count": 202,
+    "faq_seed_count": 185
+  }
+]

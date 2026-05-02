@@ -1,0 +1,242 @@
+{
+  "generated_at": "2026-04-08T14:39:51.469377+00:00",
+  "source_count": 2,
+  "chunk_count": 292,
+  "faq_seed_count": 250,
+  "documents": [
+    {
+      "product_id": "admt_android_screen",
+      "product_name": "ADMT安卓屏系列",
+      "source_file": "ADMT安卓屏系列产品操作手册（中英文版）(2).docx",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "section_count": {
+        "zh": 48,
+        "en": 44
+      },
+      "chunk_count": 90,
+      "missing_toc_headings": {
+        "zh": [],
+        "en": [
+          "Introduction of the working principle of the instrument",
+          "Matrix high density method",
+          "本操作手册适用以下仪器:"
+        ]
+      },
+      "sparse_sections": [
+        {
+          "product_id": "admt_android_screen",
+          "product_name": "ADMT安卓屏系列",
+          "lang": "zh",
+          "section_path": [
+            "四、仪器接口介绍及主要技术参数",
+            "单通道仪器介绍"
+          ],
+          "reason": "No extractable text in this section. The source likely contains figures, tables, or screenshots only."
+        },
+        {
+          "product_id": "admt_android_screen",
+          "product_name": "ADMT安卓屏系列",
+          "lang": "zh",
+          "section_path": [
+            "四、仪器接口介绍及主要技术参数",
+            "16 通道仪器介绍"
+          ],
+          "reason": "No extractable text in this section. The source likely contains figures, tables, or screenshots only."
+        },
+        {
+          "product_id": "admt_android_screen",
+          "product_name": "ADMT安卓屏系列",
+          "lang": "zh",
+          "section_path": [
+            "四、仪器接口介绍及主要技术参数",
+            "32 通道仪器介绍"
+          ],
+          "reason": "No extractable text in this section. The source likely contains figures, tables, or screenshots only."
+        },
+        {
+          "product_id": "admt_android_screen",
+          "product_name": "ADMT安卓屏系列",
+          "lang": "zh",
+          "section_path": [
+            "四、仪器接口介绍及主要技术参数",
+            "基本款 1 和 16 通道主要技术参数"
+          ],
+          "reason": "No extractable text in this section. The source likely contains figures, tables, or screenshots only."
+        },
+        {
+          "product_id": "admt_android_screen",
+          "product_name": "ADMT安卓屏系列",
+          "lang": "zh",
+          "section_path": [
+            "四、仪器接口介绍及主要技术参数",
+            "基本款 32 通道主要技术参数"
+          ],
+          "reason": "No extractable text in this section. The source likely contains figures, tables, or screenshots only."
+        },
+        {
+          "product_id": "admt_android_screen",
+          "product_name": "ADMT安卓屏系列",
+          "lang": "zh",
+          "section_path": [
+            "四、仪器接口介绍及主要技术参数",
+            "专业款 1 和 16 通道主要技术参数"
+          ],
+          "reason": "No extractable text in this section. The source likely contains figures, tables, or screenshots only."
+        },
+        {
+          "product_id": "admt_android_screen",
+          "product_name": "ADMT安卓屏系列",
+          "lang": "zh",
+          "section_path": [
+            "四、仪器接口介绍及主要技术参数",
+            "专业款 32 通道主要技术参数"
+          ],
+          "reason": "No extractable text in this section. The source likely contains figures, tables, or screenshots only."
+        },
+        {
+          "product_id": "admt_android_screen",
+          "product_name": "ADMT安卓屏系列",
+          "lang": "en",
+          "section_path": [
+            "Instrument Instruction and Main parameters",
+            "Single Channel Instrument Instruction"
+          ],
+          "reason": "No extractable text in this section. The source likely contains figures, tables, or screenshots only."
+        },
+        {
+          "product_id": "admt_android_screen",
+          "product_name": "ADMT安卓屏系列",
+          "lang": "en",
+          "section_path": [
+            "Instrument Instruction and Main parameters",
+            "16 channels instrument instruction"
+          ],
+          "reason": "No extractable text in this section. The source likely contains figures, tables, or screenshots only."
+        },
+        {
+          "product_id": "admt_android_screen",
+          "product_name": "ADMT安卓屏系列",
+          "lang": "en",
+          "section_path": [
+            "Instrument Instruction and Main parameters",
+            "32 channels instrument instruction"
+          ],
+          "reason": "No extractable text in this section. The source likely contains figures, tables, or screenshots only."
+        },
+        {
+          "product_id": "admt_android_screen",
+          "product_name": "ADMT安卓屏系列",
+          "lang": "en",
+          "section_path": [
+            "Instrument Instruction and Main parameters",
+            "Main parameters of basic model 1 and 16 channels"
+          ],
+          "reason": "No extractable text in this section. The source likely contains figures, tables, or screenshots only."
+        },
+        {
+          "product_id": "admt_android_screen",
+          "product_name": "ADMT安卓屏系列",
+          "lang": "en",
+          "section_path": [
+            "Instrument Instruction and Main parameters",
+            "Main parameters of basic model 32 channels"
+          ],
+          "reason": "No extractable text in this section. The source likely contains figures, tables, or screenshots only."
+        },
+        {
+          "product_id": "admt_android_screen",
+          "product_name": "ADMT安卓屏系列",
+          "lang": "en",
+          "section_path": [
+            "Instrument Instruction and Main parameters",
+            "Main parameters of professional 1 and 16 channels"
+          ],
+          "reason": "No extractable text in this section. The source likely contains figures, tables, or screenshots only."
+        },
+        {
+          "product_id": "admt_android_screen",
+          "product_name": "ADMT安卓屏系列",
+          "lang": "en",
+          "section_path": [
+            "Instrument Instruction and Main parameters",
+            "Main parameters of professional 32 channels"
+          ],
+          "reason": "No extractable text in this section. The source likely contains figures, tables, or screenshots only."
+        },
+        {
+          "product_id": "admt_android_screen",
+          "product_name": "ADMT安卓屏系列",
+          "lang": "en",
+          "section_path": [
+            "Operation method of other functions of the instrument",
+            "Field connection method of the instrument"
+          ],
+          "reason": "No extractable text in this section. The source likely contains figures, tables, or screenshots only."
+        }
+      ],
+      "notes": [
+        "Sparse sections usually indicate screenshots, tables, or technical parameter images that were not extractable as plain text.",
+        "Review sparse sections manually if you need exact numeric specifications in the chatbot."
+      ]
+    },
+    {
+      "product_id": "golden_rod",
+      "product_name": "找水金箍棒",
+      "source_file": "找水金箍棒操作手册中英文版V20240711.docx",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "section_count": {
+        "zh": 105,
+        "en": 102
+      },
+      "chunk_count": 202,
+      "missing_toc_headings": {
+        "zh": [],
+        "en": [
+          "5. Introduction to the main page of the software"
+        ]
+      },
+      "sparse_sections": [
+        {
+          "product_id": "golden_rod",
+          "product_name": "找水金箍棒",
+          "lang": "zh",
+          "section_path": [
+            "四、仪器整体介绍",
+            "4.1 主要技术参数"
+          ],
+          "reason": "No extractable text in this section. The source likely contains figures, tables, or screenshots only."
+        },
+        {
+          "product_id": "golden_rod",
+          "product_name": "找水金箍棒",
+          "lang": "zh",
+          "section_path": [
+            "七、简易操作使用方法",
+            "7.5 简易操作流程图"
+          ],
+          "reason": "No extractable text in this section. The source likely contains figures, tables, or screenshots only."
+        },
+        {
+          "product_id": "golden_rod",
+          "product_name": "找水金箍棒",
+          "lang": "en",
+          "section_path": [
+            "7. Simple operation and use method",
+            "7.5 Simple Operation Flow Chart"
+          ],
+          "reason": "No extractable text in this section. The source likely contains figures, tables, or screenshots only."
+        }
+      ],
+      "notes": [
+        "Sparse sections usually indicate screenshots, tables, or technical parameter images that were not extractable as plain text.",
+        "Review sparse sections manually if you need exact numeric specifications in the chatbot."
+      ]
+    }
+  ]
+}

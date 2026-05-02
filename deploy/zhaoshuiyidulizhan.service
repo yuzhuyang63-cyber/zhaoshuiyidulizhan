@@ -1,0 +1,16 @@
+[Unit]
+Description=Zhaoshuiyidulizhan RAG Chat Backend
+After=network.target
+
+[Service]
+Type=simple
+# Replace www-data with your real deploy user if needed.
+User=www-data
+WorkingDirectory=/opt/zhaoshuiyidulizhan
+EnvironmentFile=/opt/zhaoshuiyidulizhan/.env
+ExecStart=/opt/zhaoshuiyidulizhan/.venv/bin/python -m backend.main
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

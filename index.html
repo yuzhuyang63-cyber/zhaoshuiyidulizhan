@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AquaScan Detectors | Home</title>
+    <meta
+      name="description"
+      content="A multi-page foreign trade website for groundwater detectors with multilingual support, product showcases, solutions, video references, and export-oriented contact flows."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@400;500;700&family=Noto+Sans+Arabic:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="container topbar-inner">
+          <div class="topbar-list">
+            <span data-i18n="toplineEmail">Email: sales@aquascandetectors.com</span>
+            <span data-i18n="toplinePhone">WhatsApp: +86 131 9773 5816</span>
+          </div>
+          <div class="language-wrap">
+            <label class="sr-only" for="language-select-topbar-home">Language switcher</label>
+            <div class="language-switch">
+              <select class="language-select" id="language-select-topbar-home" aria-label="Language switcher">
+                <option value="en">🇬🇧 English</option>
+                <option value="zh">🇨🇳 中文</option>
+                <option value="ar">🇸🇦 العربية</option>
+                <option value="tr">🇹🇷 Türkçe</option>
+                <option value="fa">🇮🇷 فارسی</option>
+                <option value="fr">🇫🇷 Français</option>
+                <option value="es">🇪🇸 Español</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nav class="navbar">
+        <div class="container navbar-inner">
+          <a href="./index.html" class="brand">
+            <img class="brand-mark" src="./assets/logo-white.svg" data-logo-light="./assets/logo-white.svg" data-logo-dark="./assets/logo-color.svg" alt="AquaScan logo" />
+            <div>
+              <strong>AquaScan</strong>
+              <small data-i18n="brandTag">Groundwater Detection Systems</small>
+            </div>
+          </a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-links" id="nav-links">
+            <a href="./index.html" class="is-active" data-i18n="navHome">Home</a>
+            <a href="./about.html" data-i18n="navAbout">About</a>
+            <a href="./products.html" data-i18n="navProducts">Products</a>
+            <a href="./solutions.html" data-i18n="navSolutions">Solutions</a>
+            <a href="./contact.html" data-i18n="navContact">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <section class="home-banner" id="home-banner">
+          <div class="home-banner-track">
+            <article class="home-banner-slide is-active">
+              <video class="home-banner-video" autoplay muted loop playsinline preload="auto">
+                <source src="./media/home-banner.mp4" type="video/mp4" />
+              </video>
+              <div class="container home-banner-content"></div>
+              <div class="container home-search-overlay">
+                <form class="home-product-search" id="home-product-search" autocomplete="off">
+                  <div class="home-product-search-field">
+                    <label class="sr-only" for="home-product-query" data-i18n="homeSearchLabel">Search products</label>
+                    <input
+                      id="home-product-query"
+                      name="query"
+                      type="text"
+                      list="home-product-options"
+                      data-i18n-placeholder="homeSearchPlaceholder"
+                      placeholder="Search your product model"
+                    />
+                    <datalist id="home-product-options"></datalist>
+                  </div>
+                  <button class="button primary home-search-button" type="submit" data-i18n="homeSearchButton">Search products</button>
+                </form>
+                <p class="home-search-feedback" id="home-search-feedback" aria-live="polite"></p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="contact-strip">
+          <div class="container contact-strip-grid">
+            <article>
+              <span data-i18n="stripPhoneLabel">WhatsApp</span>
+              <strong>+86 131 9773 5816</strong>
+              <p data-i18n="stripPhoneText">Fast response for dealers and drilling contractors.</p>
+            </article>
+            <article>
+              <span data-i18n="stripEmailLabel">Email</span>
+              <strong>sales@aquascandetectors.com</strong>
+              <p data-i18n="stripEmailText">Send RFQs, OEM requests, and shipping inquiries.</p>
+            </article>
+            <article>
+              <span data-i18n="stripAddressLabel">Office</span>
+              <strong data-i18n="stripAddressValue">Shanghai, China</strong>
+              <p data-i18n="stripAddressText">Remote demos and export document support available.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow" data-i18n="homeProductsEyebrow">Best selling detectors</p>
+              <h2 data-i18n="homeProductsTitle">A homepage that introduces the core product range before pushing visitors deeper into the site</h2>
+              <p data-i18n="homeProductsText">
+                The page flow is now split across dedicated pages, but the homepage still keeps the strongest product cards close to the first inquiry action.
+              </p>
+            </div>
+
+            <div class="product-grid">
+              <article class="product-card">
+                <img src="./assets/products/group-5.png" alt="Intelligent High-density Groundwater Detector" />
+                <div class="product-body">
+                  <h3 data-i18n="p1Name">Intelligent High-density Groundwater Detector</h3>
+                  <p data-i18n="p1Text">1-60 channel integrated platform with AI interpretation and real-time data sharing.</p>
+                  <a href="./products.html" data-i18n="productAction">View product</a>
+                </div>
+              </article>
+              <article class="product-card">
+                <img src="./assets/products/group-7.png" alt="Quick Version Multi-Channel Groundwater Detector" />
+                <div class="product-body">
+                  <h3 data-i18n="p2Name">Quick Version Multi-Channel Groundwater Detector</h3>
+                  <p data-i18n="p2Text">HD Android touchscreen, auto-imaging workflow, and repeatable field accuracy.</p>
+                  <a href="./products.html" data-i18n="productAction">View product</a>
+                </div>
+              </article>
+              <article class="product-card">
+                <img src="./assets/products/group-4.png" alt="32-Channel High Density Groundwater Detector" />
+                <div class="product-body">
+                  <h3 data-i18n="p3Name">32-Channel High Density Groundwater Detector</h3>
+                  <p data-i18n="p3Text">Real-time 3D and 2D imaging for well siting, water layer analysis, and geological mapping.</p>
+                  <a href="./products.html" data-i18n="productAction">View product</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-alt">
+          <div class="container feature-band">
+            <div class="section-heading narrow">
+              <p class="eyebrow" data-i18n="homeWhyEyebrow">Why this structure works</p>
+              <h2 data-i18n="homeWhyTitle">The new multi-page structure follows the sales logic of a mature export website</h2>
+            </div>
+            <div class="value-grid home-service-grid">
+              <article class="value-card">
+                <h3 data-i18n="homeWhy1Title">Clear entry page</h3>
+                <p data-i18n="homeWhy1Text">Homepage introduces the brand, strongest products, and immediate trust signals.</p>
+              </article>
+              <article class="value-card">
+                <h3 data-i18n="homeWhy2Title">Dedicated product depth</h3>
+                <p data-i18n="homeWhy2Text">Product and solution pages now carry the technical details that would overcrowd a single page.</p>
+              </article>
+              <article class="value-card">
+                <h3 data-i18n="homeWhy3Title">Better conversion path</h3>
+                <p data-i18n="homeWhy3Text">Every page now links naturally toward quotation and contact actions.</p>
+              </article>
+              <article class="value-card">
+                <h3 data-i18n="homeWhy4Title">Future expansion ready</h3>
+                <p data-i18n="homeWhy4Text">This structure is easier to expand with dealer pages, case studies, and blog content later.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container cta-panel">
+            <div>
+              <p class="eyebrow" data-i18n="homeCtaEyebrow">Next step</p>
+              <h2 data-i18n="homeCtaTitle">Need a customized configuration for your market?</h2>
+              <p data-i18n="homeCtaText">Share your preferred language, target depth, drilling conditions, and budget. We will recommend a suitable water finder model.</p>
+            </div>
+            <a class="button primary" href="./contact.html" data-i18n="homeCtaButton">Contact sales</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-grid">
+          <div>
+            <h3>AquaScan</h3>
+            <p data-i18n="footerText">A groundwater detector website concept for foreign trade, built with export-style page flow and multilingual switching.</p>
+          </div>
+          <div>
+            <h4 data-i18n="footerNavTitle">Navigation</h4>
+            <a href="./about.html" data-i18n="navAbout">About</a>
+            <a href="./products.html" data-i18n="navProducts">Products</a>
+            <a href="./solutions.html" data-i18n="navSolutions">Solutions</a>
+            <a href="./contact.html" data-i18n="navContact">Contact</a>
+          </div>
+          <div>
+            <h4 data-i18n="footerContactTitle">Contact</h4>
+            <p>sales@aquascandetectors.com</p>
+            <p>+86 131 9773 5816</p>
+            <p data-i18n="footerAddress">Shanghai, China</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

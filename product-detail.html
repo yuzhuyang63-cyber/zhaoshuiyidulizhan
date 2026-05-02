@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AquaScan Detectors | Product Detail</title>
+    <meta
+      name="description"
+      content="Detailed groundwater detector product page with image gallery, video introduction, product poster, and direct inquiry contact."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@400;500;700&family=Noto+Sans+Arabic:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="product-detail">
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="container topbar-inner">
+          <div class="topbar-list">
+            <span data-i18n="toplineEmail">Email: sales@aquascandetectors.com</span>
+            <span data-i18n="toplinePhone">WhatsApp: +86 131 9773 5816</span>
+          </div>
+          <div class="language-wrap">
+            <label class="sr-only" for="language-select-topbar-detail">Language switcher</label>
+            <div class="language-switch">
+              <select class="language-select" id="language-select-topbar-detail" aria-label="Language switcher">
+                <option value="en">🇬🇧 English</option>
+                <option value="zh">🇨🇳 中文</option>
+                <option value="ar">🇸🇦 العربية</option>
+                <option value="tr">🇹🇷 Türkçe</option>
+                <option value="fa">🇮🇷 فارسی</option>
+                <option value="fr">🇫🇷 Français</option>
+                <option value="es">🇪🇸 Español</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </header>
+      <nav class="navbar">
+        <div class="container navbar-inner">
+          <a href="./index.html" class="brand">
+            <img class="brand-mark" src="./assets/logo-color.svg" alt="AquaScan logo" />
+            <div>
+              <strong>AquaScan</strong>
+              <small data-i18n="brandTag">Groundwater Detection Systems</small>
+            </div>
+          </a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="nav-links" id="nav-links">
+            <a href="./index.html" data-i18n="navHome">Home</a>
+            <a href="./about.html" data-i18n="navAbout">About</a>
+            <a href="./products.html" class="is-active" data-i18n="navProducts">Products</a>
+            <a href="./solutions.html" data-i18n="navSolutions">Solutions</a>
+            <a href="./contact.html" data-i18n="navContact">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <main id="product-detail-page">
+        <section class="page-hero product-hero" id="detail-overview-section">
+          <div class="container product-hero-grid">
+            <div class="content-card">
+              <p class="eyebrow" data-i18n="detailEyebrow">Product detail</p>
+              <h1 id="detail-title">Groundwater Detector</h1>
+              <div id="detail-summary" class="detail-summary"></div>
+              <div class="detail-quick-specs" id="detail-quick-specs"></div>
+              <div class="hero-actions">
+                <a class="button primary" href="#detail-contact" data-i18n="detailPrimaryAction">Get quotation</a>
+                <a class="button ghost" href="./products.html" data-i18n="detailSecondaryAction">Back to products</a>
+              </div>
+            </div>
+            <article class="detail-gallery-card">
+              <div class="detail-main-visual">
+                <button class="gallery-nav prev" type="button" aria-label="Previous image">&larr;</button>
+                <img id="detail-main-image" src="" alt="" />
+                <button class="gallery-nav next" type="button" aria-label="Next image">&rarr;</button>
+              </div>
+              <div class="detail-thumbs" id="detail-thumbs"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section detail-anchor-section">
+          <div class="container">
+            <div class="detail-anchor-nav" id="detail-section-tabs" role="tablist" aria-label="Product detail tabs">
+              <button type="button" class="detail-anchor-button is-active" id="detail-tab-video" data-target="detail-video-section" data-i18n="detailNavVideo" role="tab" aria-selected="true">Video introduction</button>
+              <button type="button" class="detail-anchor-button" id="detail-tab-tech" data-target="detail-tech-section" data-i18n="detailNavTech" role="tab" aria-selected="false">Technical parameters</button>
+              <button type="button" class="detail-anchor-button" id="detail-tab-intro" data-target="detail-intro-section" data-i18n="detailNavIntro" role="tab" aria-selected="false">Product introduction</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-alt" id="detail-video-section">
+          <div class="container detail-center-wrap">
+            <article class="video-showcase-card center-module">
+              <div class="video-poster-wrap">
+                <video id="detail-video-player" controls playsinline preload="metadata"></video>
+              </div>
+              <p id="detail-video-text" class="video-support-text"></p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="detail-tech-section" hidden>
+          <div class="container detail-center-wrap">
+            <article class="poster-card center-module">
+              <div class="detail-tech-table-wrap">
+                <table class="detail-tech-table" id="detail-tech-table"></table>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="detail-intro-section" hidden>
+          <div class="container detail-center-wrap">
+            <article class="poster-card center-module">
+              <div class="detail-intro-images" id="detail-intro-images"></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="detail-contact">
+          <div class="container contact-grid">
+            <div class="contact-copy">
+              <p class="eyebrow" data-i18n="detailContactEyebrow">Direct contact</p>
+              <h2 data-i18n="detailContactTitle">Want this model’s price list, poster, and market recommendation?</h2>
+              <p data-i18n="detailContactText">
+                Send us your market, target depth, and order quantity. We can help you position the right configuration for retail, distribution, or project bidding.
+              </p>
+              <div class="contact-cards">
+                <article>
+                  <span data-i18n="contactCard1Label">Sales support</span>
+                  <strong>sales@aquascandetectors.com</strong>
+                </article>
+                <article>
+                  <span data-i18n="contactCard2Label">WhatsApp</span>
+                  <strong>+86 131 9773 5816</strong>
+                </article>
+                <article>
+                  <span data-i18n="detailContactCard3Label">Available materials</span>
+                  <strong data-i18n="detailContactCard3Value">Quotation, poster, catalog, demo video</strong>
+                </article>
+              </div>
+            </div>
+
+            <form class="contact-form">
+              <div class="field">
+                <label for="name" data-i18n="formName">Your name</label>
+                <input id="name" name="name" type="text" data-i18n-placeholder="formNamePlaceholder" placeholder="Enter your full name" />
+              </div>
+              <div class="field">
+                <label for="company" data-i18n="formCompany">Company</label>
+                <input id="company" name="company" type="text" data-i18n-placeholder="formCompanyPlaceholder" placeholder="Company or drilling team" />
+              </div>
+              <div class="field">
+                <label for="email" data-i18n="formEmail">Email</label>
+                <input id="email" name="email" type="email" data-i18n-placeholder="formEmailPlaceholder" placeholder="you@example.com" />
+              </div>
+              <div class="field">
+                <label for="whatsapp" data-i18n="formWhatsapp">WhatsApp</label>
+                <input id="whatsapp" name="whatsapp" type="text" data-i18n-placeholder="formWhatsappPlaceholder" placeholder="+971 / +966 / +20 ..." />
+              </div>
+              <div class="field full">
+                <label for="message" data-i18n="detailMessageLabel">Required materials</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  data-i18n-placeholder="detailMessagePlaceholder"
+                  placeholder="Tell us whether you need price, poster, video, sample policy, or distributor support."
+                ></textarea>
+              </div>
+              <button class="button primary full-width" type="submit" data-i18n="formSubmit">Send inquiry</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-grid">
+          <div>
+            <h3>AquaScan</h3>
+            <p data-i18n="footerText">A groundwater detector website concept for foreign trade, built with export-style page flow and multilingual switching.</p>
+          </div>
+          <div>
+            <h4 data-i18n="footerNavTitle">Navigation</h4>
+            <a href="./about.html" data-i18n="navAbout">About</a>
+            <a href="./products.html" data-i18n="navProducts">Products</a>
+            <a href="./solutions.html" data-i18n="navSolutions">Solutions</a>
+            <a href="./contact.html" data-i18n="navContact">Contact</a>
+          </div>
+          <div>
+            <h4 data-i18n="footerContactTitle">Contact</h4>
+            <p>sales@aquascandetectors.com</p>
+            <p>+86 131 9773 5816</p>
+            <p data-i18n="footerAddress">Shanghai, China</p>
+          </div>
+        </div>
+      </footer>
+
+      <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
