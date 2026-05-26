@@ -1426,25 +1426,25 @@ const productCatalog = {
           title: "High-density flagship description",
           text: "An integrated multi-channel detector designed for buyers who want a stronger professional image, clearer survey capability, and stronger export positioning.",
           tags: ["Flagship", "Integrated", "Premium"],
-          image: "https://aiduny.com/upload/file/20260127/8b003f9f84ec90fabe2ca1b23320695b.jpg"
+          image: "assets/seo-images/8b003f9f84ec90fabe2ca1b23320695b.jpg"
         },
         usage: {
           title: "How this model is used",
           text: "Best presented as a high-level field solution for drilling teams, project contractors, and advanced distributors that need stronger on-site interpretation support.",
           tags: ["Project use", "Dealer demo", "Field workflow"],
-          image: "https://aiduny.com/upload/file/20260127/f4a6b12029263cba95d8efc8346aae2e.jpg"
+          image: "assets/seo-images/f4a6b12029263cba95d8efc8346aae2e.jpg"
         },
         range: {
           title: "Applicable market range",
           text: "Suitable for premium export markets, professional groundwater survey businesses, and quotation scenarios where channel density and imaging strength matter.",
           tags: ["Export", "Professional", "Imaging"],
-          image: "https://aiduny.com/upload/file/20240711/e4631fe44025d277465ff51785a86eb3.jpg"
+          image: "assets/seo-images/e4631fe44025d277465ff51785a86eb3.jpg"
         },
         effect: {
           title: "Market impact and selling effect",
           text: "This model helps create a stronger premium impression, improves quotation confidence, and gives sales teams better material for high-value conversations.",
           tags: ["Premium", "Confidence", "Conversion"],
-          image: "https://aiduny.com/upload/file/20260127/8b003f9f84ec90fabe2ca1b23320695b.jpg"
+          image: "assets/seo-images/8b003f9f84ec90fabe2ca1b23320695b.jpg"
         }
       }
     },
@@ -1474,25 +1474,25 @@ const productCatalog = {
           title: "高密度旗舰型号描述",
           text: "这是一款面向高端市场的多通道一体化找水仪，适合强调专业形象、测量能力和出口高端定位。",
           tags: ["旗舰型", "一体化", "高端"],
-          image: "https://aiduny.com/upload/file/20260127/8b003f9f84ec90fabe2ca1b23320695b.jpg"
+          image: "assets/seo-images/8b003f9f84ec90fabe2ca1b23320695b.jpg"
         },
         usage: {
           title: "适合怎样使用",
           text: "更适合打井团队、项目承包商和高级经销商，用于展示更专业的现场作业和更强的解译支持。",
           tags: ["项目使用", "渠道演示", "现场流程"],
-          image: "https://aiduny.com/upload/file/20260127/f4a6b12029263cba95d8efc8346aae2e.jpg"
+          image: "assets/seo-images/f4a6b12029263cba95d8efc8346aae2e.jpg"
         },
         range: {
           title: "适用范围",
           text: "适合高端出口市场、专业找水业务和那些更看重通道密度与成像效果的询盘场景。",
           tags: ["出口市场", "专业型", "成像强"],
-          image: "https://aiduny.com/upload/file/20240711/e4631fe44025d277465ff51785a86eb3.jpg"
+          image: "assets/seo-images/e4631fe44025d277465ff51785a86eb3.jpg"
         },
         effect: {
           title: "推广影响",
           text: "这款机型有助于提升高端印象、增强报价说服力，并让销售在高价值沟通中更有材料可讲。",
           tags: ["高端感", "说服力", "提升转化"],
-          image: "https://aiduny.com/upload/file/20260127/8b003f9f84ec90fabe2ca1b23320695b.jpg"
+          image: "assets/seo-images/8b003f9f84ec90fabe2ca1b23320695b.jpg"
         }
       }
     }
@@ -1582,10 +1582,10 @@ const productCatalog = {
         "Poster-style positioning makes this model feel organized, commercial, and easier to compare during negotiation.",
       posterTags: ["16 channel", "Balanced", "Mid-range"],
       panelSections: {
-        description: { title: "Balanced high-density description", text: "A commercially balanced model that preserves imaging appeal while staying easier to price and explain.", tags: ["Balanced", "Imaging", "Mid-range"], image: "https://aiduny.com/upload/file/20250124/085a0077cb14401f5f7c7e70cbd12bbc.jpg" },
-        usage: { title: "How to use in quotation", text: "Use this model where the buyer wants a more advanced impression without immediately stepping into the highest price band.", tags: ["Quotation", "Balanced", "Practical"], image: "https://aiduny.com/upload/file/20250124/6719041d0659eb253412ae3d4859fd8d.jpg" },
-        range: { title: "Applicable range", text: "Fits practical distributors and drilling businesses that want a stable mid-range technical offering.", tags: ["Mid-range", "Stable", "Practical"], image: "https://aiduny.com/upload/file/20260127/f4a6b12029263cba95d8efc8346aae2e.jpg" },
-        effect: { title: "Sales effect", text: "Often improves close rate because it looks advanced while remaining easier to justify on budget.", tags: ["Close rate", "Advanced look", "Budget fit"], image: "https://aiduny.com/upload/file/20250124/085a0077cb14401f5f7c7e70cbd12bbc.jpg" }
+        description: { title: "Balanced high-density description", text: "A commercially balanced model that preserves imaging appeal while staying easier to price and explain.", tags: ["Balanced", "Imaging", "Mid-range"], image: "assets/seo-images/085a0077cb14401f5f7c7e70cbd12bbc.jpg" },
+        usage: { title: "How to use in quotation", text: "Use this model where the buyer wants a more advanced impression without immediately stepping into the highest price band.", tags: ["Quotation", "Balanced", "Practical"], image: "assets/seo-images/6719041d0659eb253412ae3d4859fd8d.jpg" },
+        range: { title: "Applicable range", text: "Fits practical distributors and drilling businesses that want a stable mid-range technical offering.", tags: ["Mid-range", "Stable", "Practical"], image: "assets/seo-images/f4a6b12029263cba95d8efc8346aae2e.jpg" },
+        effect: { title: "Sales effect", text: "Often improves close rate because it looks advanced while remaining easier to justify on budget.", tags: ["Close rate", "Advanced look", "Budget fit"], image: "assets/seo-images/085a0077cb14401f5f7c7e70cbd12bbc.jpg" }
       }
     },
     zh: {
@@ -1609,10 +1609,10 @@ const productCatalog = {
       posterText: "海报式排版让这个型号在谈判和比价中看起来更清晰、更商业化。",
       posterTags: ["16 通道", "平衡配置", "中端市场"],
       panelSections: {
-        description: { title: "平衡型高密度描述", text: "这是一款兼顾成像卖点和成交友好度的型号，适合做中端主推。", tags: ["平衡型", "成像", "中端"], image: "https://aiduny.com/upload/file/20250124/085a0077cb14401f5f7c7e70cbd12bbc.jpg" },
-        usage: { title: "适合怎样报价", text: "适合那些想要技术感，但又不愿直接进入最高价格带的客户。", tags: ["报价", "平衡", "实用"], image: "https://aiduny.com/upload/file/20250124/6719041d0659eb253412ae3d4859fd8d.jpg" },
-        range: { title: "适用范围", text: "适合务实型经销商和希望有稳定中端技术款的打井业务。", tags: ["中端", "稳定", "务实"], image: "https://aiduny.com/upload/file/20260127/f4a6b12029263cba95d8efc8346aae2e.jpg" },
-        effect: { title: "推广影响", text: "它往往更容易成交，因为看起来足够先进，同时预算解释也更轻松。", tags: ["更易成交", "技术感", "预算友好"], image: "https://aiduny.com/upload/file/20250124/085a0077cb14401f5f7c7e70cbd12bbc.jpg" }
+        description: { title: "平衡型高密度描述", text: "这是一款兼顾成像卖点和成交友好度的型号，适合做中端主推。", tags: ["平衡型", "成像", "中端"], image: "assets/seo-images/085a0077cb14401f5f7c7e70cbd12bbc.jpg" },
+        usage: { title: "适合怎样报价", text: "适合那些想要技术感，但又不愿直接进入最高价格带的客户。", tags: ["报价", "平衡", "实用"], image: "assets/seo-images/6719041d0659eb253412ae3d4859fd8d.jpg" },
+        range: { title: "适用范围", text: "适合务实型经销商和希望有稳定中端技术款的打井业务。", tags: ["中端", "稳定", "务实"], image: "assets/seo-images/f4a6b12029263cba95d8efc8346aae2e.jpg" },
+        effect: { title: "推广影响", text: "它往往更容易成交，因为看起来足够先进，同时预算解释也更轻松。", tags: ["更易成交", "技术感", "预算友好"], image: "assets/seo-images/085a0077cb14401f5f7c7e70cbd12bbc.jpg" }
       }
     }
   },
@@ -1703,10 +1703,10 @@ const productCatalog = {
         "Use this poster panel to present the device as compact, approachable, and easy to deploy.",
       posterTags: ["Portable", "Single channel", "Easy setup"],
       panelSections: {
-        description: { title: "Portable single-channel description", text: "A practical product for price-sensitive and mobility-focused markets that want a simpler starting model.", tags: ["Portable", "Single channel", "Practical"], image: "https://aiduny.com/upload/file/20250124/6aa6813c18af515c27981ba9e31ba8e6.jpg" },
-        usage: { title: "How to use in market entry", text: "Best used as a starter model for dealer trials, mobile demonstrations, and compact field work promotion.", tags: ["Starter", "Mobile", "Trial market"], image: "https://aiduny.com/upload/file/20260127/390559b63c1a8c7abf4b72051ee47620.jpg" },
-        range: { title: "Applicable range", text: "Good for smaller drilling teams, first-step distributors, and buyers who prioritize portability over complexity.", tags: ["Small teams", "Portable", "Entry"], image: "https://aiduny.com/upload/file/20240711/e4631fe44025d277465ff51785a86eb3.jpg" },
-        effect: { title: "Sales effect", text: "Helps reduce hesitation in early conversations because it looks approachable and easier to understand.", tags: ["Approachable", "Easy explain", "First order"], image: "https://aiduny.com/upload/file/20250124/6aa6813c18af515c27981ba9e31ba8e6.jpg" }
+        description: { title: "Portable single-channel description", text: "A practical product for price-sensitive and mobility-focused markets that want a simpler starting model.", tags: ["Portable", "Single channel", "Practical"], image: "assets/seo-images/6aa6813c18af515c27981ba9e31ba8e6.jpg" },
+        usage: { title: "How to use in market entry", text: "Best used as a starter model for dealer trials, mobile demonstrations, and compact field work promotion.", tags: ["Starter", "Mobile", "Trial market"], image: "assets/seo-images/390559b63c1a8c7abf4b72051ee47620.jpg" },
+        range: { title: "Applicable range", text: "Good for smaller drilling teams, first-step distributors, and buyers who prioritize portability over complexity.", tags: ["Small teams", "Portable", "Entry"], image: "assets/seo-images/e4631fe44025d277465ff51785a86eb3.jpg" },
+        effect: { title: "Sales effect", text: "Helps reduce hesitation in early conversations because it looks approachable and easier to understand.", tags: ["Approachable", "Easy explain", "First order"], image: "assets/seo-images/6aa6813c18af515c27981ba9e31ba8e6.jpg" }
       }
     },
     zh: {
@@ -1730,10 +1730,10 @@ const productCatalog = {
       posterText: "海报区可以把这款机型塑造成紧凑、易用、部署简单的选择。",
       posterTags: ["便携", "单通道", "易部署"],
       panelSections: {
-        description: { title: "便携单通道描述", text: "这是一款更适合价格敏感和重视便携市场的实用型入门产品。", tags: ["便携", "单通道", "实用"], image: "https://aiduny.com/upload/file/20250124/6aa6813c18af515c27981ba9e31ba8e6.jpg" },
-        usage: { title: "适合怎样切入市场", text: "适合做试销、移动演示和更轻量的现场推广。", tags: ["起步款", "移动演示", "试销"], image: "https://aiduny.com/upload/file/20260127/390559b63c1a8c7abf4b72051ee47620.jpg" },
-        range: { title: "适用范围", text: "更适合小型打井团队、入门经销商，以及更重视便携性的买家。", tags: ["小团队", "便携", "入门"], image: "https://aiduny.com/upload/file/20240711/e4631fe44025d277465ff51785a86eb3.jpg" },
-        effect: { title: "推广影响", text: "它能降低买家初次接触时的心理门槛，因为看起来更容易理解和接受。", tags: ["容易接受", "易讲解", "首单"], image: "https://aiduny.com/upload/file/20250124/6aa6813c18af515c27981ba9e31ba8e6.jpg" }
+        description: { title: "便携单通道描述", text: "这是一款更适合价格敏感和重视便携市场的实用型入门产品。", tags: ["便携", "单通道", "实用"], image: "assets/seo-images/6aa6813c18af515c27981ba9e31ba8e6.jpg" },
+        usage: { title: "适合怎样切入市场", text: "适合做试销、移动演示和更轻量的现场推广。", tags: ["起步款", "移动演示", "试销"], image: "assets/seo-images/390559b63c1a8c7abf4b72051ee47620.jpg" },
+        range: { title: "适用范围", text: "更适合小型打井团队、入门经销商，以及更重视便携性的买家。", tags: ["小团队", "便携", "入门"], image: "assets/seo-images/e4631fe44025d277465ff51785a86eb3.jpg" },
+        effect: { title: "推广影响", text: "它能降低买家初次接触时的心理门槛，因为看起来更容易理解和接受。", tags: ["容易接受", "易讲解", "首单"], image: "assets/seo-images/6aa6813c18af515c27981ba9e31ba8e6.jpg" }
       }
     }
   },
@@ -1823,10 +1823,10 @@ const productCatalog = {
         "The poster layout emphasizes the upgraded-generation feel and helps it perform well in social selling.",
       posterTags: ["New generation", "Differentiated", "Strong visual"],
       panelSections: {
-        description: { title: "Distinctive product description", text: "A model with stronger visual personality that helps campaigns stand out and supports differentiated promotion.", tags: ["Distinctive", "Visual", "New generation"], image: "https://aiduny.com/upload/file/20240711/e4631fe44025d277465ff51785a86eb3.jpg" },
-        usage: { title: "How to use in promotion", text: "Use this model when the buyer responds well to visual differentiation, upgraded-generation storytelling, and social-ready materials.", tags: ["Promotion", "Visual", "Storytelling"], image: "https://aiduny.com/upload/file/20260127/79ac1f9280ce1e88423bd72c09725f98.jpg" },
-        range: { title: "Applicable range", text: "Suitable for visually driven markets, branding-heavy dealers, and campaigns that need more than plain technical comparison.", tags: ["Branding", "Visual markets", "Promotion"], image: "https://aiduny.com/upload/file/20250124/6aa6813c18af515c27981ba9e31ba8e6.jpg" },
-        effect: { title: "Market effect", text: "Creates stronger recall online and supports poster-led promotion across WhatsApp, social media, and sales decks.", tags: ["Recall", "Online", "Poster-led"], image: "https://aiduny.com/upload/file/20240711/e4631fe44025d277465ff51785a86eb3.jpg" }
+        description: { title: "Distinctive product description", text: "A model with stronger visual personality that helps campaigns stand out and supports differentiated promotion.", tags: ["Distinctive", "Visual", "New generation"], image: "assets/seo-images/e4631fe44025d277465ff51785a86eb3.jpg" },
+        usage: { title: "How to use in promotion", text: "Use this model when the buyer responds well to visual differentiation, upgraded-generation storytelling, and social-ready materials.", tags: ["Promotion", "Visual", "Storytelling"], image: "assets/seo-images/79ac1f9280ce1e88423bd72c09725f98.jpg" },
+        range: { title: "Applicable range", text: "Suitable for visually driven markets, branding-heavy dealers, and campaigns that need more than plain technical comparison.", tags: ["Branding", "Visual markets", "Promotion"], image: "assets/seo-images/6aa6813c18af515c27981ba9e31ba8e6.jpg" },
+        effect: { title: "Market effect", text: "Creates stronger recall online and supports poster-led promotion across WhatsApp, social media, and sales decks.", tags: ["Recall", "Online", "Poster-led"], image: "assets/seo-images/e4631fe44025d277465ff51785a86eb3.jpg" }
       }
     },
     zh: {
@@ -1850,10 +1850,10 @@ const productCatalog = {
       posterText: "海报布局重点强化新一代感和在社交销售中的视觉优势。",
       posterTags: ["新一代", "差异化", "视觉强"],
       panelSections: {
-        description: { title: "差异化产品描述", text: "这是一款更有视觉个性的机型，适合做差异化推广和更强的线上展示。", tags: ["差异化", "视觉型", "新一代"], image: "https://aiduny.com/upload/file/20240711/e4631fe44025d277465ff51785a86eb3.jpg" },
-        usage: { title: "适合怎样推广", text: "适合那些对视觉差异、升级换代和社媒传播更敏感的客户场景。", tags: ["推广", "视觉传播", "故事化"], image: "https://aiduny.com/upload/file/20260127/79ac1f9280ce1e88423bd72c09725f98.jpg" },
-        range: { title: "适用范围", text: "适合品牌表达更重、视觉推广更强的市场，而不只是单纯比技术参数。", tags: ["品牌感", "视觉市场", "宣传型"], image: "https://aiduny.com/upload/file/20250124/6aa6813c18af515c27981ba9e31ba8e6.jpg" },
-        effect: { title: "推广影响", text: "这款机型在线上更容易被记住，也更适合做海报传播和社交渠道推广。", tags: ["记忆点", "线上传播", "海报型"], image: "https://aiduny.com/upload/file/20240711/e4631fe44025d277465ff51785a86eb3.jpg" }
+        description: { title: "差异化产品描述", text: "这是一款更有视觉个性的机型，适合做差异化推广和更强的线上展示。", tags: ["差异化", "视觉型", "新一代"], image: "assets/seo-images/e4631fe44025d277465ff51785a86eb3.jpg" },
+        usage: { title: "适合怎样推广", text: "适合那些对视觉差异、升级换代和社媒传播更敏感的客户场景。", tags: ["推广", "视觉传播", "故事化"], image: "assets/seo-images/79ac1f9280ce1e88423bd72c09725f98.jpg" },
+        range: { title: "适用范围", text: "适合品牌表达更重、视觉推广更强的市场，而不只是单纯比技术参数。", tags: ["品牌感", "视觉市场", "宣传型"], image: "assets/seo-images/6aa6813c18af515c27981ba9e31ba8e6.jpg" },
+        effect: { title: "推广影响", text: "这款机型在线上更容易被记住，也更适合做海报传播和社交渠道推广。", tags: ["记忆点", "线上传播", "海报型"], image: "assets/seo-images/e4631fe44025d277465ff51785a86eb3.jpg" }
       }
     }
   },
@@ -2455,7 +2455,7 @@ const navLinks = document.querySelector(".nav-links");
 const galleryState = { index: 0, productId: null };
 const productListState = { category: "selected", page: 1, pageSize: 9 };
 const productOrder = ["p1", "p4", "p5", "p6", "p7", "p8"];
-const defaultProductVideoFile = "https://aiduny.com/upload/file/20260105/89516113d62bd6981949e81df299d11f.mp4";
+const defaultProductVideoFile = "assets/seo-images/89516113d62bd6981949e81df299d11f.mp4";
 
 function syncLanguageSelects(lang) {
   if (!languageSelects.length) {
