@@ -1,7 +1,7 @@
 const translations = {
   en: {
     toplineEmail: "Email: sales@aquascandetectors.com",
-    toplinePhone: "WhatsApp: +86 131 9773 5816",
+    toplinePhone: "WhatsApp: +86 15261404133",
     brandTag: "Groundwater Detection Systems",
     navHome: "Home",
     navAbout: "About",
@@ -265,7 +265,7 @@ const translations = {
   },
   zh: {
     toplineEmail: "邮箱：sales@aquascandetectors.com",
-    toplinePhone: "WhatsApp：+86 131 9773 5816",
+    toplinePhone: "WhatsApp：+86 15261404133",
     brandTag: "精密检测系统",
     navHome: "首页",
     navAbout: "关于我们",
@@ -498,7 +498,7 @@ const translations = {
 const extraTranslations = {
   ar: {
     toplineEmail: "البريد الإلكتروني: sales@aquascandetectors.com",
-    toplinePhone: "واتساب: +86 131 9773 5816",
+    toplinePhone: "واتساب: +86 15261404133",
     brandTag: "أنظمة كشف المياه الجوفية",
     navHome: "الرئيسية",
     navAbout: "من نحن",
@@ -664,7 +664,7 @@ const extraTranslations = {
   },
   tr: {
     toplineEmail: "E-posta: sales@aquascandetectors.com",
-    toplinePhone: "WhatsApp: +86 131 9773 5816",
+    toplinePhone: "WhatsApp: +86 15261404133",
     brandTag: "Yer Alti Suyu Tespit Sistemleri",
     navHome: "Ana Sayfa",
     navAbout: "Hakkimizda",
@@ -830,7 +830,7 @@ const extraTranslations = {
   },
   fa: {
     toplineEmail: "ایمیل: sales@aquascandetectors.com",
-    toplinePhone: "واتساپ: +86 131 9773 5816",
+    toplinePhone: "واتساپ: +86 15261404133",
     brandTag: "سیستم های تشخیص آب زیرزمینی",
     navHome: "خانه",
     navAbout: "درباره ما",
@@ -996,7 +996,7 @@ const extraTranslations = {
   },
   fr: {
     toplineEmail: "E-mail : sales@aquascandetectors.com",
-    toplinePhone: "WhatsApp : +86 131 9773 5816",
+    toplinePhone: "WhatsApp : +86 15261404133",
     brandTag: "Systemes de detection d'eau souterraine",
     navHome: "Accueil",
     navAbout: "A propos",
@@ -1162,7 +1162,7 @@ const extraTranslations = {
   },
   es: {
     toplineEmail: "Correo: sales@aquascandetectors.com",
-    toplinePhone: "WhatsApp: +86 131 9773 5816",
+    toplinePhone: "WhatsApp: +86 15261404133",
     brandTag: "Sistemas de deteccion de agua subterranea",
     navHome: "Inicio",
     navAbout: "Nosotros",
