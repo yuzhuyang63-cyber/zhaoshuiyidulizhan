@@ -1,7 +1,7 @@
 const translations = {
   en: {
-    toplineEmail: "Email: sales@aquascandetectors.com",
-    toplinePhone: "WhatsApp: +86 15261404133",
+    toplineEmail: "Email: yuzhuyang63@gmail.com",
+    toplinePhone: "WhatsApp: +86 18319333114",
     brandTag: "Groundwater Detection Systems",
     navHome: "Home",
     navAbout: "About",
@@ -264,8 +264,8 @@ const translations = {
     footerAddress: "Shanghai, China"
   },
   zh: {
-    toplineEmail: "邮箱：sales@aquascandetectors.com",
-    toplinePhone: "WhatsApp：+86 15261404133",
+    toplineEmail: "邮箱：yuzhuyang63@gmail.com",
+    toplinePhone: "WhatsApp：+86 18319333114",
     brandTag: "精密检测系统",
     navHome: "首页",
     navAbout: "关于我们",
@@ -497,8 +497,8 @@ const translations = {
 
 const extraTranslations = {
   ar: {
-    toplineEmail: "البريد الإلكتروني: sales@aquascandetectors.com",
-    toplinePhone: "واتساب: +86 15261404133",
+    toplineEmail: "البريد الإلكتروني: yuzhuyang63@gmail.com",
+    toplinePhone: "واتساب: +86 18319333114",
     brandTag: "أنظمة كشف المياه الجوفية",
     navHome: "الرئيسية",
     navAbout: "من نحن",
@@ -663,8 +663,8 @@ const extraTranslations = {
     footerAddress: "شنغهاي، الصين"
   },
   tr: {
-    toplineEmail: "E-posta: sales@aquascandetectors.com",
-    toplinePhone: "WhatsApp: +86 15261404133",
+    toplineEmail: "E-posta: yuzhuyang63@gmail.com",
+    toplinePhone: "WhatsApp: +86 18319333114",
     brandTag: "Yer Alti Suyu Tespit Sistemleri",
     navHome: "Ana Sayfa",
     navAbout: "Hakkimizda",
@@ -829,8 +829,8 @@ const extraTranslations = {
     footerAddress: "Sanghay, Cin"
   },
   fa: {
-    toplineEmail: "ایمیل: sales@aquascandetectors.com",
-    toplinePhone: "واتساپ: +86 15261404133",
+    toplineEmail: "ایمیل: yuzhuyang63@gmail.com",
+    toplinePhone: "واتساپ: +86 18319333114",
     brandTag: "سیستم های تشخیص آب زیرزمینی",
     navHome: "خانه",
     navAbout: "درباره ما",
@@ -995,8 +995,8 @@ const extraTranslations = {
     footerAddress: "شانگهای، چین"
   },
   fr: {
-    toplineEmail: "E-mail : sales@aquascandetectors.com",
-    toplinePhone: "WhatsApp : +86 15261404133",
+    toplineEmail: "E-mail : yuzhuyang63@gmail.com",
+    toplinePhone: "WhatsApp : +86 18319333114",
     brandTag: "Systemes de detection d'eau souterraine",
     navHome: "Accueil",
     navAbout: "A propos",
@@ -1161,8 +1161,8 @@ const extraTranslations = {
     footerAddress: "Shanghai, Chine"
   },
   es: {
-    toplineEmail: "Correo: sales@aquascandetectors.com",
-    toplinePhone: "WhatsApp: +86 15261404133",
+    toplineEmail: "Correo: yuzhuyang63@gmail.com",
+    toplinePhone: "WhatsApp: +86 18319333114",
     brandTag: "Sistemas de deteccion de agua subterranea",
     navHome: "Inicio",
     navAbout: "Nosotros",
