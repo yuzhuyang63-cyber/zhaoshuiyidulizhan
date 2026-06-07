@@ -5,3 +5,6 @@ __pycache__/
 .env
 data/
 logs/
+.venv/
+*-check*.png
+/*.png

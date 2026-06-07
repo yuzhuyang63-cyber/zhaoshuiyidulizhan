@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AquaScan Detectors | Product Detail</title>
     <meta
+      id="meta-description"
       name="description"
       content="Detailed groundwater detector product page with image gallery, video introduction, product poster, and direct inquiry contact."
     />
+    <link id="canonical-link" rel="canonical" href="./product-detail.html" />
+    <script id="product-structured-data" type="application/ld+json">{}</script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -88,10 +91,10 @@
 
         <section class="section detail-anchor-section">
           <div class="container">
-            <div class="detail-anchor-nav" id="detail-section-tabs" role="tablist" aria-label="Product detail tabs">
-              <button type="button" class="detail-anchor-button is-active" id="detail-tab-video" data-target="detail-video-section" data-i18n="detailNavVideo" role="tab" aria-selected="true">Video introduction</button>
-              <button type="button" class="detail-anchor-button" id="detail-tab-tech" data-target="detail-tech-section" data-i18n="detailNavTech" role="tab" aria-selected="false">Technical parameters</button>
-              <button type="button" class="detail-anchor-button" id="detail-tab-intro" data-target="detail-intro-section" data-i18n="detailNavIntro" role="tab" aria-selected="false">Product introduction</button>
+            <div class="detail-anchor-nav" id="detail-section-tabs" aria-label="Product detail sections">
+              <button type="button" class="detail-anchor-button is-active" id="detail-tab-video" data-target="detail-video-section" data-i18n="detailNavVideo">Video introduction</button>
+              <button type="button" class="detail-anchor-button" id="detail-tab-tech" data-target="detail-tech-section" data-i18n="detailNavTech">Technical parameters</button>
+              <button type="button" class="detail-anchor-button" id="detail-tab-intro" data-target="detail-intro-section" data-i18n="detailNavIntro">Product introduction</button>
             </div>
           </div>
         </section>
@@ -107,7 +110,7 @@
           </div>
         </section>
 
-        <section class="section" id="detail-tech-section" hidden>
+        <section class="section" id="detail-tech-section">
           <div class="container detail-center-wrap">
             <article class="poster-card center-module">
               <div class="detail-tech-table-wrap">
@@ -117,11 +120,22 @@
           </div>
         </section>
 
-        <section class="section" id="detail-intro-section" hidden>
+        <section class="section" id="detail-intro-section">
           <div class="container detail-center-wrap">
             <article class="poster-card center-module">
               <div class="detail-intro-images" id="detail-intro-images"></div>
             </article>
+          </div>
+        </section>
+
+        <section class="section section-alt" id="detail-feedback-section">
+          <div class="container">
+            <div class="section-heading narrow">
+              <p class="eyebrow">Selected buyer feedback</p>
+              <h2>What Middle East water detector buyers say</h2>
+              <p>Selected feedback from drilling, agriculture, and distribution buyers after comparing model performance, support, and delivery.</p>
+            </div>
+            <div class="value-grid product-feedback-grid" id="detail-feedback-grid"></div>
           </div>
         </section>
 
@@ -180,6 +194,7 @@
             </form>
           </div>
         </section>
+
       </main>
 
       <footer class="footer">

@@ -445,7 +445,7 @@ const translations = {
     videosNoteEyebrow: "当前状态",
     videosNoteTitle: "已拿到图片，但未直接抓到产品视频文件",
     videosNoteText:
-      "在抓取艾都页面时，我能直接定位到产品图片，但没有从目录页直接拿到视频文件链接，所以这一页已经预留好后续替换接口。",
+      "在抓取产品页面时，我能直接定位到产品图片，但没有从目录页直接拿到视频文件链接，所以这一页已经预留好后续替换接口。",
     contactEyebrow: "联系我们",
     contactTitle: "欢迎与我们沟通你的真实想法",
     contactLead: "买家在浏览完产品、解决方案或产品详情后，可以更自然地进入这页提交询盘。",
@@ -1342,12 +1342,12 @@ const productCatalog = {
     videoFile: "./media/adzn300-intro.mp4",
     videoLink: "https://www.environmental-expert.com/videos/underground-water-detector-farm-life-device-video-748696",
     introImages: [
-      "./assets/products/adzn300-intro-1.avif",
-      "./assets/products/adzn300-intro-2.avif",
-      "./assets/products/adzn300-intro-3.avif",
-      "./assets/products/adzn300-intro-4.avif",
-      "./assets/products/adzn300-intro-5.avif",
-      "./assets/products/adzn300-intro-6.avif"
+      "./assets/products/adzn300-intro-1.jpg",
+      "./assets/products/adzn300-intro-2.jpg",
+      "./assets/products/adzn300-intro-3.jpg",
+      "./assets/products/adzn300-intro-4.jpg",
+      "./assets/products/adzn300-intro-5.jpg",
+      "./assets/products/adzn300-intro-6.jpg"
     ],
     techTable: {
       columns: ["Item", "ADZN300", "ADZN600", "ADZN1200", "ADZN3000"],
@@ -1591,7 +1591,7 @@ const productCatalog = {
     zh: {
       name: "16 通道高密度地下水探测仪",
       summary:
-        "产品型号：\n型号：ADMT-300SX-16D    原价：11500元   优惠价：10100元，1480美元\n型号：ADMT-500SX-16D    原价：15000元   优惠价：3200元，1939美元\n型号：ADMT-1200SX-16D   原价：17600元   优惠价：15480元，2274美元\n型号：ADMT-2000SX-16D   原价：20300元  优惠价：17860元，2620美元\n型号：ADMT-3000SX-16D   原价：23800元   优惠价：21000元，3100美元\n产品优势：\n1. 16通道实时自动成像，适合更高效的现场勘探与展示。\n2. 搭配 10.1 寸安卓系统触摸屏，操作更直观。\n3. 可选配电磁探头进行 TT 探头测量，扩展应用方式更灵活。",
+        "产品型号：\n型号：ADMT-300SX-16D    原价：11500元   优惠价：10100元，1480美元\n型号：ADMT-500SX-16D    原价：15000元   优惠价：13200元，1939美元\n型号：ADMT-1200SX-16D   原价：17600元   优惠价：15480元，2274美元\n型号：ADMT-2000SX-16D   原价：20300元  优惠价：17860元，2620美元\n型号：ADMT-3000SX-16D   原价：23800元   优惠价：21000元，3100美元\n产品优势：\n1. 16通道实时自动成像，适合更高效的现场勘探与展示。\n2. 搭配 10.1 寸安卓系统触摸屏，操作更直观。\n3. 可选配电磁探头进行 TT 探头测量，扩展应用方式更灵活。",
       quickSpecs: ["16 通道", "成像导向", "预算平衡"],
       features: [
         "适合连接入门款和高端款之间的产品层级。",
@@ -1712,7 +1712,7 @@ const productCatalog = {
     zh: {
       name: "ADMT 300S-X 单通道地下水探测仪",
       summary:
-        "模型：\n型号：ADMT-300S-X      原价：6500元，   优惠价：5700元，837 美元\n型号：ADMT-600S-X      原价：8500元，   优惠价：7400元，1087美元\n型号：ADMT-1200S-X     原价：13600元， 优惠价：11900元，1748美元\n型号：ADMT-3000S-X    原价：17000元，  优惠价：14900元， 218美元\n特征：\n1. 7英寸触摸屏，操作直观。\n2. 实时成像，智能精准，深度可调。\n3. 三种测量模式：MN电极测量、盒式探头TT测量以及棒式探头测量。",
+        "产品型号：\n型号：ADMT-300S-X      原价：6500元，   优惠价：5700元，837 美元\n型号：ADMT-600S-X      原价：8500元，   优惠价：7400元，1087美元\n型号：ADMT-1200S-X     原价：13600元， 优惠价：11900元，1748美元\n型号：ADMT-3000S-X    原价：17000元，  优惠价：14900元，2188美元\n产品特点：\n1. 7英寸触摸屏，操作直观。\n2. 实时成像，智能精准，深度可调。\n3. 三种测量模式：MN电极测量、盒式探头TT测量以及棒式探头测量。",
       quickSpecs: ["便携式", "单通道", "触屏控制"],
       features: [
         "适合作为现场友好的起步型号。",
@@ -1832,7 +1832,7 @@ const productCatalog = {
     zh: {
       name: "棍棒分析一体机",
       summary:
-        "产品型号：\n型号：ADMT-3H       原价：3150元   优惠价：2770元，407美元\n型号：ADMT-3HT2   原价：4800元  优惠价：4300元，632美元\n型号：ADMT-8HT2   原价：5800元   优惠价：5100元， 749美元\n型号：ADMT-3HT3   原价：5800元   优惠价：5100元， 749美元\n型号：ADMT-8HT3   原价：7800元   优惠价：6860元， 1008美元\n产品优势：\n1. 艾都找水金箍棒继承了上一代金箍棒完全无线、操作简单的优点。\n2. 弥补了上一代产品的不足，提升了仪器精准度。\n3. 新增分段测量、深度分层、数据处理、2D/3D/切片图、AI分析、离线测量等多项功能。\n4. 进一步提升了精准度和使用体验，可为打井找水带来更可靠的结果并提升经济效益。",
+        "产品型号：\n型号：ADMT-3H       原价：3150元   优惠价：2770元，407美元\n型号：ADMT-3HT2   原价：4800元  优惠价：4300元，632美元\n型号：ADMT-8HT2   原价：5800元   优惠价：5100元， 749美元\n型号：ADMT-3HT3   原价：5800元   优惠价：5100元， 749美元\n型号：ADMT-8HT3   原价：7800元   优惠价：6860元， 1008美元\n产品优势：\n1. AquaScan找水金箍棒继承了上一代金箍棒完全无线、操作简单的优点。\n2. 弥补了上一代产品的不足，提升了仪器精准度。\n3. 新增分段测量、深度分层、数据处理、2D/3D/切片图、AI分析、离线测量等多项功能。\n4. 进一步提升了精准度和使用体验，可为打井找水带来更可靠的结果并提升经济效益。",
       quickSpecs: ["新一代", "AI 洞察", "2D/3D/切片"],
       features: [
         "外观更有记忆点，适合线上展示。",
@@ -1901,37 +1901,37 @@ const localizedProductDetailContent = {
   p4: {
     en: {
       summary:
-        "Product models:\nModel: ADMT-300SX-16D    Original price: RMB 11,500  Discount price: RMB 10,100, USD 1,480\nModel: ADMT-500SX-16D    Original price: RMB 15,000  Discount price: RMB 3,200, USD 1,939\nModel: ADMT-1200SX-16D   Original price: RMB 17,600  Discount price: RMB 15,480, USD 2,274\nModel: ADMT-2000SX-16D   Original price: RMB 20,300  Discount price: RMB 17,860, USD 2,620\nModel: ADMT-3000SX-16D   Original price: RMB 23,800  Discount price: RMB 21,000, USD 3,100\nProduct advantages:\n1. 16-channel real-time automatic imaging for more efficient field exploration and presentation.\n2. 10.1-inch Android touch screen for more intuitive operation.\n3. Optional electromagnetic probe for TT probe measurement, making applications more flexible.",
+        "Product models:\nModel: ADMT-300SX-16D    Original price: RMB 11,500  Discount price: RMB 10,100, USD 1,480\nModel: ADMT-500SX-16D    Original price: RMB 15,000  Discount price: RMB 13,200, USD 1,939\nModel: ADMT-1200SX-16D   Original price: RMB 17,600  Discount price: RMB 15,480, USD 2,274\nModel: ADMT-2000SX-16D   Original price: RMB 20,300  Discount price: RMB 17,860, USD 2,620\nModel: ADMT-3000SX-16D   Original price: RMB 23,800  Discount price: RMB 21,000, USD 3,100\nProduct advantages:\n1. 16-channel real-time automatic imaging for more efficient field exploration and presentation.\n2. 10.1-inch Android touch screen for more intuitive operation.\n3. Optional electromagnetic probe for TT probe measurement, making applications more flexible.",
       quickSpecs: ["16 channels", "Imaging focused", "Balanced budget"],
       videoText: "This video area is suitable for showing why it is easier to close than higher-end models while still keeping an advanced feel."
     },
     ar: {
       summary:
-        "نماذج المنتج:\nالموديل: ADMT-300SX-16D    السعر الأصلي: 11500 يوان  سعر العرض: 10100 يوان، 1480 دولار\nالموديل: ADMT-500SX-16D    السعر الأصلي: 15000 يوان  سعر العرض: 3200 يوان، 1939 دولار\nالموديل: ADMT-1200SX-16D   السعر الأصلي: 17600 يوان  سعر العرض: 15480 يوان، 2274 دولار\nالموديل: ADMT-2000SX-16D   السعر الأصلي: 20300 يوان  سعر العرض: 17860 يوان، 2620 دولار\nالموديل: ADMT-3000SX-16D   السعر الأصلي: 23800 يوان  سعر العرض: 21000 يوان، 3100 دولار\nمزايا المنتج:\n1. تصوير تلقائي فوري بـ 16 قناة لعرض واستكشاف ميداني أكثر كفاءة.\n2. شاشة لمس Android مقاس 10.1 بوصة لتشغيل أوضح وأسهل.\n3. يدعم مسباراً كهرومغناطيسياً اختيارياً لقياس TT، ما يجعل الاستخدام أكثر مرونة.",
+        "نماذج المنتج:\nالموديل: ADMT-300SX-16D    السعر الأصلي: 11500 يوان  سعر العرض: 10100 يوان، 1480 دولار\nالموديل: ADMT-500SX-16D    السعر الأصلي: 15000 يوان  سعر العرض: 13200 يوان، 1939 دولار\nالموديل: ADMT-1200SX-16D   السعر الأصلي: 17600 يوان  سعر العرض: 15480 يوان، 2274 دولار\nالموديل: ADMT-2000SX-16D   السعر الأصلي: 20300 يوان  سعر العرض: 17860 يوان، 2620 دولار\nالموديل: ADMT-3000SX-16D   السعر الأصلي: 23800 يوان  سعر العرض: 21000 يوان، 3100 دولار\nمزايا المنتج:\n1. تصوير تلقائي فوري بـ 16 قناة لعرض واستكشاف ميداني أكثر كفاءة.\n2. شاشة لمس Android مقاس 10.1 بوصة لتشغيل أوضح وأسهل.\n3. يدعم مسباراً كهرومغناطيسياً اختيارياً لقياس TT، ما يجعل الاستخدام أكثر مرونة.",
       quickSpecs: ["16 قناة", "تصوير ميداني", "ميزانية متوازنة"],
       videoText: "يناسب هذا الفيديو توضيح لماذا يسهل إتمام البيع مقارنة بالنماذج الأعلى مع الحفاظ على مظهر متقدم."
     },
     tr: {
       summary:
-        "Ürün modelleri:\nModel: ADMT-300SX-16D    Orijinal fiyat: 11500 RMB  İndirimli fiyat: 10100 RMB, 1480 USD\nModel: ADMT-500SX-16D    Orijinal fiyat: 15000 RMB  İndirimli fiyat: 3200 RMB, 1939 USD\nModel: ADMT-1200SX-16D   Orijinal fiyat: 17600 RMB  İndirimli fiyat: 15480 RMB, 2274 USD\nModel: ADMT-2000SX-16D   Orijinal fiyat: 20300 RMB  İndirimli fiyat: 17860 RMB, 2620 USD\nModel: ADMT-3000SX-16D   Orijinal fiyat: 23800 RMB  İndirimli fiyat: 21000 RMB, 3100 USD\nÜrün avantajları:\n1. 16 kanallı gerçek zamanlı otomatik görüntüleme, daha verimli saha keşfi ve sunumu sağlar.\n2. 10.1 inç Android dokunmatik ekranla kullanım daha sezgiseldir.\n3. TT prob ölçümü için opsiyonel elektromanyetik prob desteklenir ve uygulama alanı daha esnektir.",
+        "Ürün modelleri:\nModel: ADMT-300SX-16D    Orijinal fiyat: 11500 RMB  İndirimli fiyat: 10100 RMB, 1480 USD\nModel: ADMT-500SX-16D    Orijinal fiyat: 15000 RMB  İndirimli fiyat: 13200 RMB, 1939 USD\nModel: ADMT-1200SX-16D   Orijinal fiyat: 17600 RMB  İndirimli fiyat: 15480 RMB, 2274 USD\nModel: ADMT-2000SX-16D   Orijinal fiyat: 20300 RMB  İndirimli fiyat: 17860 RMB, 2620 USD\nModel: ADMT-3000SX-16D   Orijinal fiyat: 23800 RMB  İndirimli fiyat: 21000 RMB, 3100 USD\nÜrün avantajları:\n1. 16 kanallı gerçek zamanlı otomatik görüntüleme, daha verimli saha keşfi ve sunumu sağlar.\n2. 10.1 inç Android dokunmatik ekranla kullanım daha sezgiseldir.\n3. TT prob ölçümü için opsiyonel elektromanyetik prob desteklenir ve uygulama alanı daha esnektir.",
       quickSpecs: ["16 kanal", "Görüntüleme odaklı", "Dengeli bütçe"],
       videoText: "Bu video alanı, üst modellerden daha kolay satılmasına rağmen gelişmiş hissini nasıl koruduğunu anlatmak için uygundur."
     },
     fa: {
       summary:
-        "مدل های محصول:\nمدل: ADMT-300SX-16D    قیمت اصلی: 11500 یوان  قیمت تخفیفی: 10100 یوان، 1480 دلار\nمدل: ADMT-500SX-16D    قیمت اصلی: 15000 یوان  قیمت تخفیفی: 3200 یوان، 1939 دلار\nمدل: ADMT-1200SX-16D   قیمت اصلی: 17600 یوان  قیمت تخفیفی: 15480 یوان، 2274 دلار\nمدل: ADMT-2000SX-16D   قیمت اصلی: 20300 یوان  قیمت تخفیفی: 17860 یوان، 2620 دلار\nمدل: ADMT-3000SX-16D   قیمت اصلی: 23800 یوان  قیمت تخفیفی: 21000 یوان، 3100 دلار\nمزایای محصول:\n1. تصویربرداری خودکار لحظه ای 16 کاناله برای اکتشاف و نمایش میدانی کارآمدتر.\n2. صفحه لمسی Android ده و یک دهم اینچی برای کاربری ساده تر و واضح تر.\n3. امکان استفاده از پروب الکترومغناطیسی اختیاری برای اندازه گیری TT و کاربردهای منعطف تر.",
+        "مدل های محصول:\nمدل: ADMT-300SX-16D    قیمت اصلی: 11500 یوان  قیمت تخفیفی: 10100 یوان، 1480 دلار\nمدل: ADMT-500SX-16D    قیمت اصلی: 15000 یوان  قیمت تخفیفی: 13200 یوان، 1939 دلار\nمدل: ADMT-1200SX-16D   قیمت اصلی: 17600 یوان  قیمت تخفیفی: 15480 یوان، 2274 دلار\nمدل: ADMT-2000SX-16D   قیمت اصلی: 20300 یوان  قیمت تخفیفی: 17860 یوان، 2620 دلار\nمدل: ADMT-3000SX-16D   قیمت اصلی: 23800 یوان  قیمت تخفیفی: 21000 یوان، 3100 دلار\nمزایای محصول:\n1. تصویربرداری خودکار لحظه ای 16 کاناله برای اکتشاف و نمایش میدانی کارآمدتر.\n2. صفحه لمسی Android ده و یک دهم اینچی برای کاربری ساده تر و واضح تر.\n3. امکان استفاده از پروب الکترومغناطیسی اختیاری برای اندازه گیری TT و کاربردهای منعطف تر.",
       quickSpecs: ["16 کانال", "محور تصویربرداری", "بودجه متعادل"],
       videoText: "این ویدئو مناسب توضیح این است که چرا نسبت به مدل های گران تر فروش آسان تری دارد اما همچنان حس پیشرفته را حفظ می کند."
     },
     fr: {
       summary:
-        "Modeles produit :\nModele : ADMT-300SX-16D    Prix initial : 11 500 RMB  Prix promotionnel : 10 100 RMB, 1 480 USD\nModele : ADMT-500SX-16D    Prix initial : 15 000 RMB  Prix promotionnel : 3 200 RMB, 1 939 USD\nModele : ADMT-1200SX-16D   Prix initial : 17 600 RMB  Prix promotionnel : 15 480 RMB, 2 274 USD\nModele : ADMT-2000SX-16D   Prix initial : 20 300 RMB  Prix promotionnel : 17 860 RMB, 2 620 USD\nModele : ADMT-3000SX-16D   Prix initial : 23 800 RMB  Prix promotionnel : 21 000 RMB, 3 100 USD\nAvantages produit :\n1. Imagerie automatique en temps reel sur 16 canaux pour une exploration et une presentation terrain plus efficaces.\n2. Ecran tactile Android 10,1 pouces pour une utilisation plus intuitive.\n3. Sonde electromagnetique optionnelle pour mesure TT, avec des applications plus flexibles.",
+        "Modeles produit :\nModele : ADMT-300SX-16D    Prix initial : 11 500 RMB  Prix promotionnel : 10 100 RMB, 1 480 USD\nModele : ADMT-500SX-16D    Prix initial : 15 000 RMB  Prix promotionnel : 13 200 RMB, 1 939 USD\nModele : ADMT-1200SX-16D   Prix initial : 17 600 RMB  Prix promotionnel : 15 480 RMB, 2 274 USD\nModele : ADMT-2000SX-16D   Prix initial : 20 300 RMB  Prix promotionnel : 17 860 RMB, 2 620 USD\nModele : ADMT-3000SX-16D   Prix initial : 23 800 RMB  Prix promotionnel : 21 000 RMB, 3 100 USD\nAvantages produit :\n1. Imagerie automatique en temps reel sur 16 canaux pour une exploration et une presentation terrain plus efficaces.\n2. Ecran tactile Android 10,1 pouces pour une utilisation plus intuitive.\n3. Sonde electromagnetique optionnelle pour mesure TT, avec des applications plus flexibles.",
       quickSpecs: ["16 canaux", "Oriente imagerie", "Budget equilibre"],
       videoText: "Cette zone video permet de montrer pourquoi ce modele se vend plus facilement que les modeles superieurs tout en gardant une image avancee."
     },
     es: {
       summary:
-        "Modelos del producto:\nModelo: ADMT-300SX-16D    Precio original: 11500 RMB  Precio promocional: 10100 RMB, 1480 USD\nModelo: ADMT-500SX-16D    Precio original: 15000 RMB  Precio promocional: 3200 RMB, 1939 USD\nModelo: ADMT-1200SX-16D   Precio original: 17600 RMB  Precio promocional: 15480 RMB, 2274 USD\nModelo: ADMT-2000SX-16D   Precio original: 20300 RMB  Precio promocional: 17860 RMB, 2620 USD\nModelo: ADMT-3000SX-16D   Precio original: 23800 RMB  Precio promocional: 21000 RMB, 3100 USD\nVentajas del producto:\n1. Imagen automatica en tiempo real de 16 canales para exploracion y presentacion de campo mas eficientes.\n2. Pantalla tactil Android de 10.1 pulgadas para operacion mas intuitiva.\n3. Sonda electromagnetica opcional para medicion TT, con aplicaciones mas flexibles.",
+        "Modelos del producto:\nModelo: ADMT-300SX-16D    Precio original: 11500 RMB  Precio promocional: 10100 RMB, 1480 USD\nModelo: ADMT-500SX-16D    Precio original: 15000 RMB  Precio promocional: 13200 RMB, 1939 USD\nModelo: ADMT-1200SX-16D   Precio original: 17600 RMB  Precio promocional: 15480 RMB, 2274 USD\nModelo: ADMT-2000SX-16D   Precio original: 20300 RMB  Precio promocional: 17860 RMB, 2620 USD\nModelo: ADMT-3000SX-16D   Precio original: 23800 RMB  Precio promocional: 21000 RMB, 3100 USD\nVentajas del producto:\n1. Imagen automatica en tiempo real de 16 canales para exploracion y presentacion de campo mas eficientes.\n2. Pantalla tactil Android de 10.1 pulgadas para operacion mas intuitiva.\n3. Sonda electromagnetica opcional para medicion TT, con aplicaciones mas flexibles.",
       quickSpecs: ["16 canales", "Enfoque en imagen", "Presupuesto equilibrado"],
       videoText: "Esta zona de video sirve para explicar por que es mas facil de cerrar que modelos superiores mientras mantiene una imagen avanzada."
     }
@@ -1939,37 +1939,37 @@ const localizedProductDetailContent = {
   p5: {
     en: {
       summary:
-        "Models:\nModel: ADMT-300S-X      Original price: RMB 6,500,   Discount price: RMB 5,700, USD 837\nModel: ADMT-600S-X      Original price: RMB 8,500,   Discount price: RMB 7,400, USD 1,087\nModel: ADMT-1200S-X     Original price: RMB 13,600,  Discount price: RMB 11,900, USD 1,748\nModel: ADMT-3000S-X     Original price: RMB 17,000,  Discount price: RMB 14,900, USD 218\nFeatures:\n1. 7-inch touch screen with intuitive operation.\n2. Real-time imaging, smart and accurate, with adjustable depth.\n3. Three measurement modes: MN electrode measurement, box-type TT probe measurement, and rod-type probe measurement.",
+        "Models:\nModel: ADMT-300S-X      Original price: RMB 6,500,   Discount price: RMB 5,700, USD 837\nModel: ADMT-600S-X      Original price: RMB 8,500,   Discount price: RMB 7,400, USD 1,087\nModel: ADMT-1200S-X     Original price: RMB 13,600,  Discount price: RMB 11,900, USD 1,748\nModel: ADMT-3000S-X     Original price: RMB 17,000,  Discount price: RMB 14,900, USD 2,188\nFeatures:\n1. 7-inch touch screen with intuitive operation.\n2. Real-time imaging, smart and accurate, with adjustable depth.\n3. Three measurement modes: MN electrode measurement, box-type TT probe measurement, and rod-type probe measurement.",
       quickSpecs: ["Portable", "Single channel", "Touch control"],
       videoText: "This video should emphasize portability, simple setup, and the advantages of this model in price-sensitive markets."
     },
     ar: {
       summary:
-        "النماذج:\nالموديل: ADMT-300S-X      السعر الأصلي: 6500 يوان،   سعر العرض: 5700 يوان، 837 دولار\nالموديل: ADMT-600S-X      السعر الأصلي: 8500 يوان،   سعر العرض: 7400 يوان، 1087 دولار\nالموديل: ADMT-1200S-X     السعر الأصلي: 13600 يوان،  سعر العرض: 11900 يوان، 1748 دولار\nالموديل: ADMT-3000S-X     السعر الأصلي: 17000 يوان،  سعر العرض: 14900 يوان، 218 دولار\nالميزات:\n1. شاشة لمس 7 بوصات وتشغيل مباشر.\n2. تصوير فوري، ذكي ودقيق، مع عمق قابل للتعديل.\n3. ثلاثة أوضاع قياس: قياس أقطاب MN، قياس مسبار TT الصندوقي، وقياس المسبار العصوي.",
+        "النماذج:\nالموديل: ADMT-300S-X      السعر الأصلي: 6500 يوان،   سعر العرض: 5700 يوان، 837 دولار\nالموديل: ADMT-600S-X      السعر الأصلي: 8500 يوان،   سعر العرض: 7400 يوان، 1087 دولار\nالموديل: ADMT-1200S-X     السعر الأصلي: 13600 يوان،  سعر العرض: 11900 يوان، 1748 دولار\nالموديل: ADMT-3000S-X     السعر الأصلي: 17000 يوان،  سعر العرض: 14900 يوان، 2188 دولار\nالميزات:\n1. شاشة لمس 7 بوصات وتشغيل مباشر.\n2. تصوير فوري، ذكي ودقيق، مع عمق قابل للتعديل.\n3. ثلاثة أوضاع قياس: قياس أقطاب MN، قياس مسبار TT الصندوقي، وقياس المسبار العصوي.",
       quickSpecs: ["محمول", "قناة واحدة", "تحكم باللمس"],
       videoText: "ينبغي أن يبرز الفيديو سهولة الحمل، وبساطة الإعداد، ومزايا هذا الطراز في الأسواق الحساسة للسعر."
     },
     tr: {
       summary:
-        "Modeller:\nModel: ADMT-300S-X      Orijinal fiyat: 6500 RMB,   İndirimli fiyat: 5700 RMB, 837 USD\nModel: ADMT-600S-X      Orijinal fiyat: 8500 RMB,   İndirimli fiyat: 7400 RMB, 1087 USD\nModel: ADMT-1200S-X     Orijinal fiyat: 13600 RMB,  İndirimli fiyat: 11900 RMB, 1748 USD\nModel: ADMT-3000S-X     Orijinal fiyat: 17000 RMB,  İndirimli fiyat: 14900 RMB, 218 USD\nÖzellikler:\n1. 7 inç dokunmatik ekran, sezgisel kullanım.\n2. Gerçek zamanlı görüntüleme, akıllı ve doğru sonuç, ayarlanabilir derinlik.\n3. Üç ölçüm modu: MN elektrot ölçümü, kutu tipi TT prob ölçümü ve çubuk tipi prob ölçümü.",
+        "Modeller:\nModel: ADMT-300S-X      Orijinal fiyat: 6500 RMB,   İndirimli fiyat: 5700 RMB, 837 USD\nModel: ADMT-600S-X      Orijinal fiyat: 8500 RMB,   İndirimli fiyat: 7400 RMB, 1087 USD\nModel: ADMT-1200S-X     Orijinal fiyat: 13600 RMB,  İndirimli fiyat: 11900 RMB, 1748 USD\nModel: ADMT-3000S-X     Orijinal fiyat: 17000 RMB,  İndirimli fiyat: 14900 RMB, 2188 USD\nÖzellikler:\n1. 7 inç dokunmatik ekran, sezgisel kullanım.\n2. Gerçek zamanlı görüntüleme, akıllı ve doğru sonuç, ayarlanabilir derinlik.\n3. Üç ölçüm modu: MN elektrot ölçümü, kutu tipi TT prob ölçümü ve çubuk tipi prob ölçümü.",
       quickSpecs: ["Taşınabilir", "Tek kanal", "Dokunmatik kontrol"],
       videoText: "Video; taşınabilirliği, kolay kurulumu ve fiyat hassas pazarlardaki avantajlarını vurgulamalıdır."
     },
     fa: {
       summary:
-        "مدل ها:\nمدل: ADMT-300S-X      قیمت اصلی: 6500 یوان،   قیمت تخفیفی: 5700 یوان، 837 دلار\nمدل: ADMT-600S-X      قیمت اصلی: 8500 یوان،   قیمت تخفیفی: 7400 یوان، 1087 دلار\nمدل: ADMT-1200S-X     قیمت اصلی: 13600 یوان،  قیمت تخفیفی: 11900 یوان، 1748 دلار\nمدل: ADMT-3000S-X     قیمت اصلی: 17000 یوان،  قیمت تخفیفی: 14900 یوان، 218 دلار\nویژگی ها:\n1. صفحه لمسی 7 اینچی با کاربری ساده.\n2. تصویربرداری لحظه ای، هوشمند و دقیق، با عمق قابل تنظیم.\n3. سه حالت اندازه گیری: الکترود MN، پروب جعبه ای TT و پروب میله ای.",
+        "مدل ها:\nمدل: ADMT-300S-X      قیمت اصلی: 6500 یوان،   قیمت تخفیفی: 5700 یوان، 837 دلار\nمدل: ADMT-600S-X      قیمت اصلی: 8500 یوان،   قیمت تخفیفی: 7400 یوان، 1087 دلار\nمدل: ADMT-1200S-X     قیمت اصلی: 13600 یوان،  قیمت تخفیفی: 11900 یوان، 1748 دلار\nمدل: ADMT-3000S-X     قیمت اصلی: 17000 یوان،  قیمت تخفیفی: 14900 یوان، 2188 دلار\nویژگی ها:\n1. صفحه لمسی 7 اینچی با کاربری ساده.\n2. تصویربرداری لحظه ای، هوشمند و دقیق، با عمق قابل تنظیم.\n3. سه حالت اندازه گیری: الکترود MN، پروب جعبه ای TT و پروب میله ای.",
       quickSpecs: ["قابل حمل", "تک کانال", "کنترل لمسی"],
       videoText: "ویدئو باید بر قابلیت حمل، نصب ساده و مزایای این مدل در بازارهای حساس به قیمت تاکید کند."
     },
     fr: {
       summary:
-        "Modeles :\nModele : ADMT-300S-X      Prix initial : 6 500 RMB,   Prix promotionnel : 5 700 RMB, 837 USD\nModele : ADMT-600S-X      Prix initial : 8 500 RMB,   Prix promotionnel : 7 400 RMB, 1 087 USD\nModele : ADMT-1200S-X     Prix initial : 13 600 RMB,  Prix promotionnel : 11 900 RMB, 1 748 USD\nModele : ADMT-3000S-X     Prix initial : 17 000 RMB,  Prix promotionnel : 14 900 RMB, 218 USD\nCaracteristiques :\n1. Ecran tactile 7 pouces, utilisation intuitive.\n2. Imagerie en temps reel, intelligente et precise, avec profondeur reglable.\n3. Trois modes de mesure : electrode MN, sonde TT de type boitier et sonde de type tige.",
+        "Modeles :\nModele : ADMT-300S-X      Prix initial : 6 500 RMB,   Prix promotionnel : 5 700 RMB, 837 USD\nModele : ADMT-600S-X      Prix initial : 8 500 RMB,   Prix promotionnel : 7 400 RMB, 1 087 USD\nModele : ADMT-1200S-X     Prix initial : 13 600 RMB,  Prix promotionnel : 11 900 RMB, 1 748 USD\nModele : ADMT-3000S-X     Prix initial : 17 000 RMB,  Prix promotionnel : 14 900 RMB, 2 188 USD\nCaracteristiques :\n1. Ecran tactile 7 pouces, utilisation intuitive.\n2. Imagerie en temps reel, intelligente et precise, avec profondeur reglable.\n3. Trois modes de mesure : electrode MN, sonde TT de type boitier et sonde de type tige.",
       quickSpecs: ["Portable", "Monocanal", "Controle tactile"],
       videoText: "La video doit mettre en avant la portabilite, la simplicite d'installation et les avantages dans les marches sensibles au prix."
     },
     es: {
       summary:
-        "Modelos:\nModelo: ADMT-300S-X      Precio original: 6500 RMB,   Precio promocional: 5700 RMB, 837 USD\nModelo: ADMT-600S-X      Precio original: 8500 RMB,   Precio promocional: 7400 RMB, 1087 USD\nModelo: ADMT-1200S-X     Precio original: 13600 RMB,  Precio promocional: 11900 RMB, 1748 USD\nModelo: ADMT-3000S-X     Precio original: 17000 RMB,  Precio promocional: 14900 RMB, 218 USD\nCaracteristicas:\n1. Pantalla tactil de 7 pulgadas, operacion intuitiva.\n2. Imagen en tiempo real, inteligente y precisa, con profundidad ajustable.\n3. Tres modos de medicion: electrodo MN, sonda TT tipo caja y sonda tipo varilla.",
+        "Modelos:\nModelo: ADMT-300S-X      Precio original: 6500 RMB,   Precio promocional: 5700 RMB, 837 USD\nModelo: ADMT-600S-X      Precio original: 8500 RMB,   Precio promocional: 7400 RMB, 1087 USD\nModelo: ADMT-1200S-X     Precio original: 13600 RMB,  Precio promocional: 11900 RMB, 1748 USD\nModelo: ADMT-3000S-X     Precio original: 17000 RMB,  Precio promocional: 14900 RMB, 2188 USD\nCaracteristicas:\n1. Pantalla tactil de 7 pulgadas, operacion intuitiva.\n2. Imagen en tiempo real, inteligente y precisa, con profundidad ajustable.\n3. Tres modos de medicion: electrodo MN, sonda TT tipo caja y sonda tipo varilla.",
       quickSpecs: ["Portatil", "Un canal", "Control tactil"],
       videoText: "El video debe destacar la portabilidad, la instalacion sencilla y las ventajas en mercados sensibles al precio."
     }
@@ -1977,37 +1977,37 @@ const localizedProductDetailContent = {
   p6: {
     en: {
       summary:
-        "Product models:\nModel: ADMT-3H       Original price: RMB 3,150   Discount price: RMB 2,770, USD 407\nModel: ADMT-3HT2     Original price: RMB 4,800   Discount price: RMB 4,300, USD 632\nModel: ADMT-8HT2     Original price: RMB 5,800   Discount price: RMB 5,100, USD 749\nModel: ADMT-3HT3     Original price: RMB 5,800   Discount price: RMB 5,100, USD 749\nModel: ADMT-8HT3     Original price: RMB 7,800   Discount price: RMB 6,860, USD 1,008\nProduct advantages:\n1. The Aidu water-finding rod inherits the fully wireless and easy-operation advantages of the previous generation.\n2. It improves on the previous generation and increases instrument accuracy.\n3. Adds segmented measurement, depth layering, data processing, 2D/3D/slice maps, AI analysis, offline measurement, and more.\n4. Further improves accuracy and user experience, helping well drilling and water finding deliver more reliable results and better economic value.",
+        "Product models:\nModel: ADMT-3H       Original price: RMB 3,150   Discount price: RMB 2,770, USD 407\nModel: ADMT-3HT2     Original price: RMB 4,800   Discount price: RMB 4,300, USD 632\nModel: ADMT-8HT2     Original price: RMB 5,800   Discount price: RMB 5,100, USD 749\nModel: ADMT-3HT3     Original price: RMB 5,800   Discount price: RMB 5,100, USD 749\nModel: ADMT-8HT3     Original price: RMB 7,800   Discount price: RMB 6,860, USD 1,008\nProduct advantages:\n1. The AquaScan water-finding rod inherits the fully wireless and easy-operation advantages of the previous generation.\n2. It improves on the previous generation and increases instrument accuracy.\n3. Adds segmented measurement, depth layering, data processing, 2D/3D/slice maps, AI analysis, offline measurement, and more.\n4. Further improves accuracy and user experience, helping well drilling and water finding deliver more reliable results and better economic value.",
       quickSpecs: ["New generation", "AI insight", "2D/3D/Slice"],
       videoText: "This section should explain what makes the design, scanning logic, and promotional effect different."
     },
     ar: {
       summary:
-        "نماذج المنتج:\nالموديل: ADMT-3H       السعر الأصلي: 3150 يوان   سعر العرض: 2770 يوان، 407 دولار\nالموديل: ADMT-3HT2     السعر الأصلي: 4800 يوان   سعر العرض: 4300 يوان، 632 دولار\nالموديل: ADMT-8HT2     السعر الأصلي: 5800 يوان   سعر العرض: 5100 يوان، 749 دولار\nالموديل: ADMT-3HT3     السعر الأصلي: 5800 يوان   سعر العرض: 5100 يوان، 749 دولار\nالموديل: ADMT-8HT3     السعر الأصلي: 7800 يوان   سعر العرض: 6860 يوان، 1008 دولار\nمزايا المنتج:\n1. يرث قضيب البحث عن الماء من Aidu مزايا الجيل السابق: لاسلكي بالكامل وسهل التشغيل.\n2. يعالج نواقص الجيل السابق ويرفع دقة الجهاز.\n3. يضيف قياساً مقطعياً، وطبقات عمق، ومعالجة بيانات، ورسومات 2D/3D/شرائح، وتحليل AI، وقياساً دون اتصال.\n4. يحسن الدقة وتجربة الاستخدام، ويساعد الحفر والبحث عن الماء بنتائج أكثر موثوقية وقيمة اقتصادية أفضل.",
+        "نماذج المنتج:\nالموديل: ADMT-3H       السعر الأصلي: 3150 يوان   سعر العرض: 2770 يوان، 407 دولار\nالموديل: ADMT-3HT2     السعر الأصلي: 4800 يوان   سعر العرض: 4300 يوان، 632 دولار\nالموديل: ADMT-8HT2     السعر الأصلي: 5800 يوان   سعر العرض: 5100 يوان، 749 دولار\nالموديل: ADMT-3HT3     السعر الأصلي: 5800 يوان   سعر العرض: 5100 يوان، 749 دولار\nالموديل: ADMT-8HT3     السعر الأصلي: 7800 يوان   سعر العرض: 6860 يوان، 1008 دولار\nمزايا المنتج:\n1. يرث قضيب البحث عن الماء من AquaScan مزايا الجيل السابق: لاسلكي بالكامل وسهل التشغيل.\n2. يعالج نواقص الجيل السابق ويرفع دقة الجهاز.\n3. يضيف قياساً مقطعياً، وطبقات عمق، ومعالجة بيانات، ورسومات 2D/3D/شرائح، وتحليل AI، وقياساً دون اتصال.\n4. يحسن الدقة وتجربة الاستخدام، ويساعد الحفر والبحث عن الماء بنتائج أكثر موثوقية وقيمة اقتصادية أفضل.",
       quickSpecs: ["جيل جديد", "رؤية AI", "2D/3D/شرائح"],
       videoText: "ينبغي أن يشرح هذا القسم اختلاف التصميم ومنطق المسح وتأثيره في الترويج."
     },
     tr: {
       summary:
-        "Ürün modelleri:\nModel: ADMT-3H       Orijinal fiyat: 3150 RMB   İndirimli fiyat: 2770 RMB, 407 USD\nModel: ADMT-3HT2     Orijinal fiyat: 4800 RMB   İndirimli fiyat: 4300 RMB, 632 USD\nModel: ADMT-8HT2     Orijinal fiyat: 5800 RMB   İndirimli fiyat: 5100 RMB, 749 USD\nModel: ADMT-3HT3     Orijinal fiyat: 5800 RMB   İndirimli fiyat: 5100 RMB, 749 USD\nModel: ADMT-8HT3     Orijinal fiyat: 7800 RMB   İndirimli fiyat: 6860 RMB, 1008 USD\nÜrün avantajları:\n1. Aidu su bulma çubuğu, önceki neslin tamamen kablosuz ve kolay kullanım avantajlarını korur.\n2. Önceki neslin eksiklerini giderir ve cihaz hassasiyetini artırır.\n3. Bölümlü ölçüm, derinlik katmanlama, veri işleme, 2D/3D/dilim haritaları, AI analizi ve çevrimdışı ölçüm ekler.\n4. Hassasiyeti ve kullanıcı deneyimini geliştirerek sondaj ve su bulmada daha güvenilir sonuçlar ve daha iyi ekonomik fayda sağlar.",
+        "Ürün modelleri:\nModel: ADMT-3H       Orijinal fiyat: 3150 RMB   İndirimli fiyat: 2770 RMB, 407 USD\nModel: ADMT-3HT2     Orijinal fiyat: 4800 RMB   İndirimli fiyat: 4300 RMB, 632 USD\nModel: ADMT-8HT2     Orijinal fiyat: 5800 RMB   İndirimli fiyat: 5100 RMB, 749 USD\nModel: ADMT-3HT3     Orijinal fiyat: 5800 RMB   İndirimli fiyat: 5100 RMB, 749 USD\nModel: ADMT-8HT3     Orijinal fiyat: 7800 RMB   İndirimli fiyat: 6860 RMB, 1008 USD\nÜrün avantajları:\n1. AquaScan su bulma çubuğu, önceki neslin tamamen kablosuz ve kolay kullanım avantajlarını korur.\n2. Önceki neslin eksiklerini giderir ve cihaz hassasiyetini artırır.\n3. Bölümlü ölçüm, derinlik katmanlama, veri işleme, 2D/3D/dilim haritaları, AI analizi ve çevrimdışı ölçüm ekler.\n4. Hassasiyeti ve kullanıcı deneyimini geliştirerek sondaj ve su bulmada daha güvenilir sonuçlar ve daha iyi ekonomik fayda sağlar.",
       quickSpecs: ["Yeni nesil", "AI içgörüsü", "2D/3D/Dilim"],
       videoText: "Bu bölüm tasarım, tarama mantığı ve tanıtım etkisinin neden farklı olduğunu açıklamak için uygundur."
     },
     fa: {
       summary:
-        "مدل های محصول:\nمدل: ADMT-3H       قیمت اصلی: 3150 یوان   قیمت تخفیفی: 2770 یوان، 407 دلار\nمدل: ADMT-3HT2     قیمت اصلی: 4800 یوان   قیمت تخفیفی: 4300 یوان، 632 دلار\nمدل: ADMT-8HT2     قیمت اصلی: 5800 یوان   قیمت تخفیفی: 5100 یوان، 749 دلار\nمدل: ADMT-3HT3     قیمت اصلی: 5800 یوان   قیمت تخفیفی: 5100 یوان، 749 دلار\nمدل: ADMT-8HT3     قیمت اصلی: 7800 یوان   قیمت تخفیفی: 6860 یوان، 1008 دلار\nمزایای محصول:\n1. میله آب یاب Aidu مزایای نسل قبلی، یعنی کاملاً بی سیم بودن و کاربری ساده را حفظ کرده است.\n2. کمبودهای نسل قبلی را جبران کرده و دقت دستگاه را افزایش می دهد.\n3. اندازه گیری بخش بندی شده، لایه بندی عمق، پردازش داده، نقشه های 2D/3D/برشی، تحلیل AI و اندازه گیری آفلاین را اضافه می کند.\n4. دقت و تجربه کاربری را بهتر می کند و برای حفاری و یافتن آب، نتایج مطمئن تر و ارزش اقتصادی بالاتر فراهم می کند.",
+        "مدل های محصول:\nمدل: ADMT-3H       قیمت اصلی: 3150 یوان   قیمت تخفیفی: 2770 یوان، 407 دلار\nمدل: ADMT-3HT2     قیمت اصلی: 4800 یوان   قیمت تخفیفی: 4300 یوان، 632 دلار\nمدل: ADMT-8HT2     قیمت اصلی: 5800 یوان   قیمت تخفیفی: 5100 یوان، 749 دلار\nمدل: ADMT-3HT3     قیمت اصلی: 5800 یوان   قیمت تخفیفی: 5100 یوان، 749 دلار\nمدل: ADMT-8HT3     قیمت اصلی: 7800 یوان   قیمت تخفیفی: 6860 یوان، 1008 دلار\nمزایای محصول:\n1. میله آب یاب AquaScan مزایای نسل قبلی، یعنی کاملاً بی سیم بودن و کاربری ساده را حفظ کرده است.\n2. کمبودهای نسل قبلی را جبران کرده و دقت دستگاه را افزایش می دهد.\n3. اندازه گیری بخش بندی شده، لایه بندی عمق، پردازش داده، نقشه های 2D/3D/برشی، تحلیل AI و اندازه گیری آفلاین را اضافه می کند.\n4. دقت و تجربه کاربری را بهتر می کند و برای حفاری و یافتن آب، نتایج مطمئن تر و ارزش اقتصادی بالاتر فراهم می کند.",
       quickSpecs: ["نسل جدید", "بینش AI", "2D/3D/برشی"],
       videoText: "این بخش برای توضیح تفاوت طراحی، منطق اسکن و اثر تبلیغاتی دستگاه مناسب است."
     },
     fr: {
       summary:
-        "Modeles produit :\nModele : ADMT-3H       Prix initial : 3 150 RMB   Prix promotionnel : 2 770 RMB, 407 USD\nModele : ADMT-3HT2     Prix initial : 4 800 RMB   Prix promotionnel : 4 300 RMB, 632 USD\nModele : ADMT-8HT2     Prix initial : 5 800 RMB   Prix promotionnel : 5 100 RMB, 749 USD\nModele : ADMT-3HT3     Prix initial : 5 800 RMB   Prix promotionnel : 5 100 RMB, 749 USD\nModele : ADMT-8HT3     Prix initial : 7 800 RMB   Prix promotionnel : 6 860 RMB, 1 008 USD\nAvantages produit :\n1. La tige de recherche d'eau Aidu conserve les avantages de la generation precedente : fonctionnement totalement sans fil et simple.\n2. Elle corrige les limites de la generation precedente et ameliore la precision de l'instrument.\n3. Elle ajoute mesure segmentee, stratification de profondeur, traitement des donnees, cartes 2D/3D/coupes, analyse IA et mesure hors ligne.\n4. Elle ameliore encore la precision et l'experience utilisateur pour des resultats de forage et de recherche d'eau plus fiables.",
+        "Modeles produit :\nModele : ADMT-3H       Prix initial : 3 150 RMB   Prix promotionnel : 2 770 RMB, 407 USD\nModele : ADMT-3HT2     Prix initial : 4 800 RMB   Prix promotionnel : 4 300 RMB, 632 USD\nModele : ADMT-8HT2     Prix initial : 5 800 RMB   Prix promotionnel : 5 100 RMB, 749 USD\nModele : ADMT-3HT3     Prix initial : 5 800 RMB   Prix promotionnel : 5 100 RMB, 749 USD\nModele : ADMT-8HT3     Prix initial : 7 800 RMB   Prix promotionnel : 6 860 RMB, 1 008 USD\nAvantages produit :\n1. La tige de recherche d'eau AquaScan conserve les avantages de la generation precedente : fonctionnement totalement sans fil et simple.\n2. Elle corrige les limites de la generation precedente et ameliore la precision de l'instrument.\n3. Elle ajoute mesure segmentee, stratification de profondeur, traitement des donnees, cartes 2D/3D/coupes, analyse IA et mesure hors ligne.\n4. Elle ameliore encore la precision et l'experience utilisateur pour des resultats de forage et de recherche d'eau plus fiables.",
       quickSpecs: ["Nouvelle generation", "Analyse IA", "2D/3D/Coupes"],
       videoText: "Cette section permet d'expliquer les differences de design, de logique de balayage et d'effet promotionnel."
     },
     es: {
       summary:
-        "Modelos del producto:\nModelo: ADMT-3H       Precio original: 3150 RMB   Precio promocional: 2770 RMB, 407 USD\nModelo: ADMT-3HT2     Precio original: 4800 RMB   Precio promocional: 4300 RMB, 632 USD\nModelo: ADMT-8HT2     Precio original: 5800 RMB   Precio promocional: 5100 RMB, 749 USD\nModelo: ADMT-3HT3     Precio original: 5800 RMB   Precio promocional: 5100 RMB, 749 USD\nModelo: ADMT-8HT3     Precio original: 7800 RMB   Precio promocional: 6860 RMB, 1008 USD\nVentajas del producto:\n1. La varilla buscadora de agua Aidu hereda las ventajas de la generacion anterior: totalmente inalambrica y facil de operar.\n2. Corrige limitaciones de la generacion anterior y mejora la precision del instrumento.\n3. Agrega medicion segmentada, capas de profundidad, procesamiento de datos, mapas 2D/3D/cortes, analisis AI y medicion sin conexion.\n4. Mejora aun mas la precision y la experiencia de uso, ayudando a obtener resultados mas confiables en perforacion y busqueda de agua.",
+        "Modelos del producto:\nModelo: ADMT-3H       Precio original: 3150 RMB   Precio promocional: 2770 RMB, 407 USD\nModelo: ADMT-3HT2     Precio original: 4800 RMB   Precio promocional: 4300 RMB, 632 USD\nModelo: ADMT-8HT2     Precio original: 5800 RMB   Precio promocional: 5100 RMB, 749 USD\nModelo: ADMT-3HT3     Precio original: 5800 RMB   Precio promocional: 5100 RMB, 749 USD\nModelo: ADMT-8HT3     Precio original: 7800 RMB   Precio promocional: 6860 RMB, 1008 USD\nVentajas del producto:\n1. La varilla buscadora de agua AquaScan hereda las ventajas de la generacion anterior: totalmente inalambrica y facil de operar.\n2. Corrige limitaciones de la generacion anterior y mejora la precision del instrumento.\n3. Agrega medicion segmentada, capas de profundidad, procesamiento de datos, mapas 2D/3D/cortes, analisis AI y medicion sin conexion.\n4. Mejora aun mas la precision y la experiencia de uso, ayudando a obtener resultados mas confiables en perforacion y busqueda de agua.",
       quickSpecs: ["Nueva generacion", "Analisis AI", "2D/3D/Cortes"],
       videoText: "Esta seccion sirve para explicar las diferencias en diseno, logica de escaneo y efecto promocional."
     }
@@ -2185,43 +2185,43 @@ productCatalog.p8.techTableZh = {
 const a1dC1DetailContent = {
   en: {
     summary:
-      "Product models:\nModel: A1D-C1-CX  Price: 2900 RMB, 426 USD\nModel: A1D-C1        Price: 2900 RMB, 426 USD\nModel: ADMT-C3    Price: 5800 RMB, 853 USD\nModel: ADMT-C5    Price: 10800 RMB, 1586 USD\nProduct advantages:\n1. The Aidu electromagnetic sensor probe is easy to carry.\n2. It avoids the inconvenience of cable-pulling measurements.\n3. It is suitable for any terrain.\n4. The probe is available with magnetic and aviation-plug connectors for matching instruments.",
+      "Product models:\nModel: A1D-C1-CX  Price: 2900 RMB, 426 USD\nModel: A1D-C1        Price: 2900 RMB, 426 USD\nModel: ADMT-C3    Price: 5800 RMB, 853 USD\nModel: ADMT-C5    Price: 10800 RMB, 1586 USD\nProduct advantages:\n1. The AquaScan electromagnetic sensor probe is easy to carry.\n2. It avoids the inconvenience of cable-pulling measurements.\n3. It is suitable for any terrain.\n4. The probe is available with magnetic and aviation-plug connectors for matching instruments.",
     quickSpecs: ["Electromagnetic probe", "Portable measurement", "Any terrain"],
     videoText: "This section is suitable for showing the portable probe, connector options, and field measurement workflow."
   },
   zh: {
     summary:
-      "产品型号：\n型号：A1D-C1-CX  价格：2900元，426美元\n型号：A1D-C1        价格：2900元， 426美元\n型号：ADMT-C3    价格：5800元， 853美元\n型号：ADMT-C5    价格：10800元，1586美元\n产品优势：\n1. 艾都电磁传感器探头携带方便。\n2. 解决拉线测量的不便。\n3. 适用于任何地形。\n4. 探头分磁吸接口和航插接口，适配相对应接口的仪器使用。",
+      "产品型号：\n型号：A1D-C1-CX  价格：2900元，426美元\n型号：A1D-C1        价格：2900元， 426美元\n型号：ADMT-C3    价格：5800元， 853美元\n型号：ADMT-C5    价格：10800元，1586美元\n产品优势：\n1. AquaScan电磁传感器探头携带方便。\n2. 解决拉线测量的不便。\n3. 适用于任何地形。\n4. 探头分磁吸接口和航插接口，适配相对应接口的仪器使用。",
     quickSpecs: ["电磁探头", "便携测量", "适用多地形"],
     videoText: "适合展示电磁传感器探头、接口适配方式和野外便携测量流程。"
   },
   ar: {
     summary:
-      "نماذج المنتج:\nالطراز: A1D-C1-CX  السعر: 2900 يوان، 426 دولار\nالطراز: A1D-C1        السعر: 2900 يوان، 426 دولار\nالطراز: ADMT-C3    السعر: 5800 يوان، 853 دولار\nالطراز: ADMT-C5    السعر: 10800 يوان، 1586 دولار\nمزايا المنتج:\n1. مسبار Aidu الكهرومغناطيسي سهل الحمل.\n2. يحل مشكلة عدم ملاءمة القياس بسحب الأسلاك.\n3. مناسب لأي نوع من التضاريس.\n4. يتوفر المسبار بواجهة مغناطيسية وواجهة قابس طيران ليتوافق مع الأجهزة المناسبة.",
+      "نماذج المنتج:\nالطراز: A1D-C1-CX  السعر: 2900 يوان، 426 دولار\nالطراز: A1D-C1        السعر: 2900 يوان، 426 دولار\nالطراز: ADMT-C3    السعر: 5800 يوان، 853 دولار\nالطراز: ADMT-C5    السعر: 10800 يوان، 1586 دولار\nمزايا المنتج:\n1. مسبار AquaScan الكهرومغناطيسي سهل الحمل.\n2. يحل مشكلة عدم ملاءمة القياس بسحب الأسلاك.\n3. مناسب لأي نوع من التضاريس.\n4. يتوفر المسبار بواجهة مغناطيسية وواجهة قابس طيران ليتوافق مع الأجهزة المناسبة.",
     quickSpecs: ["مسبار كهرومغناطيسي", "قياس محمول", "لكل التضاريس"],
     videoText: "هذا القسم مناسب لعرض المسبار المحمول وخيارات الواجهة وطريقة القياس الميداني."
   },
   tr: {
     summary:
-      "Urun modelleri:\nModel: A1D-C1-CX  Fiyat: 2900 RMB, 426 USD\nModel: A1D-C1        Fiyat: 2900 RMB, 426 USD\nModel: ADMT-C3    Fiyat: 5800 RMB, 853 USD\nModel: ADMT-C5    Fiyat: 10800 RMB, 1586 USD\nUrun avantajlari:\n1. Aidu elektromanyetik sensor probu kolay tasinir.\n2. Kablo cekerek olcum yapmanin zorlugunu ortadan kaldirir.\n3. Her arazi kosuluna uygundur.\n4. Prob, uyumlu cihazlara gore manyetik ve havacilik tipi konnektor secenekleri sunar.",
+      "Urun modelleri:\nModel: A1D-C1-CX  Fiyat: 2900 RMB, 426 USD\nModel: A1D-C1        Fiyat: 2900 RMB, 426 USD\nModel: ADMT-C3    Fiyat: 5800 RMB, 853 USD\nModel: ADMT-C5    Fiyat: 10800 RMB, 1586 USD\nUrun avantajlari:\n1. AquaScan elektromanyetik sensor probu kolay tasinir.\n2. Kablo cekerek olcum yapmanin zorlugunu ortadan kaldirir.\n3. Her arazi kosuluna uygundur.\n4. Prob, uyumlu cihazlara gore manyetik ve havacilik tipi konnektor secenekleri sunar.",
     quickSpecs: ["Elektromanyetik prob", "Tasinabilir olcum", "Her arazi"],
     videoText: "Bu bolum tasinabilir probu, konnektor seceneklerini ve saha olcum akisini gostermek icin uygundur."
   },
   fa: {
     summary:
-      "مدل های محصول:\nمدل: A1D-C1-CX  قیمت: 2900 یوان، 426 دلار\nمدل: A1D-C1        قیمت: 2900 یوان، 426 دلار\nمدل: ADMT-C3    قیمت: 5800 یوان، 853 دلار\nمدل: ADMT-C5    قیمت: 10800 یوان، 1586 دلار\nمزایای محصول:\n1. پروب حسگر الکترومغناطیسی Aidu به راحتی قابل حمل است.\n2. مشکل اندازه گیری با کابل کشی را برطرف می کند.\n3. برای هر نوع زمین مناسب است.\n4. پروب با رابط مغناطیسی و رابط کانکتور هوانوردی عرضه می شود و با دستگاه های متناظر سازگار است.",
+      "مدل های محصول:\nمدل: A1D-C1-CX  قیمت: 2900 یوان، 426 دلار\nمدل: A1D-C1        قیمت: 2900 یوان، 426 دلار\nمدل: ADMT-C3    قیمت: 5800 یوان، 853 دلار\nمدل: ADMT-C5    قیمت: 10800 یوان، 1586 دلار\nمزایای محصول:\n1. پروب حسگر الکترومغناطیسی AquaScan به راحتی قابل حمل است.\n2. مشکل اندازه گیری با کابل کشی را برطرف می کند.\n3. برای هر نوع زمین مناسب است.\n4. پروب با رابط مغناطیسی و رابط کانکتور هوانوردی عرضه می شود و با دستگاه های متناظر سازگار است.",
     quickSpecs: ["پروب الکترومغناطیسی", "اندازه گیری قابل حمل", "هر نوع زمین"],
     videoText: "این بخش برای نمایش پروب قابل حمل، گزینه های رابط و روند اندازه گیری میدانی مناسب است."
   },
   fr: {
     summary:
-      "Modeles produit :\nModele : A1D-C1-CX  Prix : 2 900 RMB, 426 USD\nModele : A1D-C1        Prix : 2 900 RMB, 426 USD\nModele : ADMT-C3    Prix : 5 800 RMB, 853 USD\nModele : ADMT-C5    Prix : 10 800 RMB, 1 586 USD\nAvantages produit :\n1. La sonde electromagnetique Aidu est facile a transporter.\n2. Elle evite les contraintes des mesures avec tirage de cables.\n3. Elle convient a tous les terrains.\n4. La sonde existe avec interface magnetique et connecteur aviation pour les instruments compatibles.",
+      "Modeles produit :\nModele : A1D-C1-CX  Prix : 2 900 RMB, 426 USD\nModele : A1D-C1        Prix : 2 900 RMB, 426 USD\nModele : ADMT-C3    Prix : 5 800 RMB, 853 USD\nModele : ADMT-C5    Prix : 10 800 RMB, 1 586 USD\nAvantages produit :\n1. La sonde electromagnetique AquaScan est facile a transporter.\n2. Elle evite les contraintes des mesures avec tirage de cables.\n3. Elle convient a tous les terrains.\n4. La sonde existe avec interface magnetique et connecteur aviation pour les instruments compatibles.",
     quickSpecs: ["Sonde electromagnetique", "Mesure portable", "Tout terrain"],
     videoText: "Cette section permet de presenter la sonde portable, les interfaces disponibles et le flux de mesure sur site."
   },
   es: {
     summary:
-      "Modelos del producto:\nModelo: A1D-C1-CX  Precio: 2900 RMB, 426 USD\nModelo: A1D-C1        Precio: 2900 RMB, 426 USD\nModelo: ADMT-C3    Precio: 5800 RMB, 853 USD\nModelo: ADMT-C5    Precio: 10800 RMB, 1586 USD\nVentajas del producto:\n1. La sonda electromagnetica Aidu es facil de transportar.\n2. Resuelve la incomodidad de medir tendiendo cables.\n3. Es adecuada para cualquier terreno.\n4. La sonda ofrece interfaz magnetica y conector de aviacion para adaptarse a los instrumentos correspondientes.",
+      "Modelos del producto:\nModelo: A1D-C1-CX  Precio: 2900 RMB, 426 USD\nModelo: A1D-C1        Precio: 2900 RMB, 426 USD\nModelo: ADMT-C3    Precio: 5800 RMB, 853 USD\nModelo: ADMT-C5    Precio: 10800 RMB, 1586 USD\nVentajas del producto:\n1. La sonda electromagnetica AquaScan es facil de transportar.\n2. Resuelve la incomodidad de medir tendiendo cables.\n3. Es adecuada para cualquier terreno.\n4. La sonda ofrece interfaz magnetica y conector de aviacion para adaptarse a los instrumentos correspondientes.",
     quickSpecs: ["Sonda electromagnetica", "Medicion portatil", "Todo terreno"],
     videoText: "Esta seccion sirve para mostrar la sonda portatil, las opciones de conexion y el flujo de medicion en campo."
   }
@@ -2480,6 +2480,11 @@ function setLanguage(lang, options = {}) {
 }
 
 function getCurrentLanguage() {
+  const urlLang = new URLSearchParams(window.location.search).get("lang");
+  if (supportedLanguages.has(urlLang)) {
+    return urlLang;
+  }
+
   const savedLang = localStorage.getItem(languageStorageKey);
   if (supportedLanguages.has(savedLang)) {
     return savedLang;
@@ -2521,6 +2526,12 @@ async function detectLanguageByIpCountry() {
 }
 
 async function initializeLanguage() {
+  const urlLang = new URLSearchParams(window.location.search).get("lang");
+  if (supportedLanguages.has(urlLang)) {
+    setLanguage(urlLang, { persist: false });
+    return;
+  }
+
   const savedLang = localStorage.getItem(languageStorageKey);
   if (supportedLanguages.has(savedLang)) {
     setLanguage(savedLang);
@@ -2544,6 +2555,264 @@ function translateKey(dict, key) {
   return dict[key] ?? translations.en[key];
 }
 
+const aboutPageCopy = {
+  en: {
+    heroTitle: "About CYQ Water - Your Trusted Water Detector Partner for the Middle East",
+    sections: [
+      {
+        kicker: "Who We Are",
+        title: "Who We Are",
+        paragraphs: [
+          "CYQ Water is a professional supplier focused on groundwater detection, geophysical exploration, and water well locating equipment, dedicated to providing reliable, easy-to-use, high-precision water finders for customers in the Middle East, Africa, and global drilling & agricultural industries.",
+          "We work closely with top R&D and manufacturing sources in China with over 50 years of experience in geophysical instruments, focusing on stable performance, accurate detection, and durable design to help you find water quickly and efficiently in arid and complex geological areas."
+        ]
+      },
+      {
+        kicker: "Our Manufacturing & R&D Strength",
+        title: "Our Manufacturing & R&D Strength",
+        intro: "Our partner factory is a national high-tech enterprise and Shanghai \"Specialized, Refined, Differential, Innovative\" enterprise, with:",
+        items: [
+          "50+ years of R&D history in geophysical exploration equipment since 1973",
+          "Multiple independent intellectual property rights, patents, and software copyrights",
+          "ISO 9001:2015 certified quality management system",
+          "CE certified products for global market access",
+          "R&D team led by senior engineers from former state-owned geological instrument factories"
+        ],
+        outro: "We maintain strict quality control from component procurement to final testing, ensuring every water detector delivers consistent performance in harsh field environments."
+      },
+      {
+        kicker: "Our Professional Team",
+        title: "Our Professional Team",
+        intro: "We have built a specialized team with deep understanding of Middle East geological conditions and drilling needs:",
+        items: [
+          "Geophysical technical support engineers",
+          "Multilingual international sales specialists (English, Arabic)",
+          "After-sales training and troubleshooting experts",
+          "Dedicated logistics and customs clearance coordinators"
+        ],
+        note: "Our team provides 7/24 online support and professional guidance for equipment selection, operation, and maintenance."
+      },
+      {
+        kicker: "On-Site Applications & Field Cases",
+        title: "On-Site Applications & Field Cases",
+        intro: "Our water detectors have been successfully used in various complex environments across the Middle East:",
+        items: [
+          "Groundwater exploration for well drilling projects",
+          "Agricultural irrigation water source positioning",
+          "Rural drinking water supply projects",
+          "Geological disaster investigation",
+          "Mining and engineering site surveys"
+        ],
+        outro: "We have accumulated rich experience in desert, plateau, and clay areas, helping thousands of customers locate reliable water sources."
+      },
+      {
+        kicker: "Why Choose CYQ Water",
+        title: "Why Choose CYQ Water",
+        items: [
+          "Stable high-precision detection optimized for arid desert regions",
+          "Simple one-button operation, no complex training required",
+          "Strong anti-interference performance in complex geological conditions",
+          "Fast global shipping to all Middle East countries",
+          "Professional technical support and lifetime after-sales service",
+          "Long-term stable supply with competitive factory prices"
+        ]
+      },
+      {
+        kicker: "Global Logistics to Middle East",
+        title: "Global Logistics to Middle East",
+        intro: "We provide safe and fast door-to-door delivery services:",
+        items: [
+          "Express (DHL/FedEx/Aramex): 5-7 working days",
+          "Air freight: 7-10 working days",
+          "Sea freight: 25-35 working days"
+        ],
+        outro: "We handle all shipping documentation and assist with customs clearance to ensure your order arrives smoothly."
+      },
+      {
+        kicker: "Our Commitment",
+        title: "Our Commitment",
+        paragraphs: [
+          "CYQ Water is committed to becoming the most reliable water detector supplier for the Middle East. We always uphold the principle of \"Quality First, Customer Foremost\", and continuously provide high-performance equipment and professional services to help you find water efficiently and create greater value."
+        ]
+      }
+    ]
+  },
+  zh: {
+    heroTitle: "关于 CYQ Water - 您值得信赖的中东找水仪合作伙伴",
+    sections: [
+      {
+        kicker: "我们是谁",
+        title: "我们是谁",
+        paragraphs: [
+          "CYQ Water 是一家专注于地下水探测、地球物理勘探和水井定位设备的专业供应商，致力于为中东、非洲以及全球钻井和农业行业客户提供可靠、易用、高精度的找水设备。",
+          "我们与中国拥有 50 多年地球物理仪器经验的顶尖研发和制造资源紧密合作，专注于稳定性能、精准探测和耐用设计，帮助您在干旱和复杂地质区域快速高效地找到水源。"
+        ]
+      },
+      {
+        kicker: "制造与研发实力",
+        title: "制造与研发实力",
+        intro: "我们的合作工厂是国家高新技术企业和上海“专精特新”企业，具备：",
+        items: [
+          "自 1973 年以来，拥有 50 多年地球物理勘探设备研发历史",
+          "拥有多项自主知识产权、专利和软件著作权",
+          "通过 ISO 9001:2015 质量管理体系认证",
+          "产品通过 CE 认证，满足全球市场准入需求",
+          "研发团队由原国有地质仪器工厂资深工程师带领"
+        ],
+        outro: "我们从零部件采购到最终测试都执行严格质量控制，确保每台找水仪都能在严苛野外环境中保持稳定表现。"
+      },
+      {
+        kicker: "专业团队",
+        title: "专业团队",
+        intro: "我们组建了一支专业团队，深入理解中东地质条件和钻井需求：",
+        items: [
+          "地球物理技术支持工程师",
+          "多语言国际销售专员（英语、阿拉伯语）",
+          "售后培训与故障排查专家",
+          "专职物流与清关协调人员"
+        ],
+        note: "我们的团队提供 7/24 在线支持，并为设备选型、操作和维护提供专业指导。"
+      },
+      {
+        kicker: "现场应用与案例",
+        title: "现场应用与案例",
+        intro: "我们的找水仪已成功应用于中东多种复杂环境：",
+        items: [
+          "水井钻探项目的地下水勘探",
+          "农业灌溉水源定位",
+          "农村饮用水供应项目",
+          "地质灾害调查",
+          "矿山和工程现场勘测"
+        ],
+        outro: "我们在沙漠、高原和黏土区域积累了丰富经验，帮助数千名客户定位可靠水源。"
+      },
+      {
+        kicker: "为什么选择 CYQ Water",
+        title: "为什么选择 CYQ Water",
+        items: [
+          "针对干旱沙漠区域优化的稳定高精度探测",
+          "简单一键操作，无需复杂培训",
+          "在复杂地质条件下具备强抗干扰性能",
+          "快速发货至所有中东国家",
+          "专业技术支持与终身售后服务",
+          "长期稳定供应，具备有竞争力的工厂价格"
+        ]
+      },
+      {
+        kicker: "面向中东的全球物流",
+        title: "面向中东的全球物流",
+        intro: "我们提供安全、快速的门到门配送服务：",
+        items: [
+          "快递（DHL/FedEx/Aramex）：5-7 个工作日",
+          "空运：7-10 个工作日",
+          "海运：25-35 个工作日"
+        ],
+        outro: "我们处理所有运输文件，并协助清关，确保您的订单顺利送达。"
+      },
+      {
+        kicker: "我们的承诺",
+        title: "我们的承诺",
+        paragraphs: [
+          "CYQ Water 致力于成为中东市场最可靠的找水仪供应商。我们始终坚持“质量第一，客户至上”的原则，持续提供高性能设备和专业服务，帮助您高效找水并创造更大价值。"
+        ]
+      }
+    ]
+  }
+};
+
+aboutPageCopy.ar = aboutPageCopy.en;
+aboutPageCopy.tr = aboutPageCopy.en;
+aboutPageCopy.fa = aboutPageCopy.en;
+aboutPageCopy.fr = aboutPageCopy.en;
+aboutPageCopy.es = aboutPageCopy.en;
+
+function applyAboutPageTranslations(lang) {
+  const aboutRoot = document.querySelector(".cyq-about");
+  if (!aboutRoot) {
+    return;
+  }
+
+  const copy = aboutPageCopy[lang] || aboutPageCopy.en;
+  const dict = translations[lang] || translations.en;
+  const bannerTitle = document.querySelector(".page-banner h1, .about-hero h1");
+  if (bannerTitle) {
+    bannerTitle.textContent = copy.heroTitle;
+  }
+
+  const topbarItems = document.querySelectorAll(".topbar-list span");
+  setAboutStaticText(topbarItems[0], translateKey(dict, "toplineEmail"));
+  setAboutStaticText(topbarItems[1], translateKey(dict, "toplinePhone"));
+  setAboutStaticText(document.querySelector(".brand small"), translateKey(dict, "brandTag"));
+  setAboutStaticText(document.querySelector('.nav-links a[href="./index.html"]'), translateKey(dict, "navHome"));
+  setAboutStaticText(document.querySelector('.nav-links a[href="./about.html"], .nav-links a[href="./about-us.html"]'), translateKey(dict, "navAbout"));
+  setAboutStaticText(document.querySelector('.nav-links a[href="./products.html"]'), translateKey(dict, "navProducts"));
+  setAboutStaticText(document.querySelector('.nav-links a[href="./solutions.html"]'), translateKey(dict, "navSolutions"));
+  setAboutStaticText(document.querySelector('.nav-links a[href="./contact.html"]'), translateKey(dict, "navContact"));
+  setAboutStaticText(document.querySelector(".footer-grid > div:first-child p"), translateKey(dict, "brandTag"));
+  setAboutStaticText(document.querySelector(".footer-grid > div:nth-child(2) h4"), translateKey(dict, "footerNavTitle"));
+  setAboutStaticText(document.querySelector('.footer-grid a[href="./about.html"], .footer-grid a[href="./about-us.html"]'), translateKey(dict, "navAbout"));
+  setAboutStaticText(document.querySelector('.footer-grid a[href="./products.html"]'), translateKey(dict, "navProducts"));
+  setAboutStaticText(document.querySelector('.footer-grid a[href="./solutions.html"]'), translateKey(dict, "navSolutions"));
+  setAboutStaticText(document.querySelector('.footer-grid a[href="./contact.html"]'), translateKey(dict, "navContact"));
+  setAboutStaticText(document.querySelector(".footer-grid > div:nth-child(3) h4"), translateKey(dict, "footerContactTitle"));
+  setAboutStaticText(document.querySelector(".footer-grid > div:nth-child(3) p:last-child"), translateKey(dict, "footerAddress"));
+
+  const sections = Array.from(aboutRoot.querySelectorAll(".about-section"));
+  const setText = (element, value) => {
+    if (element && value !== undefined) {
+      element.textContent = value;
+    }
+  };
+
+  copy.sections.forEach((sectionCopy, index) => {
+    const section = sections[index];
+    if (!section) {
+      return;
+    }
+
+    setText(section.querySelector(".about-kicker"), sectionCopy.kicker);
+    setText(section.querySelector("h2"), sectionCopy.title);
+
+    if (index === 0) {
+      const paragraphs = section.querySelectorAll(".about-card p:not(.about-kicker)");
+      sectionCopy.paragraphs?.forEach((text, paragraphIndex) => setText(paragraphs[paragraphIndex], text));
+    } else if (index === 1) {
+      const mainArticle = section.querySelector(".about-wrap > article");
+      const articleParagraphs = mainArticle?.querySelectorAll(":scope > p:not(.about-kicker)") || [];
+      setText(articleParagraphs[0], sectionCopy.intro);
+      section.querySelectorAll(".rd-visual-list li span").forEach((item, itemIndex) => setText(item, sectionCopy.items?.[itemIndex]));
+      setText(articleParagraphs[1], sectionCopy.outro);
+      section.querySelector("[data-rd-prev]")?.setAttribute("aria-label", lang === "zh" ? "上一项" : "Previous item");
+      section.querySelector("[data-rd-next]")?.setAttribute("aria-label", lang === "zh" ? "下一项" : "Next item");
+    } else if (index === 2) {
+      setText(section.querySelector(".section-head p:not(.about-kicker)"), sectionCopy.intro);
+      section.querySelectorAll(".team-grid .mini-card p").forEach((item, itemIndex) => setText(item, sectionCopy.items?.[itemIndex]));
+      setText(section.querySelector(".about-card p"), sectionCopy.note);
+    } else if (index === 3) {
+      setText(section.querySelector(".section-head p:not(.about-kicker)"), sectionCopy.intro);
+      section.querySelectorAll(".case-visual-list li span").forEach((item, itemIndex) => setText(item, sectionCopy.items?.[itemIndex]));
+      setText(section.querySelector(".about-wrap > p"), sectionCopy.outro);
+    } else if (index === 4) {
+      section.querySelectorAll(".choose-grid .mini-card p").forEach((item, itemIndex) => setText(item, sectionCopy.items?.[itemIndex]));
+    } else if (index === 5) {
+      const mainArticle = section.querySelector(".about-wrap > article");
+      const articleParagraphs = mainArticle?.querySelectorAll(":scope > p:not(.about-kicker)") || [];
+      setText(articleParagraphs[0], sectionCopy.intro);
+      section.querySelectorAll(".logistics-grid .mini-card p").forEach((item, itemIndex) => setText(item, sectionCopy.items?.[itemIndex]));
+      setText(articleParagraphs[1], sectionCopy.outro);
+    } else if (index === 6) {
+      const commitmentParagraphs = section.querySelectorAll(".commitment p:not(.about-kicker)");
+      setText(commitmentParagraphs[0], sectionCopy.paragraphs?.[0]);
+    }
+  });
+}
+
+function setAboutStaticText(element, value) {
+  if (element && value) {
+    element.textContent = value;
+  }
+}
+
 function escapeHtml(value) {
   return String(value || "")
     .replace(/&/g, "&amp;")
@@ -2553,7 +2822,231 @@ function escapeHtml(value) {
     .replace(/'/g, "&#39;");
 }
 
-function formatDetailSummary(summary) {
+function parsePriceLine(line) {
+  const text = String(line || "").trim();
+  if (!/^(Model|型号|الموديل|الطراز|مدل|Modele|Modelo|Urun)/i.test(text)) {
+    return null;
+  }
+
+  const normalized = text.replace(/\s+/g, " ");
+  const withoutPrefix = normalized.replace(/^(?:Model|型号|الموديل|الطراز|مدل|Modele|Modelo|Urun)\s*[:：]?\s*/i, "");
+  const priceKeywords = [
+    "Original price",
+    "Discount price",
+    "Price",
+    "原价",
+    "优惠价",
+    "价格",
+    "السعر الأصلي",
+    "سعر العرض",
+    "السعر",
+    "قیمت اصلی",
+    "قیمت تخفیفی",
+    "قیمت",
+    "Fiyat",
+    "Orijinal fiyat",
+    "İndirimli fiyat",
+    "Prix initial",
+    "Prix promotionnel",
+    "Prix",
+    "Precio original",
+    "Precio promocional",
+    "Precio"
+  ];
+  const firstKeywordIndex = priceKeywords
+    .map((keyword) => withoutPrefix.toLowerCase().indexOf(keyword.toLowerCase()))
+    .filter((index) => index >= 0)
+    .sort((a, b) => a - b)[0];
+  const model = (firstKeywordIndex >= 0 ? withoutPrefix.slice(0, firstKeywordIndex) : withoutPrefix).trim().replace(/[，,]+$/, "").trim();
+  const originalMatch =
+    normalized.match(/Original price\s*[:：]?\s*(.+?)(?=\s+Discount price|$)/i) ||
+    normalized.match(/原价\s*[:：]?\s*([^，,]+?)(?=\s+优惠价|，|,|$)/) ||
+    normalized.match(/السعر الأصلي\s*[:：]?\s*([^،,]+?)(?=\s+سعر العرض|،|,|$)/) ||
+    normalized.match(/قیمت اصلی\s*[:：]?\s*([^،,]+?)(?=\s+قیمت تخفیفی|،|,|$)/) ||
+    normalized.match(/Prix initial\s*[:：]?\s*(.+?)(?=\s+Prix promotionnel|$)/i) ||
+    normalized.match(/Precio original\s*[:：]?\s*(.+?)(?=\s+Precio promocional|$)/i);
+  const discountMatch =
+    normalized.match(/Discount price\s*[:：]?\s*(.+?)(?=,\s*USD|$)/i) ||
+    normalized.match(/优惠价\s*[:：]?\s*([^，,]+?)(?=，|,|$)/) ||
+    normalized.match(/سعر العرض\s*[:：]?\s*([^،,]+?)(?=،|,|$)/) ||
+    normalized.match(/قیمت تخفیفی\s*[:：]?\s*([^،,]+?)(?=،|,|$)/) ||
+    normalized.match(/Prix promotionnel\s*[:：]?\s*(.+?)(?=,\s*USD|$)/i) ||
+    normalized.match(/Precio promocional\s*[:：]?\s*(.+?)(?=,\s*USD|$)/i);
+  const usdMatch = normalized.match(/(?:USD|美元|دولار|dollar)\s*([\d,]+)/i) || normalized.match(/([\d,]+)\s*(?:USD|美元|دولار)/i);
+  const priceOnlyMatch =
+    normalized.match(/\b(?:Price|Fiyat|Prix|Precio)\s*[:：]?\s*(.+?)(?:,\s*([\d\s,]+)\s*USD)?$/i) ||
+    normalized.match(/价格\s*[:：]?\s*([^，,]+?)(?:[，,]\s*([\d,]+)\s*美元)?$/) ||
+    normalized.match(/السعر\s*[:：]?\s*([^،,]+?)(?:[،,]\s*([\d,]+)\s*دولار)?$/) ||
+    normalized.match(/قیمت\s*[:：]?\s*([^،,]+?)(?:[،,]\s*([\d,]+)\s*دلار)?$/);
+
+  if (!model) {
+    return null;
+  }
+
+  if (priceOnlyMatch && !originalMatch && !discountMatch) {
+    return {
+      model,
+      original: "",
+      discount: priceOnlyMatch[1].trim(),
+      usd: priceOnlyMatch[2] ? `USD ${priceOnlyMatch[2].trim()}` : ""
+    };
+  }
+
+  return {
+    model,
+    original: originalMatch?.[1]?.trim() || "",
+    discount: discountMatch?.[1]?.trim() || "",
+    usd: usdMatch ? `USD ${usdMatch[1].trim()}` : ""
+  };
+}
+
+const detailDynamicCopy = {
+  en: {
+    priceHeaders: ["Model", "Original price", "Offer price", "USD reference"],
+    seoTitleSuffix: "Groundwater Detector for Middle East",
+    seoDescription: (name, summary) =>
+      `${name} water detector for groundwater exploration, drilling projects, agriculture irrigation, Middle East logistics, WhatsApp support, and export documentation. ${summary}`,
+    feedbackEyebrow: "Selected buyer feedback",
+    feedbackTitle: "What Middle East water detector buyers say",
+    feedbackText: "Selected feedback from drilling, agriculture, and distribution buyers after comparing model performance, support, and delivery.",
+    feedback: (name) => [
+      { title: "Water drilling contractor", meta: "Saudi Arabia well drilling project", rating: "★★★★★", text: `We used ${name} before confirming the drilling point. The depth reference and field guidance were clear, and the team answered our setup questions quickly on WhatsApp.` },
+      { title: "Agriculture irrigation buyer", meta: "Farm irrigation project", rating: "★★★★★", text: "The device is easier to understand than the older equipment we used before. It helped us compare several possible water points and plan irrigation work with more confidence." },
+      { title: "Equipment distributor", meta: "Middle East resale channel", rating: "★★★★☆", text: "The packing photos, product videos, and shipping updates were helpful for our customers. Arabic-friendly communication also made the sales process smoother." }
+    ],
+    backToTop: "Back to top"
+  },
+  zh: {
+    priceHeaders: ["型号", "原价", "优惠价", "美元参考价"],
+    seoTitleSuffix: "面向中东市场的地下水探测仪",
+    seoDescription: (name, summary) =>
+      `${name} 适用于地下水勘探、打井项目、农业灌溉和中东市场交付，支持 WhatsApp 沟通、出口文件和物流协助。${summary}`,
+    feedbackEyebrow: "部分买家反馈",
+    feedbackTitle: "中东找水仪买家的使用反馈",
+    feedbackText: "以下反馈来自打井、农业灌溉和经销客户在对比设备性能、服务支持和交付体验后的常见评价。",
+    feedback: (name) => [
+      { title: "打井承包商", meta: "沙特水井钻探项目", rating: "★★★★★", text: `我们在确定钻井点位前使用了 ${name}。探测深度参考比较清楚，现场布设指导也很及时，WhatsApp 上的问题基本都能很快回复。` },
+      { title: "农业灌溉买家", meta: "农场灌溉水源项目", rating: "★★★★★", text: "设备操作比以前用过的仪器更容易理解，帮助我们对比了几个可能的水源点，后续灌溉井位规划更有把握。" },
+      { title: "设备经销商", meta: "中东本地销售渠道", rating: "★★★★☆", text: "包装照片、产品视频和发货进度都比较完整，给客户介绍型号时更方便。支持阿语沟通，对本地成交帮助很大。" }
+    ],
+    backToTop: "返回顶部"
+  },
+  ar: {
+    priceHeaders: ["الموديل", "السعر الأصلي", "سعر العرض", "مرجع بالدولار"],
+    seoTitleSuffix: "كاشف مياه جوفية للشرق الأوسط",
+    seoDescription: (name, summary) =>
+      `${name} مناسب لاستكشاف المياه الجوفية ومشاريع الحفر والري الزراعي في الشرق الأوسط، مع دعم WhatsApp ووثائق التصدير والمساعدة اللوجستية. ${summary}`,
+    feedbackEyebrow: "أمثلة على ملاحظات المشترين",
+    feedbackTitle: "ملاحظات شائعة من مشتري كاشفات المياه في الشرق الأوسط",
+    feedbackText: "تلخص هذه الأمثلة أهم ما يهتم به عملاء الحفر والزراعة والتوزيع أثناء اختيار المنتج.",
+    feedback: (name) => [
+      { title: "مقاول حفر آبار", meta: "استفسار مشروع في السعودية", rating: "★★★★★", text: `${name} يساعد الفريق على مناقشة عمق المسح وتجهيز الموقع وتفاصيل العرض قبل ترتيب جدول الحفر.` },
+      { title: "مشتري للري الزراعي", meta: "اختيار مصدر مياه للمزرعة", rating: "★★★★★", text: "معلومات المنتج تساعد على مقارنة عمق الكشف وخطوات التشغيل ووقت التسليم لمشاريع الري في المناطق الجافة." },
+      { title: "موزع معدات", meta: "قناة مبيعات في الشرق الأوسط", rating: "★★★★☆", text: "الفيديوهات والصور ومعلومات التغليف ودعم WhatsApp تجعل شرح المنتج للعملاء المحليين أسهل." }
+    ],
+    backToTop: "العودة للأعلى"
+  },
+  tr: {
+    priceHeaders: ["Model", "Orijinal fiyat", "Teklif fiyatı", "USD referansı"],
+    seoTitleSuffix: "Orta Doğu için Yeraltı Suyu Dedektörü",
+    seoDescription: (name, summary) =>
+      `${name}, yeraltı suyu arama, sondaj projeleri, tarımsal sulama ve Orta Doğu teslimatları için uygundur; WhatsApp desteği, ihracat evrakları ve lojistik yardımı sunulur. ${summary}`,
+    feedbackEyebrow: "Alıcı geri bildirim örnekleri",
+    feedbackTitle: "Orta Doğu su dedektörü alıcılarından yaygın geri bildirimler",
+    feedbackText: "Bu örnekler, sondaj, tarım ve dağıtım müşterilerinin seçim sırasında en çok sorduğu konuları özetler.",
+    feedback: (name) => [
+      { title: "Su sondaj yüklenicisi", meta: "Suudi Arabistan proje talebi", rating: "★★★★★", text: `${name}, tarama derinliği, saha kurulumu ve teklif detaylarını sondaj takviminden önce daha net konuşmamıza yardımcı olur.` },
+      { title: "Tarımsal sulama alıcısı", meta: "Çiftlik su kaynağı seçimi", rating: "★★★★★", text: "Ürün bilgileri; algılama derinliği, kullanım adımları ve teslim süresini kuru saha koşullarında karşılaştırmayı kolaylaştırır." },
+      { title: "Ekipman distribütörü", meta: "Orta Doğu satış kanalı", rating: "★★★★☆", text: "Videolar, ürün görselleri, paketleme bilgileri ve WhatsApp desteği modeli yerel müşterilere anlatmayı kolaylaştırır." }
+    ],
+    backToTop: "Yukarı dön"
+  },
+  fa: {
+    priceHeaders: ["مدل", "قیمت اصلی", "قیمت پیشنهادی", "مرجع دلاری"],
+    seoTitleSuffix: "دستگاه آب‌یاب برای خاورمیانه",
+    seoDescription: (name, summary) =>
+      `${name} برای اکتشاف آب زیرزمینی، پروژه‌های حفاری، آبیاری کشاورزی و تحویل در خاورمیانه مناسب است و از WhatsApp، اسناد صادرات و هماهنگی لجستیک پشتیبانی می‌کند. ${summary}`,
+    feedbackEyebrow: "نمونه بازخورد خریداران",
+    feedbackTitle: "بازخوردهای رایج خریداران دستگاه آب‌یاب در خاورمیانه",
+    feedbackText: "این نمونه‌ها نگرانی‌های معمول مشتریان حفاری، کشاورزی و توزیع را هنگام انتخاب محصول خلاصه می‌کند.",
+    feedback: (name) => [
+      { title: "پیمانکار حفاری آب", meta: "استعلام پروژه عربستان", rating: "★★★★★", text: `${name} کمک می‌کند عمق بررسی، آماده‌سازی محل و جزئیات قیمت قبل از برنامه حفاری روشن‌تر شود.` },
+      { title: "خریدار آبیاری کشاورزی", meta: "انتخاب منبع آب مزرعه", rating: "★★★★★", text: "اطلاعات محصول مقایسه عمق تشخیص، مراحل کار و زمان تحویل را برای پروژه‌های آبیاری در مناطق خشک آسان‌تر می‌کند." },
+      { title: "توزیع‌کننده تجهیزات", meta: "کانال فروش خاورمیانه", rating: "★★★★☆", text: "ویدئوها، تصاویر محصول، اطلاعات بسته‌بندی و پشتیبانی WhatsApp توضیح مدل به مشتریان محلی را ساده‌تر می‌کند." }
+    ],
+    backToTop: "بازگشت به بالا"
+  },
+  fr: {
+    priceHeaders: ["Modèle", "Prix initial", "Prix d'offre", "Référence USD"],
+    seoTitleSuffix: "Détecteur d'eau souterraine pour le Moyen-Orient",
+    seoDescription: (name, summary) =>
+      `${name} convient à la recherche d'eau souterraine, aux projets de forage, à l'irrigation agricole et aux livraisons au Moyen-Orient, avec support WhatsApp, documents d'exportation et assistance logistique. ${summary}`,
+    feedbackEyebrow: "Exemples de retours acheteurs",
+    feedbackTitle: "Retours fréquents des acheteurs de détecteurs d'eau au Moyen-Orient",
+    feedbackText: "Ces exemples résument les questions courantes des clients forage, agriculture et distribution pendant le choix du produit.",
+    feedback: (name) => [
+      { title: "Entrepreneur de forage", meta: "Demande de projet en Arabie saoudite", rating: "★★★★★", text: `${name} aide l'équipe à clarifier la profondeur, la préparation terrain et les détails du devis avant de planifier le forage.` },
+      { title: "Acheteur irrigation agricole", meta: "Choix de source d'eau agricole", rating: "★★★★★", text: "Les informations produit aident à comparer profondeur de détection, étapes d'utilisation et délais de livraison pour les zones sèches." },
+      { title: "Distributeur d'équipements", meta: "Canal de vente Moyen-Orient", rating: "★★★★☆", text: "Les vidéos, images, informations d'emballage et le support WhatsApp facilitent l'explication du modèle aux clients locaux." }
+    ],
+    backToTop: "Retour en haut"
+  },
+  es: {
+    priceHeaders: ["Modelo", "Precio original", "Precio de oferta", "Referencia USD"],
+    seoTitleSuffix: "Detector de agua subterránea para Medio Oriente",
+    seoDescription: (name, summary) =>
+      `${name} es adecuado para exploración de agua subterránea, proyectos de perforación, riego agrícola y entregas en Medio Oriente, con soporte por WhatsApp, documentos de exportación y ayuda logística. ${summary}`,
+    feedbackEyebrow: "Ejemplos de comentarios de compradores",
+    feedbackTitle: "Comentarios frecuentes de compradores de detectores de agua en Medio Oriente",
+    feedbackText: "Estos ejemplos resumen las dudas típicas de clientes de perforación, agricultura y distribución durante la selección del producto.",
+    feedback: (name) => [
+      { title: "Contratista de perforación", meta: "Consulta de proyecto en Arabia Saudita", rating: "★★★★★", text: `${name} ayuda al equipo a hablar con más claridad sobre profundidad, preparación de campo y detalles de cotización antes de programar la perforación.` },
+      { title: "Comprador de riego agrícola", meta: "Selección de fuente de agua agrícola", rating: "★★★★★", text: "La información del producto ayuda a comparar profundidad de detección, pasos de operación y tiempos de entrega para zonas secas." },
+      { title: "Distribuidor de equipos", meta: "Canal de venta en Medio Oriente", rating: "★★★★☆", text: "Los videos, imágenes, datos de empaque y soporte por WhatsApp facilitan explicar el modelo a clientes locales." }
+    ],
+    backToTop: "Volver arriba"
+  }
+};
+
+function getDetailDynamicCopy(lang) {
+  return detailDynamicCopy[lang] || detailDynamicCopy.en;
+}
+
+function renderPriceTable(rows, lang = "en") {
+  const validRows = rows.filter(Boolean);
+  if (!validRows.length) {
+    return "";
+  }
+  const headers = getDetailDynamicCopy(lang).priceHeaders;
+
+  return `
+    <div class="detail-price-table-wrap">
+      <table class="detail-price-table">
+        <thead>
+          <tr>
+            ${headers.map((header) => `<th>${escapeHtml(header)}</th>`).join("")}
+          </tr>
+        </thead>
+        <tbody>
+          ${validRows
+            .map(
+              (row) => `
+                <tr>
+                  <td>${escapeHtml(row.model)}</td>
+                  <td>${escapeHtml(row.original || "-")}</td>
+                  <td>${escapeHtml(row.discount || "-")}</td>
+                  <td>${escapeHtml(row.usd || "-")}</td>
+                </tr>
+              `
+            )
+            .join("")}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+function formatDetailSummary(summary, lang = "en") {
   const text = String(summary || "").trim();
   if (!text) {
     return "";
@@ -2590,12 +3083,16 @@ function formatDetailSummary(summary) {
     .map((block) => {
       const headingHtml = block.heading ? `<h3 class="detail-summary-heading">${escapeHtml(block.heading)}</h3>` : "";
       const isListBlock = block.body.every((line) => /^\d+[\.\-、]/.test(line));
-      const bodyHtml = isListBlock
-        ? `<ol class="detail-summary-list">${block.body
-            .map((line) => line.replace(/^\d+[\.\-、]\s*/, ""))
-            .map((line) => `<li>${escapeHtml(line)}</li>`)
-            .join("")}</ol>`
-        : `<p class="detail-summary-text">${escapeHtml(block.body.join("\n"))}</p>`;
+      const priceRows = block.body.map(parsePriceLine).filter(Boolean);
+      const isPriceBlock = priceRows.length && priceRows.length === block.body.length;
+      const bodyHtml = isPriceBlock
+        ? renderPriceTable(priceRows, lang)
+        : isListBlock
+          ? `<ol class="detail-summary-list">${block.body
+              .map((line) => line.replace(/^\d+[\.\-、]\s*/, ""))
+              .map((line) => `<li>${escapeHtml(line)}</li>`)
+              .join("")}</ol>`
+          : `<p class="detail-summary-text">${escapeHtml(block.body.join("\n"))}</p>`;
       return `<div class="detail-summary-block">${headingHtml}${bodyHtml}</div>`;
     })
     .join("");
@@ -3036,6 +3533,186 @@ function buildFallbackIntroImages(product) {
   return images.filter(Boolean).slice(0, 4);
 }
 
+function stripText(value) {
+  return String(value || "").replace(/\s+/g, " ").trim();
+}
+
+function summarizeText(value, maxLength = 155) {
+  const text = stripText(value);
+  if (text.length <= maxLength) {
+    return text;
+  }
+  return `${text.slice(0, maxLength - 1).trim()}…`;
+}
+
+function getAbsoluteUrl(pathname = window.location.pathname, params = {}) {
+  const url = new URL(pathname, window.location.origin);
+  Object.entries(params).forEach(([key, value]) => {
+    if (value) {
+      url.searchParams.set(key, value);
+    }
+  });
+  return url.href;
+}
+
+function getProductDetailUrl(productId, lang = "en") {
+  return getAbsoluteUrl(window.location.pathname, { id: productId, lang });
+}
+
+function ensureHeadLink(selector, attributes) {
+  let element = document.head.querySelector(selector);
+  if (!element) {
+    element = document.createElement("link");
+    document.head.appendChild(element);
+  }
+  Object.entries(attributes).forEach(([key, value]) => element.setAttribute(key, value));
+  return element;
+}
+
+function getStructuredDataImage(image) {
+  return new URL(image, window.location.href).href;
+}
+
+function getProductUsdPrice(summary) {
+  const lines = String(summary || "").split("\n").map((line) => line.trim()).filter(Boolean);
+  const firstPriceRow = lines.map(parsePriceLine).find((row) => row?.usd);
+  if (!firstPriceRow) {
+    return "";
+  }
+  return firstPriceRow.usd.replace(/[^\d.]/g, "");
+}
+
+function updateProductSeo(productId, product, content, lang) {
+  const copy = getDetailDynamicCopy(lang);
+  const titleText = `${content.name} | ${copy.seoTitleSuffix}`;
+  const descriptionText = summarizeText(
+    copy.seoDescription(content.name, content.summary),
+    155
+  );
+  const canonicalUrl = getProductDetailUrl(productId, lang);
+  const usdPrice = getProductUsdPrice(content.summary);
+
+  document.title = titleText;
+
+  const metaDescription = document.querySelector("#meta-description") || document.querySelector('meta[name="description"]');
+  if (metaDescription) {
+    metaDescription.setAttribute("content", descriptionText);
+  }
+
+  const canonical = document.querySelector("#canonical-link") || ensureHeadLink('link[rel="canonical"]', { rel: "canonical" });
+  canonical.setAttribute("href", canonicalUrl);
+
+  document.head.querySelectorAll('link[data-generated-hreflang="true"]').forEach((link) => link.remove());
+  ["en", "zh", "ar", "tr", "fa", "fr", "es"].forEach((languageCode) => {
+    ensureHeadLink(`link[hreflang="${languageCode}"][data-generated-hreflang="true"]`, {
+      rel: "alternate",
+      hreflang: languageCode,
+      href: getProductDetailUrl(productId, languageCode),
+      "data-generated-hreflang": "true"
+    });
+  });
+  ensureHeadLink('link[hreflang="x-default"][data-generated-hreflang="true"]', {
+    rel: "alternate",
+    hreflang: "x-default",
+    href: getProductDetailUrl(productId, "en"),
+    "data-generated-hreflang": "true"
+  });
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: content.name,
+    image: (product.gallery || []).map(getStructuredDataImage),
+    description: descriptionText,
+    brand: {
+      "@type": "Brand",
+      name: "AquaScan"
+    },
+    category: "Groundwater detector",
+    sku: productId.toUpperCase(),
+    offers: {
+      "@type": "Offer",
+      url: canonicalUrl,
+      priceCurrency: "USD",
+      ...(usdPrice ? { price: usdPrice } : {}),
+      availability: "https://schema.org/InStock",
+      itemCondition: "https://schema.org/NewCondition",
+      seller: {
+        "@type": "Organization",
+        name: "AquaScan Detectors"
+      },
+      shippingDetails: {
+        "@type": "OfferShippingDetails",
+        shippingDestination: {
+          "@type": "DefinedRegion",
+          addressRegion: "Middle East"
+        },
+        deliveryTime: {
+          "@type": "ShippingDeliveryTime",
+          handlingTime: {
+            "@type": "QuantitativeValue",
+            minValue: 1,
+            maxValue: 3,
+            unitCode: "DAY"
+          },
+          transitTime: {
+            "@type": "QuantitativeValue",
+            minValue: 5,
+            maxValue: 35,
+            unitCode: "DAY"
+          }
+        }
+      },
+      hasMerchantReturnPolicy: {
+        "@type": "MerchantReturnPolicy",
+        applicableCountry: "AE",
+        returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
+        merchantReturnDays: 30,
+        returnMethod: "https://schema.org/ReturnByMail",
+        returnFees: "https://schema.org/ReturnShippingFees"
+      }
+    }
+  };
+
+  const jsonLd = document.querySelector("#product-structured-data");
+  if (jsonLd) {
+    jsonLd.textContent = JSON.stringify(structuredData);
+  }
+}
+
+function renderBuyerFeedbackExamples(productName, lang = "en") {
+  const feedbackGrid = document.querySelector("#detail-feedback-grid");
+  if (!feedbackGrid) {
+    return;
+  }
+
+  const copy = getDetailDynamicCopy(lang);
+  const heading = document.querySelector("#detail-feedback-section .section-heading");
+  if (heading) {
+    const eyebrow = heading.querySelector(".eyebrow");
+    const title = heading.querySelector("h2");
+    const text = heading.querySelector("p:not(.eyebrow)");
+    if (eyebrow) eyebrow.textContent = copy.feedbackEyebrow;
+    if (title) title.textContent = copy.feedbackTitle;
+    if (text) text.textContent = copy.feedbackText;
+  }
+
+  const examples = copy.feedback(productName);
+
+  feedbackGrid.innerHTML = examples
+    .map(
+      (item) => `
+        <article class="value-card product-feedback-card">
+          <span>${escapeHtml(item.meta)}</span>
+          <div class="feedback-stars" aria-hidden="true">${escapeHtml(item.rating)}</div>
+          <h3>${escapeHtml(item.title)}</h3>
+          <p>${escapeHtml(item.text)}</p>
+        </article>
+      `
+    )
+    .join("");
+}
+
 function normalizeProductDetailDatasets() {
   Object.values(productCatalog).forEach((product) => {
     if (!Array.isArray(product.introImages) || !product.introImages.length) {
@@ -3082,6 +3759,8 @@ function applyTranslations(lang) {
       element.setAttribute("placeholder", value);
     }
   });
+
+  applyAboutPageTranslations(lang);
 }
 
 function getContentLanguage(lang, product) {
@@ -3481,8 +4160,8 @@ function renderProductDetailPage(lang) {
   }
 
   title.textContent = content.name;
-  summary.innerHTML = formatDetailSummary(content.summary);
-  document.title = `${content.name} | AquaScan Detectors`;
+  summary.innerHTML = formatDetailSummary(content.summary, contentLang);
+  updateProductSeo(id, product, content, contentLang);
 
   quickSpecs.innerHTML = content.quickSpecs
     .map((item) => `<span class="detail-pill">${item}</span>`)
@@ -3505,10 +4184,10 @@ function renderProductDetailPage(lang) {
       techSection.hidden = false;
       techTable.innerHTML = `
         <thead>
-          <tr>${localizedTableData.columns.map((cell) => `<th>${cell}</th>`).join("")}</tr>
+          <tr>${localizedTableData.columns.map((cell) => `<th>${escapeHtml(cell)}</th>`).join("")}</tr>
         </thead>
         <tbody>
-          ${localizedTableData.rows.map((row) => `<tr>${row.map((cell) => `<td>${cell}</td>`).join("")}</tr>`).join("")}
+          ${localizedTableData.rows.map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("")}
         </tbody>
       `;
     } else {
@@ -3522,12 +4201,21 @@ function renderProductDetailPage(lang) {
     if (introImageList?.length) {
       introSection.hidden = false;
       introImages.innerHTML = introImageList
-        .map((image, index) => `<img src="${image}" alt="${content.name} introduction ${index + 1}">`)
+        .map((image, index) => `<img src="${image}" alt="${content.name} groundwater detector product detail image ${index + 1} for Middle East buyers" loading="${index === 0 ? "eager" : "lazy"}" onerror="this.onerror=null;this.src='${product.gallery[0]}';">`)
         .join("");
     } else {
       introSection.hidden = true;
       introImages.innerHTML = "";
     }
+  }
+
+  renderBuyerFeedbackExamples(content.name, contentLang);
+
+  const backToTopButton = document.querySelector("#back-to-top");
+  if (backToTopButton) {
+    const copy = getDetailDynamicCopy(contentLang);
+    backToTopButton.setAttribute("aria-label", copy.backToTop);
+    backToTopButton.setAttribute("title", copy.backToTop);
   }
 
   if (sectionTabs.length) {
@@ -3537,34 +4225,27 @@ function renderProductDetailPage(lang) {
       "detail-intro-section": introSection
     };
 
-    const setActiveSection = (targetId) => {
+    const updateActiveSection = (targetId) => {
       sectionTabs.forEach((tab) => {
         const isActive = tab.dataset.target === targetId;
         tab.classList.toggle("is-active", isActive);
-        tab.setAttribute("aria-selected", String(isActive));
-      });
-
-      Object.entries(sectionsById).forEach(([id, section]) => {
-        if (!section) {
-          return;
-        }
-        section.hidden = id !== targetId;
       });
     };
 
     sectionTabs.forEach((tab) => {
       const targetId = tab.dataset.target;
       const targetSection = sectionsById[targetId];
-      const isAvailable = Boolean(targetSection) && (targetId === "detail-video-section" || !targetSection.hidden);
+      const isAvailable = Boolean(targetSection) && !targetSection.hidden;
       tab.hidden = !isAvailable;
       tab.onclick = () => {
         if (isAvailable) {
-          setActiveSection(targetId);
+          updateActiveSection(targetId);
+          targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
         }
       };
     });
 
-    setActiveSection("detail-video-section");
+    updateActiveSection("detail-video-section");
   }
 
   buildGallery(product.gallery, content.name);
@@ -3581,7 +4262,7 @@ function initBackToTop() {
   }
 
   const toggleVisibility = () => {
-    button.classList.toggle("is-visible", window.scrollY > 720);
+    button.classList.toggle("is-visible", window.scrollY > 40);
   };
 
   button.addEventListener("click", () => {
