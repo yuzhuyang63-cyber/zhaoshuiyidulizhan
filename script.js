@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    toplineEmail: "Email: yuzhuyang63@gmail.com",
+    toplineEmail: "Email: cyqfactory@cyqwater.com",
     toplinePhone: "WhatsApp: +86 18319333114",
     brandTag: "Groundwater Detection Systems",
     navHome: "Home",
@@ -264,7 +264,7 @@ const translations = {
     footerAddress: "Shanghai, China"
   },
   zh: {
-    toplineEmail: "邮箱：yuzhuyang63@gmail.com",
+    toplineEmail: "邮箱：cyqfactory@cyqwater.com",
     toplinePhone: "WhatsApp：+86 18319333114",
     brandTag: "精密检测系统",
     navHome: "首页",
@@ -497,7 +497,7 @@ const translations = {
 
 const extraTranslations = {
   ar: {
-    toplineEmail: "البريد الإلكتروني: yuzhuyang63@gmail.com",
+    toplineEmail: "البريد الإلكتروني: cyqfactory@cyqwater.com",
     toplinePhone: "واتساب: +86 18319333114",
     brandTag: "أنظمة كشف المياه الجوفية",
     navHome: "الرئيسية",
@@ -663,7 +663,7 @@ const extraTranslations = {
     footerAddress: "شنغهاي، الصين"
   },
   tr: {
-    toplineEmail: "E-posta: yuzhuyang63@gmail.com",
+    toplineEmail: "E-posta: cyqfactory@cyqwater.com",
     toplinePhone: "WhatsApp: +86 18319333114",
     brandTag: "Yer Alti Suyu Tespit Sistemleri",
     navHome: "Ana Sayfa",
@@ -829,7 +829,7 @@ const extraTranslations = {
     footerAddress: "Sanghay, Cin"
   },
   fa: {
-    toplineEmail: "ایمیل: yuzhuyang63@gmail.com",
+    toplineEmail: "ایمیل: cyqfactory@cyqwater.com",
     toplinePhone: "واتساپ: +86 18319333114",
     brandTag: "سیستم های تشخیص آب زیرزمینی",
     navHome: "خانه",
@@ -995,7 +995,7 @@ const extraTranslations = {
     footerAddress: "شانگهای، چین"
   },
   fr: {
-    toplineEmail: "E-mail : yuzhuyang63@gmail.com",
+    toplineEmail: "E-mail : cyqfactory@cyqwater.com",
     toplinePhone: "WhatsApp : +86 18319333114",
     brandTag: "Systemes de detection d'eau souterraine",
     navHome: "Accueil",
@@ -1161,7 +1161,7 @@ const extraTranslations = {
     footerAddress: "Shanghai, Chine"
   },
   es: {
-    toplineEmail: "Correo: yuzhuyang63@gmail.com",
+    toplineEmail: "Correo: cyqfactory@cyqwater.com",
     toplinePhone: "WhatsApp: +86 18319333114",
     brandTag: "Sistemas de deteccion de agua subterranea",
     navHome: "Inicio",
