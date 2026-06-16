@@ -6,5 +6,6 @@ __pycache__/
 data/
 logs/
 .venv/
+node_modules/
 *-check*.png
 /*.png
