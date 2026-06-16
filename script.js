@@ -3797,7 +3797,7 @@ function buildGallery(images, productName) {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "detail-thumb";
-    button.innerHTML = `<img src="${image}" alt="${productName} thumbnail ${index + 1}">`;
+    button.innerHTML = `<img src="${image}" alt="${productName} thumbnail ${index + 1}" loading="lazy">`;
     button.addEventListener("click", () => {
       galleryState.index = index;
       renderImage();
@@ -3940,7 +3940,7 @@ function renderProductsCatalog(lang) {
       const action = translateKey(dict, "productAction");
       return `
         <article class="product-card">
-          <img src="${image}" alt="${name}" />
+          <img src="${image}" alt="${name}" loading="lazy" />
           <div class="product-body">
             <h3>${name}</h3>
             <p>${text}</p>
