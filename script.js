@@ -2947,6 +2947,22 @@ const galleryState = { index: 0, productId: null };
 const productListState = { category: "selected", page: 1, pageSize: 9 };
 const productOrder = ["p1", "p4", "p5", "p6", "p7", "p8"];
 const defaultProductVideoFile = "assets/seo-images/89516113d62bd6981949e81df299d11f.mp4";
+const productYouTubeVideoIds = {
+  p1: "qLt9DAMcmjI",
+  p4: "pbMWQWbP9lM",
+  p5: "axCz1v-vtxM",
+  p6: "ojw80i4rrZE",
+  p7: "edsDr1ipxQc",
+  p8: "miOO4CXKynY"
+};
+const productYouTubeUploadDates = {
+  p1: "2026-06-17",
+  p4: "2026-06-17",
+  p5: "2026-06-17",
+  p6: "2026-06-17",
+  p7: "2026-06-17",
+  p8: "2026-06-17"
+};
 
 function syncLanguageSelects(lang) {
   if (!languageSelects.length) {
@@ -4064,6 +4080,64 @@ function getStructuredDataImage(image) {
   return new URL(image, window.location.href).href;
 }
 
+function getProductYouTubeId(productId, product) {
+  const configuredId = product?.youtubeId || product?.youtubeVideoId || productYouTubeVideoIds[productId] || "";
+  return String(configuredId).trim();
+}
+
+function getProductVideoUploadDate(productId, product) {
+  const configuredDate = product?.videoUploadDate || productYouTubeUploadDates[productId] || "";
+  return String(configuredDate).trim();
+}
+
+function getYouTubeEmbedUrl(videoId, autoplay = false) {
+  const params = new URLSearchParams({
+    rel: "0",
+    modestbranding: "1",
+    playsinline: "1"
+  });
+  if (autoplay) {
+    params.set("autoplay", "1");
+  }
+  return `https://www.youtube-nocookie.com/embed/${encodeURIComponent(videoId)}?${params.toString()}`;
+}
+
+function getYouTubeWatchUrl(videoId) {
+  return `https://www.youtube.com/watch?v=${encodeURIComponent(videoId)}`;
+}
+
+function getYouTubeThumbnailUrl(videoId) {
+  return `https://i.ytimg.com/vi/${encodeURIComponent(videoId)}/hqdefault.jpg`;
+}
+
+function getProductVideoObject(productId, product, content, descriptionText) {
+  const youtubeId = getProductYouTubeId(productId, product);
+  const fallbackPoster = product.gallery?.[0] ? getStructuredDataImage(product.gallery[0]) : "";
+  const videoName = `${content.name} product demonstration video`;
+  const videoObject = {
+    "@type": "VideoObject",
+    name: videoName,
+    description: descriptionText,
+    thumbnailUrl: youtubeId ? [getYouTubeThumbnailUrl(youtubeId)] : (fallbackPoster ? [fallbackPoster] : [])
+  };
+
+  if (youtubeId) {
+    videoObject.embedUrl = getYouTubeEmbedUrl(youtubeId);
+    videoObject.contentUrl = getYouTubeWatchUrl(youtubeId);
+  } else if (product.videoFile) {
+    videoObject.contentUrl = new URL(product.videoFile, window.location.href).href;
+  } else if (defaultProductVideoFile) {
+    videoObject.contentUrl = new URL(defaultProductVideoFile, window.location.href).href;
+  }
+
+  const uploadDate = getProductVideoUploadDate(productId, product);
+  if (uploadDate) {
+    videoObject.uploadDate = uploadDate;
+  }
+
+  return videoObject.contentUrl ? videoObject : null;
+}
+
 function getProductUsdPrice(summary) {
   const lines = String(summary || "").split("\n").map((line) => line.trim()).filter(Boolean);
   const firstPriceRow = lines.map(parsePriceLine).find((row) => row?.usd);
@@ -4165,6 +4239,11 @@ function updateProductSeo(productId, product, content, lang) {
     }
   };
 
+  const videoObject = getProductVideoObject(productId, product, content, descriptionText);
+  if (videoObject) {
+    structuredData.video = videoObject;
+  }
+
   const jsonLd = document.querySelector("#product-structured-data");
   if (jsonLd) {
     jsonLd.textContent = JSON.stringify(structuredData);
@@ -4202,6 +4281,53 @@ function renderBuyerFeedbackExamples(productName, lang = "en") {
       `
     )
     .join("");
+}
+
+function renderProductVideo(productId, product, content) {
+  const videoWrap = document.querySelector("#detail-video-wrap");
+  const placeholder = document.querySelector("#detail-video-placeholder");
+  const poster = document.querySelector("#detail-video-poster");
+  const provider = document.querySelector("#detail-video-provider");
+  const youtubePlayer = document.querySelector("#detail-youtube-player");
+  const localPlayer = document.querySelector("#detail-video-player");
+  if (!videoWrap || !placeholder || !poster || !provider || !youtubePlayer || !localPlayer) {
+    return;
+  }
+
+  const youtubeId = getProductYouTubeId(productId, product);
+  const localVideoFile = product.videoFile || defaultProductVideoFile;
+  const posterImage = youtubeId ? getYouTubeThumbnailUrl(youtubeId) : (product.gallery?.[0] || "");
+  const posterAlt = `${content.name} groundwater detector product video`;
+
+  placeholder.hidden = false;
+  youtubePlayer.hidden = true;
+  localPlayer.hidden = true;
+  youtubePlayer.removeAttribute("src");
+  localPlayer.removeAttribute("src");
+  localPlayer.pause();
+  localPlayer.load();
+
+  poster.src = posterImage;
+  poster.alt = posterAlt;
+  provider.textContent = youtubeId ? "Watch on YouTube" : "Watch product video";
+  placeholder.setAttribute("aria-label", youtubeId ? `Play ${content.name} video on YouTube` : `Play ${content.name} product video`);
+
+  placeholder.onclick = () => {
+    placeholder.hidden = true;
+    if (youtubeId) {
+      youtubePlayer.title = `${content.name} product video`;
+      youtubePlayer.src = getYouTubeEmbedUrl(youtubeId, true);
+      youtubePlayer.hidden = false;
+      return;
+    }
+
+    localPlayer.poster = posterImage;
+    localPlayer.src = localVideoFile;
+    localPlayer.setAttribute("aria-label", `${content.name} video`);
+    localPlayer.hidden = false;
+    localPlayer.load();
+    localPlayer.play().catch(() => {});
+  };
 }
 
 function normalizeProductDetailDatasets() {
@@ -4639,7 +4765,6 @@ function renderProductDetailPage(lang) {
   const title = document.querySelector("#detail-title");
   const summary = document.querySelector("#detail-summary");
   const quickSpecs = document.querySelector("#detail-quick-specs");
-  const videoPlayer = document.querySelector("#detail-video-player");
   const videoText = document.querySelector("#detail-video-text");
   const techSection = document.querySelector("#detail-tech-section");
   const techTable = document.querySelector("#detail-tech-table");
@@ -4658,13 +4783,10 @@ function renderProductDetailPage(lang) {
     .map((item) => `<span class="detail-pill">${item}</span>`)
     .join("");
 
-  if (videoPlayer) {
-    videoPlayer.poster = product.gallery[0];
-    videoPlayer.src = product.videoFile || defaultProductVideoFile;
-    videoPlayer.setAttribute("aria-label", `${content.name} video`);
-    videoPlayer.load();
+  renderProductVideo(id, product, content);
+  if (videoText) {
+    videoText.textContent = content.videoText;
   }
-  videoText.textContent = content.videoText;
 
   if (techSection && techTable) {
     const tableData =

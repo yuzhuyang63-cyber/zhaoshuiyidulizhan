@@ -102,8 +102,14 @@
         <section class="section section-alt" id="detail-video-section">
           <div class="container detail-center-wrap">
             <article class="video-showcase-card center-module">
-              <div class="video-poster-wrap">
-                <video id="detail-video-player" controls playsinline preload="none"></video>
+              <div class="video-poster-wrap" id="detail-video-wrap">
+                <button class="video-embed-placeholder" id="detail-video-placeholder" type="button">
+                  <img id="detail-video-poster" src="" alt="" loading="lazy">
+                  <span class="video-play-button" aria-hidden="true"></span>
+                  <span class="video-provider-label" id="detail-video-provider">Watch product video</span>
+                </button>
+                <iframe id="detail-youtube-player" class="youtube-video-frame" title="Product video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen hidden></iframe>
+                <video id="detail-video-player" class="video-local-player" controls playsinline preload="none" hidden></video>
               </div>
               <p id="detail-video-text" class="video-support-text"></p>
             </article>
