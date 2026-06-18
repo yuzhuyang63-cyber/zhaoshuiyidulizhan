@@ -1887,6 +1887,23 @@ body.rtl .chat-widget {
   color: white;
 }
 
+.chat-agent {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 0;
+}
+
+.chat-agent-avatar {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.72);
+  background: #ffffff;
+}
+
 .chat-panel-title {
   display: block;
   font-size: 1rem;
@@ -1930,10 +1947,24 @@ body.rtl .chat-widget {
 }
 
 .chat-message.assistant {
+  position: relative;
+  margin-left: 42px;
   justify-self: start;
   background: white;
   border: 1px solid rgba(13, 90, 104, 0.12);
   border-bottom-left-radius: 8px;
+}
+
+.chat-message.assistant::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ffffff url("./service.png") center / cover no-repeat;
+  box-shadow: 0 4px 12px rgba(15, 31, 51, 0.16);
 }
 
 .chat-message.user {
@@ -1944,9 +1975,16 @@ body.rtl .chat-widget {
 }
 
 body.rtl .chat-message.assistant {
+  margin-right: 42px;
+  margin-left: 0;
   justify-self: end;
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 8px;
+}
+
+body.rtl .chat-message.assistant::before {
+  right: -42px;
+  left: auto;
 }
 
 body.rtl .chat-message.user {
@@ -1961,6 +1999,27 @@ body.rtl .chat-message.user {
   font-style: italic;
 }
 
+.chat-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border-top: 1px solid var(--line);
+  background: #f7fbf8;
+  color: #234035;
+}
+
+.chat-contact span {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.chat-contact strong {
+  font-size: 0.95rem;
+}
+
 .chat-form-widget {
   padding: 12px 14px 14px;
   display: grid;
@@ -1971,8 +2030,8 @@ body.rtl .chat-message.user {
 
 .chat-input {
   width: 100%;
-  min-height: 46px;
-  max-height: 46px;
+  min-height: 72px;
+  max-height: 112px;
   resize: none;
   border: 1px solid rgba(29, 42, 51, 0.12);
   border-radius: 16px;
@@ -1996,6 +2055,15 @@ body.rtl .chat-message.user {
 
 .chat-actions .button.ghost {
   border: 1px solid var(--line);
+}
+
+.chat-actions .chat-submit {
+  background: #25d366;
+  color: #ffffff;
+}
+
+.chat-actions .chat-submit:hover {
+  background: #1fb859;
 }
 
 .chat-close:disabled,

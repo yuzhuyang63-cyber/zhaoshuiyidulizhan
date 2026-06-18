@@ -9,7 +9,7 @@ from uuid import uuid4
 
 from .app_context import AppContext
 from .inquiry_service import clean_form_text
-from .logging_setup import log_chat_transcript, log_event
+from .logging_setup import log_event
 
 
 class ChatHTTPServer(ThreadingHTTPServer):
@@ -29,7 +29,7 @@ class ChatHTTPServer(ThreadingHTTPServer):
 
 
 class ChatRequestHandler(BaseHTTPRequestHandler):
-    server_version = "AquaScanChatRAG/1.0"
+    server_version = "AquaScanInquiry/1.0"
 
     @property
     def app_context(self) -> AppContext:
@@ -160,18 +160,11 @@ class ChatRequestHandler(BaseHTTPRequestHandler):
             self.ensure_request_id()
             path = urlparse(self.path).path
             if path == "/api/health":
-                knowledge_base = self.app_context.knowledge_base
-                chat_service = self.app_context.chat_service
-                has_api_key = chat_service.has_model_api_key()
                 self.send_json(
                     {
                         "status": "ok",
-                        "rag_ready": knowledge_base.is_ready,
-                        "api_configured": has_api_key,
-                        "model_ready": has_api_key,
-                        "chunk_count": len(knowledge_base.chunks),
-                        "product_count": len(knowledge_base.products),
-                        "faq_seed_count": len(knowledge_base.faq_seeds),
+                        "inquiry_ready": True,
+                        "email_configured": self.app_context.inquiry_service.email_is_configured(),
                     }
                 )
                 return
@@ -184,7 +177,7 @@ class ChatRequestHandler(BaseHTTPRequestHandler):
         try:
             request_id = self.ensure_request_id()
             path = urlparse(self.path).path
-            if path not in {"/api/chat", "/api/inquiry"}:
+            if path != "/api/inquiry":
                 self.send_json({"error": "Not found"}, status=404)
                 return
 
@@ -282,63 +275,5 @@ class ChatRequestHandler(BaseHTTPRequestHandler):
                     response_payload["email_error"] = email_error
                 self.send_json(response_payload, status=201)
                 return
-
-            message = payload.get("message", "")
-            history = payload.get("history", [])
-
-            try:
-                result = self.app_context.chat_service.create_reply(message, history)
-            except ValueError as exc:
-                log_event(
-                    self.logger,
-                    logging.WARNING,
-                    "chat_validation_failed",
-                    "chat validation failed",
-                    request_id=request_id,
-                    path=path,
-                    error=str(exc),
-                )
-                self.send_json({"error": str(exc)}, status=400)
-                return
-            except Exception as exc:
-                log_event(
-                    self.logger,
-                    logging.ERROR,
-                    "chat_request_failed",
-                    "chat backend request failed",
-                    exc_info=exc,
-                    request_id=request_id,
-                    path=path,
-                    error_type=type(exc).__name__,
-                )
-                self.send_json(
-                    {
-                        "error": "Chat backend request failed",
-                        "details": str(exc),
-                    },
-                    status=502,
-                )
-                return
-
-            log_event(
-                self.logger,
-                logging.INFO,
-                "chat_request_completed",
-                "chat request handled successfully",
-                request_id=request_id,
-                mode=result.get("mode", ""),
-                reply_lang=result.get("reply_lang", ""),
-                retrieved_chunk_count=len(result.get("retrieved_chunks", [])),
-                history_item_count=len(history) if isinstance(history, list) else 0,
-            )
-            log_chat_transcript(
-                request_id=request_id,
-                user_message=message,
-                assistant_reply=result.get("reply", ""),
-                mode=result.get("mode", ""),
-                reply_lang=result.get("reply_lang", ""),
-                retrieved_chunk_count=len(result.get("retrieved_chunks", [])),
-            )
-            self.send_json(result)
         except Exception as exc:
             self._handle_unexpected_exception(exc)

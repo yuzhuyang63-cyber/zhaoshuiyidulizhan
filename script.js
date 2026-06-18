@@ -2781,107 +2781,6 @@ Object.entries(admt120nDetailContent).forEach(([lang, content]) => {
   };
 });
 
-const chatUiCopy = {
-  en: {
-    launcher: "Smart Support",
-    title: "Smart Support",
-    subtitle: "Ask about products, pricing, shipping, and after-sales support.",
-    welcome: "Hello, I am Jade. Ask me about models, pricing, delivery, or support and I will help you right away.",
-    inputPlaceholder: "Type your question here...",
-    send: "Send",
-    sending: "Sending...",
-    reset: "Clear",
-    typing: "Customer service is replying...",
-    empty: "Please enter your question first.",
-    error: "The assistant is temporarily unavailable. Please try again later or contact us on WhatsApp.",
-    close: "Close"
-  },
-  zh: {
-    launcher: "智能客服",
-    title: "智能客服",
-    subtitle: "可咨询产品型号、价格、发货周期和售后支持。",
-    welcome: "您好，我是玉柱客服。您可以直接咨询产品型号、报价、发货或售后问题。",
-    inputPlaceholder: "请输入您的问题...",
-    send: "发送",
-    sending: "发送中...",
-    reset: "清空",
-    typing: "客服正在回复...",
-    empty: "请先输入您的问题。",
-    error: "智能客服暂时不可用，请稍后再试，或直接通过 WhatsApp 联系我们。",
-    close: "关闭"
-  },
-  ar: {
-    launcher: "دعم ذكي",
-    title: "دعم ذكي",
-    subtitle: "اسأل عن الموديلات، الأسعار، الشحن وخدمة ما بعد البيع.",
-    welcome: "مرحباً، أنا جايد. اسألني عن الموديلات أو الأسعار أو التسليم أو الدعم وسأساعدك فوراً.",
-    inputPlaceholder: "اكتب سؤالك هنا...",
-    send: "إرسال",
-    sending: "جارٍ الإرسال...",
-    reset: "مسح",
-    typing: "خدمة العملاء ترد...",
-    empty: "يرجى إدخال سؤالك أولاً.",
-    error: "المساعد غير متاح حالياً. يرجى المحاولة لاحقاً أو التواصل معنا عبر WhatsApp.",
-    close: "إغلاق"
-  },
-  tr: {
-    launcher: "Akıllı Destek",
-    title: "Akıllı Destek",
-    subtitle: "Modeller, fiyatlar, sevkiyat ve satış sonrası destek hakkında sorun.",
-    welcome: "Merhaba, ben Jade. Model, fiyat, teslimat veya destek hakkında sorun, hemen yardımcı olayım.",
-    inputPlaceholder: "Sorunuzu buraya yazın...",
-    send: "Gönder",
-    sending: "Gönderiliyor...",
-    reset: "Temizle",
-    typing: "Müşteri hizmetleri yanıtlıyor...",
-    empty: "Lütfen önce sorunuzu yazın.",
-    error: "Asistan şu anda kullanılamıyor. Lütfen daha sonra deneyin veya WhatsApp üzerinden bize ulaşın.",
-    close: "Kapat"
-  },
-  fa: {
-    launcher: "پشتیبانی هوشمند",
-    title: "پشتیبانی هوشمند",
-    subtitle: "درباره مدل ها، قیمت، ارسال و خدمات پس از فروش بپرسید.",
-    welcome: "سلام، من جید هستم. درباره مدل ها، قیمت، تحویل یا پشتیبانی بپرسید تا سریع کمک کنم.",
-    inputPlaceholder: "سوال خود را اینجا بنویسید...",
-    send: "ارسال",
-    sending: "در حال ارسال...",
-    reset: "پاک کردن",
-    typing: "پشتیبانی در حال پاسخ است...",
-    empty: "لطفاً ابتدا سوال خود را وارد کنید.",
-    error: "دستیار موقتاً در دسترس نیست. لطفاً بعداً تلاش کنید یا از طریق WhatsApp با ما تماس بگیرید.",
-    close: "بستن"
-  },
-  fr: {
-    launcher: "Support intelligent",
-    title: "Support intelligent",
-    subtitle: "Posez vos questions sur les modeles, prix, livraison et service apres-vente.",
-    welcome: "Bonjour, je suis Jade. Demandez-moi les modeles, prix, delais ou support et je vous aide tout de suite.",
-    inputPlaceholder: "Tapez votre question ici...",
-    send: "Envoyer",
-    sending: "Envoi...",
-    reset: "Effacer",
-    typing: "Le service client repond...",
-    empty: "Veuillez d'abord saisir votre question.",
-    error: "L'assistant est temporairement indisponible. Reessayez plus tard ou contactez-nous sur WhatsApp.",
-    close: "Fermer"
-  },
-  es: {
-    launcher: "Soporte inteligente",
-    title: "Soporte inteligente",
-    subtitle: "Pregunte sobre modelos, precios, envio y soporte posventa.",
-    welcome: "Hola, soy Jade. Pregunteme sobre modelos, precios, entrega o soporte y le ayudare enseguida.",
-    inputPlaceholder: "Escriba su pregunta aqui...",
-    send: "Enviar",
-    sending: "Enviando...",
-    reset: "Limpiar",
-    typing: "Atencion al cliente esta respondiendo...",
-    empty: "Por favor escriba su pregunta primero.",
-    error: "El asistente no esta disponible temporalmente. Intente mas tarde o contactenos por WhatsApp.",
-    close: "Cerrar"
-  }
-};
-
 const rtlLanguages = new Set(["ar", "fa"]);
 const languageSelects = Array.from(document.querySelectorAll(".language-select"));
 const supportedLanguages = new Set(
@@ -2984,6 +2883,7 @@ function setLanguage(lang, options = {}) {
   renderProductsCatalog(lang);
   renderProductDetailPage(lang);
   refreshHomeProductSearch(lang);
+  updateChatWidgetLanguage?.(lang);
 }
 
 function getCurrentLanguage() {
@@ -4902,29 +4802,6 @@ function resolveApiEndpoints(path, configuredEndpoint) {
   return [...new Set([...configuredEndpoints, ...autoEndpoints].filter(Boolean))];
 }
 
-function resolveChatEndpoints() {
-  const configuredEndpoints = [document.body.dataset.chatApi, window.AQUASCAN_CHAT_API_URL].filter(Boolean);
-  const localDevEndpoints = ["http://127.0.0.1:8000/api/chat", "http://localhost:8000/api/chat"];
-  const isFilePage = window.location.protocol === "file:";
-  const isLocalHost = ["127.0.0.1", "localhost"].includes(window.location.hostname);
-  const sameOriginEndpoint = isFilePage ? null : `${window.location.origin}/api/chat`;
-
-  const autoEndpoints = isFilePage
-    ? localDevEndpoints
-    : isLocalHost
-      ? [...localDevEndpoints, sameOriginEndpoint]
-      : [sameOriginEndpoint];
-
-  return [...new Set([...configuredEndpoints, ...autoEndpoints].filter(Boolean))];
-}
-
-const chatConfig = {
-  endpoints: resolveChatEndpoints(),
-  historyKey: "aquascan-chat-history",
-  legacyHistoryKey: "aquascan-chat-history",
-  maxHistory: 12
-};
-
 const inquiryConfig = {
   endpoints: resolveApiEndpoints("/api/inquiry", document.body.dataset.inquiryApi || window.AQUASCAN_INQUIRY_API_URL)
 };
@@ -4974,52 +4851,11 @@ const inquiryCopy = {
   }
 };
 
-const chatState = {
-  busy: false,
-  history: loadChatHistory()
-};
-
 let chatElements = null;
-
-function getChatHistoryStorage() {
-  return window.sessionStorage;
-}
-
-function getChatCopy(lang = getCurrentLanguage()) {
-  return chatUiCopy[lang] || chatUiCopy.en;
-}
+let updateChatWidgetLanguage = null;
 
 function getInquiryCopy(lang = getCurrentLanguage()) {
   return inquiryCopy[lang] || inquiryCopy.en;
-}
-
-function loadChatHistory() {
-  try {
-    localStorage.removeItem(chatConfig.legacyHistoryKey);
-    const raw = getChatHistoryStorage().getItem(chatConfig.historyKey);
-    if (!raw) {
-      return [];
-    }
-
-    const parsed = JSON.parse(raw);
-    if (!Array.isArray(parsed)) {
-      return [];
-    }
-
-    return parsed
-      .filter((item) => item && (item.role === "user" || item.role === "assistant") && typeof item.content === "string")
-      .slice(-chatConfig.maxHistory);
-  } catch (error) {
-    return [];
-  }
-}
-
-function saveChatHistory() {
-  try {
-    getChatHistoryStorage().setItem(chatConfig.historyKey, JSON.stringify(chatState.history.slice(-chatConfig.maxHistory)));
-  } catch (error) {
-    // Ignore storage errors and keep the chat usable in memory.
-  }
 }
 
 function buildChatMessage(role, content, options = {}) {
@@ -5055,43 +4891,7 @@ function appendChatMessage(role, content, options = {}) {
   const message = buildChatMessage(role, content, options);
   chatElements.messages.appendChild(message);
 
-  if (options.persist) {
-    chatState.history.push({ role, content });
-    chatState.history = chatState.history.slice(-chatConfig.maxHistory);
-    saveChatHistory();
-  }
-
   scrollChatToBottom();
-}
-
-function renderChatHistory() {
-  if (!chatElements?.messages) {
-    return;
-  }
-
-  chatElements.messages.textContent = "";
-
-  if (!chatState.history.length) {
-    appendChatMessage("assistant", getChatCopy().welcome, { persist: false });
-    return;
-  }
-
-  chatState.history.forEach((item) => {
-    appendChatMessage(item.role, item.content, { persist: false });
-  });
-}
-
-function setChatBusy(isBusy) {
-  chatState.busy = isBusy;
-
-  if (!chatElements) {
-    return;
-  }
-
-  const copy = getChatCopy();
-  chatElements.input.disabled = isBusy;
-  chatElements.submit.disabled = isBusy;
-  chatElements.submit.textContent = isBusy ? copy.sending : copy.send;
 }
 
 function setChatOpen(isOpen) {
@@ -5106,67 +4906,6 @@ function setChatOpen(isOpen) {
     scrollChatToBottom();
     chatElements.input.focus();
   }
-}
-
-function applyChatCopy(lang = getCurrentLanguage()) {
-  if (!chatElements) {
-    return;
-  }
-
-  const copy = getChatCopy(lang);
-  chatElements.launcherLabel.textContent = copy.launcher;
-  chatElements.title.textContent = copy.title;
-  chatElements.subtitle.textContent = copy.subtitle;
-  chatElements.input.placeholder = copy.inputPlaceholder;
-  chatElements.reset.textContent = copy.reset;
-  chatElements.submit.textContent = chatState.busy ? copy.sending : copy.send;
-  chatElements.close.setAttribute("aria-label", copy.close);
-  chatElements.close.title = copy.close;
-
-  if (!chatState.history.length && !chatState.busy) {
-    renderChatHistory();
-  }
-}
-
-async function sendChatMessage(message) {
-  const historyForRequest = chatState.history.slice(0, -1);
-  let lastError = new Error("No chat endpoint is available");
-  const isLocalDebug = ["127.0.0.1", "localhost"].includes(window.location.hostname);
-
-  for (const endpoint of chatConfig.endpoints) {
-    try {
-      const response = await fetch(endpoint, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          message,
-          history: historyForRequest
-        })
-      });
-
-      const payload = await response.json().catch(() => ({}));
-      if (!response.ok) {
-        const detailSuffix = payload.details ? `: ${payload.details}` : "";
-        const messageText = payload.error
-          ? `${payload.error}${isLocalDebug ? detailSuffix : ""}`
-          : `Chat request failed at ${endpoint}`;
-        throw new Error(messageText);
-      }
-
-      if (typeof payload.reply !== "string" || !payload.reply.trim()) {
-        throw new Error(`Empty assistant reply from ${endpoint}`);
-      }
-
-      return payload.reply.trim();
-    } catch (error) {
-      lastError = error;
-      console.warn("Chat endpoint failed:", endpoint, error);
-    }
-  }
-
-  throw lastError;
 }
 
 async function submitInquiry(payload) {
@@ -5268,31 +5007,141 @@ document.addEventListener(
 );
 
 function createChatWidget() {
+  const whatsappConfig = {
+    phoneDigits: "8615261404133",
+    phoneDisplay: "+86 152 6140 4133",
+    avatarSrc: "./service.png",
+    autoOpenDelayMs: 10000,
+    autoOpenedKey: "aquascan-chat-auto-opened",
+    dismissedKey: "aquascan-chat-dismissed"
+  };
+  const copyByLanguage = {
+    en: {
+      launcher: "Chat with us",
+      title: "AquaScan Online Consultant",
+      subtitle: "Our sales engineer can help with model selection, quotation, and delivery.",
+      welcome: "Hi, how can we help you? Send your question and our sales engineer will help with model selection, quotation, or delivery support.",
+      inputPlaceholder: "Type your question here...",
+      send: "Send on WhatsApp",
+      copy: "Copy number",
+      copied: "WhatsApp number copied.",
+      ready: "Your message is ready. Continue on WhatsApp, or copy the number and add us from your phone.",
+      close: "Close",
+      defaultMessage: "Hello, I am interested in your groundwater detector products."
+    },
+    zh: {
+      launcher: "在线咨询",
+      title: "AquaScan 在线顾问",
+      subtitle: "我们的销售工程师可协助您确认型号、报价和发货方案。",
+      welcome: "您好，请问有什么可以帮您？您可以咨询型号选择、报价、发货或售后支持。",
+      inputPlaceholder: "请输入您的问题...",
+      send: "发送到 WhatsApp",
+      copy: "复制号码",
+      copied: "WhatsApp 号码已复制。",
+      ready: "消息已准备好。请继续在 WhatsApp 沟通，或复制号码后用手机添加我们。",
+      close: "关闭",
+      defaultMessage: "您好，我想咨询地下水探测仪产品。"
+    },
+    ar: {
+      launcher: "تحدث معنا",
+      title: "مستشار AquaScan",
+      subtitle: "يمكن لمهندس المبيعات مساعدتك في اختيار الموديل والسعر والشحن.",
+      welcome: "مرحباً، كيف يمكننا مساعدتك؟ يمكنك السؤال عن اختيار الموديل أو السعر أو الشحن أو الدعم الفني.",
+      inputPlaceholder: "اكتب سؤالك هنا...",
+      send: "إرسال عبر واتساب",
+      copy: "نسخ الرقم",
+      copied: "تم نسخ رقم واتساب.",
+      ready: "رسالتك جاهزة. تابع عبر واتساب أو انسخ الرقم وأضفنا من هاتفك.",
+      close: "إغلاق",
+      defaultMessage: "مرحباً، أريد الاستفسار عن أجهزة كشف المياه الجوفية."
+    },
+    tr: {
+      launcher: "Bize yazın",
+      title: "AquaScan Satış Danışmanı",
+      subtitle: "Satış mühendisimiz model seçimi, fiyat ve teslimat konusunda yardımcı olur.",
+      welcome: "Merhaba, size nasıl yardımcı olabiliriz? Model seçimi, fiyat, teslimat veya destek hakkında yazabilirsiniz.",
+      inputPlaceholder: "Sorunuzu buraya yazın...",
+      send: "WhatsApp ile gönder",
+      copy: "Numarayı kopyala",
+      copied: "WhatsApp numarası kopyalandı.",
+      ready: "Mesajınız hazır. WhatsApp'ta devam edin veya numarayı kopyalayıp telefonunuzdan ekleyin.",
+      close: "Kapat",
+      defaultMessage: "Merhaba, yeraltı suyu dedektörü ürünlerinizle ilgileniyorum."
+    },
+    fa: {
+      launcher: "با ما گفتگو کنید",
+      title: "مشاور AquaScan",
+      subtitle: "مهندس فروش ما برای انتخاب مدل، قیمت و ارسال به شما کمک می‌کند.",
+      welcome: "سلام، چگونه می‌توانیم کمک کنیم؟ درباره انتخاب مدل، قیمت، ارسال یا پشتیبانی فنی سؤال بپرسید.",
+      inputPlaceholder: "سؤال خود را اینجا بنویسید...",
+      send: "ارسال در واتساپ",
+      copy: "کپی شماره",
+      copied: "شماره واتساپ کپی شد.",
+      ready: "پیام شما آماده است. در واتساپ ادامه دهید یا شماره را کپی کرده و از گوشی اضافه کنید.",
+      close: "بستن",
+      defaultMessage: "سلام، می‌خواهم درباره دستگاه‌های تشخیص آب زیرزمینی سؤال کنم."
+    },
+    fr: {
+      launcher: "Nous contacter",
+      title: "Consultant AquaScan",
+      subtitle: "Notre ingenieur commercial vous aide pour le modele, le devis et la livraison.",
+      welcome: "Bonjour, comment pouvons-nous vous aider ? Posez votre question sur les modeles, prix, livraison ou support.",
+      inputPlaceholder: "Tapez votre question ici...",
+      send: "Envoyer sur WhatsApp",
+      copy: "Copier le numero",
+      copied: "Numero WhatsApp copie.",
+      ready: "Votre message est pret. Continuez sur WhatsApp ou copiez le numero depuis votre telephone.",
+      close: "Fermer",
+      defaultMessage: "Bonjour, je suis interesse par vos detecteurs d'eau souterraine."
+    },
+    es: {
+      launcher: "Hablar con nosotros",
+      title: "Consultor AquaScan",
+      subtitle: "Nuestro ingeniero de ventas le ayuda con modelo, cotizacion y entrega.",
+      welcome: "Hola, ¿como podemos ayudarle? Pregunte sobre modelos, precio, entrega o soporte tecnico.",
+      inputPlaceholder: "Escriba su pregunta aqui...",
+      send: "Enviar por WhatsApp",
+      copy: "Copiar numero",
+      copied: "Numero de WhatsApp copiado.",
+      ready: "Su mensaje esta listo. Continue en WhatsApp o copie el numero y agreguenos desde su telefono.",
+      close: "Cerrar",
+      defaultMessage: "Hola, estoy interesado en sus detectores de agua subterranea."
+    }
+  };
+  const getWidgetCopy = (lang = getCurrentLanguage()) => copyByLanguage[lang] || copyByLanguage.en;
+  const copy = getWidgetCopy();
   const widget = document.createElement("div");
   widget.className = "chat-widget";
   widget.innerHTML = `
     <section class="chat-panel" id="chat-panel" hidden>
       <div class="chat-panel-header">
-        <div>
-          <strong class="chat-panel-title"></strong>
-          <p class="chat-panel-subtitle"></p>
+        <div class="chat-agent">
+          <img class="chat-agent-avatar" src="${whatsappConfig.avatarSrc}" alt="" aria-hidden="true" />
+          <div>
+            <strong class="chat-panel-title">${copy.title}</strong>
+            <p class="chat-panel-subtitle">${copy.subtitle}</p>
+          </div>
         </div>
-        <button class="chat-close" type="button">
+        <button class="chat-close" type="button" aria-label="${copy.close}" title="${copy.close}">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="chat-messages" aria-live="polite"></div>
+      <div class="chat-contact">
+        <span>WhatsApp</span>
+        <strong>${whatsappConfig.phoneDisplay}</strong>
+      </div>
       <form class="chat-form-widget">
-        <textarea class="chat-input" rows="1"></textarea>
+        <textarea class="chat-input" rows="2" placeholder="${copy.inputPlaceholder}"></textarea>
         <div class="chat-actions">
-          <button class="button ghost chat-reset" type="button"></button>
-          <button class="button primary chat-submit" type="submit"></button>
+          <button class="button ghost chat-copy" type="button">${copy.copy}</button>
+          <button class="button primary chat-submit" type="submit">${copy.send}</button>
         </div>
       </form>
     </section>
     <button class="chat-launcher" type="button" aria-expanded="false" aria-controls="chat-panel">
       <span class="chat-launcher-dot" aria-hidden="true"></span>
-      <span class="chat-launcher-label"></span>
+      <span class="chat-launcher-label">${copy.launcher}</span>
     </button>
   `;
 
@@ -5309,39 +5158,85 @@ function createChatWidget() {
     messages: widget.querySelector(".chat-messages"),
     form: widget.querySelector(".chat-form-widget"),
     input: widget.querySelector(".chat-input"),
-    reset: widget.querySelector(".chat-reset"),
+    copy: widget.querySelector(".chat-copy"),
     submit: widget.querySelector(".chat-submit")
   };
+  let userInteractedWithChat = false;
+  let autoOpenHandled = sessionStorage.getItem(whatsappConfig.autoOpenedKey) === "1";
+
+  const markChatDismissed = () => {
+    userInteractedWithChat = true;
+    autoOpenHandled = true;
+    sessionStorage.setItem(whatsappConfig.dismissedKey, "1");
+  };
+
+  const buildWhatsAppUrl = (message) => {
+    const text = message || getWidgetCopy().defaultMessage;
+    return `https://wa.me/${whatsappConfig.phoneDigits}?text=${encodeURIComponent(text)}`;
+  };
+
+  const appendLocalMessage = (role, content, options = {}) => {
+    removeTransientMessages();
+    appendChatMessage(role, content, { persist: false, ...options });
+  };
+
+  const refreshWidgetCopy = (lang = getCurrentLanguage()) => {
+    const nextCopy = getWidgetCopy(lang);
+    chatElements.launcherLabel.textContent = nextCopy.launcher;
+    chatElements.title.textContent = nextCopy.title;
+    chatElements.subtitle.textContent = nextCopy.subtitle;
+    chatElements.input.placeholder = nextCopy.inputPlaceholder;
+    chatElements.copy.textContent = nextCopy.copy;
+    chatElements.submit.textContent = nextCopy.send;
+    chatElements.close.setAttribute("aria-label", nextCopy.close);
+    chatElements.close.title = nextCopy.close;
+
+    const onlyWelcome =
+      chatElements.messages.children.length <= 1 &&
+      !chatElements.messages.querySelector(".chat-message.user");
+    if (onlyWelcome) {
+      chatElements.messages.textContent = "";
+      appendChatMessage("assistant", nextCopy.welcome, { persist: false });
+    }
+  };
+
+  updateChatWidgetLanguage = refreshWidgetCopy;
 
   chatElements.launcher.addEventListener("click", () => {
-    const isOpen = chatElements.panel.hidden;
-    setChatOpen(isOpen);
+    userInteractedWithChat = true;
+    const shouldOpen = chatElements.panel.hidden;
+    if (!shouldOpen) {
+      markChatDismissed();
+    }
+    setChatOpen(shouldOpen);
   });
 
   chatElements.close.addEventListener("click", () => {
+    markChatDismissed();
     setChatOpen(false);
   });
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
+    if (event.key === "Escape" && !chatElements.panel.hidden) {
+      markChatDismissed();
       setChatOpen(false);
     }
   });
 
-  document.addEventListener("click", (event) => {
-    if (chatElements.panel.hidden) {
-      return;
+  chatElements.copy.addEventListener("click", async () => {
+    userInteractedWithChat = true;
+    const activeCopy = getWidgetCopy();
+    try {
+      await navigator.clipboard.writeText(whatsappConfig.phoneDisplay);
+    } catch (error) {
+      const tempInput = document.createElement("input");
+      tempInput.value = whatsappConfig.phoneDisplay;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand("copy");
+      tempInput.remove();
     }
-
-    if (!chatElements.widget.contains(event.target)) {
-      setChatOpen(false);
-    }
-  });
-
-  chatElements.reset.addEventListener("click", () => {
-    chatState.history = [];
-    saveChatHistory();
-    renderChatHistory();
+    appendLocalMessage("assistant", activeCopy.copied, { status: true, transient: true });
     chatElements.input.focus();
   });
 
@@ -5352,44 +5247,33 @@ function createChatWidget() {
     }
   });
 
-  chatElements.form.addEventListener("submit", async (event) => {
+  chatElements.form.addEventListener("submit", (event) => {
     event.preventDefault();
-
-    if (chatState.busy) {
-      return;
-    }
+    userInteractedWithChat = true;
 
     const message = chatElements.input.value.trim();
-    if (!message) {
-      appendChatMessage("assistant", getChatCopy().empty, { persist: false, status: true, transient: true });
-      scrollChatToBottom();
-      return;
+    const activeCopy = getWidgetCopy();
+    if (message) {
+      appendLocalMessage("user", message);
+      chatElements.input.value = "";
+      appendLocalMessage("assistant", activeCopy.ready, { status: true });
     }
-
-    removeTransientMessages();
-    appendChatMessage("user", message, { persist: true });
-    chatElements.input.value = "";
-    setChatBusy(true);
-    appendChatMessage("assistant", getChatCopy().typing, { persist: false, status: true, transient: true });
-
-    try {
-      const reply = await sendChatMessage(message);
-      removeTransientMessages();
-      appendChatMessage("assistant", reply, { persist: true });
-    } catch (error) {
-      removeTransientMessages();
-      const isLocalDebug = ["127.0.0.1", "localhost"].includes(window.location.hostname);
-      const debugMessage = error instanceof Error ? error.message : String(error);
-      const errorMessage = isLocalDebug ? `${getChatCopy().error}\n${debugMessage}` : getChatCopy().error;
-      appendChatMessage("assistant", errorMessage, { persist: false, status: true, transient: true });
-    } finally {
-      setChatBusy(false);
-      scrollChatToBottom();
-    }
+    window.open(buildWhatsAppUrl(message), "_blank", "noopener");
+    scrollChatToBottom();
   });
 
-  renderChatHistory();
-  applyChatCopy();
+  chatElements.messages.textContent = "";
+  appendLocalMessage("assistant", copy.welcome);
+  refreshWidgetCopy();
+
+  window.setTimeout(() => {
+    const wasDismissed = sessionStorage.getItem(whatsappConfig.dismissedKey) === "1";
+    if (!autoOpenHandled && !wasDismissed && !userInteractedWithChat && chatElements.panel.hidden) {
+      autoOpenHandled = true;
+      sessionStorage.setItem(whatsappConfig.autoOpenedKey, "1");
+      setChatOpen(true);
+    }
+  }, whatsappConfig.autoOpenDelayMs);
 }
 
 createChatWidget();

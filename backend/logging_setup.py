@@ -9,8 +9,7 @@ from logging.handlers import RotatingFileHandler
 from .config import AppConfig
 
 
-LOGGER_NAME = "chat_backend"
-TRANSCRIPT_LOGGER_NAME = "chat_transcript"
+LOGGER_NAME = "inquiry_backend"
 _BASE_LOG_RECORD = logging.makeLogRecord({})
 _RESERVED_FIELDS = set(_BASE_LOG_RECORD.__dict__.keys())
 _RESERVED_FIELDS.update({"message", "asctime", "event"})
@@ -67,15 +66,6 @@ def get_logger() -> logging.Logger:
     return logging.getLogger(LOGGER_NAME)
 
 
-def get_transcript_logger() -> logging.Logger:
-    return logging.getLogger(TRANSCRIPT_LOGGER_NAME)
-
-
-def normalize_log_text(value: object) -> str:
-    text = str(value or "")
-    return text.replace("\\", "\\\\").replace("\r\n", "\\n").replace("\r", "\\n").replace("\n", "\\n")
-
-
 def log_event(
     logger: logging.Logger,
     level: int,
@@ -95,28 +85,6 @@ def log_event(
         extra={"event": event, **context},
         exc_info=exc_info,
         stacklevel=stacklevel + 1,
-    )
-
-
-def log_chat_transcript(
-    *,
-    request_id: str,
-    user_message: str,
-    assistant_reply: str,
-    mode: str,
-    reply_lang: str,
-    retrieved_chunk_count: int,
-) -> None:
-    transcript_logger = get_transcript_logger()
-    transcript_logger.info(
-        "chat transcript"
-        f" | request_id={request_id}"
-        f" mode={mode}"
-        f" reply_lang={reply_lang}"
-        f" retrieved_chunk_count={retrieved_chunk_count}"
-        f" user={normalize_log_text(user_message)}"
-        f" assistant={normalize_log_text(assistant_reply)}",
-        stacklevel=2,
     )
 
 
@@ -150,20 +118,16 @@ def install_exception_hooks(logger: logging.Logger) -> None:
 
 def configure_logging(config: AppConfig) -> logging.Logger:
     logger = get_logger()
-    transcript_logger = get_transcript_logger()
-    if logger.handlers and transcript_logger.handlers:
+    if logger.handlers:
         return logger
 
     log_level = getattr(logging, config.log_level, logging.INFO)
     config.log_path.parent.mkdir(parents=True, exist_ok=True)
-    config.transcript_log_path.parent.mkdir(parents=True, exist_ok=True)
 
     formatter = PlainTextLogFormatter(config.project_root)
 
     logger.setLevel(log_level)
     logger.propagate = False
-    transcript_logger.setLevel(logging.INFO)
-    transcript_logger.propagate = False
 
     file_handler = RotatingFileHandler(
         config.log_path,
@@ -173,15 +137,6 @@ def configure_logging(config: AppConfig) -> logging.Logger:
     )
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
-
-    transcript_handler = RotatingFileHandler(
-        config.transcript_log_path,
-        maxBytes=max(config.transcript_log_max_bytes, 1024),
-        backupCount=max(config.transcript_log_backup_count, 0),
-        encoding="utf-8",
-    )
-    transcript_handler.setFormatter(formatter)
-    transcript_logger.addHandler(transcript_handler)
 
     if config.log_stdout:
         stream_handler = logging.StreamHandler()
@@ -200,8 +155,5 @@ def configure_logging(config: AppConfig) -> logging.Logger:
         log_stdout=config.log_stdout,
         log_max_bytes=max(config.log_max_bytes, 1024),
         log_backup_count=max(config.log_backup_count, 0),
-        transcript_log_path=config.transcript_log_path,
-        transcript_log_max_bytes=max(config.transcript_log_max_bytes, 1024),
-        transcript_log_backup_count=max(config.transcript_log_backup_count, 0),
     )
     return logger
