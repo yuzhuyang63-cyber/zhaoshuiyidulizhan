@@ -1326,8 +1326,106 @@ body.rtl .detail-summary-list {
   display: none !important;
 }
 
+.video-poster-wrap::before,
+.video-poster-wrap::after {
+  pointer-events: none;
+}
+
+.video-poster-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 8;
+  opacity: 0.16;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='120' viewBox='0 0 260 120'%3E%3Ctext x='20' y='64' fill='white' fill-opacity='0.72' font-family='Arial,sans-serif' font-size='18' font-weight='700' transform='rotate(-18 130 60)'%3ECyqwater%3C/text%3E%3C/svg%3E");
+  background-size: 260px 120px;
+}
+
+.video-poster-wrap::after {
+  content: "Cyqwater";
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 9;
+  padding: 7px 10px;
+  border-radius: 6px;
+  background: rgba(3, 18, 34, 0.58);
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  backdrop-filter: blur(8px);
+}
+
 .video-support-text {
   margin: 16px 0 0;
+}
+
+.media-protection-enabled img,
+.media-protection-enabled video,
+.media-protection-enabled iframe {
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+.protected-media-shell {
+  position: relative;
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.protected-media-shell.media-inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.protected-media-shell > img,
+.protected-media-shell > video,
+.protected-media-shell > iframe {
+  display: block;
+}
+
+.protected-media-shell::before,
+.protected-media-shell::after {
+  pointer-events: none;
+}
+
+.protected-media-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 7;
+  opacity: 0.13;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='120' viewBox='0 0 260 120'%3E%3Ctext x='20' y='64' fill='white' fill-opacity='0.72' font-family='Arial,sans-serif' font-size='18' font-weight='700' transform='rotate(-18 130 60)'%3ECyqwater%3C/text%3E%3C/svg%3E");
+  background-size: 260px 120px;
+  mix-blend-mode: screen;
+}
+
+.protected-media-shell::after {
+  content: "Cyqwater";
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 8;
+  padding: 6px 9px;
+  border-radius: 6px;
+  background: rgba(3, 18, 34, 0.54);
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0;
+  backdrop-filter: blur(8px);
+}
+
+.brand .protected-media-shell::before,
+.brand .protected-media-shell::after,
+.chat-widget .protected-media-shell::before,
+.chat-widget .protected-media-shell::after {
+  content: none;
 }
 
 .detail-tech-table-wrap {
@@ -1340,7 +1438,8 @@ body.rtl .detail-summary-list {
 
 .detail-tech-table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   min-width: 720px;
 }
 
@@ -1351,6 +1450,16 @@ body.rtl .detail-summary-list {
   text-align: left;
   vertical-align: top;
   line-height: 1.65;
+}
+
+.detail-tech-table th:not(:last-child),
+.detail-tech-table td:not(:last-child) {
+  border-inline-end: 1px solid rgba(15, 31, 51, 0.1);
+}
+
+.detail-tech-table th:first-child,
+.detail-tech-table td:first-child {
+  border-inline-end-color: rgba(0, 114, 239, 0.18);
 }
 
 .detail-tech-table thead th {
@@ -2555,6 +2664,17 @@ body[data-page="home"] .navbar .menu-toggle span {
   inset: 0;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.18) 48%, rgba(0, 0, 0, 0.08));
   pointer-events: none;
+}
+
+.home-banner-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.16;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='150' viewBox='0 0 320 150'%3E%3Ctext x='22' y='82' fill='white' fill-opacity='0.72' font-family='Arial,sans-serif' font-size='20' font-weight='700' transform='rotate(-18 160 75)'%3ECyqwater%3C/text%3E%3C/svg%3E");
+  background-size: 320px 150px;
 }
 
 body[data-page="about"] .page-banner::after {

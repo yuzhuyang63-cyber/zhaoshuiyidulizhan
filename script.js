@@ -70,7 +70,7 @@ const translations = {
     homeSpotlightTitle: "Quick Version Intelligent High-density Groundwater Detector",
     homeSpotlightMeta: "AI analysis · Multi-channel · Auto imaging",
     homeBannerEyebrow: "Middle East groundwater solutions",
-    homeBannerTitle: "Groundwater Detector Supplier for Middle East and Africa",
+    homeBannerTitle: "Groundwater Detector Supplier for Global and Middle East Markets",
     homeTrustEyebrow: "Export trust signals",
     homeTrustTitle: "Built for buyers who need proof before they send an inquiry",
     homeTrustText: "Middle East customers can verify our manufacturing resources, quality documents, shipping options, and after-sales support before choosing a water detector supplier.",
@@ -478,7 +478,7 @@ const translations = {
     contactTitle: "欢迎与我们沟通你的真实想法",
     contactLead: "买家在浏览完产品、解决方案或产品详情后，可以更自然地进入这页提交询盘。",
     homeBannerEyebrow: "中东地下水解决方案",
-    homeBannerTitle: "面向中东和非洲的地下水探测器供应商",
+    homeBannerTitle: "面向全球和中东的地下水探测器供应商",
     homeTrustEyebrow: "出口信任信号",
     homeTrustTitle: "为需要凭证的买家而建",
     homeTrustText: "中东客户可以在选择水探测器供应商之前，核实我们的制造资源、质量文件、运输选项和售后支持。",
@@ -777,7 +777,7 @@ const extraTranslations = {
     contactEyebrow: "اتصل بنا",
     contactLead: "تم تصميم هذه الصفحة لاستقبال الاستفسارات بعد مراجعة المشترين لمنتجاتك وحلولك ومحتوى تفاصيل المنتج.",
     homeBannerEyebrow: "حلول المياه الجوفية في الشرق الأوسط",
-    homeBannerTitle: "مورد أجهزة كشف المياه الجوفية للشرق الأوسط وأفريقيا",
+    homeBannerTitle: "مورد أجهزة كشف المياه الجوفية للأسواق العالمية والشرق الأوسط",
     homeTrustEyebrow: "إشارات ثقة التصدير",
     homeTrustTitle: "مصمم للمشترين الذين يحتاجون إلى إثبات قبل إرسال الاستفسار",
     homeTrustText: "يمكن لعملاء الشرق الأوسط التحقق من موارد التصنيع ووثائق الجودة وخيارات الشحن ودعم ما بعد البيع قبل اختيار مورد أجهزة كشف المياه.",
@@ -1030,7 +1030,7 @@ const extraTranslations = {
     contactEyebrow: "Bize ulasin",
     contactLead: "Bu sayfa, alicilarin urunlerinizi, cozumlerinizi ve urun detay iceriginizi inceledikten sonra sorgulama almasi icin tasarlanmistir.",
     homeBannerEyebrow: "Orta Dogu yeralti suyu cozumleri",
-    homeBannerTitle: "Orta Dogu ve Afrika icin Yeralti Suyu Dedektoru Tedarikcisi",
+    homeBannerTitle: "Kuresel pazarlar ve Orta Dogu icin yeralti suyu dedektoru tedarikcisi",
     homeTrustEyebrow: "Ihracat guven sinyalleri",
     homeTrustTitle: "Sorgulama gondermeden once kanit isteyen alicilar icin insa edildi",
     homeTrustText: "Orta Dogu musterileri, bir su dedektoru tedarikcisi secmeden once uretim kaynaklarimizi, kalite belgelerimizi, nakliye seceneklerimizi ve satis sonrasi destegimizi dogrulayabilir.",
@@ -1283,7 +1283,7 @@ const extraTranslations = {
     contactEyebrow: "تماس با ما",
     contactLead: "این صفحه برای دریافت استعلام پس از بررسی محصولات، راهکارها و محتوای جزئیات محصول توسط خریداران طراحی شده است.",
     homeBannerEyebrow: "راهکارهای آب زیرزمینی خاورمیانه",
-    homeBannerTitle: "تأمین‌کننده دستگاه تشخیص آب زیرزمینی برای خاورمیانه و آفریقا",
+    homeBannerTitle: "تأمین کننده دستگاه تشخیص آب زیرزمینی برای بازارهای جهانی و خاورمیانه",
     homeTrustEyebrow: "سیگنال‌های اعتماد صادراتی",
     homeTrustTitle: "ساخته شده برای خریدارانی که قبل از ارسال استعلام به اثبات نیاز دارند",
     homeTrustText: "مشتریان خاورمیانه می‌توانند منابع تولیدی، اسناد کیفیت، گزینه‌های حمل و نقل و پشتیبانی پس از فروش ما را قبل از انتخاب تأمین‌کننده دستگاه تشخیص آب تأیید کنند.",
@@ -1536,7 +1536,7 @@ const extraTranslations = {
     contactEyebrow: "Contactez-nous",
     contactLead: "Cette page est concue pour recevoir des demandes apres que les acheteurs ont examine vos produits, vos solutions et le contenu detaille des produits.",
     homeBannerEyebrow: "Solutions d eau souterraine au Moyen-Orient",
-    homeBannerTitle: "Fournisseur de detecteurs d eau souterraine pour le Moyen-Orient et l Afrique",
+    homeBannerTitle: "Fournisseur de détecteurs d'eau souterraine pour les marchés mondiaux et le Moyen-Orient",
     homeTrustEyebrow: "Signaux de confiance a l exportation",
     homeTrustTitle: "Concues pour les acheteurs qui ont besoin de preuves avant d envoyer une demande",
     homeTrustText: "Les clients du Moyen-Orient peuvent verifier nos ressources de fabrication, nos documents de qualite, nos options d expedition et notre support apres-vente avant de choisir un fournisseur de detecteurs d eau.",
@@ -1789,7 +1789,7 @@ const extraTranslations = {
     contactEyebrow: "Contactenos",
     contactLead: "Esta pagina esta disenada para recibir consultas despues de que los compradores revisen sus productos, soluciones y contenido de detalles del producto.",
     homeBannerEyebrow: "Soluciones de agua subterranea en Medio Oriente",
-    homeBannerTitle: "Proveedor de detectores de agua subterranea para Medio Oriente y Africa",
+    homeBannerTitle: "Proveedor de detectores de agua subterránea para mercados globales y Oriente Medio",
     homeTrustEyebrow: "Senales de confianza para exportacion",
     homeTrustTitle: "Construido para compradores que necesitan pruebas antes de enviar una consulta",
     homeTrustText: "Los clientes de Medio Oriente pueden verificar nuestros recursos de fabricacion, documentos de calidad, opciones de envio y soporte postventa antes de elegir un proveedor de detectores de agua.",
@@ -1989,7 +1989,7 @@ const productCatalog = {
     }
   },
   p4: {
-    category: "high-density",
+    category: "multi-channel",
     gallery: [
       "./assets/products/group-6.webp",
       "./assets/products/admt-300sx-thumb-1.webp",
@@ -2621,6 +2621,7 @@ productCatalog.p8.gallery = [
   "./assets/products/admt-120n-detail-3.webp"
 ];
 productCatalog.p8.videoFile = "./media/admt-120n-video.mp4";
+productCatalog.p8.category = "high-density";
 productCatalog.p8.introImages = [
   "./assets/products/admt-120n-intro-1.avif",
   "./assets/products/admt-120n-intro-2.avif",
@@ -3010,7 +3011,7 @@ const aboutPageCopy = {
           "Geological disaster investigation",
           "Mining and engineering site surveys"
         ],
-        outro: "We have accumulated rich experience in desert, plateau, and clay areas, helping thousands of customers locate reliable water sources."
+        outro: ""
       },
       {
         kicker: "Why Choose CYQ Water",
@@ -3091,7 +3092,7 @@ const aboutPageCopy = {
           "地质灾害调查",
           "矿山和工程现场勘测"
         ],
-        outro: "我们在沙漠、高原和黏土区域积累了丰富经验，帮助数千名客户定位可靠水源。"
+        outro: ""
       },
       {
         kicker: "为什么选择 CYQ Water",
@@ -3124,14 +3125,413 @@ const aboutPageCopy = {
         ]
       }
     ]
+  },
+  ar: {
+    heroTitle: "حول CYQ Water - شريكك الموثوق لأجهزة كشف المياه في الشرق الأوسط",
+    sections: [
+      {
+        kicker: "من نحن",
+        title: "من نحن",
+        paragraphs: [
+          "CYQ Water مورد متخصص في كشف المياه الجوفية والاستكشاف الجيوفيزيائي ومعدات تحديد مواقع آبار المياه، يلتزم بتوفير أجهزة بحث عن المياه موثوقة وسهلة الاستخدام وعالية الدقة للعملاء في الشرق الأوسط وأفريقيا وقطاعات الحفر والزراعة حول العالم.",
+          "نعمل بشكل وثيق مع مصادر بحث وتطوير وتصنيع رائدة في الصين تمتلك خبرة تزيد عن 50 عاماً في الأجهزة الجيوفيزيائية، مع التركيز على الأداء المستقر والدقة في الكشف والتصميم المتين لمساعدتك على العثور على المياه بسرعة وكفاءة في المناطق الجافة والجيولوجيا المعقدة."
+        ]
+      },
+      {
+        kicker: "قوة التصنيع والبحث والتطوير",
+        title: "قوة التصنيع والبحث والتطوير",
+        intro: "مصنعنا الشريك مؤسسة وطنية عالية التقنية ومؤسسة في شنغهاي من فئة \"متخصصة، دقيقة، متميزة، مبتكرة\"، ويتمتع بما يلي:",
+        items: [
+          "أكثر من 50 عاماً من تاريخ البحث والتطوير في معدات الاستكشاف الجيوفيزيائي منذ عام 1973",
+          "حقوق ملكية فكرية مستقلة متعددة وبراءات اختراع وحقوق نشر برمجية",
+          "نظام إدارة جودة معتمد وفق ISO 9001:2015",
+          "منتجات حاصلة على شهادة CE لدخول الأسواق العالمية",
+          "فريق بحث وتطوير يقوده مهندسون كبار من مصانع أجهزة جيولوجية مملوكة للدولة سابقاً"
+        ],
+        outro: "نطبق رقابة صارمة على الجودة من شراء المكونات حتى الاختبار النهائي، لضمان أن يقدم كل جهاز كشف مياه أداءً ثابتاً في البيئات الميدانية القاسية."
+      },
+      {
+        kicker: "فريقنا المهني",
+        title: "فريقنا المهني",
+        intro: "بنينا فريقاً متخصصاً لديه فهم عميق للظروف الجيولوجية واحتياجات الحفر في الشرق الأوسط:",
+        items: [
+          "مهندسو دعم فني جيوفيزيائي",
+          "مختصو مبيعات دولية بعدة لغات (الإنجليزية، العربية)",
+          "خبراء تدريب ما بعد البيع واستكشاف الأعطال",
+          "منسقون متخصصون في الخدمات اللوجستية والتخليص الجمركي"
+        ],
+        note: "يوفر فريقنا دعماً عبر الإنترنت على مدار 7/24 وإرشاداً مهنياً لاختيار المعدات وتشغيلها وصيانتها."
+      },
+      {
+        kicker: "التطبيقات الميدانية والحالات العملية",
+        title: "التطبيقات الميدانية والحالات العملية",
+        intro: "استُخدمت أجهزة كشف المياه لدينا بنجاح في بيئات معقدة متعددة في الشرق الأوسط:",
+        items: [
+          "استكشاف المياه الجوفية لمشاريع حفر الآبار",
+          "تحديد مصادر مياه الري الزراعي",
+          "مشاريع إمداد مياه الشرب في المناطق الريفية",
+          "تحقيقات الكوارث الجيولوجية",
+          "مسوحات مواقع التعدين والهندسة"
+        ],
+        outro: ""
+      },
+      {
+        kicker: "لماذا تختار CYQ Water",
+        title: "لماذا تختار CYQ Water",
+        items: [
+          "كشف مستقر وعالي الدقة محسّن للمناطق الصحراوية الجافة",
+          "تشغيل بسيط بزر واحد دون الحاجة إلى تدريب معقد",
+          "قدرة قوية على مقاومة التداخل في الظروف الجيولوجية المعقدة",
+          "شحن عالمي سريع إلى جميع دول الشرق الأوسط",
+          "دعم فني مهني وخدمة ما بعد البيع مدى الحياة",
+          "توريد مستقر طويل الأجل بأسعار مصنع تنافسية"
+        ]
+      },
+      {
+        kicker: "الخدمات اللوجستية العالمية إلى الشرق الأوسط",
+        title: "الخدمات اللوجستية العالمية إلى الشرق الأوسط",
+        intro: "نوفر خدمات توصيل آمنة وسريعة من الباب إلى الباب:",
+        items: [
+          "الشحن السريع (DHL/FedEx/Aramex): 5-7 أيام عمل",
+          "الشحن الجوي: 7-10 أيام عمل",
+          "الشحن البحري: 25-35 يوم عمل"
+        ],
+        outro: "نتولى جميع مستندات الشحن ونساعد في التخليص الجمركي لضمان وصول طلبك بسلاسة."
+      },
+      {
+        kicker: "التزامنا",
+        title: "التزامنا",
+        paragraphs: [
+          "تلتزم CYQ Water بأن تصبح أكثر مورد موثوق لأجهزة كشف المياه في الشرق الأوسط. نتمسك دائماً بمبدأ \"الجودة أولاً، والعميل في المقام الأول\"، ونواصل تقديم معدات عالية الأداء وخدمات مهنية لمساعدتك على العثور على المياه بكفاءة وخلق قيمة أكبر."
+        ]
+      }
+    ]
+  },
+  tr: {
+    heroTitle: "CYQ Water Hakkında - Orta Doğu için Güvenilir Su Dedektörü Ortağınız",
+    sections: [
+      {
+        kicker: "Biz Kimiz",
+        title: "Biz Kimiz",
+        paragraphs: [
+          "CYQ Water; yeraltı suyu tespiti, jeofizik keşif ve kuyu yeri belirleme ekipmanlarına odaklanan profesyonel bir tedarikçidir. Orta Doğu, Afrika ve küresel sondaj ile tarım sektörlerindeki müşterilere güvenilir, kullanımı kolay ve yüksek hassasiyetli su arama cihazları sağlamaya odaklanır.",
+          "Çin'de jeofizik cihazlarda 50 yılı aşkın deneyime sahip üst düzey Ar-Ge ve üretim kaynaklarıyla yakın çalışıyoruz. Kurak ve karmaşık jeolojik bölgelerde suyu hızlı ve verimli şekilde bulmanıza yardımcı olmak için kararlı performans, doğru tespit ve dayanıklı tasarıma odaklanıyoruz."
+        ]
+      },
+      {
+        kicker: "Üretim ve Ar-Ge Gücümüz",
+        title: "Üretim ve Ar-Ge Gücümüz",
+        intro: "İş ortağımız olan fabrika, ulusal yüksek teknoloji kuruluşu ve Şanghay \"Uzmanlaşmış, Rafine, Farklı, Yenilikçi\" kuruluşudur ve şu özelliklere sahiptir:",
+        items: [
+          "1973'ten bu yana jeofizik keşif ekipmanlarında 50 yılı aşkın Ar-Ge geçmişi",
+          "Çok sayıda bağımsız fikri mülkiyet hakkı, patent ve yazılım telif hakkı",
+          "ISO 9001:2015 sertifikalı kalite yönetim sistemi",
+          "Küresel pazarlara erişim için CE sertifikalı ürünler",
+          "Eski devlet jeolojik cihaz fabrikalarından gelen kıdemli mühendislerin liderlik ettiği Ar-Ge ekibi"
+        ],
+        outro: "Bileşen tedariğinden son teste kadar sıkı kalite kontrol uygularız; böylece her su dedektörü zorlu saha ortamlarında istikrarlı performans sunar."
+      },
+      {
+        kicker: "Profesyonel Ekibimiz",
+        title: "Profesyonel Ekibimiz",
+        intro: "Orta Doğu jeolojik koşullarını ve sondaj ihtiyaçlarını iyi anlayan uzman bir ekip oluşturduk:",
+        items: [
+          "Jeofizik teknik destek mühendisleri",
+          "Çok dilli uluslararası satış uzmanları (İngilizce, Arapça)",
+          "Satış sonrası eğitim ve arıza giderme uzmanları",
+          "Özel lojistik ve gümrükleme koordinatörleri"
+        ],
+        note: "Ekibimiz ekipman seçimi, kullanım ve bakım için 7/24 çevrim içi destek ve profesyonel rehberlik sağlar."
+      },
+      {
+        kicker: "Saha Uygulamaları ve Vaka Örnekleri",
+        title: "Saha Uygulamaları ve Vaka Örnekleri",
+        intro: "Su dedektörlerimiz Orta Doğu'da çeşitli karmaşık ortamlarda başarıyla kullanılmıştır:",
+        items: [
+          "Kuyu sondaj projeleri için yeraltı suyu araştırması",
+          "Tarımsal sulama su kaynağı konumlandırma",
+          "Kırsal içme suyu temin projeleri",
+          "Jeolojik afet araştırmaları",
+          "Maden ve mühendislik sahası etütleri"
+        ],
+        outro: ""
+      },
+      {
+        kicker: "Neden CYQ Water",
+        title: "Neden CYQ Water",
+        items: [
+          "Kurak çöl bölgeleri için optimize edilmiş kararlı ve yüksek hassasiyetli tespit",
+          "Karmaşık eğitim gerektirmeyen basit tek tuşla kullanım",
+          "Karmaşık jeolojik koşullarda güçlü parazit önleme performansı",
+          "Tüm Orta Doğu ülkelerine hızlı küresel sevkiyat",
+          "Profesyonel teknik destek ve ömür boyu satış sonrası hizmet",
+          "Rekabetçi fabrika fiyatlarıyla uzun vadeli istikrarlı tedarik"
+        ]
+      },
+      {
+        kicker: "Orta Doğu'ya Küresel Lojistik",
+        title: "Orta Doğu'ya Küresel Lojistik",
+        intro: "Güvenli ve hızlı kapıdan kapıya teslimat hizmetleri sunuyoruz:",
+        items: [
+          "Ekspres (DHL/FedEx/Aramex): 5-7 iş günü",
+          "Hava kargo: 7-10 iş günü",
+          "Deniz kargo: 25-35 iş günü"
+        ],
+        outro: "Siparişinizin sorunsuz ulaşmasını sağlamak için tüm sevkiyat belgelerini hazırlar ve gümrükleme sürecine yardımcı oluruz."
+      },
+      {
+        kicker: "Taahhüdümüz",
+        title: "Taahhüdümüz",
+        paragraphs: [
+          "CYQ Water, Orta Doğu için en güvenilir su dedektörü tedarikçisi olmayı hedefler. Her zaman \"Önce Kalite, Önce Müşteri\" ilkesini benimser; suyu verimli şekilde bulmanıza ve daha fazla değer yaratmanıza yardımcı olmak için yüksek performanslı ekipman ve profesyonel hizmetler sunmaya devam eder."
+        ]
+      }
+    ]
+  },
+  fa: {
+    heroTitle: "درباره CYQ Water - شریک قابل اعتماد شما برای دستگاه های آب یاب در خاورمیانه",
+    sections: [
+      {
+        kicker: "ما که هستیم",
+        title: "ما که هستیم",
+        paragraphs: [
+          "CYQ Water تأمین کننده ای حرفه ای در حوزه تشخیص آب زیرزمینی، اکتشاف ژئوفیزیکی و تجهیزات تعیین محل چاه آب است و متعهد است دستگاه های آب یاب قابل اعتماد، آسان برای استفاده و بسیار دقیق را برای مشتریان خاورمیانه، آفریقا و صنایع حفاری و کشاورزی جهانی فراهم کند.",
+          "ما با منابع برتر تحقیق و توسعه و تولید در چین که بیش از 50 سال تجربه در ابزارهای ژئوفیزیکی دارند همکاری نزدیک داریم و بر عملکرد پایدار، تشخیص دقیق و طراحی بادوام تمرکز می کنیم تا به شما کمک کنیم در مناطق خشک و زمین شناسی پیچیده، آب را سریع و کارآمد پیدا کنید."
+        ]
+      },
+      {
+        kicker: "توان تولید و تحقیق و توسعه",
+        title: "توان تولید و تحقیق و توسعه",
+        intro: "کارخانه همکار ما یک شرکت ملی با فناوری پیشرفته و شرکت «تخصصی، دقیق، متمایز، نوآور» شانگهای است و دارای موارد زیر است:",
+        items: [
+          "بیش از 50 سال سابقه تحقیق و توسعه در تجهیزات اکتشاف ژئوفیزیکی از سال 1973",
+          "چندین حق مالکیت فکری مستقل، پتنت و حق نشر نرم افزار",
+          "سیستم مدیریت کیفیت دارای گواهی ISO 9001:2015",
+          "محصولات دارای گواهی CE برای ورود به بازارهای جهانی",
+          "تیم تحقیق و توسعه به رهبری مهندسان ارشد از کارخانه های سابق دولتی ابزارهای زمین شناسی"
+        ],
+        outro: "ما از تأمین قطعات تا آزمون نهایی، کنترل کیفیت سخت گیرانه ای را حفظ می کنیم تا هر دستگاه آب یاب در محیط های میدانی سخت عملکردی پایدار ارائه دهد."
+      },
+      {
+        kicker: "تیم حرفه ای ما",
+        title: "تیم حرفه ای ما",
+        intro: "ما تیمی تخصصی ساخته ایم که شناخت عمیقی از شرایط زمین شناسی و نیازهای حفاری در خاورمیانه دارد:",
+        items: [
+          "مهندسان پشتیبانی فنی ژئوفیزیک",
+          "متخصصان فروش بین المللی چندزبانه (انگلیسی، عربی)",
+          "کارشناسان آموزش پس از فروش و رفع اشکال",
+          "هماهنگ کنندگان اختصاصی لجستیک و ترخیص گمرکی"
+        ],
+        note: "تیم ما پشتیبانی آنلاین 7/24 و راهنمایی حرفه ای برای انتخاب، کاربری و نگهداری تجهیزات ارائه می دهد."
+      },
+      {
+        kicker: "کاربردهای میدانی و نمونه ها",
+        title: "کاربردهای میدانی و نمونه ها",
+        intro: "دستگاه های آب یاب ما با موفقیت در محیط های پیچیده مختلف در سراسر خاورمیانه استفاده شده اند:",
+        items: [
+          "اکتشاف آب زیرزمینی برای پروژه های حفاری چاه",
+          "تعیین موقعیت منبع آب آبیاری کشاورزی",
+          "پروژه های تأمین آب آشامیدنی روستایی",
+          "بررسی بلایای زمین شناسی",
+          "برداشت های سایت های معدنی و مهندسی"
+        ],
+        outro: ""
+      },
+      {
+        kicker: "چرا CYQ Water",
+        title: "چرا CYQ Water",
+        items: [
+          "تشخیص پایدار و بسیار دقیق، بهینه شده برای مناطق بیابانی خشک",
+          "کاربری ساده با یک دکمه، بدون نیاز به آموزش پیچیده",
+          "مقاومت قوی در برابر تداخل در شرایط زمین شناسی پیچیده",
+          "ارسال سریع جهانی به تمام کشورهای خاورمیانه",
+          "پشتیبانی فنی حرفه ای و خدمات پس از فروش مادام العمر",
+          "تأمین پایدار بلندمدت با قیمت های رقابتی کارخانه"
+        ]
+      },
+      {
+        kicker: "لجستیک جهانی به خاورمیانه",
+        title: "لجستیک جهانی به خاورمیانه",
+        intro: "ما خدمات تحویل امن و سریع درب تا درب ارائه می دهیم:",
+        items: [
+          "اکسپرس (DHL/FedEx/Aramex): 5-7 روز کاری",
+          "حمل هوایی: 7-10 روز کاری",
+          "حمل دریایی: 25-35 روز کاری"
+        ],
+        outro: "ما همه اسناد حمل را آماده می کنیم و در ترخیص گمرکی کمک می کنیم تا سفارش شما بدون مشکل برسد."
+      },
+      {
+        kicker: "تعهد ما",
+        title: "تعهد ما",
+        paragraphs: [
+          "CYQ Water متعهد است به قابل اعتمادترین تأمین کننده دستگاه آب یاب برای خاورمیانه تبدیل شود. ما همواره اصل «کیفیت اول، مشتری در اولویت» را رعایت می کنیم و به طور مستمر تجهیزات با کارایی بالا و خدمات حرفه ای ارائه می دهیم تا به شما کمک کنیم آب را به طور کارآمد پیدا کنید و ارزش بیشتری خلق کنید."
+        ]
+      }
+    ]
+  },
+  fr: {
+    heroTitle: "À propos de CYQ Water - Votre partenaire fiable en détecteurs d'eau pour le Moyen-Orient",
+    sections: [
+      {
+        kicker: "Qui nous sommes",
+        title: "Qui nous sommes",
+        paragraphs: [
+          "CYQ Water est un fournisseur professionnel spécialisé dans la détection des eaux souterraines, l'exploration géophysique et les équipements de localisation de puits. Nous fournissons des détecteurs d'eau fiables, faciles à utiliser et de haute précision aux clients du Moyen-Orient, d'Afrique et des secteurs mondiaux du forage et de l'agriculture.",
+          "Nous collaborons étroitement avec des sources chinoises de R&D et de fabrication de premier plan, fortes de plus de 50 ans d'expérience dans les instruments géophysiques. Nous privilégions la stabilité des performances, la précision de détection et la conception durable afin de vous aider à trouver l'eau rapidement et efficacement dans les zones arides et les contextes géologiques complexes."
+        ]
+      },
+      {
+        kicker: "Force de fabrication et de R&D",
+        title: "Force de fabrication et de R&D",
+        intro: "Notre usine partenaire est une entreprise nationale de haute technologie et une entreprise de Shanghai « spécialisée, raffinée, différenciée, innovante », avec :",
+        items: [
+          "Plus de 50 ans d'histoire en R&D d'équipements d'exploration géophysique depuis 1973",
+          "De multiples droits de propriété intellectuelle indépendants, brevets et droits d'auteur logiciels",
+          "Un système de gestion de la qualité certifié ISO 9001:2015",
+          "Des produits certifiés CE pour l'accès aux marchés mondiaux",
+          "Une équipe de R&D dirigée par des ingénieurs seniors issus d'anciennes usines publiques d'instruments géologiques"
+        ],
+        outro: "Nous maintenons un contrôle qualité strict, de l'achat des composants jusqu'aux tests finaux, afin que chaque détecteur d'eau offre des performances constantes dans les environnements de terrain difficiles."
+      },
+      {
+        kicker: "Notre équipe professionnelle",
+        title: "Notre équipe professionnelle",
+        intro: "Nous avons constitué une équipe spécialisée avec une compréhension approfondie des conditions géologiques et des besoins de forage au Moyen-Orient :",
+        items: [
+          "Ingénieurs de support technique géophysique",
+          "Spécialistes des ventes internationales multilingues (anglais, arabe)",
+          "Experts en formation après-vente et dépannage",
+          "Coordinateurs dédiés à la logistique et au dédouanement"
+        ],
+        note: "Notre équipe fournit une assistance en ligne 7/24 et des conseils professionnels pour le choix, l'utilisation et la maintenance des équipements."
+      },
+      {
+        kicker: "Applications sur site et cas terrain",
+        title: "Applications sur site et cas terrain",
+        intro: "Nos détecteurs d'eau ont été utilisés avec succès dans divers environnements complexes au Moyen-Orient :",
+        items: [
+          "Exploration des eaux souterraines pour les projets de forage de puits",
+          "Localisation de sources d'eau pour l'irrigation agricole",
+          "Projets d'approvisionnement en eau potable rurale",
+          "Enquêtes sur les risques géologiques",
+          "Études de sites miniers et d'ingénierie"
+        ],
+        outro: ""
+      },
+      {
+        kicker: "Pourquoi choisir CYQ Water",
+        title: "Pourquoi choisir CYQ Water",
+        items: [
+          "Détection stable et haute précision optimisée pour les régions désertiques arides",
+          "Utilisation simple à un bouton, sans formation complexe",
+          "Forte résistance aux interférences dans les conditions géologiques complexes",
+          "Expédition mondiale rapide vers tous les pays du Moyen-Orient",
+          "Support technique professionnel et service après-vente à vie",
+          "Approvisionnement stable à long terme avec prix usine compétitifs"
+        ]
+      },
+      {
+        kicker: "Logistique mondiale vers le Moyen-Orient",
+        title: "Logistique mondiale vers le Moyen-Orient",
+        intro: "Nous proposons des services de livraison porte-à-porte sûrs et rapides :",
+        items: [
+          "Express (DHL/FedEx/Aramex) : 5 à 7 jours ouvrables",
+          "Fret aérien : 7 à 10 jours ouvrables",
+          "Fret maritime : 25 à 35 jours ouvrables"
+        ],
+        outro: "Nous gérons tous les documents d'expédition et aidons au dédouanement afin que votre commande arrive sans difficulté."
+      },
+      {
+        kicker: "Notre engagement",
+        title: "Notre engagement",
+        paragraphs: [
+          "CYQ Water s'engage à devenir le fournisseur de détecteurs d'eau le plus fiable pour le Moyen-Orient. Nous défendons toujours le principe « La qualité d'abord, le client avant tout » et continuons à fournir des équipements performants et des services professionnels pour vous aider à trouver l'eau efficacement et créer davantage de valeur."
+        ]
+      }
+    ]
+  },
+  es: {
+    heroTitle: "Acerca de CYQ Water - Su socio confiable en detectores de agua para Oriente Medio",
+    sections: [
+      {
+        kicker: "Quiénes somos",
+        title: "Quiénes somos",
+        paragraphs: [
+          "CYQ Water es un proveedor profesional enfocado en la detección de aguas subterráneas, la exploración geofísica y los equipos de localización de pozos de agua. Nos dedicamos a ofrecer buscadores de agua confiables, fáciles de usar y de alta precisión para clientes en Oriente Medio, África y las industrias globales de perforación y agricultura.",
+          "Trabajamos estrechamente con fuentes líderes de I+D y fabricación en China, con más de 50 años de experiencia en instrumentos geofísicos, enfocándonos en rendimiento estable, detección precisa y diseño duradero para ayudarle a encontrar agua de forma rápida y eficiente en zonas áridas y geologías complejas."
+        ]
+      },
+      {
+        kicker: "Fortaleza de fabricación e I+D",
+        title: "Fortaleza de fabricación e I+D",
+        intro: "Nuestra fábrica asociada es una empresa nacional de alta tecnología y una empresa de Shanghái «especializada, refinada, diferenciada e innovadora», con:",
+        items: [
+          "Más de 50 años de historia en I+D de equipos de exploración geofísica desde 1973",
+          "Múltiples derechos de propiedad intelectual independientes, patentes y derechos de autor de software",
+          "Sistema de gestión de calidad certificado ISO 9001:2015",
+          "Productos certificados CE para acceso al mercado global",
+          "Equipo de I+D dirigido por ingenieros senior de antiguas fábricas estatales de instrumentos geológicos"
+        ],
+        outro: "Mantenemos un estricto control de calidad desde la compra de componentes hasta la prueba final, garantizando que cada detector de agua ofrezca un rendimiento constante en entornos de campo exigentes."
+      },
+      {
+        kicker: "Nuestro equipo profesional",
+        title: "Nuestro equipo profesional",
+        intro: "Hemos formado un equipo especializado con profundo conocimiento de las condiciones geológicas y necesidades de perforación en Oriente Medio:",
+        items: [
+          "Ingenieros de soporte técnico geofísico",
+          "Especialistas en ventas internacionales multilingües (inglés, árabe)",
+          "Expertos en capacitación posventa y solución de problemas",
+          "Coordinadores dedicados de logística y despacho aduanero"
+        ],
+        note: "Nuestro equipo ofrece soporte en línea 7/24 y orientación profesional para la selección, operación y mantenimiento de equipos."
+      },
+      {
+        kicker: "Aplicaciones en campo y casos",
+        title: "Aplicaciones en campo y casos",
+        intro: "Nuestros detectores de agua se han utilizado con éxito en diversos entornos complejos de Oriente Medio:",
+        items: [
+          "Exploración de aguas subterráneas para proyectos de perforación de pozos",
+          "Localización de fuentes de agua para riego agrícola",
+          "Proyectos de suministro de agua potable rural",
+          "Investigación de desastres geológicos",
+          "Estudios de sitios mineros y de ingeniería"
+        ],
+        outro: ""
+      },
+      {
+        kicker: "Por qué elegir CYQ Water",
+        title: "Por qué elegir CYQ Water",
+        items: [
+          "Detección estable de alta precisión optimizada para regiones desérticas áridas",
+          "Operación simple con un solo botón, sin formación compleja",
+          "Fuerte rendimiento antiinterferencias en condiciones geológicas complejas",
+          "Envío global rápido a todos los países de Oriente Medio",
+          "Soporte técnico profesional y servicio posventa de por vida",
+          "Suministro estable a largo plazo con precios de fábrica competitivos"
+        ]
+      },
+      {
+        kicker: "Logística global hacia Oriente Medio",
+        title: "Logística global hacia Oriente Medio",
+        intro: "Ofrecemos servicios de entrega puerta a puerta seguros y rápidos:",
+        items: [
+          "Exprés (DHL/FedEx/Aramex): 5-7 días laborables",
+          "Carga aérea: 7-10 días laborables",
+          "Carga marítima: 25-35 días laborables"
+        ],
+        outro: "Gestionamos toda la documentación de envío y ayudamos con el despacho aduanero para asegurar que su pedido llegue sin problemas."
+      },
+      {
+        kicker: "Nuestro compromiso",
+        title: "Nuestro compromiso",
+        paragraphs: [
+          "CYQ Water se compromete a convertirse en el proveedor de detectores de agua más confiable para Oriente Medio. Siempre mantenemos el principio de «Calidad primero, cliente ante todo» y seguimos proporcionando equipos de alto rendimiento y servicios profesionales para ayudarle a encontrar agua de manera eficiente y crear mayor valor."
+        ]
+      }
+    ]
   }
 };
-
-aboutPageCopy.ar = aboutPageCopy.en;
-aboutPageCopy.tr = aboutPageCopy.en;
-aboutPageCopy.fa = aboutPageCopy.en;
-aboutPageCopy.fr = aboutPageCopy.en;
-aboutPageCopy.es = aboutPageCopy.en;
 
 function applyAboutPageTranslations(lang) {
   const aboutRoot = document.querySelector(".cyq-about");
@@ -4104,7 +4504,7 @@ function updateProductSeo(productId, product, content, lang) {
       itemCondition: "https://schema.org/NewCondition",
       seller: {
         "@type": "Organization",
-        name: "AquaScan Detectors"
+        name: "Cyqwater"
       },
       shippingDetails: {
         "@type": "OfferShippingDetails",
@@ -5308,6 +5708,115 @@ document.querySelectorAll(".contact-form").forEach((form) => {
   });
 });
 
+const mediaProtectionConfig = {
+  watermark: "Cyqwater"
+};
+
+function isProtectedMediaTarget(target) {
+  return Boolean(
+    target?.closest?.(
+      "img, video, iframe, .protected-media-shell, .video-poster-wrap, .home-banner-slide"
+    )
+  );
+}
+
+function shouldWrapProtectedMedia(element) {
+  if (!element || element.closest(".protected-media-shell")) {
+    return false;
+  }
+  if (
+    element.matches(".brand-mark, .chat-agent-avatar, .home-banner-video") ||
+    element.closest(".brand, .chat-widget, .video-poster-wrap")
+  ) {
+    return false;
+  }
+  return element.matches("img, video");
+}
+
+function protectMediaElement(element) {
+  if (!element || element.dataset.mediaProtected === "true") {
+    return;
+  }
+
+  element.dataset.mediaProtected = "true";
+  element.setAttribute("draggable", "false");
+  element.setAttribute("oncontextmenu", "return false");
+
+  if (element.tagName === "VIDEO") {
+    element.setAttribute("controlsList", "nodownload noplaybackrate");
+    element.setAttribute("disablePictureInPicture", "");
+  }
+
+  if (!shouldWrapProtectedMedia(element) || !element.parentNode) {
+    return;
+  }
+
+  const wrapper = document.createElement("span");
+  wrapper.className = "protected-media-shell";
+  wrapper.setAttribute("aria-label", `${mediaProtectionConfig.watermark} protected media`);
+
+  const display = window.getComputedStyle(element).display;
+  if (display === "inline" || display === "inline-block") {
+    wrapper.classList.add("media-inline");
+  }
+
+  element.parentNode.insertBefore(wrapper, element);
+  wrapper.appendChild(element);
+}
+
+function protectAllMedia(root = document) {
+  root.querySelectorAll?.("img, video, iframe").forEach(protectMediaElement);
+}
+
+function initMediaProtection() {
+  document.documentElement.classList.add("media-protection-enabled");
+  protectAllMedia();
+
+  document.addEventListener("contextmenu", (event) => {
+    if (isProtectedMediaTarget(event.target)) {
+      event.preventDefault();
+    }
+  });
+
+  document.addEventListener("dragstart", (event) => {
+    if (isProtectedMediaTarget(event.target)) {
+      event.preventDefault();
+    }
+  });
+
+  document.addEventListener("copy", (event) => {
+    if (isProtectedMediaTarget(document.activeElement) || window.getSelection()?.toString() === "") {
+      const selectionNode = window.getSelection()?.anchorNode?.parentElement;
+      if (isProtectedMediaTarget(selectionNode)) {
+        event.preventDefault();
+      }
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    const key = event.key.toLowerCase();
+    const withModifier = event.metaKey || event.ctrlKey;
+    if (withModifier && ["s", "u", "p"].includes(key)) {
+      event.preventDefault();
+    }
+  });
+
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      mutation.addedNodes.forEach((node) => {
+        if (node.nodeType !== Node.ELEMENT_NODE) {
+          return;
+        }
+        if (node.matches?.("img, video, iframe")) {
+          protectMediaElement(node);
+        }
+        protectAllMedia(node);
+      });
+    });
+  });
+  observer.observe(document.body, { childList: true, subtree: true });
+}
+
 languageSelects.forEach((select) => {
   select.addEventListener("change", () => {
     localStorage.setItem(languageManualStorageKey, "1");
@@ -5316,6 +5825,7 @@ languageSelects.forEach((select) => {
 });
 
 initializeLanguage();
+initMediaProtection();
 initHomeBanner();
 initHomeProductSearch();
 initBannerNavbar();

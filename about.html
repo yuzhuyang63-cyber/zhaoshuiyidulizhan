@@ -172,11 +172,11 @@
       }
 
       .cyq-about .logistics-media img {
-        position: absolute;
-        inset: 0;
+        position: relative;
+        display: block;
         width: 100%;
         height: 100%;
-        min-height: 0;
+        min-height: 520px;
         object-fit: cover;
         object-position: center center;
         transform: scale(1.08);
@@ -187,7 +187,8 @@
       }
 
       .cyq-about .logistics-media {
-        min-height: 100%;
+        min-height: 520px;
+        height: 100%;
         margin: 0;
       }
 
@@ -378,6 +379,159 @@
         opacity: 1;
         transform: translateY(0);
         padding: 16px 0;
+      }
+
+      .cyq-about .field-video-carousel {
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+        overflow: hidden;
+      }
+
+      .cyq-about .field-video-carousel::before,
+      .cyq-about .field-video-carousel::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 8px;
+        z-index: 3;
+        width: 78px;
+        pointer-events: none;
+      }
+
+      .cyq-about .field-video-carousel::before {
+        left: 0;
+        background: linear-gradient(90deg, var(--about-soft), rgba(246, 249, 253, 0));
+      }
+
+      .cyq-about .field-video-carousel::after {
+        right: 0;
+        background: linear-gradient(270deg, var(--about-soft), rgba(246, 249, 253, 0));
+      }
+
+      .cyq-about .field-video-grid {
+        display: flex;
+        gap: 18px;
+        align-items: stretch;
+        margin: 0;
+        padding: 0 74px 8px;
+        list-style: none;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+      }
+
+      .cyq-about .field-video-grid::-webkit-scrollbar {
+        display: none;
+      }
+
+      .cyq-about .field-video-card {
+        position: relative;
+        flex: 0 0 clamp(190px, 18.8vw, 230px);
+        overflow: hidden;
+        aspect-ratio: 9 / 16;
+        scroll-snap-align: start;
+        border: 1px solid var(--about-line);
+        border-radius: 10px;
+        background: #0f1f33;
+        box-shadow: 0 16px 34px rgba(15, 31, 51, 0.08);
+        isolation: isolate;
+      }
+
+      .cyq-about .field-video-card::before {
+        display: none;
+      }
+
+      .cyq-about .field-video-card::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        pointer-events: none;
+        background: linear-gradient(180deg, rgba(0, 61, 124, 0), rgba(0, 61, 124, 0.18));
+        opacity: 0.78;
+        transition: opacity 0.28s ease;
+      }
+
+      .cyq-about .field-video-card:hover {
+        border-color: rgba(0, 114, 239, 0.28);
+        box-shadow: 0 20px 42px rgba(15, 31, 51, 0.12);
+      }
+
+      .cyq-about .field-video-card:hover::after {
+        opacity: 0.18;
+      }
+
+      .cyq-about .field-video-card video {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: saturate(0.86) contrast(1.04);
+        transform: scale(1.01);
+        transition: transform 0.34s ease, filter 0.28s ease;
+      }
+
+      .cyq-about .field-video-card .protected-media-shell {
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+      }
+
+      .cyq-about .field-video-card:hover video {
+        filter: saturate(0.98) contrast(1.04);
+        transform: scale(1.025);
+      }
+
+      .cyq-about .field-video-nav {
+        position: absolute;
+        top: 50%;
+        z-index: 4;
+        width: 44px;
+        height: 44px;
+        display: grid;
+        place-items: center;
+        border: 1px solid rgba(0, 114, 239, 0.22);
+        border-radius: 50%;
+        color: var(--about-blue);
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0 12px 28px rgba(15, 31, 51, 0.12);
+        cursor: pointer;
+        transform: translateY(-50%);
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      }
+
+      .cyq-about .field-video-nav:hover {
+        background: #ffffff;
+        box-shadow: 0 18px 36px rgba(0, 114, 239, 0.16);
+        transform: translateY(-50%) scale(1.04);
+      }
+
+      .cyq-about .field-video-nav.prev {
+        left: 12px;
+      }
+
+      .cyq-about .field-video-nav.next {
+        right: 12px;
+      }
+
+      .cyq-about .field-video-nav span {
+        width: 12px;
+        height: 12px;
+        border-top: 2px solid currentColor;
+        border-right: 2px solid currentColor;
+        display: block;
+      }
+
+      .cyq-about .field-video-nav.prev span {
+        transform: rotate(-135deg);
+        margin-left: 4px;
+      }
+
+      .cyq-about .field-video-nav.next span {
+        transform: rotate(45deg);
+        margin-right: 4px;
       }
 
       .cyq-about .rd-nav {
@@ -781,6 +935,14 @@
 
         .cyq-about .media-card img {
           min-height: 300px;
+        }
+
+        .cyq-about .logistics-media {
+          min-height: 360px;
+        }
+
+        .cyq-about .logistics-media img {
+          min-height: 360px;
         }
 
         .cyq-about .bullet-list li,
@@ -1413,54 +1575,30 @@
               <h2>现场应用与案例</h2>
               <p>我们的找水仪已成功应用于中东多种复杂环境：</p>
             </div>
-            <ul class="bullet-list case-visual-list">
-              <li>
-                <img
-                  src="./assets/seo-images/about-case-1.webp"
-                  alt="Groundwater exploration for well drilling project using water detector"
-                  data-unsplash-keywords="groundwater exploration well drilling field survey"
-                  loading="lazy"
-                />
-                <span>水井钻探项目的地下水勘探</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/seo-images/about-case-2.webp"
-                  alt="Agricultural irrigation water source positioning with groundwater finder"
-                  data-unsplash-keywords="agricultural irrigation water source field"
-                  loading="lazy"
-                />
-                <span>农业灌溉水源定位</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/seo-images/about-case-3.webp"
-                  alt="Rural drinking water supply project supported by middle east water detector"
-                  data-unsplash-keywords="rural drinking water supply desert village"
-                  loading="lazy"
-                />
-                <span>农村饮用水供应项目</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/seo-images/about-case-4.webp"
-                  alt="Geological disaster investigation and field survey"
-                  data-unsplash-keywords="geological disaster investigation field survey"
-                  loading="lazy"
-                />
-                <span>地质灾害调查</span>
-              </li>
-              <li>
-                <img
-                  src="./assets/seo-images/about-case-5.webp"
-                  alt="Mining and engineering site surveys with geophysical detector"
-                  data-unsplash-keywords="mining engineering site survey geophysical detector"
-                  loading="lazy"
-                />
-                <span>矿山和工程现场勘测</span>
-              </li>
-            </ul>
-            <p style="max-width: 900px; margin: 24px auto 0; text-align: center;">我们在沙漠、高原和黏土区域积累了丰富经验，帮助数千名客户定位可靠水源。</p>
+            <div class="field-video-carousel" data-field-video-carousel>
+              <button class="field-video-nav prev" type="button" aria-label="向左查看现场视频" data-field-video-prev><span></span></button>
+              <ul class="field-video-grid" aria-label="现场应用视频展示">
+                <li class="field-video-card">
+                  <video src="./assets/about-videos/about-field-video-1.mp4" loop playsinline preload="metadata" aria-label="现场应用视频 1"></video>
+                </li>
+                <li class="field-video-card">
+                  <video src="./assets/about-videos/about-field-video-2.mp4" loop playsinline preload="metadata" aria-label="现场应用视频 2"></video>
+                </li>
+                <li class="field-video-card">
+                  <video src="./assets/about-videos/about-field-video-3.mp4" loop playsinline preload="metadata" aria-label="现场应用视频 3"></video>
+                </li>
+                <li class="field-video-card">
+                  <video src="./assets/about-videos/about-field-video-4.mp4" loop playsinline preload="metadata" aria-label="现场应用视频 4"></video>
+                </li>
+                <li class="field-video-card">
+                  <video src="./assets/about-videos/about-field-video-5.mp4" loop playsinline preload="metadata" aria-label="现场应用视频 5"></video>
+                </li>
+                <li class="field-video-card">
+                  <video src="./assets/about-videos/about-field-video-6.mp4" loop playsinline preload="metadata" aria-label="现场应用视频 6"></video>
+                </li>
+              </ul>
+              <button class="field-video-nav next" type="button" aria-label="向右查看现场视频" data-field-video-next><span></span></button>
+            </div>
           </div>
         </section>
 
@@ -1563,6 +1701,49 @@
 
         prev.addEventListener("click", () => move(-1));
         next.addEventListener("click", () => move(1));
+      });
+
+      document.querySelectorAll("[data-field-video-carousel]").forEach((carousel) => {
+        const track = carousel.querySelector(".field-video-grid");
+        const prev = carousel.querySelector("[data-field-video-prev]");
+        const next = carousel.querySelector("[data-field-video-next]");
+        if (!track || !prev || !next) return;
+
+        const move = (direction) => {
+          const firstCard = track.querySelector(".field-video-card");
+          const cardWidth = firstCard ? firstCard.getBoundingClientRect().width : 220;
+          track.scrollBy({ left: direction * (cardWidth + 18), behavior: "smooth" });
+        };
+
+        prev.addEventListener("click", () => move(-1));
+        next.addEventListener("click", () => move(1));
+      });
+
+      document.querySelectorAll(".field-video-card").forEach((card) => {
+        const video = card.querySelector("video");
+        if (!video) return;
+
+        video.controls = false;
+        video.controlsList?.add("nodownload");
+        video.disablePictureInPicture = true;
+        video.muted = true;
+
+        const playVideo = () => {
+          video.muted = false;
+          video.volume = 1;
+          video.play().catch(() => {});
+        };
+
+        const stopVideo = () => {
+          video.pause();
+          video.muted = true;
+          video.currentTime = 0;
+        };
+
+        card.addEventListener("mouseenter", playVideo);
+        card.addEventListener("focusin", playVideo);
+        card.addEventListener("mouseleave", stopVideo);
+        card.addEventListener("focusout", stopVideo);
       });
     </script>
     <script src="./script.js"></script>

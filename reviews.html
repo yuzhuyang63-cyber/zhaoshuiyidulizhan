@@ -94,7 +94,7 @@
       }
     </style>
   </head>
-  <body data-page="reviews">
+  <body data-page="reviews" data-review-page="reviews">
     <div class="site-shell">
       <header class="topbar">
         <div class="container topbar-inner">
@@ -137,7 +137,7 @@
             <a href="./products.html" data-i18n="navProducts">Products</a>
             <a href="./solutions.html" data-i18n="navSolutions">Solutions</a>
             <a href="./contact.html" data-i18n="navContact">Contact</a>
-            <a href="./reviews.html" class="is-active">Reviews</a>
+            <a href="./reviews.html" class="is-active" data-review-i18n="navReviews">Reviews</a>
           </div>
         </div>
       </nav>
@@ -145,27 +145,27 @@
       <main>
         <section class="page-banner" style="background-image: url('./assets/products/group-9.webp');">
           <div class="container page-banner-inner">
-            <h1>Water Detector Reviews & Buying Guides</h1>
-            <a class="button primary banner-cta" href="./contact.html">Ask for buying advice</a>
+            <h1 data-review-i18n="reviewsHeroTitle">Water Detector Reviews & Buying Guides</h1>
+            <a class="button primary banner-cta" href="./contact.html" data-review-i18n="reviewsHeroCta">Ask for buying advice</a>
           </div>
         </section>
 
         <section class="section">
           <div class="container">
             <div class="section-heading">
-              <p class="eyebrow">Review center</p>
-              <h2>Independent field notes for groundwater detector buyers</h2>
-              <p>
+              <p class="eyebrow" data-review-i18n="reviewsIntroEyebrow">Review center</p>
+              <h2 data-review-i18n="reviewsIntroTitle">Independent field notes for groundwater detector buyers</h2>
+              <p data-review-i18n="reviewsIntroText">
                 Our review center compares groundwater detection equipment through field-use criteria such as depth range, ease of operation, geological adaptability, shipping readiness, and after-sales support.
               </p>
               <div class="review-meta">
-                <span>Field testing focus</span>
-                <span>Buyer-friendly summaries</span>
-                <span>Middle East and Africa use cases</span>
+                <span data-review-i18n="reviewsMeta1">Field testing focus</span>
+                <span data-review-i18n="reviewsMeta2">Buyer-friendly summaries</span>
+                <span data-review-i18n="reviewsMeta3">Global and Middle East use cases</span>
               </div>
             </div>
 
-            <div class="review-disclosure">
+            <div class="review-disclosure" data-review-i18n-html="reviewsDisclosure">
               <strong>Editorial independence:</strong> Reviews are written as buying guidance for customers comparing water detector options. Product names belong to their respective owners, and review opinions are based on stated field criteria and user-facing product evaluation.
             </div>
           </div>
@@ -174,17 +174,17 @@
         <section class="section section-alt">
           <div class="container">
             <div class="section-heading">
-              <p class="eyebrow">Featured review</p>
-              <h2>Detailed product evaluation</h2>
+              <p class="eyebrow" data-review-i18n="reviewsFeaturedEyebrow">Featured review</p>
+              <h2 data-review-i18n="reviewsFeaturedTitle">Detailed product evaluation</h2>
             </div>
 
             <div class="product-grid">
               <article class="product-card review-card">
                 <img src="./assets/products/group-6.webp" alt="ADZN3000 water detector review and field testing guide" loading="lazy" />
                 <div class="product-body">
-                  <h3>ADZN3000 Review 2026: Complete Field Test Results</h3>
-                  <p>A practical review of the ADZN3000 deep water detector, including test criteria, use cases, strengths, limits, and buying guidance.</p>
-                  <a href="./reviews/adzn3000-review.html">Read full review</a>
+                  <h3 data-review-i18n="reviewsCardTitle">ADZN3000 Review 2026: Complete Field Test Results</h3>
+                  <p data-review-i18n="reviewsCardText">A practical review of the ADZN3000 deep water detector, including test criteria, use cases, strengths, limits, and buying guidance.</p>
+                  <a href="./reviews/adzn3000-review.html" data-review-i18n="reviewsCardLink">Read full review</a>
                 </div>
               </article>
             </div>
@@ -194,25 +194,25 @@
         <section class="section">
           <div class="container">
             <div class="section-heading">
-              <p class="eyebrow">Buying guides</p>
-              <h2>Selection advice by application</h2>
+              <p class="eyebrow" data-review-i18n="reviewsGuidesEyebrow">Buying guides</p>
+              <h2 data-review-i18n="reviewsGuidesTitle">Selection advice by application</h2>
             </div>
 
             <div class="value-grid home-service-grid">
               <article class="value-card guide-card">
-                <h3>Best Water Detectors for Agriculture 2026</h3>
-                <p>Compare practical detector features for irrigation planning, farm wells, and rural water source positioning.</p>
-                <a href="./contact.html" class="button secondary">Request guide</a>
+                <h3 data-review-i18n="reviewsGuide1Title">Best Water Detectors for Agriculture 2026</h3>
+                <p data-review-i18n="reviewsGuide1Text">Compare practical detector features for irrigation planning, farm wells, and rural water source positioning.</p>
+                <a href="./contact.html" class="button secondary" data-review-i18n="reviewsGuide1Cta">Request guide</a>
               </article>
               <article class="value-card guide-card">
-                <h3>How to Choose a Groundwater Finder</h3>
-                <p>Understand depth range, terrain, anti-interference capability, operating workflow, and delivery considerations.</p>
-                <a href="./products.html" class="button secondary">Compare products</a>
+                <h3 data-review-i18n="reviewsGuide2Title">How to Choose a Groundwater Finder</h3>
+                <p data-review-i18n="reviewsGuide2Text">Understand depth range, terrain, anti-interference capability, operating workflow, and delivery considerations.</p>
+                <a href="./products.html" class="button secondary" data-review-i18n="reviewsGuide2Cta">Compare products</a>
               </article>
               <article class="value-card guide-card">
-                <h3>Water Detector Shipping to the Middle East</h3>
-                <p>Review express, air freight, and sea freight timing for customers planning drilling projects and equipment procurement.</p>
-                <a href="./contact.html" class="button secondary">Ask logistics</a>
+                <h3 data-review-i18n="reviewsGuide3Title">Water Detector Shipping to the Middle East</h3>
+                <p data-review-i18n="reviewsGuide3Text">Review express, air freight, and sea freight timing for customers planning drilling projects and equipment procurement.</p>
+                <a href="./contact.html" class="button secondary" data-review-i18n="reviewsGuide3Cta">Ask logistics</a>
               </article>
             </div>
           </div>
@@ -221,11 +221,11 @@
         <section class="section section-alt">
           <div class="container cta-panel">
             <div>
-              <p class="eyebrow">Need a recommendation?</p>
-              <h2>Tell us your depth target, terrain, and drilling plan.</h2>
-              <p>We can help you compare detector options and choose a practical model for field work, resale, or project procurement.</p>
+              <p class="eyebrow" data-review-i18n="reviewsCtaEyebrow">Need a recommendation?</p>
+              <h2 data-review-i18n="reviewsCtaTitle">Tell us your depth target, terrain, and drilling plan.</h2>
+              <p data-review-i18n="reviewsCtaText">We can help you compare detector options and choose a practical model for field work, resale, or project procurement.</p>
             </div>
-            <a class="button primary" href="./contact.html">Contact sales</a>
+            <a class="button primary" href="./contact.html" data-review-i18n="reviewsCtaButton">Contact sales</a>
           </div>
         </section>
       </main>
@@ -253,5 +253,6 @@
       </footer>
     </div>
     <script src="./script.js"></script>
+    <script src="./review-translations.js"></script>
   </body>
 </html>

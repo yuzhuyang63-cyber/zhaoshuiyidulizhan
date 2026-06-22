@@ -200,7 +200,7 @@
       }
     </style>
   </head>
-  <body data-page="reviews">
+  <body data-page="reviews" data-review-page="adzn3000">
     <div class="site-shell">
       <header class="topbar">
         <div class="container topbar-inner">
@@ -243,7 +243,7 @@
             <a href="../products.html" data-i18n="navProducts">Products</a>
             <a href="../solutions.html" data-i18n="navSolutions">Solutions</a>
             <a href="../contact.html" data-i18n="navContact">Contact</a>
-            <a href="../reviews.html" class="is-active">Reviews</a>
+            <a href="../reviews.html" class="is-active" data-review-i18n="navReviews">Reviews</a>
           </div>
         </div>
       </nav>
@@ -251,22 +251,22 @@
       <main class="review-article">
         <section class="page-banner" style="background-image: url('../assets/products/group-8.webp');">
           <div class="container page-banner-inner">
-            <h1>ADZN3000 Review 2026: Complete Field Test Results</h1>
-            <a class="button primary banner-cta" href="../contact.html">Check availability</a>
+            <h1 data-review-i18n="adznHeroTitle">ADZN3000 Review 2026: Complete Field Test Results</h1>
+            <a class="button primary banner-cta" href="../contact.html" data-review-i18n="adznHeroCta">Check availability</a>
           </div>
         </section>
 
         <section class="section">
           <div class="container">
             <nav class="breadcrumb" aria-label="Breadcrumb">
-              <a href="../index.html">Home</a>
+              <a href="../index.html" data-review-i18n="crumbHome">Home</a>
               <span>/</span>
-              <a href="../reviews.html">Reviews</a>
+              <a href="../reviews.html" data-review-i18n="navReviews">Reviews</a>
               <span>/</span>
-              <span>ADZN3000 Review</span>
+              <span data-review-i18n="crumbAdzn">ADZN3000 Review</span>
             </nav>
 
-            <div class="review-disclosure">
+            <div class="review-disclosure" data-review-i18n-html="adznDisclosure">
               <strong>Editorial independence:</strong> This page is written as an independent buyer guide. Product names belong to their respective owners. The review focuses on field-use criteria, product selection, and practical purchasing questions.
             </div>
           </div>
@@ -276,12 +276,12 @@
           <div class="container review-layout">
             <img class="review-hero-img" src="../assets/products/group-6.webp" alt="ADZN3000 water detector field review and groundwater finder test" loading="lazy" />
             <article class="review-panel">
-              <p class="eyebrow">Quick summary</p>
-              <div class="rating"><span>4.2</span> Overall rating / 5</div>
-              <p><strong>Best for:</strong> small farmers, water drilling contractors, and rural drinking water projects.</p>
-              <p><strong>Pros:</strong> easy to use, portable, practical for common field conditions, and buyer-friendly for entry-level projects.</p>
-              <p><strong>Cons:</strong> performance can vary in rocky terrain, and buyers should confirm language support, warranty, and after-sales details before purchase.</p>
-              <a class="button primary" href="../contact.html">Ask for best price</a>
+              <p class="eyebrow" data-review-i18n="adznSummaryEyebrow">Quick summary</p>
+              <div class="rating"><span>4.2</span> <em data-review-i18n="adznRatingText">Overall rating / 5</em></div>
+              <p data-review-i18n-html="adznBestFor"><strong>Best for:</strong> small farmers, water drilling contractors, and rural drinking water projects.</p>
+              <p data-review-i18n-html="adznProsShort"><strong>Pros:</strong> easy to use, portable, practical for common field conditions, and buyer-friendly for entry-level projects.</p>
+              <p data-review-i18n-html="adznConsShort"><strong>Cons:</strong> performance can vary in rocky terrain, and buyers should confirm language support, warranty, and after-sales details before purchase.</p>
+              <a class="button primary" href="../contact.html" data-review-i18n="adznBestPrice">Ask for best price</a>
             </article>
           </div>
         </section>
@@ -289,33 +289,33 @@
         <section class="section">
           <div class="container">
             <div class="section-heading">
-              <p class="eyebrow">Testing methodology</p>
-              <h2>How this review evaluates the ADZN3000</h2>
-              <p>
+              <p class="eyebrow" data-review-i18n="adznMethodEyebrow">Testing methodology</p>
+              <h2 data-review-i18n="adznMethodTitle">How this review evaluates the ADZN3000</h2>
+              <p data-review-i18n="adznMethodText">
                 This review evaluates the ADZN3000 using buyer-facing criteria: target detection depth, ease of operation, stability in different geological conditions, portability, support needs, and suitability for drilling-related projects.
               </p>
             </div>
 
             <table class="spec-table">
               <tr>
-                <th>Specification</th>
-                <th>Review note</th>
+                <th data-review-i18n="adznSpecHead1">Specification</th>
+                <th data-review-i18n="adznSpecHead2">Review note</th>
               </tr>
               <tr>
-                <td>Maximum Detection Depth</td>
-                <td>Marketed for deep groundwater detection scenarios up to 300 meters.</td>
+                <td data-review-i18n="adznSpec1Name">Maximum Detection Depth</td>
+                <td data-review-i18n="adznSpec1Text">Marketed for deep groundwater detection scenarios up to 300 meters.</td>
               </tr>
               <tr>
-                <td>Application Range</td>
-                <td>Agricultural irrigation, rural water source location, and small drilling projects.</td>
+                <td data-review-i18n="adznSpec2Name">Application Range</td>
+                <td data-review-i18n="adznSpec2Text">Agricultural irrigation, rural water source location, and small drilling projects.</td>
               </tr>
               <tr>
-                <td>Operation Style</td>
-                <td>Designed for field users who need a simpler water detector workflow.</td>
+                <td data-review-i18n="adznSpec3Name">Operation Style</td>
+                <td data-review-i18n="adznSpec3Text">Designed for field users who need a simpler water detector workflow.</td>
               </tr>
               <tr>
-                <td>Buyer Checks</td>
-                <td>Confirm manual language, warranty, support, shipping method, and local terrain suitability.</td>
+                <td data-review-i18n="adznSpec4Name">Buyer Checks</td>
+                <td data-review-i18n="adznSpec4Text">Confirm manual language, warranty, support, shipping method, and local terrain suitability.</td>
               </tr>
             </table>
           </div>
@@ -324,28 +324,28 @@
         <section class="section section-alt">
           <div class="container">
             <div class="section-heading">
-              <p class="eyebrow">Pros and cons</p>
-              <h2>Practical buying notes</h2>
+              <p class="eyebrow" data-review-i18n="adznProsConsEyebrow">Pros and cons</p>
+              <h2 data-review-i18n="adznProsConsTitle">Practical buying notes</h2>
             </div>
 
             <div class="pros-cons">
               <article>
-                <h3>Pros</h3>
+                <h3 data-review-i18n="adznProsTitle">Pros</h3>
                 <ul>
-                  <li>Simple operation flow for non-specialist buyers.</li>
-                  <li>Portable format for field visits and drilling-site preparation.</li>
-                  <li>Useful for agricultural and rural water projects.</li>
-                  <li>Good fit for buyers who need quick model comparison before quotation.</li>
-                  <li>Can be paired with export support and remote operation guidance.</li>
+                  <li data-review-i18n="adznPro1">Simple operation flow for non-specialist buyers.</li>
+                  <li data-review-i18n="adznPro2">Portable format for field visits and drilling-site preparation.</li>
+                  <li data-review-i18n="adznPro3">Useful for agricultural and rural water projects.</li>
+                  <li data-review-i18n="adznPro4">Good fit for buyers who need quick model comparison before quotation.</li>
+                  <li data-review-i18n="adznPro5">Can be paired with export support and remote operation guidance.</li>
                 </ul>
               </article>
               <article>
-                <h3>Cons</h3>
+                <h3 data-review-i18n="adznConsTitle">Cons</h3>
                 <ul>
-                  <li>Performance should be checked against local geology.</li>
-                  <li>Rocky or highly complex areas may require more careful interpretation.</li>
-                  <li>Buyers should confirm waterproofing, accessories, and manual language.</li>
-                  <li>After-sales process should be clarified before placing bulk orders.</li>
+                  <li data-review-i18n="adznCon1">Performance should be checked against local geology.</li>
+                  <li data-review-i18n="adznCon2">Rocky or highly complex areas may require more careful interpretation.</li>
+                  <li data-review-i18n="adznCon3">Buyers should confirm waterproofing, accessories, and manual language.</li>
+                  <li data-review-i18n="adznCon4">After-sales process should be clarified before placing bulk orders.</li>
                 </ul>
               </article>
             </div>
@@ -355,20 +355,20 @@
         <section class="section">
           <div class="container">
             <div class="section-heading">
-              <p class="eyebrow">Field use</p>
-              <h2>Where the ADZN3000 makes the most sense</h2>
-              <p>
+              <p class="eyebrow" data-review-i18n="adznFieldEyebrow">Field use</p>
+              <h2 data-review-i18n="adznFieldTitle">Where the ADZN3000 makes the most sense</h2>
+              <p data-review-i18n="adznFieldText">
                 The ADZN3000 is most relevant for buyers comparing portable groundwater finder options for farms, village drinking water projects, and drilling contractors working in accessible terrain. For complex mountainous, rocky, or high-interference sites, buyers should request technical guidance before ordering.
               </p>
             </div>
 
             <div class="cta-panel">
               <div>
-                <p class="eyebrow">Where to buy</p>
-                <h2>Need pricing, shipping time, or model advice?</h2>
-                <p>Send your expected depth, terrain, country, and use case. The sales team can help compare suitable water detector options and confirm shipping plans.</p>
+                <p class="eyebrow" data-review-i18n="adznBuyEyebrow">Where to buy</p>
+                <h2 data-review-i18n="adznBuyTitle">Need pricing, shipping time, or model advice?</h2>
+                <p data-review-i18n="adznBuyText">Send your expected depth, terrain, country, and use case. The sales team can help compare suitable water detector options and confirm shipping plans.</p>
               </div>
-              <a class="button primary" href="../contact.html">Contact sales</a>
+              <a class="button primary" href="../contact.html" data-review-i18n="adznContactSales">Contact sales</a>
             </div>
           </div>
         </section>
@@ -376,19 +376,19 @@
         <section class="section section-alt">
           <div class="container">
             <div class="section-heading">
-              <p class="eyebrow">FAQ</p>
-              <h2>Frequently asked questions</h2>
+              <p class="eyebrow" data-review-i18n="adznFaqEyebrow">FAQ</p>
+              <h2 data-review-i18n="adznFaqTitle">Frequently asked questions</h2>
             </div>
 
             <div class="faq-block">
-              <h3>Is the ADZN3000 suitable for agriculture?</h3>
-              <p>It can be considered for agricultural irrigation water source positioning, especially when the buyer needs a portable groundwater detector for field use.</p>
+              <h3 data-review-i18n="adznFaq1Q">Is the ADZN3000 suitable for agriculture?</h3>
+              <p data-review-i18n="adznFaq1A">It can be considered for agricultural irrigation water source positioning, especially when the buyer needs a portable groundwater detector for field use.</p>
 
-              <h3>How deep can the ADZN3000 detect water?</h3>
-              <p>The model is commonly positioned as a 300-meter deep water detector. Actual results depend on terrain, geological conditions, operation method, and interpretation quality.</p>
+              <h3 data-review-i18n="adznFaq2Q">How deep can the ADZN3000 detect water?</h3>
+              <p data-review-i18n="adznFaq2A">The model is commonly positioned as a 300-meter deep water detector. Actual results depend on terrain, geological conditions, operation method, and interpretation quality.</p>
 
-              <h3>What should buyers confirm before purchase?</h3>
-              <p>Confirm the supported language, warranty terms, accessories, shipping method, local geological suitability, and whether technical guidance is available after delivery.</p>
+              <h3 data-review-i18n="adznFaq3Q">What should buyers confirm before purchase?</h3>
+              <p data-review-i18n="adznFaq3A">Confirm the supported language, warranty terms, accessories, shipping method, local geological suitability, and whether technical guidance is available after delivery.</p>
             </div>
           </div>
         </section>
@@ -417,5 +417,6 @@
       </footer>
     </div>
     <script src="../script.js"></script>
+    <script src="../review-translations.js"></script>
   </body>
 </html>
