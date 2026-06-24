@@ -2874,8 +2874,11 @@ function syncLanguageSelects(lang) {
   });
 }
 
+let currentLanguage = "en";
+
 function setLanguage(lang, options = {}) {
   const { persist = true } = options;
+  currentLanguage = lang;
   if (persist) {
     localStorage.setItem(languageStorageKey, lang);
   }
@@ -2884,6 +2887,7 @@ function setLanguage(lang, options = {}) {
   renderProductsCatalog(lang);
   renderProductDetailPage(lang);
   refreshHomeProductSearch(lang);
+  refreshInquirySuccessCards();
   updateChatWidgetLanguage?.(lang);
 }
 
@@ -2897,7 +2901,7 @@ function getCurrentLanguage() {
   if (supportedLanguages.has(savedLang)) {
     return savedLang;
   }
-  return "en";
+  return currentLanguage;
 }
 
 function getBrowserLanguage() {
@@ -5209,45 +5213,59 @@ const inquiryConfig = {
 const inquiryCopy = {
   en: {
     sending: "Sending inquiry...",
-    success: "Inquiry submitted. We will contact you soon.",
+    successTitle: "Inquiry Submitted!",
+    successText: "We will contact you soon.",
+    successWhatsapp: "You can also reach us directly on WhatsApp for faster response:",
     error: "Inquiry submission failed. Please try again later or contact us by email.",
     invalid: "Please leave your name and at least one contact method."
   },
   zh: {
     sending: "正在提交询盘...",
-    success: "询盘已提交，我们会尽快联系你。",
+    successTitle: "询盘已提交成功！",
+    successText: "我们会尽快联系你",
+    successWhatsapp: "也可以直接添加 WhatsApp 快速沟通：",
     error: "询盘提交失败，请稍后重试或直接发邮件联系我们。",
     invalid: "请留下姓名，并至少填写邮箱或 WhatsApp。"
   },
   ar: {
     sending: "جارٍ إرسال الاستفسار...",
-    success: "تم إرسال الاستفسار. سنتواصل معك قريباً.",
+    successTitle: "تم إرسال الاستفسار بنجاح!",
+    successText: "سنتواصل معك قريباً",
+    successWhatsapp: "يمكنك أيضاً التواصل معنا مباشرة عبر واتساب:",
     error: "فشل إرسال الاستفسار. يرجى المحاولة لاحقاً أو التواصل معنا عبر البريد الإلكتروني.",
     invalid: "يرجى ترك الاسم وطريقة تواصل واحدة على الأقل."
   },
   tr: {
     sending: "Talep gönderiliyor...",
-    success: "Talebiniz gönderildi. Sizinle kısa sürede iletişime geçeceğiz.",
+    successTitle: "Talebiniz gönderildi!",
+    successText: "Sizinle kısa sürede iletişime geçeceğiz.",
+    successWhatsapp: "Daha hızlı yanıt için doğrudan WhatsApp'tan da ulaşabilirsiniz:",
     error: "Talep gönderilemedi. Lütfen daha sonra deneyin veya bize e-posta ile ulaşın.",
     invalid: "Lütfen adınızı ve en az bir iletişim bilgisini bırakın."
   },
   fa: {
     sending: "در حال ارسال درخواست...",
-    success: "درخواست ارسال شد. به زودی با شما تماس می گیریم.",
+    successTitle: "درخواست با موفقیت ارسال شد!",
+    successText: "به زودی با شما تماس می گیریم",
+    successWhatsapp: "همچنین می توانید مستقیماً از طریق واتساپ با ما تماس بگیرید:",
     error: "ارسال درخواست ناموفق بود. لطفاً بعداً تلاش کنید یا از طریق ایمیل با ما تماس بگیرید.",
     invalid: "لطفاً نام و حداقل یک روش تماس را وارد کنید."
   },
   fr: {
     sending: "Envoi de la demande...",
-    success: "Demande envoyee. Nous vous contacterons bientot.",
-    error: "Echec de l'envoi. Veuillez reessayer plus tard ou nous contacter par e-mail.",
+    successTitle: "Demande envoyée avec succès !",
+    successText: "Nous vous contacterons bientôt.",
+    successWhatsapp: "Vous pouvez également nous contacter directement sur WhatsApp :",
+    error: "Échec de l'envoi. Veuillez réessayer plus tard ou nous contacter par e-mail.",
     invalid: "Veuillez indiquer votre nom et au moins un moyen de contact."
   },
   es: {
     sending: "Enviando consulta...",
-    success: "Consulta enviada. Le contactaremos pronto.",
-    error: "No se pudo enviar la consulta. Intente mas tarde o contactenos por correo.",
-    invalid: "Por favor deje su nombre y al menos un metodo de contacto."
+    successTitle: "¡Consulta enviada con éxito!",
+    successText: "Le contactaremos pronto.",
+    successWhatsapp: "También puede contactarnos directamente por WhatsApp:",
+    error: "No se pudo enviar la consulta. Intente más tarde o contáctenos por correo.",
+    invalid: "Por favor deje su nombre y al menos un método de contacto."
   }
 };
 
@@ -5341,6 +5359,91 @@ async function submitInquiry(payload) {
   throw lastError;
 }
 
+const WHATSAPP_DIGITS = "8618319333114";
+const WHATSAPP_DISPLAY = "+86 18319333114";
+
+function renderInquirySuccess(form, copy) {
+  form.reset();
+
+  const whatsappLink = `https://wa.me/${WHATSAPP_DIGITS}`;
+  const overlay = document.createElement("div");
+  overlay.className = "inquiry-success-overlay";
+  overlay.setAttribute("role", "dialog");
+  overlay.setAttribute("aria-modal", "true");
+  overlay.setAttribute("aria-label", copy.successTitle);
+  overlay.innerHTML = `
+    <div class="inquiry-success-card">
+      <button class="inquiry-success-close" type="button" aria-label="Close">&times;</button>
+      <div class="inquiry-success-icon" aria-hidden="true">
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="32" r="30" fill="#16a34a" stroke="#15803d" stroke-width="2"/>
+          <path d="M19 35l8 7 18-19" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h3 class="inquiry-success-title">${escapeHtml(copy.successTitle)}</h3>
+      <p class="inquiry-success-text">${escapeHtml(copy.successText)}</p>
+      <div class="inquiry-success-whatsapp">
+        <p>${escapeHtml(copy.successWhatsapp)}</p>
+        <a class="button primary" href="${whatsappLink}" target="_blank" rel="noopener">
+          <span class="wa-icon" aria-hidden="true">💬</span>
+          ${escapeHtml(WHATSAPP_DISPLAY)}
+        </a>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(overlay);
+  document.body.style.overflow = "hidden";
+
+  const close = () => {
+    overlay.classList.remove("is-open");
+    overlay.classList.add("is-closing");
+    document.body.style.overflow = "";
+    const remove = () => overlay.remove();
+    overlay.addEventListener("transitionend", remove, { once: true });
+    setTimeout(() => {
+      overlay.removeEventListener("transitionend", remove);
+      if (overlay.parentNode) overlay.remove();
+    }, 500);
+  };
+
+  overlay.querySelector(".inquiry-success-close").addEventListener("click", close);
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) close();
+  });
+  document.addEventListener("keydown", function onEsc(e) {
+    if (e.key === "Escape") {
+      document.removeEventListener("keydown", onEsc);
+      close();
+    }
+  });
+
+  requestAnimationFrame(() => {
+    overlay.classList.add("is-open");
+    overlay.querySelector(".inquiry-success-card")?.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+
+  overlay._close = close;
+  form._inquirySuccessOverlay = overlay;
+}
+
+function refreshInquirySuccessCards() {
+  document.querySelectorAll(".contact-form").forEach((form) => {
+    const overlay = form._inquirySuccessOverlay;
+    if (overlay && overlay.parentNode) {
+      const copy = getInquiryCopy();
+      const whatsappLink = `https://wa.me/${WHATSAPP_DIGITS}`;
+      const card = overlay.querySelector(".inquiry-success-card");
+      if (card) {
+        card.querySelector(".inquiry-success-title").textContent = copy.successTitle;
+        card.querySelector(".inquiry-success-text").textContent = copy.successText;
+        card.querySelector(".inquiry-success-whatsapp p").textContent = copy.successWhatsapp;
+      }
+      overlay.setAttribute("aria-label", copy.successTitle);
+    }
+  });
+}
+
 function setInquiryStatus(form, message, tone) {
   let status = form.querySelector(".form-status");
   if (!status) {
@@ -5392,12 +5495,10 @@ document.addEventListener(
 
     try {
       await submitInquiry(payload);
-      form.reset();
-      setInquiryStatus(form, copy.success, "success");
+      renderInquirySuccess(form, copy);
     } catch (error) {
       const detail = error instanceof Error ? error.message : String(error);
       setInquiryStatus(form, `${copy.error} ${detail}`.trim(), "error");
-    } finally {
       if (submitButton instanceof HTMLButtonElement) {
         submitButton.disabled = false;
       }
@@ -5408,8 +5509,8 @@ document.addEventListener(
 
 function createChatWidget() {
   const whatsappConfig = {
-    phoneDigits: "8615261404133",
-    phoneDisplay: "+86 152 6140 4133",
+    phoneDigits: "8618319333114",
+    phoneDisplay: "+86 18319333114",
     avatarSrc: "./service.png",
     autoOpenDelayMs: 10000,
     autoOpenedKey: "aquascan-chat-auto-opened",
