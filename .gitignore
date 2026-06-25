@@ -6,5 +6,7 @@ data/
 logs/
 .venv/
 node_modules/
+/media/*.mp4
+!/media/home-banner.mp4
 *-check*.png
 /*.png

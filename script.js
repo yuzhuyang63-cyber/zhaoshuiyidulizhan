@@ -1830,7 +1830,6 @@ const productCatalog = {
       "./assets/products/adzn300-thumb-2.webp",
       "./assets/products/adzn300-thumb-3.webp"
     ],
-    videoFile: "./media/adzn300-intro.mp4",
     videoLink: "https://www.environmental-expert.com/videos/underground-water-detector-farm-life-device-video-748696",
     introImages: [
       "./assets/products/adzn300-intro-1.webp",
@@ -1996,7 +1995,6 @@ const productCatalog = {
       "./assets/products/admt-300sx-thumb-2.webp",
       "./assets/products/admt-300sx-thumb-3.webp"
     ],
-    videoFile: "./media/admt-300sx-video.mp4",
     videoLink: "https://uigdetectors.com/underground-water-detectors/",
     introImages: [
       "./assets/products/admt-300sx-intro-1.avif",
@@ -2116,7 +2114,6 @@ const productCatalog = {
       "./assets/products/admt-300s-thumb-3.webp",
       "./assets/products/admt-300s-thumb-4.webp"
     ],
-    videoFile: "./media/admt-300s-video.mp4",
     videoLink: "https://manuals.plus/video/8d4c1083fa8c45671dcbd8874a2fe462f05c91ec0d3f2b224e5d42bfc84fe01f",
     introImages: [
       "./assets/products/admt-300s-intro-1.avif",
@@ -2238,7 +2235,6 @@ const productCatalog = {
       "./assets/products/jingubang-thumb-4.webp",
       "./assets/products/jingubang-thumb-5.webp"
     ],
-    videoFile: "./media/jingubang-video.mp4",
     videoLink: "https://www.environmental-expert.com/videos/underground-water-detector-farm-life-device-video-748696",
     introImages: [
       "./assets/products/jingubang-intro-1.avif",
@@ -2592,7 +2588,7 @@ productCatalog.p7.gallery = [
   "./assets/products/a1d-c1-detail-3.webp",
   "./assets/products/a1d-c1-detail-4.webp"
 ];
-productCatalog.p7.videoFile = "./media/a1d-c1-a1d-c1-cx-video.mp4";
+/*** videoFile removed – using YouTube only ***/
 productCatalog.p7.introImages = [
   "./assets/products/a1d-c1-intro-1.avif",
   "./assets/products/a1d-c1-intro-2.avif",
@@ -2620,7 +2616,7 @@ productCatalog.p8.gallery = [
   "./assets/products/admt-120n-detail-2.webp",
   "./assets/products/admt-120n-detail-3.webp"
 ];
-productCatalog.p8.videoFile = "./media/admt-120n-video.mp4";
+/*** videoFile removed – using YouTube only ***/
 productCatalog.p8.category = "high-density";
 productCatalog.p8.introImages = [
   "./assets/products/admt-120n-intro-1.avif",
@@ -2846,7 +2842,6 @@ const navLinks = document.querySelector(".nav-links");
 const galleryState = { index: 0, productId: null };
 const productListState = { category: "selected", page: 1, pageSize: 9 };
 const productOrder = ["p1", "p4", "p5", "p6", "p7", "p8"];
-const defaultProductVideoFile = "assets/seo-images/89516113d62bd6981949e81df299d11f.mp4";
 const productYouTubeVideoIds = {
   p1: "qLt9DAMcmjI",
   p4: "pbMWQWbP9lM",
@@ -4428,10 +4423,8 @@ function getProductVideoObject(productId, product, content, descriptionText) {
   if (youtubeId) {
     videoObject.embedUrl = getYouTubeEmbedUrl(youtubeId);
     videoObject.contentUrl = getYouTubeWatchUrl(youtubeId);
-  } else if (product.videoFile) {
-    videoObject.contentUrl = new URL(product.videoFile, window.location.href).href;
-  } else if (defaultProductVideoFile) {
-    videoObject.contentUrl = new URL(defaultProductVideoFile, window.location.href).href;
+  } else {
+    videoObject.contentUrl = getYouTubeWatchUrl(youtubeId);
   }
 
   const uploadDate = getProductVideoUploadDate(productId, product);
@@ -4599,8 +4592,7 @@ function renderProductVideo(productId, product, content) {
   }
 
   const youtubeId = getProductYouTubeId(productId, product);
-  const localVideoFile = product.videoFile || defaultProductVideoFile;
-  const posterImage = youtubeId ? getYouTubeThumbnailUrl(youtubeId) : (product.gallery?.[0] || "");
+  const posterImage = getYouTubeThumbnailUrl(youtubeId);
   const posterAlt = `${content.name} groundwater detector product video`;
 
   placeholder.hidden = false;
@@ -4618,19 +4610,9 @@ function renderProductVideo(productId, product, content) {
 
   placeholder.onclick = () => {
     placeholder.hidden = true;
-    if (youtubeId) {
-      youtubePlayer.title = `${content.name} product video`;
-      youtubePlayer.src = getYouTubeEmbedUrl(youtubeId, true);
-      youtubePlayer.hidden = false;
-      return;
-    }
-
-    localPlayer.poster = posterImage;
-    localPlayer.src = localVideoFile;
-    localPlayer.setAttribute("aria-label", `${content.name} video`);
-    localPlayer.hidden = false;
-    localPlayer.load();
-    localPlayer.play().catch(() => {});
+    youtubePlayer.title = `${content.name} product video`;
+    youtubePlayer.src = getYouTubeEmbedUrl(youtubeId, true);
+    youtubePlayer.hidden = false;
   };
 }
 
