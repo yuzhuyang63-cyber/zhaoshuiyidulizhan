@@ -5387,6 +5387,13 @@ function renderInquirySuccess(form, copy) {
       overlay.removeEventListener("transitionend", remove);
       if (overlay.parentNode) overlay.remove();
     }, 500);
+
+    // 重置表单提交状态：隐藏 "正在提交询盘..." 并重新启用按钮
+    setInquiryStatus(form, "", "");
+    const btn = form.querySelector("button[type='submit']");
+    if (btn instanceof HTMLButtonElement) {
+      btn.disabled = false;
+    }
   };
 
   overlay.querySelector(".inquiry-success-close").addEventListener("click", close);
