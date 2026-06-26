@@ -5780,7 +5780,7 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
   });
 });
 
-document.querySelectorAll(".contact-form").forEach((form) => {
+document.querySelectorAll(".contact-form-demo-disabled").forEach((form) => {
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     const lang = getCurrentLanguage();

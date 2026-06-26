@@ -72,6 +72,14 @@ def get_bool_env(name: str, default: bool) -> bool:
     return raw_value not in {"0", "false", "no", "off"}
 
 
+def get_tuple_env(name: str) -> tuple[str, ...]:
+    return tuple(
+        item.strip()
+        for item in os.getenv(name, "").replace(";", ",").split(",")
+        if item.strip()
+    )
+
+
 def resolve_path(raw_path: str, default_path: Path) -> Path:
     path = Path(raw_path.strip()) if raw_path.strip() else default_path
     if path.is_absolute():
@@ -109,6 +117,10 @@ class AppConfig:
     smtp_to: tuple[str, ...]
     smtp_use_ssl: bool
     smtp_use_tls: bool
+    inquiry_retention_days: int
+    inquiry_allowed_origins: tuple[str, ...]
+    inquiry_daily_report_hour: int
+    inquiry_daily_report_minute: int
 
     @classmethod
     def from_env(cls) -> "AppConfig":
@@ -146,13 +158,13 @@ class AppConfig:
             smtp_user=os.getenv("SMTP_USER", "").strip(),
             smtp_password=os.getenv("SMTP_PASSWORD", "").strip(),
             smtp_from=get_env_value("SMTP_FROM", "SMTP_USER"),
-            smtp_to=tuple(
-                item.strip()
-                for item in os.getenv("INQUIRY_TO", "").replace(";", ",").split(",")
-                if item.strip()
-            ),
+            smtp_to=get_tuple_env("INQUIRY_TO"),
             smtp_use_ssl=get_bool_env("SMTP_USE_SSL", True),
             smtp_use_tls=get_bool_env("SMTP_USE_TLS", False),
+            inquiry_retention_days=get_int_env("INQUIRY_RETENTION_DAYS", 0),
+            inquiry_allowed_origins=get_tuple_env("INQUIRY_ALLOWED_ORIGINS"),
+            inquiry_daily_report_hour=get_int_env("INQUIRY_DAILY_REPORT_HOUR", 21),
+            inquiry_daily_report_minute=get_int_env("INQUIRY_DAILY_REPORT_MINUTE", 0),
         )
 
 

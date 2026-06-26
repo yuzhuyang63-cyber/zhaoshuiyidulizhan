@@ -136,3 +136,29 @@ curl -X POST https://example.com/api/inquiry \
 The public endpoint should report `rag_ready: true` and `api_configured: true`.
 
 Inquiry submissions are stored on the server under `/opt/zhaoshuiyidulizhan/data/inquiries/`.
+Each successful submission also refreshes the long-term Excel statistics report:
+
+- `/opt/zhaoshuiyidulizhan/data/inquiries/reports/inquiry-statistics.xlsx`
+
+The long-term report is generated from all saved inquiry records and includes
+raw inquiries plus daily, weekly, monthly, quarterly, yearly, and product
+interest summaries. Monthly report files are still generated as
+`inquiry-report-YYYY-MM.xlsx` when needed.
+
+When SMTP is configured, inquiry notification emails and the daily scheduled
+report email use the existing `INQUIRY_TO` destination mailbox list. The daily
+statistics email is sent by the backend at 21:00 China time by default.
+
+Optional inquiry settings in `.env`:
+
+```bash
+INQUIRY_RETENTION_DAYS=0
+INQUIRY_DAILY_REPORT_HOUR=21
+INQUIRY_DAILY_REPORT_MINUTE=0
+INQUIRY_ALLOWED_ORIGINS=https://cyqwater.com,https://www.cyqwater.com
+```
+
+`INQUIRY_RETENTION_DAYS=0` means keep historical inquiry data indefinitely, which
+preserves yearly, quarterly, monthly, and weekly statistics continuity.
+`INQUIRY_ALLOWED_ORIGINS` limits cross-origin browser calls to the inquiry API;
+same-origin website submissions continue to work without adding the domain here.

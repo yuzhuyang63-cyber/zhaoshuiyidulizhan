@@ -5,6 +5,7 @@
 - `knowledge_base.py`: local knowledge base loading and retrieval
 - `chat_service.py`: RAG reply generation and model access
 - `inquiry_service.py`: inquiry validation and persistence
+- `inquiry_report.py`: long-term Excel inquiry reports with daily, weekly, monthly, quarterly, yearly, and interest summaries
 - `http_server.py`: HTTP routes and request logging
 - `main.py`: application wiring and server startup
 
