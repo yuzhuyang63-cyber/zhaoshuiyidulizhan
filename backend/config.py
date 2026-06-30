@@ -121,6 +121,15 @@ class AppConfig:
     inquiry_allowed_origins: tuple[str, ...]
     inquiry_daily_report_hour: int
     inquiry_daily_report_minute: int
+    geoip_enabled: bool
+    geoip_api_url_template: str
+    geoip_timeout_seconds: int
+    feishu_enabled: bool
+    feishu_app_id: str
+    feishu_app_secret: str
+    feishu_bitable_app_token: str
+    feishu_customer_table_id: str
+    feishu_api_base_url: str
 
     @classmethod
     def from_env(cls) -> "AppConfig":
@@ -165,6 +174,16 @@ class AppConfig:
             inquiry_allowed_origins=get_tuple_env("INQUIRY_ALLOWED_ORIGINS"),
             inquiry_daily_report_hour=get_int_env("INQUIRY_DAILY_REPORT_HOUR", 21),
             inquiry_daily_report_minute=get_int_env("INQUIRY_DAILY_REPORT_MINUTE", 0),
+            geoip_enabled=get_bool_env("GEOIP_ENABLED", False),
+            geoip_api_url_template=os.getenv("GEOIP_API_URL_TEMPLATE", "").strip(),
+            geoip_timeout_seconds=get_int_env("GEOIP_TIMEOUT_SECONDS", 3),
+            feishu_enabled=get_bool_env("FEISHU_ENABLED", False),
+            feishu_app_id=os.getenv("FEISHU_APP_ID", "").strip(),
+            feishu_app_secret=os.getenv("FEISHU_APP_SECRET", "").strip(),
+            feishu_bitable_app_token=os.getenv("FEISHU_BITABLE_APP_TOKEN", "").strip(),
+            feishu_customer_table_id=os.getenv("FEISHU_CUSTOMER_TABLE_ID", "").strip(),
+            feishu_api_base_url=os.getenv("FEISHU_API_BASE_URL", "https://open.feishu.cn").strip()
+            or "https://open.feishu.cn",
         )
 
 

@@ -6,6 +6,7 @@
 - `chat_service.py`: RAG reply generation and model access
 - `inquiry_service.py`: inquiry validation and persistence
 - `inquiry_report.py`: long-term Excel inquiry reports with daily, weekly, monthly, quarterly, yearly, and interest summaries
+- `feishu_service.py`: Feishu Bitable customer tracking record creation
 - `http_server.py`: HTTP routes and request logging
 - `main.py`: application wiring and server startup
 

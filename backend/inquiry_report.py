@@ -35,8 +35,7 @@ INQUIRY_HEADERS = [
     "\u90ae\u7bb1",
     "WhatsApp",
     "\u610f\u5411\u4ea7\u54c1",
-    "\u9875\u9762\u8bed\u8a00",
-    "\u6765\u6e90\u9875\u9762",
+    "\u5730\u533a\u540d\u79f0",
     "\u8bbf\u5ba2IP",
     "\u6d4f\u89c8\u5668\u4fe1\u606f",
     "\u7559\u8a00\u5185\u5bb9",
@@ -390,8 +389,7 @@ def inquiry_record_row(record: dict) -> list[object]:
         record.get("email", ""),
         record.get("whatsapp", ""),
         record.get("interest", ""),
-        record.get("language", ""),
-        record.get("source_page", ""),
+        record.get("country") or record.get("region") or "",
         visitor_ip,
         record.get("user_agent", ""),
         record.get("message", ""),
@@ -516,7 +514,7 @@ def write_monthly_inquiry_report(inquiry_dir: Path, month_key: str) -> Path:
     inquiry_rows, daily_rows, interest_rows = build_report_rows(records, month_key)
     sheet_names = [SHEET_INQUIRIES, SHEET_MONTH_DAILY, SHEET_PRODUCT]
     worksheets = [
-        worksheet_xml(inquiry_rows, column_widths=[14, 21, 18, 22, 28, 20, 24, 12, 28, 22, 42, 60]),
+        worksheet_xml(inquiry_rows, column_widths=[14, 21, 18, 22, 28, 20, 24, 18, 22, 42, 60]),
         worksheet_xml(daily_rows, column_widths=[16, 16], drawing_relationship_id="rId1"),
         worksheet_xml(interest_rows, column_widths=[30, 16]),
     ]
@@ -543,7 +541,7 @@ def write_inquiry_statistics_report(inquiry_dir: Path) -> Path:
         SHEET_PRODUCT,
     ]
     worksheets = [
-        worksheet_xml(inquiry_rows, column_widths=[14, 21, 18, 22, 28, 20, 24, 12, 28, 22, 42, 60]),
+        worksheet_xml(inquiry_rows, column_widths=[14, 21, 18, 22, 28, 20, 24, 18, 22, 42, 60]),
         worksheet_xml(month_daily_rows, column_widths=[16, 16], drawing_relationship_id="rId1"),
         worksheet_xml(weekly_rows, column_widths=[16, 16]),
         worksheet_xml(monthly_rows, column_widths=[16, 16]),

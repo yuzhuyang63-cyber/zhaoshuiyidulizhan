@@ -1,10 +1,14 @@
 from __future__ import annotations
 
 import calendar
+import ipaddress
 import json
 import logging
 import re
 import smtplib
+import urllib.error
+import urllib.parse
+import urllib.request
 from datetime import datetime, timedelta, timezone
 from email.message import EmailMessage
 from pathlib import Path
@@ -29,12 +33,120 @@ def clean_form_text(value: object, *, limit: int = 1000) -> str:
     return normalize_text(str(value or ""))[:limit]
 
 
+COUNTRY_HEADER_NAMES = (
+    "CF-IPCountry",
+    "CloudFront-Viewer-Country",
+    "X-Vercel-IP-Country",
+    "X-Country-Code",
+    "X-Appengine-Country",
+)
+
+COUNTRY_NAMES_ZH = {
+    "AE": "阿联酋",
+    "AR": "阿根廷",
+    "AU": "澳大利亚",
+    "BR": "巴西",
+    "CA": "加拿大",
+    "CL": "智利",
+    "CN": "中国",
+    "DE": "德国",
+    "ES": "西班牙",
+    "FR": "法国",
+    "GB": "英国",
+    "ID": "印度尼西亚",
+    "IN": "印度",
+    "IT": "意大利",
+    "JP": "日本",
+    "KR": "韩国",
+    "MX": "墨西哥",
+    "MY": "马来西亚",
+    "NL": "荷兰",
+    "PH": "菲律宾",
+    "RU": "俄罗斯",
+    "SA": "沙特阿拉伯",
+    "SG": "新加坡",
+    "TH": "泰国",
+    "TR": "土耳其",
+    "US": "美国",
+    "VN": "越南",
+    "ZA": "南非",
+}
+
+
+def country_name_from_code(value: object) -> str:
+    country_code = clean_form_text(value, limit=32).upper()
+    if country_code in {"", "XX", "ZZ", "T1"}:
+        return ""
+    if re.fullmatch(r"[A-Z]{2}", country_code):
+        country_name = COUNTRY_NAMES_ZH.get(country_code)
+        return f"{country_name} ({country_code})" if country_name else country_code
+    return clean_form_text(value, limit=80)
+
+
+def detect_country_from_headers(headers) -> str:
+    for header_name in COUNTRY_HEADER_NAMES:
+        country = country_name_from_code(headers.get(header_name, ""))
+        if country:
+            return country
+    return ""
+
+
+def first_public_ip(*values: object) -> str:
+    for value in values:
+        for part in str(value or "").split(","):
+            ip_text = part.strip().strip("[]")
+            if not ip_text:
+                continue
+            try:
+                ip_value = ipaddress.ip_address(ip_text)
+            except ValueError:
+                continue
+            if (
+                ip_value.is_loopback
+                or ip_value.is_private
+                or ip_value.is_reserved
+                or ip_value.is_multicast
+                or ip_value.is_unspecified
+            ):
+                continue
+            return str(ip_value)
+    return ""
+
+
+def country_from_geoip_payload(payload: dict) -> str:
+    if not isinstance(payload, dict):
+        return ""
+
+    status = str(payload.get("status") or "").lower()
+    if status and status not in {"success", "ok"}:
+        return ""
+    if payload.get("success") is False:
+        return ""
+
+    data = payload.get("data") if isinstance(payload.get("data"), dict) else {}
+    country_code = (
+        payload.get("country_code")
+        or payload.get("countryCode")
+        or payload.get("country_code2")
+        or data.get("country_code")
+        or data.get("countryCode")
+        or payload.get("country")
+    )
+    country = country_name_from_code(country_code)
+    if country:
+        return country
+
+    country_name = payload.get("country") or payload.get("country_name") or data.get("country") or data.get("country_name")
+    return clean_form_text(country_name, limit=80)
+
+
 class InquiryService:
     def __init__(self, config: AppConfig):
         self.config = config
         self.inquiry_dir = config.inquiry_dir
         self.logger = get_logger()
         self._last_cleanup_date = None
+        self._geoip_cache: dict[str, str] = {}
         self.cleanup_old_inquiry_files(force=True)
 
     def validate_payload(self, payload: dict) -> dict:
@@ -68,6 +180,52 @@ class InquiryService:
             "source_page": source_page,
         }
 
+    def lookup_country_by_ip(self, ip_address: str) -> str:
+        if not self.config.geoip_enabled or not self.config.geoip_api_url_template or not ip_address:
+            return ""
+        if ip_address in self._geoip_cache:
+            return self._geoip_cache[ip_address]
+
+        encoded_ip = urllib.parse.quote(ip_address, safe="")
+        url = self.config.geoip_api_url_template.format(ip=encoded_ip)
+        request = urllib.request.Request(
+            url,
+            headers={
+                "Accept": "application/json",
+                "User-Agent": "zhaoshuiyidulizhan-inquiry/1.0",
+            },
+        )
+
+        try:
+            with urllib.request.urlopen(request, timeout=max(1, self.config.geoip_timeout_seconds)) as response:
+                response_body = response.read().decode("utf-8")
+            country = country_from_geoip_payload(json.loads(response_body))
+        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError, ValueError) as exc:
+            country = ""
+            log_event(
+                self.logger,
+                logging.WARNING,
+                "geoip_lookup_failed",
+                "IP country lookup failed",
+                exc_info=exc,
+                error_type=type(exc).__name__,
+            )
+
+        self._geoip_cache[ip_address] = country
+        return country
+
+    def detect_country(self, handler) -> str:
+        header_country = detect_country_from_headers(handler.headers)
+        if header_country:
+            return header_country
+
+        visitor_ip = first_public_ip(
+            handler.headers.get("X-Real-IP", ""),
+            handler.headers.get("X-Forwarded-For", ""),
+            handler.client_address[0],
+        )
+        return self.lookup_country_by_ip(visitor_ip)
+
     def persist(self, payload: dict, handler) -> dict:
         self.inquiry_dir.mkdir(parents=True, exist_ok=True)
         inquiry_id = uuid4().hex[:12]
@@ -76,6 +234,7 @@ class InquiryService:
             "created_at": utc_now_iso(),
             "remote_addr": handler.client_address[0],
             "forwarded_for": handler.headers.get("X-Forwarded-For", ""),
+            "country": self.detect_country(handler),
             "user_agent": clean_form_text(handler.headers.get("User-Agent", ""), limit=300),
             "referer": clean_form_text(handler.headers.get("Referer", ""), limit=300),
             **payload,
@@ -166,8 +325,7 @@ class InquiryService:
             ("Customer email", inquiry.get("email", "")),
             ("WhatsApp", inquiry.get("whatsapp", "")),
             ("Interested product", inquiry.get("interest", "")),
-            ("Page language", inquiry.get("language", "")),
-            ("Source page", inquiry.get("source_page", "")),
+            ("Country/Region", inquiry.get("country", "")),
             ("Visitor IP", inquiry.get("forwarded_for") or inquiry.get("remote_addr", "")),
         ]
         lines = ["New website inquiry received", ""]

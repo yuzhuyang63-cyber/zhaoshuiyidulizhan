@@ -162,3 +162,75 @@ INQUIRY_ALLOWED_ORIGINS=https://cyqwater.com,https://www.cyqwater.com
 preserves yearly, quarterly, monthly, and weekly statistics continuity.
 `INQUIRY_ALLOWED_ORIGINS` limits cross-origin browser calls to the inquiry API;
 same-origin website submissions continue to work without adding the domain here.
+
+## Feishu customer tracking
+
+The backend can append every new inquiry to one Feishu Bitable customer tracking
+table. It only creates a new record; it does not overwrite existing rows edited
+by sales.
+
+Create these fields in the Feishu customer table:
+
+```text
+询盘编号
+提交时间
+客户名单
+地区名称
+客户场景
+沟通进程
+客户要求
+是否需要跟进
+已购买
+购买金额
+成本
+利润
+发货形式
+发货状态
+售后跟踪
+跟进备注
+下次跟进时间
+最后更新时间
+公司名称
+邮箱
+WhatsApp
+意向产品
+访客IP
+```
+
+Recommended first-pass field types: text for most fields, single-select for
+status fields such as `沟通进程`, `是否需要跟进`, `已购买`, `发货形式`, `发货状态`,
+and `售后跟踪`. The backend sends default values such as `新询盘`, `是`, `否`,
+`未确定`, `未发货`, and `未开始`.
+
+`地区名称` is filled automatically from server-side country headers such as
+`CF-IPCountry`, `CloudFront-Viewer-Country`, or `X-Vercel-IP-Country` when your
+CDN/reverse proxy provides them. If no country header is available, the field is
+looked up through the optional GeoIP API below; if both methods fail, the field
+is left empty.
+
+Optional GeoIP API settings:
+
+```bash
+GEOIP_ENABLED=1
+GEOIP_API_URL_TEMPLATE=https://ipwho.is/{ip}?lang=zh-CN
+GEOIP_TIMEOUT_SECONDS=3
+```
+
+`GEOIP_API_URL_TEMPLATE` must contain `{ip}`. Free IP lookup APIs are usually
+enough for low inquiry volume, but they may have rate limits, availability
+limits, or commercial-use restrictions. For stable production use, replace the
+URL with a paid API or a local IP database provider.
+
+Add these settings to `.env` after creating a Feishu self-built app and granting
+it Bitable permissions:
+
+```bash
+FEISHU_ENABLED=1
+FEISHU_APP_ID=
+FEISHU_APP_SECRET=
+FEISHU_BITABLE_APP_TOKEN=
+FEISHU_CUSTOMER_TABLE_ID=
+```
+
+If Feishu sync fails, the inquiry is still saved locally and email reporting
+continues; the failure is written to the backend log.

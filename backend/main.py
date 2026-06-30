@@ -18,12 +18,14 @@ if __package__ in {None, ""}:
 
     from backend.app_context import AppContext
     from backend.config import load_runtime_config
+    from backend.feishu_service import FeishuService
     from backend.http_server import ChatHTTPServer, ChatRequestHandler
     from backend.inquiry_service import InquiryService
     from backend.logging_setup import configure_logging, log_event
 else:
     from .app_context import AppContext
     from .config import load_runtime_config
+    from .feishu_service import FeishuService
     from .http_server import ChatHTTPServer, ChatRequestHandler
     from .inquiry_service import InquiryService
     from .logging_setup import configure_logging, log_event
@@ -40,6 +42,7 @@ def create_app_context() -> AppContext:
         config=config,
         logger=logger,
         inquiry_service=InquiryService(config),
+        feishu_service=FeishuService(config),
     )
 
 
