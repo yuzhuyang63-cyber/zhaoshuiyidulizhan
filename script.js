@@ -2,7 +2,7 @@ const translations = {
   en: {
     toplineEmail: "Email: cyqfactory@cyqwater.com",
     toplinePhone: "WhatsApp: +86 18319333114",
-    brandTag: "Groundwater Detection Systems",
+    brandTag: "Groundwater Detector Supply & Support",
     navHome: "Home",
     navAbout: "About",
     navProducts: "Products",
@@ -17,7 +17,6 @@ const translations = {
     detailSecondaryAction: "Back to products",
     detailNavVideo: "Video introduction",
     detailNavTech: "Technical parameters",
-    detailNavIntro: "Product introduction",
     detailOverviewEyebrow: "Overview",
     detailOverviewTitle: "Product highlights",
     detailSpecsEyebrow: "Key specifications",
@@ -26,8 +25,6 @@ const translations = {
     detailVideoAction: "Watch demo video",
     detailTechEyebrow: "Technical parameters",
     detailTechTitle: "Main models and technical parameters",
-    detailIntroEyebrow: "Product introduction",
-    detailIntroTitle: "Product introduction",
     detailPosterEyebrow: "Product poster",
     detailTabDescription: "Description",
     detailTabUsage: "Usage",
@@ -42,6 +39,15 @@ const translations = {
     detailMessageLabel: "Required materials",
     detailMessagePlaceholder:
       "Tell us whether you need price, poster, video, sample policy, or distributor support.",
+    detailQualificationEyebrow: "Before quotation",
+    detailQualificationTitle: "Information that helps us recommend accurately",
+    detailQualificationText: "A clear project background helps reduce repeated communication and improves quotation quality.",
+    detailQualification1: "Target country or project area",
+    detailQualification2: "Expected detection depth and drilling purpose",
+    detailQualification3: "Terrain type: desert, farm, mountain, clay, or rocky area",
+    detailQualification4: "Buyer role: contractor, farm owner, distributor, or project team",
+    detailQualification5: "Quantity, delivery time, and preferred shipping method",
+    detailQualification6: "Documents needed for import or internal approval",
     stripPhoneLabel: "WhatsApp",
     stripPhoneText: "Fast response for dealers and drilling contractors.",
     stripEmailLabel: "Email",
@@ -69,15 +75,15 @@ const translations = {
     homeSpotlightLabel: "Featured system",
     homeSpotlightTitle: "Quick Version Intelligent High-density Groundwater Detector",
     homeSpotlightMeta: "AI analysis · Multi-channel · Auto imaging",
-    homeBannerEyebrow: "Middle East groundwater solutions",
+    homeBannerEyebrow: "Global and Middle East groundwater solutions",
     homeBannerTitle: "Groundwater Detector Supplier for Global and Middle East Markets",
     homeTrustEyebrow: "Export trust signals",
     homeTrustTitle: "Built for buyers who need proof before they send an inquiry",
-    homeTrustText: "Middle East customers can verify our manufacturing resources, quality documents, shipping options, and after-sales support before choosing a water detector supplier.",
+    homeTrustText: "Middle East customers can verify our supply resources, quality documents, shipping options, and after-sales support before choosing a water detector supplier.",
     homeTrust1Title: "Certificates Ready",
     homeTrust1Text: "ISO 9001 quality management references, CE product documents, and product compliance files can be prepared for buyer review.",
-    homeTrust2Title: "Factory & Testing",
-    homeTrust2Text: "Factory, R&D, production, calibration, and field application materials help buyers confirm real supply capability.",
+    homeTrust2Title: "Supply & Testing Proof",
+    homeTrust2Text: "R&D, production, calibration, and field application materials help buyers confirm real supply and technical support capability.",
     homeTrust3Title: "Shipping Proof",
     homeTrust3Text: "Packaging photos, carton details, export documents, and shipment updates are available for order tracking and internal approval.",
     homeTrust4Title: "Customs Support",
@@ -93,6 +99,33 @@ const translations = {
     homeSearchPlaceholder: "Search your product model",
     homeSearchButton: "Search products",
     homeSearchNoResult: "No matching product was found on this website. Please choose from the listed models.",
+    homeSegmentsEyebrow: "Buyer scenarios",
+    homeSegmentsTitle: "Cyqwater helps different buyers choose the right groundwater detector before ordering",
+    homeSegmentsText: "The website now separates buyer needs clearly, so drilling contractors, farms, distributors, and project teams can understand which model direction fits their work.",
+    homeSegment1Title: "Drilling Contractors",
+    homeSegment1Text: "Compare target depth, field terrain, and borehole planning requirements before recommending a detector model.",
+    homeSegment2Title: "Farms & Irrigation",
+    homeSegment2Text: "Support water source positioning for irrigation projects, rural water supply, and dry-region farm planning.",
+    homeSegment3Title: "Equipment Distributors",
+    homeSegment3Text: "Provide product images, demo videos, packaging details, and quotation materials for local sales preparation.",
+    homeSegment4Title: "Project Procurement",
+    homeSegment4Text: "Prepare model comparison, logistics timing, and export documents for teams that need internal approval.",
+    homeInquiryEyebrow: "Inquiry entry",
+    homeInquiryTitle: "Send project details once, and we can recommend the model faster",
+    homeInquiryText: "For faster quotation, share these details by form, email, or WhatsApp.",
+    homeInquiry1: "Country or project region",
+    homeInquiry1Placeholder: "e.g. Saudi Arabia desert drilling project",
+    homeInquiry2: "Expected detection depth",
+    homeInquiry2Placeholder: "e.g. 150m / 300m / 600m",
+    homeInquiry3: "Terrain and geological condition",
+    homeInquiry3Placeholder: "e.g. desert, clay, rocky area, farm land",
+    homeInquiry4: "Use case: drilling, farm irrigation, survey, or resale",
+    homeInquiry4Placeholder: "e.g. well drilling contractor / irrigation / distributor",
+    homeInquiry5: "Quantity and delivery deadline",
+    homeInquiry5Placeholder: "e.g. 1 set, needed within 10 days",
+    homeInquiry6: "Preferred logistics method and document needs",
+    homeInquiry6Placeholder: "e.g. DHL, air freight, invoice and packing list",
+    homeInquiryButton: "Send project details",
     homeWhyEyebrow: "Technology & support",
     homeWhyTitle: "Refined product modules backed by full-process support",
     homeWhy1Title: "Professional modules",
@@ -165,6 +198,11 @@ const translations = {
     productsTabHighDensity: "High-density Systems",
     productsTabMultiChannel: "Multi-channel Systems",
     productsTabPortable: "Portable Single-channel Systems",
+    productsTabGroundwater: "Yer Alti Suyu Dedektorleri",
+    productsTabMineral: "Maden Dedektorleri",
+    productsTabHydroGeo: "Muhendislik Jeofizigi",
+    productsTabTreasure: "Hazine Dedektorleri",
+    productsEmptyText: "Bu urun kategorisi duzenleniyor. Model onerisi icin lutfen bizimle iletisime gecin.",
     productsPagerPrev: "Prev",
     productsPagerNext: "Next",
     productsCtaEyebrow: "Need help choosing?",
@@ -225,7 +263,7 @@ const translations = {
     videosNoteEyebrow: "Current status",
     videosNoteTitle: "Images were available directly, video files were not",
     videosNoteText:
-      "When I fetched the AIDU site pages, I could locate usable product images, but not direct product video file links from the catalogue pages. This page is built so those can be dropped in later without changing layout.",
+      "When I fetched the reference catalogue pages, I could locate usable product images, but not direct product video file links from the catalogue pages. This page is built so those can be dropped in later without changing layout.",
     contactEyebrow: "Contact us",
     contactTitle: "We welcome your real thoughts and project needs.",
     contactLead:
@@ -267,15 +305,18 @@ const translations = {
     formEmailPlaceholder: "you@example.com",
     formWhatsappPlaceholder: "+971 / +966 / +20 ...",
     formMessagePlaceholder: "Tell us your target depth, terrain, and preferred market language.",
-    faq1Q: "Can the detector work well in mountainous or saline-alkali areas?",
+    faq1Q: "Which groundwater detector model should I choose?",
     faq1A:
-      "Its anti-interference design supports stable detection across different terrains and helps deliver more accurate groundwater location results.",
-    faq2Q: "Do you provide technical guidance if the customer is not familiar with operation?",
+      "Share your target depth, terrain, project use, and budget. We will recommend a suitable model instead of asking you to choose blindly.",
+    faq2Q: "Can you support Middle East delivery and customs documents?",
     faq2A:
-      "Yes. We provide one-to-one guidance together with operation materials so users can get started faster and more confidently.",
-    faq3Q: "How long is the delivery lead time for export orders?",
+      "Yes. We can prepare commercial invoice, packing list, product description, certificate references, and shipping updates for buyer confirmation.",
+    faq3Q: "How long does shipping usually take?",
     faq3A:
-      "We maintain regular stock for common models and can arrange production for larger orders, with on-time shipment and global logistics support.",
+      "Express delivery usually takes 5-7 working days, air freight 7-10 working days, and sea freight 25-35 working days depending on country and cargo plan.",
+    faq4Q: "Do you support WhatsApp and Arabic-friendly communication?",
+    faq4A:
+      "Yes. WhatsApp is suitable for quick model selection, quotation follow-up, remote guidance, and after-sales questions. Arabic-friendly communication can be supported for Middle East buyers.",
     p1Name: "Quick Version Intelligent High-density Groundwater Detector",
     p1Text: "1-60 channel integrated platform with AI interpretation and real-time data sharing.",
     p4Name: "16-Channel High Density Groundwater Detector",
@@ -294,7 +335,7 @@ const translations = {
   zh: {
     toplineEmail: "邮箱：cyqfactory@cyqwater.com",
     toplinePhone: "WhatsApp：+86 18319333114",
-    brandTag: "精密检测系统",
+    brandTag: "地下水探测设备供应与支持",
     navHome: "首页",
     navAbout: "关于我们",
     navProducts: "产品中心",
@@ -309,7 +350,6 @@ const translations = {
     detailSecondaryAction: "返回产品中心",
     detailNavVideo: "视频介绍",
     detailNavTech: "技术参数",
-    detailNavIntro: "产品介绍",
     detailOverviewEyebrow: "产品概览",
     detailOverviewTitle: "核心卖点",
     detailSpecsEyebrow: "关键参数",
@@ -318,8 +358,6 @@ const translations = {
     detailVideoAction: "查看演示视频",
     detailTechEyebrow: "技术参数",
     detailTechTitle: "主要型号和技术参数",
-    detailIntroEyebrow: "产品介绍",
-    detailIntroTitle: "产品介绍",
     detailPosterEyebrow: "产品海报",
     detailTabDescription: "描述",
     detailTabUsage: "用法",
@@ -334,6 +372,15 @@ const translations = {
     detailMessageLabel: "想要的资料",
     detailMessagePlaceholder:
       "请告诉我们你需要价格、海报、视频、样机政策或经销支持。",
+    detailQualificationEyebrow: "报价前信息",
+    detailQualificationTitle: "这些信息能帮助我们更准确推荐型号",
+    detailQualificationText: "清晰的项目背景可以减少反复沟通，也能提升报价和选型质量。",
+    detailQualification1: "目标国家或项目地区",
+    detailQualification2: "预计探测深度和打井用途",
+    detailQualification3: "地形类型：沙漠、农田、山区、黏土或岩石区域",
+    detailQualification4: "买家角色：打井承包商、农场主、经销商或项目团队",
+    detailQualification5: "采购数量、交付时间和偏好物流方式",
+    detailQualification6: "进口清关或内部审批需要的文件",
     stripPhoneLabel: "WhatsApp",
     stripPhoneText: "适合经销商和打井承包商的快速响应通道。",
     stripEmailLabel: "邮箱",
@@ -341,10 +388,10 @@ const translations = {
     stripAddressLabel: "办公地点",
     stripAddressValue: "中国上海",
     stripAddressText: "支持远程演示和出口文件协助。",
-    homeHeroEyebrow: "工业质量解决方案",
-    homeHeroTitle: "面向严苛制造环境的高精度测量与检测系统。",
+    homeHeroEyebrow: "专业地下水探测解决方案",
+    homeHeroTitle: "为打井团队和经销商提供更高效的地下水探测设备。",
     homeHeroText:
-      "为全球工业买家提供高端测量设备、光学检测平台与应用支持，满足精度、重复性与长期稳定性的要求。",
+      "便携式找水仪、高密度系统和多通道探测设备，帮助买家更有信心判断地下水位置、深度和出水量。",
     homeSlide2Eyebrow: "专业成像系统",
     homeSlide2Title: "面向更强现场说服力的高密度地下水探测设备。",
     homeSlide2Text: "帮助买家更直观看到成像能力、技术定位和更高端的出口展示效果。",
@@ -366,6 +413,33 @@ const translations = {
     homeSearchPlaceholder: "搜索你需要的产品型号",
     homeSearchButton: "搜索产品",
     homeSearchNoResult: "没有找到匹配的站内产品，请从现有产品型号中搜索。",
+    homeSegmentsEyebrow: "买家场景",
+    homeSegmentsTitle: "Cyqwater 帮助不同买家在下单前选择合适的地下水探测仪",
+    homeSegmentsText: "现在网站把买家需求拆得更清楚，打井承包商、农场灌溉、设备经销商和项目采购都能更快判断适合的型号方向。",
+    homeSegment1Title: "打井承包商",
+    homeSegment1Text: "根据目标深度、现场地形和布井需求，帮助判断更适合的探测仪型号。",
+    homeSegment2Title: "农场与灌溉",
+    homeSegment2Text: "支持灌溉项目、农村饮用水和干旱地区农场规划中的水源定位。",
+    homeSegment3Title: "设备经销商",
+    homeSegment3Text: "提供产品图片、演示视频、包装信息和报价资料，方便本地销售准备。",
+    homeSegment4Title: "项目采购团队",
+    homeSegment4Text: "为需要内部审批的团队准备型号对比、物流时效和出口文件说明。",
+    homeInquiryEyebrow: "询盘入口",
+    homeInquiryTitle: "一次发清项目细节，我们可以更快推荐型号",
+    homeInquiryText: "为了更快报价，可以通过表单、邮箱或 WhatsApp 发送以下信息。",
+    homeInquiry1: "国家或项目地区",
+    homeInquiry1Placeholder: "例如：沙特沙漠打井项目",
+    homeInquiry2: "预计探测深度",
+    homeInquiry2Placeholder: "例如：150米 / 300米 / 600米",
+    homeInquiry3: "地形和地质条件",
+    homeInquiry3Placeholder: "例如：沙漠、黏土、岩石区、农田",
+    homeInquiry4: "用途：打井、农场灌溉、勘探或转售",
+    homeInquiry4Placeholder: "例如：打井承包商 / 灌溉项目 / 经销商",
+    homeInquiry5: "采购数量和交付时间",
+    homeInquiry5Placeholder: "例如：1台，10天内需要发货",
+    homeInquiry6: "偏好物流方式和文件需求",
+    homeInquiry6Placeholder: "例如：DHL、空运、发票和装箱单",
+    homeInquiryButton: "发送项目细节",
     homeWhyEyebrow: "技术与服务",
     homeWhyTitle: "精研模块 全程护航",
     homeWhy1Title: "精密架构",
@@ -377,8 +451,8 @@ const translations = {
     homeWhy4Title: "全球 B2B 交付",
     homeWhy4Text: "面向制造企业、经销商、系统集成商与工业采购团队的国际化站点表达。",
     homeCtaEyebrow: "询盘入口",
-    homeCtaTitle: "需要根据你的应用场景和质量目标匹配检测方案吗？",
-    homeCtaText: "告诉我们工件类型、检测目标、精度要求和项目周期，我们将推荐合适的系统配置。",
+    homeCtaTitle: "需要根据地形、目标深度和预算匹配地下水探测仪吗？",
+    homeCtaText: "告诉我们预计深度、地质条件、打井用途和目标市场，我们将推荐适合的型号配置。",
     homeCtaButton: "提交询盘",
     aboutEyebrow: "关于我们",
     aboutTitle: "值得信赖的合作伙伴",
@@ -426,6 +500,11 @@ const translations = {
     productsTabHighDensity: "高密度系统",
     productsTabMultiChannel: "多通道系统",
     productsTabPortable: "便携式单通道系统",
+    productsTabGroundwater: "地下水探测仪",
+    productsTabMineral: "矿产探测仪",
+    productsTabHydroGeo: "工程物探",
+    productsTabTreasure: "宝藏探测仪",
+    productsEmptyText: "该分类产品正在整理中，请联系我们获取型号建议。",
     productsPagerPrev: "上一页",
     productsPagerNext: "下一页",
     productsCtaEyebrow: "需要帮你选型？",
@@ -477,15 +556,15 @@ const translations = {
     contactEyebrow: "联系我们",
     contactTitle: "欢迎与我们沟通你的真实想法",
     contactLead: "买家在浏览完产品、解决方案或产品详情后，可以更自然地进入这页提交询盘。",
-    homeBannerEyebrow: "中东地下水解决方案",
+    homeBannerEyebrow: "全球和中东地下水解决方案",
     homeBannerTitle: "面向全球和中东的地下水探测器供应商",
     homeTrustEyebrow: "出口信任信号",
     homeTrustTitle: "为需要凭证的买家而建",
-    homeTrustText: "中东客户可以在选择水探测器供应商之前，核实我们的制造资源、质量文件、运输选项和售后支持。",
+    homeTrustText: "中东客户可以在选择水探测器供应商之前，核实我们的供应资源、质量文件、运输选项和售后支持。",
     homeTrust1Title: "证书齐全",
     homeTrust1Text: "ISO 9001 质量管理参考、CE 产品文件及合规文件可供买家审查。",
-    homeTrust2Title: "工厂与测试",
-    homeTrust2Text: "工厂、研发、生产、标定和现场应用材料帮助买家确认真实供应能力。",
+    homeTrust2Title: "供应与测试凭证",
+    homeTrust2Text: "研发、生产、标定和现场应用材料帮助买家确认真实供应能力与技术支持能力。",
     homeTrust3Title: "运输凭证",
     homeTrust3Text: "包装照片、纸箱详情、出口文件和运输更新可用于订单跟踪和内部审批。",
     homeTrust4Title: "清关支持",
@@ -530,12 +609,14 @@ const translations = {
     formEmailPlaceholder: "you@example.com",
     formWhatsappPlaceholder: "+971 / +966 / +20 ...",
     formMessagePlaceholder: "请告诉我们目标深度、地形和需要的语言版本。",
-    faq1Q: "仪器在山区 / 盐碱地能用吗？",
-    faq1A: "强抗干扰设计，多种地形均可稳定探测，精准找水。",
-    faq2Q: "不会操作，有没有技术指导？",
-    faq2A: "全程一对一教学，附操作教程，快速上手无忧。",
-    faq3Q: "外贸订单交货周期多久？",
-    faq3A: "现货充足批量可排产，准时出货，支持全球物流。",
+    faq1Q: "我应该选择哪个地下水探测仪型号？",
+    faq1A: "请提供目标深度、地形、项目用途和预算，我们会推荐合适型号，而不是让客户盲选。",
+    faq2Q: "可以支持中东物流和清关文件吗？",
+    faq2A: "可以。我们可准备商业发票、装箱单、产品描述、证书参考和运输更新，方便买家确认。",
+    faq3Q: "物流通常需要多久？",
+    faq3A: "快递通常 5-7 个工作日，空运 7-10 个工作日，海运 25-35 个工作日，具体取决于国家和货运方案。",
+    faq4Q: "支持 WhatsApp 和阿拉伯语友好沟通吗？",
+    faq4A: "支持。WhatsApp 适合快速选型、报价跟进、远程指导和售后问题，中东买家也可以获得阿拉伯语友好沟通支持。",
     p1Name: "快速版智能高密度地下水探测仪",
     p1Text: "1-60 通道一体化平台，支持 AI 解译和实时数据共享。",
     p4Name: "16 通道高密度地下水探测仪",
@@ -569,14 +650,11 @@ const extraTranslations = {
     detailSecondaryAction: "العودة إلى المنتجات",
     detailNavVideo: "مقدمة الفيديو",
     detailNavTech: "المعلمات الفنية",
-    detailNavIntro: "مقدمة المنتج",
     detailOverviewEyebrow: "نظرة عامة",
     detailOverviewTitle: "أبرز المزايا",
     detailSpecsEyebrow: "المواصفات الرئيسية",
     detailSpecsTitle: "التموضع التجاري وقدرة العمل الميداني",
     detailVideoEyebrow: "مقدمة الفيديو",
-    detailIntroEyebrow: "مقدمة المنتج",
-    detailIntroTitle: "مقدمة المنتج",
     detailPosterEyebrow: "ملصق المنتج",
     detailTabDescription: "الوصف",
     detailTabUsage: "الاستخدام",
@@ -650,6 +728,11 @@ const extraTranslations = {
     productsTabHighDensity: "أنظمة عالية الكثافة",
     productsTabMultiChannel: "أنظمة متعددة القنوات",
     productsTabPortable: "أنظمة أحادية القناة المحمولة",
+    productsTabGroundwater: "كاشفات المياه الجوفية",
+    productsTabMineral: "كاشفات المعادن",
+    productsTabHydroGeo: "الاستكشاف الجيوفيزيائي الهندسي",
+    productsTabTreasure: "كاشفات الكنوز",
+    productsEmptyText: "يتم تنظيم هذه الفئة حالياً. يرجى التواصل معنا للحصول على توصية بالموديل المناسب.",
     productsPagerPrev: "السابق",
     productsPagerNext: "التالي",
     productsCtaEyebrow: "هل تحتاج مساعدة في الاختيار؟",
@@ -773,18 +856,18 @@ const extraTranslations = {
     videosTips4: "فيديوهات تدريبية بالإنجليزية والعربية والصينية",
     videosNoteEyebrow: "الحالة الحالية",
     videosNoteTitle: "الصور كانت متاحة مباشرة، ملفات الفيديو لم تكن كذلك",
-    videosNoteText: "عند جلب صفحات موقع AIDU، تمكنت من تحديد صور المنتج القابلة للاستخدام، ولكن ليس روابط ملفات الفيديو المباشرة من صفحات الكتالوج. هذه الصفحة مصممة بحيث يمكن إضافة تلك الفيديوهات لاحقاً دون تغيير التخطيط.",
+    videosNoteText: "عند جلب صفحات الكتالوج المرجعي، تمكنت من تحديد صور المنتج القابلة للاستخدام، ولكن ليس روابط ملفات الفيديو المباشرة من صفحات الكتالوج. هذه الصفحة مصممة بحيث يمكن إضافة تلك الفيديوهات لاحقاً دون تغيير التخطيط.",
     contactEyebrow: "اتصل بنا",
     contactLead: "تم تصميم هذه الصفحة لاستقبال الاستفسارات بعد مراجعة المشترين لمنتجاتك وحلولك ومحتوى تفاصيل المنتج.",
     homeBannerEyebrow: "حلول المياه الجوفية في الشرق الأوسط",
     homeBannerTitle: "مورد أجهزة كشف المياه الجوفية للأسواق العالمية والشرق الأوسط",
     homeTrustEyebrow: "إشارات ثقة التصدير",
     homeTrustTitle: "مصمم للمشترين الذين يحتاجون إلى إثبات قبل إرسال الاستفسار",
-    homeTrustText: "يمكن لعملاء الشرق الأوسط التحقق من موارد التصنيع ووثائق الجودة وخيارات الشحن ودعم ما بعد البيع قبل اختيار مورد أجهزة كشف المياه.",
+    homeTrustText: "يمكن لعملاء الشرق الأوسط التحقق من موارد التوريد ووثائق الجودة وخيارات الشحن ودعم ما بعد البيع قبل اختيار مورد أجهزة كشف المياه.",
     homeTrust1Title: "الشهادات جاهزة",
     homeTrust1Text: "مراجع إدارة الجودة ISO 9001 ووثائق منتج CE وملفات الامتثال للمنتج يمكن تجهيزها لمراجعة المشتري.",
-    homeTrust2Title: "المصنع والاختبار",
-    homeTrust2Text: "مواد المصنع والبحث والتطوير والإنتاج والمعايرة والتطبيق الميداني تساعد المشترين على تأكيد قدرة التوريد الحقيقية.",
+    homeTrust2Title: "إثبات التوريد والاختبار",
+    homeTrust2Text: "مواد البحث والتطوير والإنتاج والمعايرة والتطبيق الميداني تساعد المشترين على تأكيد قدرة التوريد والدعم الفني الحقيقية.",
     homeTrust3Title: "إثبات الشحن",
     homeTrust3Text: "صور التغليف وتفاصيل الكرتون ووثائق التصدير وتحديثات الشحن متاحة لتتبع الطلب والموافقة الداخلية.",
     homeTrust4Title: "دعم التخليص الجمركي",
@@ -822,14 +905,11 @@ const extraTranslations = {
     detailSecondaryAction: "Urunlere don",
     detailNavVideo: "Video tanitimi",
     detailNavTech: "Teknik parametreler",
-    detailNavIntro: "Urun tanitimi",
     detailOverviewEyebrow: "Genel bakis",
     detailOverviewTitle: "Temel avantajlar",
     detailSpecsEyebrow: "Ana teknik ozellikler",
     detailSpecsTitle: "Ticari konum ve saha kabiliyeti",
     detailVideoEyebrow: "Video tanitimi",
-    detailIntroEyebrow: "Urun tanitimi",
-    detailIntroTitle: "Urun tanitimi",
     detailPosterEyebrow: "Urun posteri",
     detailTabDescription: "Aciklama",
     detailTabUsage: "Kullanim",
@@ -903,6 +983,11 @@ const extraTranslations = {
     productsTabHighDensity: "Yuksek yogunluklu sistemler",
     productsTabMultiChannel: "Cok kanalli sistemler",
     productsTabPortable: "Tasinabilir tek kanalli sistemler",
+    productsTabGroundwater: "دستگاه های تشخیص آب زیرزمینی",
+    productsTabMineral: "دستگاه های تشخیص معدن",
+    productsTabHydroGeo: "ژئوفیزیک مهندسی",
+    productsTabTreasure: "دستگاه های گنج یاب",
+    productsEmptyText: "این دسته محصول در حال تنظیم است. لطفا برای پیشنهاد مدل با ما تماس بگیرید.",
     productsPagerPrev: "Onceki",
     productsPagerNext: "Sonraki",
     productsCtaEyebrow: "Secimde yardim ister misiniz?",
@@ -1026,18 +1111,18 @@ const extraTranslations = {
     videosTips4: "Ingilizce, Arapca ve Cince egitim videolari",
     videosNoteEyebrow: "Mevcut durum",
     videosNoteTitle: "Gorseller dogrudan mevcuttu, video dosyalari mevcut degildi",
-    videosNoteText: "AIDU site sayfalarini getirirken kullanilabilir urun gorsellerini bulabildim, ancak katalog sayfalarindan dogrudan urun video dosyasi baglantilari bulamadim. Bu sayfa, videolarin daha sonra duzen degistirmeden eklenebilmesi icin tasarlanmistir.",
+    videosNoteText: "reference catalogue sayfalarini getirirken kullanilabilir urun gorsellerini bulabildim, ancak katalog sayfalarindan dogrudan urun video dosyasi baglantilari bulamadim. Bu sayfa, videolarin daha sonra duzen degistirmeden eklenebilmesi icin tasarlanmistir.",
     contactEyebrow: "Bize ulasin",
     contactLead: "Bu sayfa, alicilarin urunlerinizi, cozumlerinizi ve urun detay iceriginizi inceledikten sonra sorgulama almasi icin tasarlanmistir.",
     homeBannerEyebrow: "Orta Dogu yeralti suyu cozumleri",
     homeBannerTitle: "Kuresel pazarlar ve Orta Dogu icin yeralti suyu dedektoru tedarikcisi",
     homeTrustEyebrow: "Ihracat guven sinyalleri",
     homeTrustTitle: "Sorgulama gondermeden once kanit isteyen alicilar icin insa edildi",
-    homeTrustText: "Orta Dogu musterileri, bir su dedektoru tedarikcisi secmeden once uretim kaynaklarimizi, kalite belgelerimizi, nakliye seceneklerimizi ve satis sonrasi destegimizi dogrulayabilir.",
+    homeTrustText: "Orta Dogu musterileri, bir su dedektoru tedarikcisi secmeden once tedarik kaynaklarimizi, kalite belgelerimizi, nakliye seceneklerimizi ve satis sonrasi destegimizi dogrulayabilir.",
     homeTrust1Title: "Sertifikalar Hazir",
     homeTrust1Text: "ISO 9001 kalite yonetimi referanslari, CE urun belgeleri ve urun uyumluluk dosyalari alici incelemesi icin hazirlanabilir.",
-    homeTrust2Title: "Fabrika ve Test",
-    homeTrust2Text: "Fabrika, Ar-Ge, uretim, kalibrasyon ve saha uygulama materyalleri, alicilarin gercek tedarik kabiliyetini dogrulamasina yardimci olur.",
+    homeTrust2Title: "Tedarik ve Test Kaniti",
+    homeTrust2Text: "Ar-Ge, uretim, kalibrasyon ve saha uygulama materyalleri, alicilarin gercek tedarik ve teknik destek kabiliyetini dogrulamasina yardimci olur.",
     homeTrust3Title: "Nakliye Kaniti",
     homeTrust3Text: "Paketleme fotograflari, kutu detaylari, ihracat belgeleri ve sevkiyat guncellemeleri siparis takibi ve dahili onay icin mevcuttur.",
     homeTrust4Title: "Gumruk Destegi",
@@ -1075,14 +1160,11 @@ const extraTranslations = {
     detailSecondaryAction: "بازگشت به محصولات",
     detailNavVideo: "معرفی ویدئویی",
     detailNavTech: "پارامترهای فنی",
-    detailNavIntro: "معرفی محصول",
     detailOverviewEyebrow: "نمای کلی",
     detailOverviewTitle: "مزیت های اصلی",
     detailSpecsEyebrow: "مشخصات کلیدی",
     detailSpecsTitle: "جایگاه تجاری و توانایی میدانی",
     detailVideoEyebrow: "معرفی ویدئویی",
-    detailIntroEyebrow: "معرفی محصول",
-    detailIntroTitle: "معرفی محصول",
     detailPosterEyebrow: "پوستر محصول",
     detailTabDescription: "توضیح",
     detailTabUsage: "کاربرد",
@@ -1156,6 +1238,11 @@ const extraTranslations = {
     productsTabHighDensity: "سیستم های چگالی بالا",
     productsTabMultiChannel: "سیستم های چندکاناله",
     productsTabPortable: "سیستم های تک کاناله قابل حمل",
+    productsTabGroundwater: "Detecteurs d'eau souterraine",
+    productsTabMineral: "Detecteurs de minerais",
+    productsTabHydroGeo: "Geophysique d'ingenierie",
+    productsTabTreasure: "Detecteurs de tresors",
+    productsEmptyText: "Cette categorie est en cours d'organisation. Contactez-nous pour une recommandation de modele.",
     productsPagerPrev: "قبلی",
     productsPagerNext: "بعدی",
     productsCtaEyebrow: "برای انتخاب کمک می خواهید؟",
@@ -1279,18 +1366,18 @@ const extraTranslations = {
     videosTips4: "ویدیوهای آموزشی به انگلیسی، عربی و چینی",
     videosNoteEyebrow: "وضعیت فعلی",
     videosNoteTitle: "تصاویر مستقیماً در دسترس بودند، فایل‌های ویدیویی نبودند",
-    videosNoteText: "هنگام دریافت صفحات سایت AIDU، توانستم تصاویر قابل استفاده محصول را پیدا کنم، اما نتوانستم لینک‌های مستقیم فایل ویدیویی را از صفحات کاتالوگ بیابم. این صفحه طوری طراحی شده که ویدیوها بعداً بدون تغییر چیدمان اضافه شوند.",
+    videosNoteText: "هنگام دریافت صفحات کاتالوگ مرجع، توانستم تصاویر قابل استفاده محصول را پیدا کنم، اما نتوانستم لینک‌های مستقیم فایل ویدیویی را از صفحات کاتالوگ بیابم. این صفحه طوری طراحی شده که ویدیوها بعداً بدون تغییر چیدمان اضافه شوند.",
     contactEyebrow: "تماس با ما",
     contactLead: "این صفحه برای دریافت استعلام پس از بررسی محصولات، راهکارها و محتوای جزئیات محصول توسط خریداران طراحی شده است.",
     homeBannerEyebrow: "راهکارهای آب زیرزمینی خاورمیانه",
     homeBannerTitle: "تأمین کننده دستگاه تشخیص آب زیرزمینی برای بازارهای جهانی و خاورمیانه",
     homeTrustEyebrow: "سیگنال‌های اعتماد صادراتی",
     homeTrustTitle: "ساخته شده برای خریدارانی که قبل از ارسال استعلام به اثبات نیاز دارند",
-    homeTrustText: "مشتریان خاورمیانه می‌توانند منابع تولیدی، اسناد کیفیت، گزینه‌های حمل و نقل و پشتیبانی پس از فروش ما را قبل از انتخاب تأمین‌کننده دستگاه تشخیص آب تأیید کنند.",
+    homeTrustText: "مشتریان خاورمیانه می‌توانند منابع تأمین، اسناد کیفیت، گزینه‌های حمل و نقل و پشتیبانی پس از فروش ما را قبل از انتخاب تأمین‌کننده دستگاه تشخیص آب تأیید کنند.",
     homeTrust1Title: "گواهینامه‌ها آماده",
     homeTrust1Text: "مراجع مدیریت کیفیت ISO 9001، اسناد محصول CE و فایل‌های انطباق محصول برای بررسی خریدار قابل تهیه است.",
-    homeTrust2Title: "کارخانه و آزمایش",
-    homeTrust2Text: "مواد کارخانه، تحقیق و توسعه، تولید، کالیبراسیون و کاربرد میدانی به خریداران کمک می‌کند توانایی واقعی تأمین را تأیید کنند.",
+    homeTrust2Title: "مدارک تأمین و آزمایش",
+    homeTrust2Text: "مواد تحقیق و توسعه، تولید، کالیبراسیون و کاربرد میدانی به خریداران کمک می‌کند توانایی واقعی تأمین و پشتیبانی فنی را تأیید کنند.",
     homeTrust3Title: "اثبات حمل و نقل",
     homeTrust3Text: "عکس‌های بسته‌بندی، جزئیات کارتن، اسناد صادراتی و به‌روزرسانی‌های حمل برای پیگیری سفارش و تأیید داخلی در دسترس است.",
     homeTrust4Title: "پشتیبانی گمرکی",
@@ -1328,14 +1415,11 @@ const extraTranslations = {
     detailSecondaryAction: "Retour aux produits",
     detailNavVideo: "Presentation video",
     detailNavTech: "Parametres techniques",
-    detailNavIntro: "Presentation du produit",
     detailOverviewEyebrow: "Vue d'ensemble",
     detailOverviewTitle: "Points forts",
     detailSpecsEyebrow: "Specifications cles",
     detailSpecsTitle: "Positionnement commercial et capacites terrain",
     detailVideoEyebrow: "Presentation video",
-    detailIntroEyebrow: "Presentation du produit",
-    detailIntroTitle: "Presentation du produit",
     detailPosterEyebrow: "Poster produit",
     detailTabDescription: "Description",
     detailTabUsage: "Utilisation",
@@ -1409,6 +1493,11 @@ const extraTranslations = {
     productsTabHighDensity: "Systemes haute densite",
     productsTabMultiChannel: "Systemes multicanaux",
     productsTabPortable: "Systemes portables monocanal",
+    productsTabGroundwater: "Detectores de agua subterranea",
+    productsTabMineral: "Detectores de minerales",
+    productsTabHydroGeo: "Geofisica de ingenieria",
+    productsTabTreasure: "Detectores de tesoros",
+    productsEmptyText: "Esta categoria se esta organizando. Contactenos para recomendarle un modelo.",
     productsPagerPrev: "Prec.",
     productsPagerNext: "Suiv.",
     productsCtaEyebrow: "Besoin d'aide pour choisir ?",
@@ -1532,18 +1621,18 @@ const extraTranslations = {
     videosTips4: "Videos de formation en anglais, arabe et chinois",
     videosNoteEyebrow: "Statut actuel",
     videosNoteTitle: "Les images etaient disponibles directement, les fichiers video ne l etaient pas",
-    videosNoteText: "Lors de la recuperation des pages du site AIDU, j ai pu localiser des images de produit utilisables, mais pas de liens directs de fichiers video a partir des pages du catalogue. Cette page est concue pour que ceux-ci puissent etre ajoutes plus tard sans modifier la mise en page.",
+    videosNoteText: "Lors de la recuperation des pages du catalogue de reference, j ai pu localiser des images de produit utilisables, mais pas de liens directs de fichiers video a partir des pages du catalogue. Cette page est concue pour que ceux-ci puissent etre ajoutes plus tard sans modifier la mise en page.",
     contactEyebrow: "Contactez-nous",
     contactLead: "Cette page est concue pour recevoir des demandes apres que les acheteurs ont examine vos produits, vos solutions et le contenu detaille des produits.",
     homeBannerEyebrow: "Solutions d eau souterraine au Moyen-Orient",
     homeBannerTitle: "Fournisseur de détecteurs d'eau souterraine pour les marchés mondiaux et le Moyen-Orient",
     homeTrustEyebrow: "Signaux de confiance a l exportation",
     homeTrustTitle: "Concues pour les acheteurs qui ont besoin de preuves avant d envoyer une demande",
-    homeTrustText: "Les clients du Moyen-Orient peuvent verifier nos ressources de fabrication, nos documents de qualite, nos options d expedition et notre support apres-vente avant de choisir un fournisseur de detecteurs d eau.",
+    homeTrustText: "Les clients du Moyen-Orient peuvent verifier nos ressources d approvisionnement, nos documents de qualite, nos options d expedition et notre support apres-vente avant de choisir un fournisseur de detecteurs d eau.",
     homeTrust1Title: "Certificats Prets",
     homeTrust1Text: "Les references de gestion de la qualite ISO 9001, les documents de produit CE et les dossiers de conformite des produits peuvent etre prepares pour examen par l acheteur.",
-    homeTrust2Title: "Usine et Tests",
-    homeTrust2Text: "Les materiaux d usine, de R&D, de production, d etalonnage et d application sur le terrain aident les acheteurs a confirmer la capacite d approvisionnement reelle.",
+    homeTrust2Title: "Preuve d approvisionnement et de tests",
+    homeTrust2Text: "Les materiaux de R&D, de production, d etalonnage et d application sur le terrain aident les acheteurs a confirmer la capacite d approvisionnement et de support technique.",
     homeTrust3Title: "Preuve d expedition",
     homeTrust3Text: "Des photos d emballage, des details de carton, des documents d exportation et des mises a jour d expedition sont disponibles pour le suivi des commandes et l approbation interne.",
     homeTrust4Title: "Support Douanier",
@@ -1581,14 +1670,11 @@ const extraTranslations = {
     detailSecondaryAction: "Volver a productos",
     detailNavVideo: "Introduccion en video",
     detailNavTech: "Parametros tecnicos",
-    detailNavIntro: "Introduccion del producto",
     detailOverviewEyebrow: "Resumen",
     detailOverviewTitle: "Puntos clave",
     detailSpecsEyebrow: "Especificaciones clave",
     detailSpecsTitle: "Posicionamiento comercial y capacidad de campo",
     detailVideoEyebrow: "Introduccion en video",
-    detailIntroEyebrow: "Introduccion del producto",
-    detailIntroTitle: "Introduccion del producto",
     detailPosterEyebrow: "Poster del producto",
     detailTabDescription: "Descripcion",
     detailTabUsage: "Uso",
@@ -1662,6 +1748,11 @@ const extraTranslations = {
     productsTabHighDensity: "Sistemas de alta densidad",
     productsTabMultiChannel: "Sistemas multicanal",
     productsTabPortable: "Sistemas portatiles monocanal",
+    productsTabGroundwater: "Detectores de agua subterranea",
+    productsTabMineral: "Detectores de minerales",
+    productsTabHydroGeo: "Geofisica de ingenieria",
+    productsTabTreasure: "Detectores de tesoros",
+    productsEmptyText: "Esta categoria se esta organizando. Contactenos para recomendarle un modelo.",
     productsPagerPrev: "Anterior",
     productsPagerNext: "Siguiente",
     productsCtaEyebrow: "Necesita ayuda para elegir?",
@@ -1785,18 +1876,18 @@ const extraTranslations = {
     videosTips4: "Videos de capacitacion en ingles, arabe y chino",
     videosNoteEyebrow: "Estado actual",
     videosNoteTitle: "Las imagenes estaban disponibles directamente, los archivos de video no",
-    videosNoteText: "Al obtener las paginas del sitio AIDU, pude localizar imagenes de producto utilizables, pero no enlaces directos de archivos de video de las paginas del catalogo. Esta pagina esta disenada para que estos puedan agregarse mas tarde sin cambiar el diseno.",
+    videosNoteText: "Al obtener las paginas del catalogo de referencia, pude localizar imagenes de producto utilizables, pero no enlaces directos de archivos de video de las paginas del catalogo. Esta pagina esta disenada para que estos puedan agregarse mas tarde sin cambiar el diseno.",
     contactEyebrow: "Contactenos",
     contactLead: "Esta pagina esta disenada para recibir consultas despues de que los compradores revisen sus productos, soluciones y contenido de detalles del producto.",
     homeBannerEyebrow: "Soluciones de agua subterranea en Medio Oriente",
     homeBannerTitle: "Proveedor de detectores de agua subterránea para mercados globales y Oriente Medio",
     homeTrustEyebrow: "Senales de confianza para exportacion",
     homeTrustTitle: "Construido para compradores que necesitan pruebas antes de enviar una consulta",
-    homeTrustText: "Los clientes de Medio Oriente pueden verificar nuestros recursos de fabricacion, documentos de calidad, opciones de envio y soporte postventa antes de elegir un proveedor de detectores de agua.",
+    homeTrustText: "Los clientes de Medio Oriente pueden verificar nuestros recursos de suministro, documentos de calidad, opciones de envio y soporte postventa antes de elegir un proveedor de detectores de agua.",
     homeTrust1Title: "Certificados Listos",
     homeTrust1Text: "Referencias de gestion de calidad ISO 9001, documentos de producto CE y archivos de cumplimiento del producto pueden prepararse para la revision del comprador.",
-    homeTrust2Title: "Fabrica y Pruebas",
-    homeTrust2Text: "Materiales de fabrica, I+D, produccion, calibracion y aplicacion en campo ayudan a los compradores a confirmar la capacidad real de suministro.",
+    homeTrust2Title: "Prueba de suministro y pruebas",
+    homeTrust2Text: "Materiales de I+D, produccion, calibracion y aplicacion en campo ayudan a los compradores a confirmar la capacidad real de suministro y soporte tecnico.",
     homeTrust3Title: "Prueba de Envio",
     homeTrust3Text: "Fotos de embalaje, detalles de cajas, documentos de exportacion y actualizaciones de envio estan disponibles para el seguimiento de pedidos y la aprobacion interna.",
     homeTrust4Title: "Soporte Aduanero",
@@ -1820,6 +1911,271 @@ const extraTranslations = {
 };
 
 Object.assign(translations, extraTranslations);
+
+const supplementalTranslations = {
+  ar: {
+    detailQualificationEyebrow: "قبل عرض السعر",
+    detailQualificationTitle: "معلومات تساعدنا على التوصية بدقة",
+    detailQualificationText: "تساعد خلفية المشروع الواضحة على تقليل التواصل المتكرر وتحسين جودة عرض السعر.",
+    detailQualification1: "الدولة المستهدفة أو منطقة المشروع",
+    detailQualification2: "عمق الكشف المتوقع وغرض الحفر",
+    detailQualification3: "نوع التضاريس: صحراء، مزرعة، جبل، طين، أو منطقة صخرية",
+    detailQualification4: "دور المشتري: مقاول حفر، مالك مزرعة، موزع، أو فريق مشروع",
+    detailQualification5: "الكمية ووقت التسليم وطريقة الشحن المفضلة",
+    detailQualification6: "المستندات المطلوبة للاستيراد أو الموافقة الداخلية",
+    homeSegmentsEyebrow: "سيناريوهات المشترين",
+    homeSegmentsTitle: "تساعد Cyqwater المشترين المختلفين على اختيار جهاز كشف المياه الجوفية المناسب قبل الطلب",
+    homeSegmentsText: "يقسم الموقع احتياجات المشترين بوضوح حتى يفهم مقاول الحفر والمزرعة والموزع وفريق المشروع اتجاه الموديل المناسب.",
+    homeSegment1Title: "مقاولو الحفر",
+    homeSegment1Text: "مقارنة العمق المستهدف والتضاريس ومتطلبات تخطيط الآبار قبل التوصية بالموديل.",
+    homeSegment2Title: "المزارع والري",
+    homeSegment2Text: "دعم تحديد مصادر المياه لمشاريع الري وإمدادات المياه الريفية وتخطيط المزارع في المناطق الجافة.",
+    homeSegment3Title: "موزعو المعدات",
+    homeSegment3Text: "توفير صور المنتجات وفيديوهات العرض وتفاصيل التغليف ومواد عرض السعر للتحضير للبيع المحلي.",
+    homeSegment4Title: "مشتريات المشاريع",
+    homeSegment4Text: "إعداد مقارنة الموديلات ووقت اللوجستيات ومستندات التصدير للفرق التي تحتاج إلى موافقة داخلية.",
+    homeInquiryEyebrow: "مدخل الاستفسار",
+    homeInquiryTitle: "أرسل تفاصيل المشروع مرة واحدة، وسنوصي بالموديل بسرعة أكبر",
+    homeInquiryText: "للحصول على عرض أسرع، شارك هذه التفاصيل عبر النموذج أو البريد الإلكتروني أو واتساب.",
+    homeInquiry1: "الدولة أو منطقة المشروع",
+    homeInquiry1Placeholder: "مثال: مشروع حفر في صحراء السعودية",
+    homeInquiry2: "عمق الكشف المتوقع",
+    homeInquiry2Placeholder: "مثال: 150 م / 300 م / 600 م",
+    homeInquiry3: "التضاريس والظروف الجيولوجية",
+    homeInquiry3Placeholder: "مثال: صحراء، طين، منطقة صخرية، أرض زراعية",
+    homeInquiry4: "الاستخدام: حفر، ري زراعي، مسح، أو إعادة بيع",
+    homeInquiry4Placeholder: "مثال: مقاول حفر آبار / ري / موزع",
+    homeInquiry5: "الكمية وموعد التسليم",
+    homeInquiry5Placeholder: "مثال: جهاز واحد، مطلوب خلال 10 أيام",
+    homeInquiry6: "طريقة الشحن المفضلة واحتياجات المستندات",
+    homeInquiry6Placeholder: "مثال: DHL، شحن جوي، فاتورة وقائمة تعبئة",
+    homeInquiryButton: "إرسال تفاصيل المشروع",
+    productsTabGroundwater: "كاشفات المياه الجوفية",
+    productsTabMineral: "كاشفات المعادن",
+    productsTabHydroGeo: "الاستكشاف الجيوفيزيائي الهندسي",
+    productsTabTreasure: "كاشفات الكنوز",
+    productsEmptyText: "يتم تنظيم هذه الفئة حالياً. يرجى التواصل معنا للحصول على توصية بالموديل المناسب.",
+    faq1Q: "أي موديل من كاشف المياه الجوفية يجب أن أختار؟",
+    faq1A: "شارك العمق المستهدف والتضاريس واستخدام المشروع والميزانية. سنوصي بالموديل المناسب بدلاً من الاختيار العشوائي.",
+    faq2Q: "هل يمكنكم دعم التوصيل للشرق الأوسط ومستندات التخليص؟",
+    faq2A: "نعم. يمكننا إعداد الفاتورة التجارية وقائمة التعبئة ووصف المنتج ومراجع الشهادات وتحديثات الشحن لتأكيد المشتري.",
+    faq3Q: "كم تستغرق مدة الشحن عادة؟",
+    faq3A: "يستغرق الشحن السريع عادة 5-7 أيام عمل، والشحن الجوي 7-10 أيام عمل، والشحن البحري 25-35 يوم عمل حسب الدولة وخطة الشحن.",
+    faq4Q: "هل تدعمون واتساب والتواصل المناسب للغة العربية؟",
+    faq4A: "نعم. واتساب مناسب للاختيار السريع للموديل ومتابعة عروض الأسعار والإرشاد عن بعد وأسئلة ما بعد البيع، ويمكن دعم التواصل المناسب للمشترين في الشرق الأوسط."
+  },
+  tr: {
+    detailQualificationEyebrow: "Teklif oncesi",
+    detailQualificationTitle: "Dogru model onermek icin gerekli bilgiler",
+    detailQualificationText: "Net proje bilgisi tekrar iletisimi azaltir ve teklif kalitesini artirir.",
+    detailQualification1: "Hedef ulke veya proje bolgesi",
+    detailQualification2: "Beklenen tespit derinligi ve sondaj amaci",
+    detailQualification3: "Arazi tipi: col, ciftlik, dag, kil veya kayalik alan",
+    detailQualification4: "Alici rolu: sondaj yuklenicisi, ciftlik sahibi, distributor veya proje ekibi",
+    detailQualification5: "Miktar, teslim zamani ve tercih edilen nakliye yontemi",
+    detailQualification6: "Ithalat veya ic onay icin gerekli belgeler",
+    homeSegmentsEyebrow: "Alici senaryolari",
+    homeSegmentsTitle: "Cyqwater, farkli alicilarin siparisten once dogru yer alti suyu dedektorunu secmesine yardim eder",
+    homeSegmentsText: "Site, sondaj yuklenicileri, ciftlikler, distributorler ve proje ekipleri icin ihtiyaclari daha net ayirir.",
+    homeSegment1Title: "Sondaj Yuklenicileri",
+    homeSegment1Text: "Model onermeden once hedef derinlik, saha arazisi ve kuyu planlama ihtiyaclarini karsilastirin.",
+    homeSegment2Title: "Ciftlikler ve Sulama",
+    homeSegment2Text: "Sulama projeleri, kirsal su temini ve kurak bolge ciftlik planlamasi icin su kaynagi konumlandirmayi destekler.",
+    homeSegment3Title: "Ekipman Distributorleri",
+    homeSegment3Text: "Yerel satis hazirligi icin urun gorselleri, demo videolar, paketleme bilgileri ve teklif materyalleri saglanir.",
+    homeSegment4Title: "Proje Satin Alma",
+    homeSegment4Text: "Ic onay gereken ekipler icin model karsilastirma, lojistik sureleri ve ihracat belgeleri hazirlanir.",
+    homeInquiryEyebrow: "Talep girisi",
+    homeInquiryTitle: "Proje detaylarini bir kez gonderin, modeli daha hizli onerebiliriz",
+    homeInquiryText: "Daha hizli teklif icin bu bilgileri form, e-posta veya WhatsApp ile paylasin.",
+    homeInquiry1: "Ulke veya proje bolgesi",
+    homeInquiry1Placeholder: "Orn. Suudi Arabistan col sondaj projesi",
+    homeInquiry2: "Beklenen tespit derinligi",
+    homeInquiry2Placeholder: "Orn. 150m / 300m / 600m",
+    homeInquiry3: "Arazi ve jeolojik durum",
+    homeInquiry3Placeholder: "Orn. col, kil, kayalik alan, tarim arazisi",
+    homeInquiry4: "Kullanim: sondaj, ciftlik sulama, arastirma veya yeniden satis",
+    homeInquiry4Placeholder: "Orn. kuyu sondaj yuklenicisi / sulama / distributor",
+    homeInquiry5: "Miktar ve teslim tarihi",
+    homeInquiry5Placeholder: "Orn. 1 set, 10 gun icinde gerekli",
+    homeInquiry6: "Tercih edilen lojistik ve belge ihtiyaci",
+    homeInquiry6Placeholder: "Orn. DHL, hava kargo, fatura ve paketleme listesi",
+    homeInquiryButton: "Proje detaylarini gonder",
+    productsTabGroundwater: "Yer Alti Suyu Dedektorleri",
+    productsTabMineral: "Maden Dedektorleri",
+    productsTabHydroGeo: "Muhendislik Jeofizigi",
+    productsTabTreasure: "Hazine Dedektorleri",
+    productsEmptyText: "Bu urun kategorisi duzenleniyor. Model onerisi icin lutfen bizimle iletisime gecin.",
+    faq1Q: "Hangi yer alti suyu dedektoru modelini secmeliyim?",
+    faq1A: "Hedef derinlik, arazi, proje kullanimi ve butceyi paylasin. Rastgele secim yerine uygun modeli onerecegiz.",
+    faq2Q: "Orta Dogu teslimati ve gumruk belgelerini destekliyor musunuz?",
+    faq2A: "Evet. Ticari fatura, paketleme listesi, urun aciklamasi, sertifika referanslari ve sevkiyat guncellemeleri hazirlayabiliriz.",
+    faq3Q: "Nakliye genellikle ne kadar surer?",
+    faq3A: "Ekspres teslimat genellikle 5-7 is gunu, hava kargo 7-10 is gunu, deniz nakliye 25-35 is gunu surer; ulkeye ve kargo planina baglidir.",
+    faq4Q: "WhatsApp ve Arapca dostu iletisim destekleniyor mu?",
+    faq4A: "Evet. WhatsApp hizli model secimi, teklif takibi, uzaktan rehberlik ve satis sonrasi sorular icin uygundur. Orta Dogu alicilari icin Arapca dostu iletisim desteklenebilir."
+  },
+  fa: {
+    detailQualificationEyebrow: "پیش از قیمت دهی",
+    detailQualificationTitle: "اطلاعاتی که به پیشنهاد دقیق تر کمک می کند",
+    detailQualificationText: "اطلاعات روشن پروژه، مکاتبه تکراری را کم می کند و کیفیت پیشنهاد قیمت را بالا می برد.",
+    detailQualification1: "کشور هدف یا منطقه پروژه",
+    detailQualification2: "عمق مورد انتظار و هدف حفاری",
+    detailQualification3: "نوع زمین: بیابان، مزرعه، کوهستان، خاک رسی یا منطقه سنگی",
+    detailQualification4: "نقش خریدار: پیمانکار حفاری، مالک مزرعه، توزیع کننده یا تیم پروژه",
+    detailQualification5: "تعداد، زمان تحویل و روش حمل ترجیحی",
+    detailQualification6: "مدارک لازم برای واردات یا تایید داخلی",
+    homeSegmentsEyebrow: "سناریوهای خریدار",
+    homeSegmentsTitle: "Cyqwater به خریداران مختلف کمک می کند قبل از سفارش، دستگاه مناسب تشخیص آب زیرزمینی را انتخاب کنند",
+    homeSegmentsText: "سایت نیازهای پیمانکاران حفاری، مزارع، توزیع کنندگان و تیم های پروژه را واضح تر جدا می کند.",
+    homeSegment1Title: "پیمانکاران حفاری",
+    homeSegment1Text: "پیش از پیشنهاد مدل، عمق هدف، شرایط زمین و نیازهای برنامه ریزی چاه بررسی می شود.",
+    homeSegment2Title: "مزارع و آبیاری",
+    homeSegment2Text: "از مکان یابی منبع آب برای پروژه های آبیاری، تامین آب روستایی و برنامه ریزی مزرعه در مناطق خشک پشتیبانی می کند.",
+    homeSegment3Title: "توزیع کنندگان تجهیزات",
+    homeSegment3Text: "تصاویر محصول، ویدئوهای دمو، جزئیات بسته بندی و مدارک قیمت برای آماده سازی فروش محلی ارائه می شود.",
+    homeSegment4Title: "خرید پروژه",
+    homeSegment4Text: "مقایسه مدل، زمان لجستیک و اسناد صادرات برای تیم هایی که نیاز به تایید داخلی دارند آماده می شود.",
+    homeInquiryEyebrow: "ورودی استعلام",
+    homeInquiryTitle: "جزئیات پروژه را یک بار ارسال کنید تا سریع تر مدل مناسب را پیشنهاد کنیم",
+    homeInquiryText: "برای دریافت سریع تر قیمت، این اطلاعات را از طریق فرم، ایمیل یا واتساپ ارسال کنید.",
+    homeInquiry1: "کشور یا منطقه پروژه",
+    homeInquiry1Placeholder: "مثال: پروژه حفاری بیابانی در عربستان",
+    homeInquiry2: "عمق تشخیص مورد انتظار",
+    homeInquiry2Placeholder: "مثال: 150 متر / 300 متر / 600 متر",
+    homeInquiry3: "شرایط زمین و زمین شناسی",
+    homeInquiry3Placeholder: "مثال: بیابان، خاک رسی، منطقه سنگی، زمین کشاورزی",
+    homeInquiry4: "کاربرد: حفاری، آبیاری، نقشه برداری یا فروش مجدد",
+    homeInquiry4Placeholder: "مثال: پیمانکار چاه / آبیاری / توزیع کننده",
+    homeInquiry5: "تعداد و زمان تحویل",
+    homeInquiry5Placeholder: "مثال: 1 دستگاه، نیاز طی 10 روز",
+    homeInquiry6: "روش حمل ترجیحی و نیاز مدارک",
+    homeInquiry6Placeholder: "مثال: DHL، حمل هوایی، فاکتور و لیست بسته بندی",
+    homeInquiryButton: "ارسال جزئیات پروژه",
+    productsTabGroundwater: "دستگاه های تشخیص آب زیرزمینی",
+    productsTabMineral: "دستگاه های تشخیص معدن",
+    productsTabHydroGeo: "ژئوفیزیک مهندسی",
+    productsTabTreasure: "دستگاه های گنج یاب",
+    productsEmptyText: "این دسته محصول در حال تنظیم است. لطفا برای پیشنهاد مدل با ما تماس بگیرید.",
+    faq1Q: "کدام مدل دستگاه تشخیص آب زیرزمینی را انتخاب کنم؟",
+    faq1A: "عمق هدف، زمین، کاربرد پروژه و بودجه را ارسال کنید. ما به جای انتخاب تصادفی، مدل مناسب را پیشنهاد می کنیم.",
+    faq2Q: "آیا تحویل خاورمیانه و مدارک گمرکی را پشتیبانی می کنید؟",
+    faq2A: "بله. می توانیم فاکتور تجاری، لیست بسته بندی، توضیح محصول، مراجع گواهی و به روزرسانی حمل را آماده کنیم.",
+    faq3Q: "حمل معمولا چقدر زمان می برد؟",
+    faq3A: "اکسپرس معمولا 5-7 روز کاری، حمل هوایی 7-10 روز کاری و حمل دریایی 25-35 روز کاری طول می کشد و به کشور و برنامه حمل بستگی دارد.",
+    faq4Q: "آیا واتساپ و ارتباط مناسب برای عربی پشتیبانی می شود؟",
+    faq4A: "بله. واتساپ برای انتخاب سریع مدل، پیگیری قیمت، راهنمایی از راه دور و سوالات پس از فروش مناسب است. برای خریداران خاورمیانه، ارتباط عربی دوستانه نیز قابل پشتیبانی است."
+  },
+  fr: {
+    detailQualificationEyebrow: "Avant devis",
+    detailQualificationTitle: "Informations utiles pour recommander avec precision",
+    detailQualificationText: "Un contexte projet clair reduit les echanges repetes et ameliore la qualite du devis.",
+    detailQualification1: "Pays cible ou zone du projet",
+    detailQualification2: "Profondeur de detection attendue et objectif de forage",
+    detailQualification3: "Type de terrain : desert, ferme, montagne, argile ou zone rocheuse",
+    detailQualification4: "Role de l'acheteur : foreur, proprietaire agricole, distributeur ou equipe projet",
+    detailQualification5: "Quantite, delai de livraison et mode logistique prefere",
+    detailQualification6: "Documents requis pour l'importation ou l'approbation interne",
+    homeSegmentsEyebrow: "Scenarios acheteurs",
+    homeSegmentsTitle: "Cyqwater aide differents acheteurs a choisir le bon detecteur d'eau souterraine avant commande",
+    homeSegmentsText: "Le site separe clairement les besoins des foreurs, fermes, distributeurs et equipes projet.",
+    homeSegment1Title: "Entreprises de forage",
+    homeSegment1Text: "Comparez profondeur cible, terrain et exigences de planification des puits avant recommandation.",
+    homeSegment2Title: "Fermes et irrigation",
+    homeSegment2Text: "Supporte le positionnement des sources d'eau pour irrigation, eau rurale et planification agricole en zones seches.",
+    homeSegment3Title: "Distributeurs d'equipements",
+    homeSegment3Text: "Fournit images produits, videos demo, details d'emballage et supports de devis pour la vente locale.",
+    homeSegment4Title: "Achats de projets",
+    homeSegment4Text: "Prepare comparaison de modeles, delais logistiques et documents export pour les equipes avec approbation interne.",
+    homeInquiryEyebrow: "Entree demande",
+    homeInquiryTitle: "Envoyez les details du projet une fois, nous recommanderons le modele plus vite",
+    homeInquiryText: "Pour un devis plus rapide, partagez ces details par formulaire, e-mail ou WhatsApp.",
+    homeInquiry1: "Pays ou region du projet",
+    homeInquiry1Placeholder: "ex. projet de forage desertique en Arabie Saoudite",
+    homeInquiry2: "Profondeur de detection attendue",
+    homeInquiry2Placeholder: "ex. 150 m / 300 m / 600 m",
+    homeInquiry3: "Terrain et conditions geologiques",
+    homeInquiry3Placeholder: "ex. desert, argile, zone rocheuse, terrain agricole",
+    homeInquiry4: "Usage : forage, irrigation, etude ou revente",
+    homeInquiry4Placeholder: "ex. entreprise de forage / irrigation / distributeur",
+    homeInquiry5: "Quantite et delai de livraison",
+    homeInquiry5Placeholder: "ex. 1 ensemble, necessaire sous 10 jours",
+    homeInquiry6: "Methode logistique preferee et documents requis",
+    homeInquiry6Placeholder: "ex. DHL, fret aerien, facture et liste de colisage",
+    homeInquiryButton: "Envoyer les details du projet",
+    productsTabGroundwater: "Detecteurs d'eau souterraine",
+    productsTabMineral: "Detecteurs de minerais",
+    productsTabHydroGeo: "Geophysique d'ingenierie",
+    productsTabTreasure: "Detecteurs de tresors",
+    productsEmptyText: "Cette categorie est en cours d'organisation. Contactez-nous pour une recommandation de modele.",
+    faq1Q: "Quel modele de detecteur d'eau souterraine choisir ?",
+    faq1A: "Partagez profondeur cible, terrain, usage du projet et budget. Nous recommanderons un modele adapte au lieu de vous laisser choisir au hasard.",
+    faq2Q: "Pouvez-vous prendre en charge la livraison Moyen-Orient et les documents douaniers ?",
+    faq2A: "Oui. Nous pouvons preparer facture commerciale, liste de colisage, description produit, references de certificats et mises a jour d'expedition.",
+    faq3Q: "Combien de temps prend generalement la livraison ?",
+    faq3A: "L'express prend souvent 5-7 jours ouvres, le fret aerien 7-10 jours ouvres et le fret maritime 25-35 jours ouvres selon le pays et le plan cargo.",
+    faq4Q: "Supportez-vous WhatsApp et une communication adaptee a l'arabe ?",
+    faq4A: "Oui. WhatsApp convient au choix rapide du modele, au suivi du devis, au guidage a distance et aux questions apres-vente. Une communication adaptee aux acheteurs du Moyen-Orient est possible."
+  },
+  es: {
+    detailQualificationEyebrow: "Antes de cotizar",
+    detailQualificationTitle: "Informacion que nos ayuda a recomendar con precision",
+    detailQualificationText: "Un contexto claro del proyecto reduce mensajes repetidos y mejora la calidad de la cotizacion.",
+    detailQualification1: "Pais objetivo o region del proyecto",
+    detailQualification2: "Profundidad esperada y proposito de perforacion",
+    detailQualification3: "Tipo de terreno: desierto, granja, montana, arcilla o zona rocosa",
+    detailQualification4: "Rol del comprador: contratista, agricultor, distribuidor o equipo de proyecto",
+    detailQualification5: "Cantidad, plazo de entrega y metodo logistico preferido",
+    detailQualification6: "Documentos necesarios para importacion o aprobacion interna",
+    homeSegmentsEyebrow: "Escenarios de compradores",
+    homeSegmentsTitle: "Cyqwater ayuda a diferentes compradores a elegir el detector adecuado antes de ordenar",
+    homeSegmentsText: "El sitio separa claramente las necesidades de contratistas, granjas, distribuidores y equipos de proyecto.",
+    homeSegment1Title: "Contratistas de perforacion",
+    homeSegment1Text: "Compare profundidad objetivo, terreno y requisitos de planificacion de pozos antes de recomendar un modelo.",
+    homeSegment2Title: "Granjas e irrigacion",
+    homeSegment2Text: "Apoya la ubicacion de fuentes de agua para riego, suministro rural y planificacion agricola en zonas secas.",
+    homeSegment3Title: "Distribuidores de equipos",
+    homeSegment3Text: "Proporciona imagenes, videos demo, detalles de empaque y materiales de cotizacion para venta local.",
+    homeSegment4Title: "Compras de proyectos",
+    homeSegment4Text: "Prepara comparacion de modelos, tiempos logisticos y documentos de exportacion para aprobacion interna.",
+    homeInquiryEyebrow: "Entrada de consulta",
+    homeInquiryTitle: "Envie los detalles del proyecto una vez y recomendaremos el modelo mas rapido",
+    homeInquiryText: "Para cotizar mas rapido, comparta estos detalles por formulario, correo o WhatsApp.",
+    homeInquiry1: "Pais o region del proyecto",
+    homeInquiry1Placeholder: "ej. proyecto de perforacion en desierto de Arabia Saudita",
+    homeInquiry2: "Profundidad esperada de deteccion",
+    homeInquiry2Placeholder: "ej. 150 m / 300 m / 600 m",
+    homeInquiry3: "Terreno y condicion geologica",
+    homeInquiry3Placeholder: "ej. desierto, arcilla, zona rocosa, tierra agricola",
+    homeInquiry4: "Uso: perforacion, riego, estudio o reventa",
+    homeInquiry4Placeholder: "ej. contratista de pozos / riego / distribuidor",
+    homeInquiry5: "Cantidad y fecha de entrega",
+    homeInquiry5Placeholder: "ej. 1 equipo, necesario en 10 dias",
+    homeInquiry6: "Logistica preferida y documentos requeridos",
+    homeInquiry6Placeholder: "ej. DHL, flete aereo, factura y lista de empaque",
+    homeInquiryButton: "Enviar detalles del proyecto",
+    productsTabGroundwater: "Detectores de agua subterranea",
+    productsTabMineral: "Detectores de minerales",
+    productsTabHydroGeo: "Geofisica de ingenieria",
+    productsTabTreasure: "Detectores de tesoros",
+    productsEmptyText: "Esta categoria se esta organizando. Contactenos para recomendarle un modelo.",
+    faq1Q: "Que modelo de detector de agua subterranea debo elegir?",
+    faq1A: "Comparta profundidad objetivo, terreno, uso del proyecto y presupuesto. Recomendaremos un modelo adecuado en lugar de elegir a ciegas.",
+    faq2Q: "Pueden apoyar entregas a Medio Oriente y documentos aduaneros?",
+    faq2A: "Si. Podemos preparar factura comercial, lista de empaque, descripcion del producto, referencias de certificados y actualizaciones de envio.",
+    faq3Q: "Cuanto tarda normalmente el envio?",
+    faq3A: "El express suele tardar 5-7 dias habiles, el flete aereo 7-10 dias habiles y el maritimo 25-35 dias habiles segun el pais y el plan de carga.",
+    faq4Q: "Soportan WhatsApp y comunicacion amigable en arabe?",
+    faq4A: "Si. WhatsApp es adecuado para seleccion rapida de modelo, seguimiento de cotizaciones, guia remota y preguntas posventa. Tambien puede apoyarse comunicacion amigable para compradores de Medio Oriente."
+  }
+};
+
+Object.entries(supplementalTranslations).forEach(([lang, values]) => {
+  translations[lang] = {
+    ...(translations[lang] || translations.en),
+    ...values
+  };
+});
 
 const productCatalog = {
   p1: {
@@ -2319,7 +2675,7 @@ const productCatalog = {
     zh: {
       name: "棍棒分析一体机",
       summary:
-        "产品型号：\n型号：ADMT-3H       原价：3150元   优惠价：2770元，407美元\n型号：ADMT-3HT2   原价：4800元  优惠价：4300元，632美元\n型号：ADMT-8HT2   原价：5800元   优惠价：5100元， 749美元\n型号：ADMT-3HT3   原价：5800元   优惠价：5100元， 749美元\n型号：ADMT-8HT3   原价：7800元   优惠价：6860元， 1008美元\n产品优势：\n1. AquaScan找水金箍棒继承了上一代金箍棒完全无线、操作简单的优点。\n2. 弥补了上一代产品的不足，提升了仪器精准度。\n3. 新增分段测量、深度分层、数据处理、2D/3D/切片图、AI分析、离线测量等多项功能。\n4. 进一步提升了精准度和使用体验，可为打井找水带来更可靠的结果并提升经济效益。",
+        "产品型号：\n型号：ADMT-3H       原价：3150元   优惠价：2770元，407美元\n型号：ADMT-3HT2   原价：4800元  优惠价：4300元，632美元\n型号：ADMT-8HT2   原价：5800元   优惠价：5100元， 749美元\n型号：ADMT-3HT3   原价：5800元   优惠价：5100元， 749美元\n型号：ADMT-8HT3   原价：7800元   优惠价：6860元， 1008美元\n产品优势：\n1. Cyqwater找水金箍棒继承了上一代金箍棒完全无线、操作简单的优点。\n2. 弥补了上一代产品的不足，提升了仪器精准度。\n3. 新增分段测量、深度分层、数据处理、2D/3D/切片图、AI分析、离线测量等多项功能。\n4. 进一步提升了精准度和使用体验，可为打井找水带来更可靠的结果并提升经济效益。",
       quickSpecs: ["新一代", "AI 洞察", "2D/3D/切片"],
       features: [
         "外观更有记忆点，适合线上展示。",
@@ -2464,37 +2820,37 @@ const localizedProductDetailContent = {
   p6: {
     en: {
       summary:
-        "Product models:\nModel: ADMT-3H       Original price: RMB 3,150   Discount price: RMB 2,770, USD 407\nModel: ADMT-3HT2     Original price: RMB 4,800   Discount price: RMB 4,300, USD 632\nModel: ADMT-8HT2     Original price: RMB 5,800   Discount price: RMB 5,100, USD 749\nModel: ADMT-3HT3     Original price: RMB 5,800   Discount price: RMB 5,100, USD 749\nModel: ADMT-8HT3     Original price: RMB 7,800   Discount price: RMB 6,860, USD 1,008\nProduct advantages:\n1. The AquaScan water-finding rod inherits the fully wireless and easy-operation advantages of the previous generation.\n2. It improves on the previous generation and increases instrument accuracy.\n3. Adds segmented measurement, depth layering, data processing, 2D/3D/slice maps, AI analysis, offline measurement, and more.\n4. Further improves accuracy and user experience, helping well drilling and water finding deliver more reliable results and better economic value.",
+        "Product models:\nModel: ADMT-3H       Original price: RMB 3,150   Discount price: RMB 2,770, USD 407\nModel: ADMT-3HT2     Original price: RMB 4,800   Discount price: RMB 4,300, USD 632\nModel: ADMT-8HT2     Original price: RMB 5,800   Discount price: RMB 5,100, USD 749\nModel: ADMT-3HT3     Original price: RMB 5,800   Discount price: RMB 5,100, USD 749\nModel: ADMT-8HT3     Original price: RMB 7,800   Discount price: RMB 6,860, USD 1,008\nProduct advantages:\n1. The Cyqwater water-finding rod inherits the fully wireless and easy-operation advantages of the previous generation.\n2. It improves on the previous generation and increases instrument accuracy.\n3. Adds segmented measurement, depth layering, data processing, 2D/3D/slice maps, AI analysis, offline measurement, and more.\n4. Further improves accuracy and user experience, helping well drilling and water finding deliver more reliable results and better economic value.",
       quickSpecs: ["New generation", "AI insight", "2D/3D/Slice"],
       videoText: "This section should explain what makes the design, scanning logic, and promotional effect different."
     },
     ar: {
       summary:
-        "نماذج المنتج:\nالموديل: ADMT-3H       السعر الأصلي: 3150 يوان   سعر العرض: 2770 يوان، 407 دولار\nالموديل: ADMT-3HT2     السعر الأصلي: 4800 يوان   سعر العرض: 4300 يوان، 632 دولار\nالموديل: ADMT-8HT2     السعر الأصلي: 5800 يوان   سعر العرض: 5100 يوان، 749 دولار\nالموديل: ADMT-3HT3     السعر الأصلي: 5800 يوان   سعر العرض: 5100 يوان، 749 دولار\nالموديل: ADMT-8HT3     السعر الأصلي: 7800 يوان   سعر العرض: 6860 يوان، 1008 دولار\nمزايا المنتج:\n1. يرث قضيب البحث عن الماء من AquaScan مزايا الجيل السابق: لاسلكي بالكامل وسهل التشغيل.\n2. يعالج نواقص الجيل السابق ويرفع دقة الجهاز.\n3. يضيف قياساً مقطعياً، وطبقات عمق، ومعالجة بيانات، ورسومات 2D/3D/شرائح، وتحليل AI، وقياساً دون اتصال.\n4. يحسن الدقة وتجربة الاستخدام، ويساعد الحفر والبحث عن الماء بنتائج أكثر موثوقية وقيمة اقتصادية أفضل.",
+        "نماذج المنتج:\nالموديل: ADMT-3H       السعر الأصلي: 3150 يوان   سعر العرض: 2770 يوان، 407 دولار\nالموديل: ADMT-3HT2     السعر الأصلي: 4800 يوان   سعر العرض: 4300 يوان، 632 دولار\nالموديل: ADMT-8HT2     السعر الأصلي: 5800 يوان   سعر العرض: 5100 يوان، 749 دولار\nالموديل: ADMT-3HT3     السعر الأصلي: 5800 يوان   سعر العرض: 5100 يوان، 749 دولار\nالموديل: ADMT-8HT3     السعر الأصلي: 7800 يوان   سعر العرض: 6860 يوان، 1008 دولار\nمزايا المنتج:\n1. يرث قضيب البحث عن الماء من Cyqwater مزايا الجيل السابق: لاسلكي بالكامل وسهل التشغيل.\n2. يعالج نواقص الجيل السابق ويرفع دقة الجهاز.\n3. يضيف قياساً مقطعياً، وطبقات عمق، ومعالجة بيانات، ورسومات 2D/3D/شرائح، وتحليل AI، وقياساً دون اتصال.\n4. يحسن الدقة وتجربة الاستخدام، ويساعد الحفر والبحث عن الماء بنتائج أكثر موثوقية وقيمة اقتصادية أفضل.",
       quickSpecs: ["جيل جديد", "رؤية AI", "2D/3D/شرائح"],
       videoText: "ينبغي أن يشرح هذا القسم اختلاف التصميم ومنطق المسح وتأثيره في الترويج."
     },
     tr: {
       summary:
-        "Ürün modelleri:\nModel: ADMT-3H       Orijinal fiyat: 3150 RMB   İndirimli fiyat: 2770 RMB, 407 USD\nModel: ADMT-3HT2     Orijinal fiyat: 4800 RMB   İndirimli fiyat: 4300 RMB, 632 USD\nModel: ADMT-8HT2     Orijinal fiyat: 5800 RMB   İndirimli fiyat: 5100 RMB, 749 USD\nModel: ADMT-3HT3     Orijinal fiyat: 5800 RMB   İndirimli fiyat: 5100 RMB, 749 USD\nModel: ADMT-8HT3     Orijinal fiyat: 7800 RMB   İndirimli fiyat: 6860 RMB, 1008 USD\nÜrün avantajları:\n1. AquaScan su bulma çubuğu, önceki neslin tamamen kablosuz ve kolay kullanım avantajlarını korur.\n2. Önceki neslin eksiklerini giderir ve cihaz hassasiyetini artırır.\n3. Bölümlü ölçüm, derinlik katmanlama, veri işleme, 2D/3D/dilim haritaları, AI analizi ve çevrimdışı ölçüm ekler.\n4. Hassasiyeti ve kullanıcı deneyimini geliştirerek sondaj ve su bulmada daha güvenilir sonuçlar ve daha iyi ekonomik fayda sağlar.",
+        "Ürün modelleri:\nModel: ADMT-3H       Orijinal fiyat: 3150 RMB   İndirimli fiyat: 2770 RMB, 407 USD\nModel: ADMT-3HT2     Orijinal fiyat: 4800 RMB   İndirimli fiyat: 4300 RMB, 632 USD\nModel: ADMT-8HT2     Orijinal fiyat: 5800 RMB   İndirimli fiyat: 5100 RMB, 749 USD\nModel: ADMT-3HT3     Orijinal fiyat: 5800 RMB   İndirimli fiyat: 5100 RMB, 749 USD\nModel: ADMT-8HT3     Orijinal fiyat: 7800 RMB   İndirimli fiyat: 6860 RMB, 1008 USD\nÜrün avantajları:\n1. Cyqwater su bulma çubuğu, önceki neslin tamamen kablosuz ve kolay kullanım avantajlarını korur.\n2. Önceki neslin eksiklerini giderir ve cihaz hassasiyetini artırır.\n3. Bölümlü ölçüm, derinlik katmanlama, veri işleme, 2D/3D/dilim haritaları, AI analizi ve çevrimdışı ölçüm ekler.\n4. Hassasiyeti ve kullanıcı deneyimini geliştirerek sondaj ve su bulmada daha güvenilir sonuçlar ve daha iyi ekonomik fayda sağlar.",
       quickSpecs: ["Yeni nesil", "AI içgörüsü", "2D/3D/Dilim"],
       videoText: "Bu bölüm tasarım, tarama mantığı ve tanıtım etkisinin neden farklı olduğunu açıklamak için uygundur."
     },
     fa: {
       summary:
-        "مدل های محصول:\nمدل: ADMT-3H       قیمت اصلی: 3150 یوان   قیمت تخفیفی: 2770 یوان، 407 دلار\nمدل: ADMT-3HT2     قیمت اصلی: 4800 یوان   قیمت تخفیفی: 4300 یوان، 632 دلار\nمدل: ADMT-8HT2     قیمت اصلی: 5800 یوان   قیمت تخفیفی: 5100 یوان، 749 دلار\nمدل: ADMT-3HT3     قیمت اصلی: 5800 یوان   قیمت تخفیفی: 5100 یوان، 749 دلار\nمدل: ADMT-8HT3     قیمت اصلی: 7800 یوان   قیمت تخفیفی: 6860 یوان، 1008 دلار\nمزایای محصول:\n1. میله آب یاب AquaScan مزایای نسل قبلی، یعنی کاملاً بی سیم بودن و کاربری ساده را حفظ کرده است.\n2. کمبودهای نسل قبلی را جبران کرده و دقت دستگاه را افزایش می دهد.\n3. اندازه گیری بخش بندی شده، لایه بندی عمق، پردازش داده، نقشه های 2D/3D/برشی، تحلیل AI و اندازه گیری آفلاین را اضافه می کند.\n4. دقت و تجربه کاربری را بهتر می کند و برای حفاری و یافتن آب، نتایج مطمئن تر و ارزش اقتصادی بالاتر فراهم می کند.",
+        "مدل های محصول:\nمدل: ADMT-3H       قیمت اصلی: 3150 یوان   قیمت تخفیفی: 2770 یوان، 407 دلار\nمدل: ADMT-3HT2     قیمت اصلی: 4800 یوان   قیمت تخفیفی: 4300 یوان، 632 دلار\nمدل: ADMT-8HT2     قیمت اصلی: 5800 یوان   قیمت تخفیفی: 5100 یوان، 749 دلار\nمدل: ADMT-3HT3     قیمت اصلی: 5800 یوان   قیمت تخفیفی: 5100 یوان، 749 دلار\nمدل: ADMT-8HT3     قیمت اصلی: 7800 یوان   قیمت تخفیفی: 6860 یوان، 1008 دلار\nمزایای محصول:\n1. میله آب یاب Cyqwater مزایای نسل قبلی، یعنی کاملاً بی سیم بودن و کاربری ساده را حفظ کرده است.\n2. کمبودهای نسل قبلی را جبران کرده و دقت دستگاه را افزایش می دهد.\n3. اندازه گیری بخش بندی شده، لایه بندی عمق، پردازش داده، نقشه های 2D/3D/برشی، تحلیل AI و اندازه گیری آفلاین را اضافه می کند.\n4. دقت و تجربه کاربری را بهتر می کند و برای حفاری و یافتن آب، نتایج مطمئن تر و ارزش اقتصادی بالاتر فراهم می کند.",
       quickSpecs: ["نسل جدید", "بینش AI", "2D/3D/برشی"],
       videoText: "این بخش برای توضیح تفاوت طراحی، منطق اسکن و اثر تبلیغاتی دستگاه مناسب است."
     },
     fr: {
       summary:
-        "Modeles produit :\nModele : ADMT-3H       Prix initial : 3 150 RMB   Prix promotionnel : 2 770 RMB, 407 USD\nModele : ADMT-3HT2     Prix initial : 4 800 RMB   Prix promotionnel : 4 300 RMB, 632 USD\nModele : ADMT-8HT2     Prix initial : 5 800 RMB   Prix promotionnel : 5 100 RMB, 749 USD\nModele : ADMT-3HT3     Prix initial : 5 800 RMB   Prix promotionnel : 5 100 RMB, 749 USD\nModele : ADMT-8HT3     Prix initial : 7 800 RMB   Prix promotionnel : 6 860 RMB, 1 008 USD\nAvantages produit :\n1. La tige de recherche d'eau AquaScan conserve les avantages de la generation precedente : fonctionnement totalement sans fil et simple.\n2. Elle corrige les limites de la generation precedente et ameliore la precision de l'instrument.\n3. Elle ajoute mesure segmentee, stratification de profondeur, traitement des donnees, cartes 2D/3D/coupes, analyse IA et mesure hors ligne.\n4. Elle ameliore encore la precision et l'experience utilisateur pour des resultats de forage et de recherche d'eau plus fiables.",
+        "Modeles produit :\nModele : ADMT-3H       Prix initial : 3 150 RMB   Prix promotionnel : 2 770 RMB, 407 USD\nModele : ADMT-3HT2     Prix initial : 4 800 RMB   Prix promotionnel : 4 300 RMB, 632 USD\nModele : ADMT-8HT2     Prix initial : 5 800 RMB   Prix promotionnel : 5 100 RMB, 749 USD\nModele : ADMT-3HT3     Prix initial : 5 800 RMB   Prix promotionnel : 5 100 RMB, 749 USD\nModele : ADMT-8HT3     Prix initial : 7 800 RMB   Prix promotionnel : 6 860 RMB, 1 008 USD\nAvantages produit :\n1. La tige de recherche d'eau Cyqwater conserve les avantages de la generation precedente : fonctionnement totalement sans fil et simple.\n2. Elle corrige les limites de la generation precedente et ameliore la precision de l'instrument.\n3. Elle ajoute mesure segmentee, stratification de profondeur, traitement des donnees, cartes 2D/3D/coupes, analyse IA et mesure hors ligne.\n4. Elle ameliore encore la precision et l'experience utilisateur pour des resultats de forage et de recherche d'eau plus fiables.",
       quickSpecs: ["Nouvelle generation", "Analyse IA", "2D/3D/Coupes"],
       videoText: "Cette section permet d'expliquer les differences de design, de logique de balayage et d'effet promotionnel."
     },
     es: {
       summary:
-        "Modelos del producto:\nModelo: ADMT-3H       Precio original: 3150 RMB   Precio promocional: 2770 RMB, 407 USD\nModelo: ADMT-3HT2     Precio original: 4800 RMB   Precio promocional: 4300 RMB, 632 USD\nModelo: ADMT-8HT2     Precio original: 5800 RMB   Precio promocional: 5100 RMB, 749 USD\nModelo: ADMT-3HT3     Precio original: 5800 RMB   Precio promocional: 5100 RMB, 749 USD\nModelo: ADMT-8HT3     Precio original: 7800 RMB   Precio promocional: 6860 RMB, 1008 USD\nVentajas del producto:\n1. La varilla buscadora de agua AquaScan hereda las ventajas de la generacion anterior: totalmente inalambrica y facil de operar.\n2. Corrige limitaciones de la generacion anterior y mejora la precision del instrumento.\n3. Agrega medicion segmentada, capas de profundidad, procesamiento de datos, mapas 2D/3D/cortes, analisis AI y medicion sin conexion.\n4. Mejora aun mas la precision y la experiencia de uso, ayudando a obtener resultados mas confiables en perforacion y busqueda de agua.",
+        "Modelos del producto:\nModelo: ADMT-3H       Precio original: 3150 RMB   Precio promocional: 2770 RMB, 407 USD\nModelo: ADMT-3HT2     Precio original: 4800 RMB   Precio promocional: 4300 RMB, 632 USD\nModelo: ADMT-8HT2     Precio original: 5800 RMB   Precio promocional: 5100 RMB, 749 USD\nModelo: ADMT-3HT3     Precio original: 5800 RMB   Precio promocional: 5100 RMB, 749 USD\nModelo: ADMT-8HT3     Precio original: 7800 RMB   Precio promocional: 6860 RMB, 1008 USD\nVentajas del producto:\n1. La varilla buscadora de agua Cyqwater hereda las ventajas de la generacion anterior: totalmente inalambrica y facil de operar.\n2. Corrige limitaciones de la generacion anterior y mejora la precision del instrumento.\n3. Agrega medicion segmentada, capas de profundidad, procesamiento de datos, mapas 2D/3D/cortes, analisis AI y medicion sin conexion.\n4. Mejora aun mas la precision y la experiencia de uso, ayudando a obtener resultados mas confiables en perforacion y busqueda de agua.",
       quickSpecs: ["Nueva generacion", "Analisis AI", "2D/3D/Cortes"],
       videoText: "Esta seccion sirve para explicar las diferencias en diseno, logica de escaneo y efecto promocional."
     }
@@ -2673,43 +3029,43 @@ productCatalog.p8.techTableZh = {
 const a1dC1DetailContent = {
   en: {
     summary:
-      "Product models:\nModel: A1D-C1-CX  Price: 2900 RMB, 426 USD\nModel: A1D-C1        Price: 2900 RMB, 426 USD\nModel: ADMT-C3    Price: 5800 RMB, 853 USD\nModel: ADMT-C5    Price: 10800 RMB, 1586 USD\nProduct advantages:\n1. The AquaScan electromagnetic sensor probe is easy to carry.\n2. It avoids the inconvenience of cable-pulling measurements.\n3. It is suitable for any terrain.\n4. The probe is available with magnetic and aviation-plug connectors for matching instruments.",
+      "Product models:\nModel: A1D-C1-CX  Price: 2900 RMB, 426 USD\nModel: A1D-C1        Price: 2900 RMB, 426 USD\nModel: ADMT-C3    Price: 5800 RMB, 853 USD\nModel: ADMT-C5    Price: 10800 RMB, 1586 USD\nProduct advantages:\n1. The Cyqwater electromagnetic sensor probe is easy to carry.\n2. It avoids the inconvenience of cable-pulling measurements.\n3. It is suitable for any terrain.\n4. The probe is available with magnetic and aviation-plug connectors for matching instruments.",
     quickSpecs: ["Electromagnetic probe", "Portable measurement", "Any terrain"],
     videoText: "This section is suitable for showing the portable probe, connector options, and field measurement workflow."
   },
   zh: {
     summary:
-      "产品型号：\n型号：A1D-C1-CX  价格：2900元，426美元\n型号：A1D-C1        价格：2900元， 426美元\n型号：ADMT-C3    价格：5800元， 853美元\n型号：ADMT-C5    价格：10800元，1586美元\n产品优势：\n1. AquaScan电磁传感器探头携带方便。\n2. 解决拉线测量的不便。\n3. 适用于任何地形。\n4. 探头分磁吸接口和航插接口，适配相对应接口的仪器使用。",
+      "产品型号：\n型号：A1D-C1-CX  价格：2900元，426美元\n型号：A1D-C1        价格：2900元， 426美元\n型号：ADMT-C3    价格：5800元， 853美元\n型号：ADMT-C5    价格：10800元，1586美元\n产品优势：\n1. Cyqwater电磁传感器探头携带方便。\n2. 解决拉线测量的不便。\n3. 适用于任何地形。\n4. 探头分磁吸接口和航插接口，适配相对应接口的仪器使用。",
     quickSpecs: ["电磁探头", "便携测量", "适用多地形"],
     videoText: "适合展示电磁传感器探头、接口适配方式和野外便携测量流程。"
   },
   ar: {
     summary:
-      "نماذج المنتج:\nالطراز: A1D-C1-CX  السعر: 2900 يوان، 426 دولار\nالطراز: A1D-C1        السعر: 2900 يوان، 426 دولار\nالطراز: ADMT-C3    السعر: 5800 يوان، 853 دولار\nالطراز: ADMT-C5    السعر: 10800 يوان، 1586 دولار\nمزايا المنتج:\n1. مسبار AquaScan الكهرومغناطيسي سهل الحمل.\n2. يحل مشكلة عدم ملاءمة القياس بسحب الأسلاك.\n3. مناسب لأي نوع من التضاريس.\n4. يتوفر المسبار بواجهة مغناطيسية وواجهة قابس طيران ليتوافق مع الأجهزة المناسبة.",
+      "نماذج المنتج:\nالطراز: A1D-C1-CX  السعر: 2900 يوان، 426 دولار\nالطراز: A1D-C1        السعر: 2900 يوان، 426 دولار\nالطراز: ADMT-C3    السعر: 5800 يوان، 853 دولار\nالطراز: ADMT-C5    السعر: 10800 يوان، 1586 دولار\nمزايا المنتج:\n1. مسبار Cyqwater الكهرومغناطيسي سهل الحمل.\n2. يحل مشكلة عدم ملاءمة القياس بسحب الأسلاك.\n3. مناسب لأي نوع من التضاريس.\n4. يتوفر المسبار بواجهة مغناطيسية وواجهة قابس طيران ليتوافق مع الأجهزة المناسبة.",
     quickSpecs: ["مسبار كهرومغناطيسي", "قياس محمول", "لكل التضاريس"],
     videoText: "هذا القسم مناسب لعرض المسبار المحمول وخيارات الواجهة وطريقة القياس الميداني."
   },
   tr: {
     summary:
-      "Urun modelleri:\nModel: A1D-C1-CX  Fiyat: 2900 RMB, 426 USD\nModel: A1D-C1        Fiyat: 2900 RMB, 426 USD\nModel: ADMT-C3    Fiyat: 5800 RMB, 853 USD\nModel: ADMT-C5    Fiyat: 10800 RMB, 1586 USD\nUrun avantajlari:\n1. AquaScan elektromanyetik sensor probu kolay tasinir.\n2. Kablo cekerek olcum yapmanin zorlugunu ortadan kaldirir.\n3. Her arazi kosuluna uygundur.\n4. Prob, uyumlu cihazlara gore manyetik ve havacilik tipi konnektor secenekleri sunar.",
+      "Urun modelleri:\nModel: A1D-C1-CX  Fiyat: 2900 RMB, 426 USD\nModel: A1D-C1        Fiyat: 2900 RMB, 426 USD\nModel: ADMT-C3    Fiyat: 5800 RMB, 853 USD\nModel: ADMT-C5    Fiyat: 10800 RMB, 1586 USD\nUrun avantajlari:\n1. Cyqwater elektromanyetik sensor probu kolay tasinir.\n2. Kablo cekerek olcum yapmanin zorlugunu ortadan kaldirir.\n3. Her arazi kosuluna uygundur.\n4. Prob, uyumlu cihazlara gore manyetik ve havacilik tipi konnektor secenekleri sunar.",
     quickSpecs: ["Elektromanyetik prob", "Tasinabilir olcum", "Her arazi"],
     videoText: "Bu bolum tasinabilir probu, konnektor seceneklerini ve saha olcum akisini gostermek icin uygundur."
   },
   fa: {
     summary:
-      "مدل های محصول:\nمدل: A1D-C1-CX  قیمت: 2900 یوان، 426 دلار\nمدل: A1D-C1        قیمت: 2900 یوان، 426 دلار\nمدل: ADMT-C3    قیمت: 5800 یوان، 853 دلار\nمدل: ADMT-C5    قیمت: 10800 یوان، 1586 دلار\nمزایای محصول:\n1. پروب حسگر الکترومغناطیسی AquaScan به راحتی قابل حمل است.\n2. مشکل اندازه گیری با کابل کشی را برطرف می کند.\n3. برای هر نوع زمین مناسب است.\n4. پروب با رابط مغناطیسی و رابط کانکتور هوانوردی عرضه می شود و با دستگاه های متناظر سازگار است.",
+      "مدل های محصول:\nمدل: A1D-C1-CX  قیمت: 2900 یوان، 426 دلار\nمدل: A1D-C1        قیمت: 2900 یوان، 426 دلار\nمدل: ADMT-C3    قیمت: 5800 یوان، 853 دلار\nمدل: ADMT-C5    قیمت: 10800 یوان، 1586 دلار\nمزایای محصول:\n1. پروب حسگر الکترومغناطیسی Cyqwater به راحتی قابل حمل است.\n2. مشکل اندازه گیری با کابل کشی را برطرف می کند.\n3. برای هر نوع زمین مناسب است.\n4. پروب با رابط مغناطیسی و رابط کانکتور هوانوردی عرضه می شود و با دستگاه های متناظر سازگار است.",
     quickSpecs: ["پروب الکترومغناطیسی", "اندازه گیری قابل حمل", "هر نوع زمین"],
     videoText: "این بخش برای نمایش پروب قابل حمل، گزینه های رابط و روند اندازه گیری میدانی مناسب است."
   },
   fr: {
     summary:
-      "Modeles produit :\nModele : A1D-C1-CX  Prix : 2 900 RMB, 426 USD\nModele : A1D-C1        Prix : 2 900 RMB, 426 USD\nModele : ADMT-C3    Prix : 5 800 RMB, 853 USD\nModele : ADMT-C5    Prix : 10 800 RMB, 1 586 USD\nAvantages produit :\n1. La sonde electromagnetique AquaScan est facile a transporter.\n2. Elle evite les contraintes des mesures avec tirage de cables.\n3. Elle convient a tous les terrains.\n4. La sonde existe avec interface magnetique et connecteur aviation pour les instruments compatibles.",
+      "Modeles produit :\nModele : A1D-C1-CX  Prix : 2 900 RMB, 426 USD\nModele : A1D-C1        Prix : 2 900 RMB, 426 USD\nModele : ADMT-C3    Prix : 5 800 RMB, 853 USD\nModele : ADMT-C5    Prix : 10 800 RMB, 1 586 USD\nAvantages produit :\n1. La sonde electromagnetique Cyqwater est facile a transporter.\n2. Elle evite les contraintes des mesures avec tirage de cables.\n3. Elle convient a tous les terrains.\n4. La sonde existe avec interface magnetique et connecteur aviation pour les instruments compatibles.",
     quickSpecs: ["Sonde electromagnetique", "Mesure portable", "Tout terrain"],
     videoText: "Cette section permet de presenter la sonde portable, les interfaces disponibles et le flux de mesure sur site."
   },
   es: {
     summary:
-      "Modelos del producto:\nModelo: A1D-C1-CX  Precio: 2900 RMB, 426 USD\nModelo: A1D-C1        Precio: 2900 RMB, 426 USD\nModelo: ADMT-C3    Precio: 5800 RMB, 853 USD\nModelo: ADMT-C5    Precio: 10800 RMB, 1586 USD\nVentajas del producto:\n1. La sonda electromagnetica AquaScan es facil de transportar.\n2. Resuelve la incomodidad de medir tendiendo cables.\n3. Es adecuada para cualquier terreno.\n4. La sonda ofrece interfaz magnetica y conector de aviacion para adaptarse a los instrumentos correspondientes.",
+      "Modelos del producto:\nModelo: A1D-C1-CX  Precio: 2900 RMB, 426 USD\nModelo: A1D-C1        Precio: 2900 RMB, 426 USD\nModelo: ADMT-C3    Precio: 5800 RMB, 853 USD\nModelo: ADMT-C5    Precio: 10800 RMB, 1586 USD\nVentajas del producto:\n1. La sonda electromagnetica Cyqwater es facil de transportar.\n2. Resuelve la incomodidad de medir tendiendo cables.\n3. Es adecuada para cualquier terreno.\n4. La sonda ofrece interfaz magnetica y conector de aviacion para adaptarse a los instrumentos correspondientes.",
     quickSpecs: ["Sonda electromagnetica", "Medicion portatil", "Todo terreno"],
     videoText: "Esta seccion sirve para mostrar la sonda portatil, las opciones de conexion y el flujo de medicion en campo."
   }
@@ -2783,8 +3139,8 @@ const languageSelects = Array.from(document.querySelectorAll(".language-select")
 const supportedLanguages = new Set(
   languageSelects.flatMap((select) => Array.from(select.options).map((option) => option.value)).filter(Boolean)
 );
-const languageStorageKey = "aquascan-language";
-const languageManualStorageKey = "aquascan-language-manual";
+const languageStorageKey = "cyqwater-language";
+const languageManualStorageKey = "cyqwater-language-manual";
 const countryLanguageMap = {
   CN: "zh",
   HK: "zh",
@@ -2840,24 +3196,931 @@ const countryLanguageMap = {
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 const galleryState = { index: 0, productId: null };
-const productListState = { category: "selected", page: 1, pageSize: 9 };
-const productOrder = ["p1", "p4", "p5", "p6", "p7", "p8"];
+const productListState = { category: "groundwater", page: 1, pageSize: 9 };
+const productOrder = ["p1", "p4", "p5"];
 const productYouTubeVideoIds = {
   p1: "qLt9DAMcmjI",
   p4: "pbMWQWbP9lM",
-  p5: "axCz1v-vtxM",
-  p6: "ojw80i4rrZE",
-  p7: "edsDr1ipxQc",
-  p8: "miOO4CXKynY"
+  p5: "axCz1v-vtxM"
 };
 const productYouTubeUploadDates = {
   p1: "2026-06-17",
   p4: "2026-06-17",
-  p5: "2026-06-17",
-  p6: "2026-06-17",
-  p7: "2026-06-17",
-  p8: "2026-06-17"
+  p5: "2026-06-17"
 };
+
+["p1", "p4", "p5"].forEach((id) => {
+  if (productCatalog[id]) {
+    productCatalog[id].category = "groundwater";
+  }
+});
+
+const hydroGeoImageBase = "./assets/products/hydro-geo/";
+const hydroGeoProductDefinitions = [
+  {
+    id: "p9",
+    name: "32 Channels Dam Piping Leakage Detector",
+    slug: "32-channels-dam-piping-leakage-detector",
+    shortText: "Multi-channel dam piping and leakage detector for embankment safety inspection.",
+    model: "32 Channels Dam Piping Leakage Detector",
+    application: "Dam piping, seepage, and leakage investigation",
+    channels: "32 channels",
+    method: "Natural electric field and resistivity survey",
+    highlights: [
+      "Supports multi-channel field acquisition for dam and reservoir safety checks.",
+      "Real-time 2D, 3D, and curve imaging helps technicians locate abnormal seepage zones.",
+      "Suitable for embankments, reservoirs, levees, and water conservancy projects."
+    ],
+    quickSpecs: ["32 channels", "Dam leakage", "2D / 3D imaging"]
+  },
+  {
+    id: "p10",
+    name: "16 Channels Embankment Internal Erosions Detection Equipment",
+    slug: "embankment-internal-erosion-detection-equipment",
+    shortText: "16-channel geophysical mapping equipment for embankment internal erosion inspection.",
+    model: "16 Channels Embankment Internal Erosions Detection Equipment",
+    application: "Internal erosion, piping, seepage, and embankment risk screening",
+    channels: "Multi-channel configuration",
+    method: "Geophysical imaging and abnormal-zone interpretation",
+    highlights: [
+      "Designed for hidden seepage and internal erosion risk checks in embankment structures.",
+      "Helps engineering teams evaluate piping, seekage, and weak-zone distribution before repair.",
+      "Supports field imaging output for faster reporting and project communication."
+    ],
+    quickSpecs: ["Internal erosion", "Piping inspection", "Engineering survey"]
+  },
+];
+
+function buildHydroGeoImages(slug, count = 4) {
+  return Array.from({ length: count }, (_, index) => `${hydroGeoImageBase}${slug}-${index + 1}.webp`);
+}
+
+hydroGeoProductDefinitions.forEach((item) => {
+  const gallery = buildHydroGeoImages(item.slug, item.slug === "earthquake-advance-prediction-system" ? 3 : 4);
+  productCatalog[item.id] = {
+    category: "hydro-geo",
+    gallery,
+    introImages: gallery.slice(1),
+    techTable: {
+      columns: ["Item", item.model],
+      rows: [
+        ["Product model", item.model],
+        ["Application", item.application],
+        ["Channel / configuration", item.channels],
+        ["Survey method", item.method],
+        ["Imaging / output", "2D / 3D imaging, curve chart, and field interpretation support"],
+        ["Recommended users", "Engineering survey teams, water conservancy projects, contractors, and distributors"]
+      ]
+    },
+    en: {
+      name: item.name,
+      summary: `Product model:\n${item.model}\n\n1. ${item.highlights[0]}\n2. ${item.highlights[1]}\n3. ${item.highlights[2]}`,
+      quickSpecs: item.quickSpecs,
+      features: item.highlights,
+      specs: [
+        { label: "Product model", value: item.model },
+        { label: "Application", value: item.application },
+        { label: "Channel / configuration", value: item.channels },
+        { label: "Survey method", value: item.method },
+        { label: "Recommended users", value: "Engineering survey teams, contractors, water conservancy projects, and distributors" }
+      ],
+      videoText: "Product video can be added later. Please contact us for field photos, operation guidance, and model recommendations."
+    }
+  };
+
+  if (!productOrder.includes(item.id)) {
+    productOrder.push(item.id);
+  }
+
+  translations.en[`${item.id}Name`] = item.name;
+  translations.en[`${item.id}Text`] = item.shortText;
+});
+
+const referenceMainImageBase = "./assets/products/reference-main/";
+const referenceMainImages = {
+  p4: "16-channel-high-density-groundwater-detector",
+  p5: "admt-300s-x-single-channel-groundwater-detector",
+  p9: "32-channels-dam-piping-leakage-detector",
+  p10: "16-channels-embankment-internal-erosions-detection-equipment"
+};
+const referenceDetailImageBase = "./assets/products/reference-detail/";
+
+const referenceProductAdditions = [
+  {
+    id: "p22",
+    category: "groundwater",
+    slug: "32-channel-high-density-groundwater-detector",
+    name: "32-Channel High Density Groundwater Detector",
+    text: "32-channel real-time 2D/3D imaging groundwater detector with Android touch operation.",
+    model: "32-Channel High Density Groundwater Detector",
+    application: "High-density groundwater exploration and drilling site selection",
+    configuration: "32 channels",
+    method: "MT electromagnetic groundwater survey",
+    quickSpecs: ["32 channels", "2D / 3D imaging", "Touch screen"],
+    highlights: [
+      "Designed for high-density groundwater surveys where stronger imaging and faster comparison are required.",
+      "Supports real-time 2D and 3D image output for field interpretation.",
+      "Suitable for drilling contractors, farm water projects, and professional survey teams."
+    ]
+  },
+  {
+    id: "p23",
+    category: "hydro-geo",
+    slug: "ad-120n-smart-resistivity-ip-imaging-system-ert",
+    name: "AD-120N Smart Resistivity & IP Imaging System (ERT)",
+    text: "Integrated smart ERT and IP imaging system for resistivity survey and engineering exploration.",
+    model: "AD-120N Smart Resistivity & IP Imaging System (ERT)",
+    application: "Resistivity tomography, IP imaging, groundwater, and engineering survey",
+    configuration: "Smart ERT / IP system",
+    method: "Electrical resistivity tomography and induced polarization",
+    quickSpecs: ["ERT / IP", "Smart imaging", "Engineering survey"],
+    highlights: [
+      "Combines resistivity tomography and IP imaging for broader geophysical applications.",
+      "Supports groundwater, engineering, and geological structure investigation.",
+      "Suitable for professional teams needing a stronger resistivity imaging workflow."
+    ]
+  },
+  {
+    id: "p24",
+    category: "groundwater",
+    slug: "golden-rod-groundwater-detector-new-generation-2024",
+    name: "Golden Rod Groundwater Detector (New Generation 2024)",
+    text: "New generation rod-type groundwater detector for segmented and mobile water exploration.",
+    model: "Golden Rod Groundwater Detector (New Generation 2024)",
+    application: "Portable groundwater exploration and well drilling site selection",
+    configuration: "Rod-type groundwater detector",
+    method: "Electromagnetic groundwater survey",
+    quickSpecs: ["Rod type", "Segmented scan", "Portable"],
+    highlights: [
+      "Portable rod-type workflow is suitable for fast field checks and smaller teams.",
+      "Supports segmented survey logic for clearer depth comparison.",
+      "Useful for drilling contractors, farm water users, and dealer demonstrations."
+    ]
+  },
+  {
+    id: "p25",
+    category: "hydro-geo",
+    slug: "magnetotelluric-mt-survey-system",
+    name: "Magnetotelluric (MT) Survey System",
+    text: "MT survey system using natural electromagnetic signals for deep geophysical exploration.",
+    model: "Magnetotelluric (MT) Survey System",
+    application: "Deep geophysical structure, groundwater, and mineral exploration",
+    configuration: "MT survey system",
+    method: "Magnetotelluric electromagnetic survey",
+    quickSpecs: ["MT survey", "Deep exploration", "Geophysical system"],
+    highlights: [
+      "Uses natural electromagnetic signals for deeper geophysical interpretation.",
+      "Can support groundwater, geothermal, mineral, and structural investigation projects.",
+      "Suitable for professional survey teams and institutional exploration programs."
+    ]
+  },
+  {
+    id: "p26",
+    category: "groundwater",
+    slug: "admt-zn-all-channel-speedy-groundwater-detector",
+    name: "ADMT ZN All-Channel Speedy Groundwater Detector",
+    text: "Speedy all-channel groundwater detector for fast field measurement and automatic imaging.",
+    model: "ADMT ZN All-Channel Speedy Groundwater Detector",
+    application: "Fast groundwater exploration and drilling project screening",
+    configuration: "All-channel speedy configuration",
+    method: "MT electromagnetic groundwater survey",
+    quickSpecs: ["All-channel", "Fast survey", "Auto imaging"],
+    highlights: [
+      "Designed for fast field measurement when survey efficiency matters.",
+      "Supports automatic imaging output to shorten the decision process before drilling.",
+      "Suitable for contractors who need faster model selection and site verification."
+    ]
+  },
+  {
+    id: "p28",
+    category: "mineral",
+    slug: "three-component-magnetometer",
+    name: "Three-component Magnetometer",
+    text: "Three-component magnetic survey instrument for geological and mineral exploration tasks.",
+    model: "Three-component Magnetometer",
+    application: "Magnetic survey, mineral exploration, and geological structure investigation",
+    configuration: "Three-component magnetic acquisition",
+    method: "Magnetic field survey",
+    quickSpecs: ["3 components", "Magnetic survey", "Mineral exploration"],
+    highlights: [
+      "Supports magnetic data acquisition for geological and mineral exploration.",
+      "Suitable for field teams that need directional magnetic information.",
+      "Useful for structural mapping, anomaly checks, and survey comparison."
+    ]
+  },
+  {
+    id: "p29",
+    category: "hydro-geo",
+    slug: "borrowing-line-telecontrol-high-density-expansion-survey-system",
+    name: "Borrowing-line Telecontrol High-density Expansion Survey System",
+    text: "High-density expansion survey system for flexible electrical array field work.",
+    model: "Borrowing-line Telecontrol High-density Expansion Survey System",
+    application: "High-density electrical array survey and engineering exploration",
+    configuration: "Telecontrol high-density expansion system",
+    method: "Electrical array geophysical survey",
+    quickSpecs: ["High density", "Telecontrol", "Electrical array"],
+    highlights: [
+      "Built for high-density electrical array survey scenarios.",
+      "Helps reduce traditional cable complexity while supporting expanded field layouts.",
+      "Suitable for engineering exploration, groundwater, and geological structure work."
+    ]
+  },
+  {
+    id: "p30",
+    category: "hydro-geo",
+    slug: "32-channel-professional-mt-electrometer",
+    name: "32-Channel Professional MT Electrometer",
+    text: "32-channel professional MT electrometer for mid-density geophysical survey work.",
+    model: "32-Channel Professional MT Electrometer",
+    application: "Professional MT geophysical detection and imaging survey",
+    configuration: "32 channels",
+    method: "MT electromagnetic survey",
+    quickSpecs: ["32 channels", "MT electrometer", "Professional survey"],
+    highlights: [
+      "Professional multi-channel MT instrument for geophysical detection.",
+      "Supports automatic imaging workflow for field interpretation.",
+      "Suitable for groundwater, engineering, and geological survey projects."
+    ]
+  },
+  {
+    id: "p31",
+    category: "hydro-geo",
+    slug: "16-channel-professional-mt-electromagnetic-geophysical-equipment",
+    name: "16 Channel Professional MT Electromagnetic Geophysical Equipment",
+    text: "16-channel professional MT electromagnetic equipment with touch-screen imaging workflow.",
+    model: "16 Channel Professional MT Electromagnetic Geophysical Equipment",
+    application: "MT geophysical survey and groundwater exploration",
+    configuration: "16 channels",
+    method: "MT electromagnetic survey",
+    quickSpecs: ["16 channels", "MT equipment", "Real-time imaging"],
+    highlights: [
+      "16-channel MT configuration for efficient professional field survey.",
+      "Touch-screen imaging workflow helps technicians review data in the field.",
+      "Suitable for groundwater, geological, and engineering applications."
+    ]
+  },
+  {
+    id: "p32",
+    category: "hydro-geo",
+    slug: "admt-300ax-single-channel-professional-geophysical-survey-equipment",
+    name: "ADMT 300AX Single-Channel Professional Geophysical Survey Equipment",
+    text: "Single-channel professional geophysical equipment for electromagnetic probe measurement.",
+    model: "ADMT 300AX Single-Channel Professional Geophysical Survey Equipment",
+    application: "Single-channel geophysical and groundwater survey",
+    configuration: "Single channel",
+    method: "Electromagnetic geophysical survey",
+    quickSpecs: ["Single channel", "Professional survey", "EM probe"],
+    highlights: [
+      "Single-channel professional configuration for compact geophysical survey work.",
+      "Supports electromagnetic probe measurement in suitable field conditions.",
+      "Useful for smaller teams and preliminary geological checks."
+    ]
+  },
+  {
+    id: "p35",
+    category: "mineral",
+    slug: "acz-8-proton-magnetometer",
+    name: "ACZ-8 Proton Magnetometer (Broadband Low Disturbance)",
+    text: "Proton magnetometer for broadband low-disturbance magnetic survey applications.",
+    model: "ACZ-8 Proton Magnetometer",
+    application: "Magnetic survey and mineral exploration",
+    configuration: "Proton magnetometer",
+    method: "Total magnetic field measurement",
+    quickSpecs: ["Proton magnetometer", "0.1 nT", "Magnetic survey"],
+    highlights: [
+      "Designed for magnetic survey applications requiring stable field readings.",
+      "Supports mineral exploration, geological mapping, and anomaly investigation.",
+      "Suitable for professional field teams and research programs."
+    ]
+  },
+  {
+    id: "p36",
+    category: "mineral",
+    slug: "amc-7-three-component-fluxgate-magnetometer",
+    name: "AMC-7 three-component fluxgate magnetometer",
+    text: "Three-component fluxgate magnetometer for X, Y, Z magnetic field measurement.",
+    model: "AMC-7 three-component fluxgate magnetometer",
+    application: "Three-axis magnetic field measurement and geological survey",
+    configuration: "Three-component fluxgate",
+    method: "Fluxgate magnetic survey",
+    quickSpecs: ["Fluxgate", "Three-component", "XYZ measurement"],
+    highlights: [
+      "Measures magnetic field components in multiple directions for clearer interpretation.",
+      "Useful for geological structure, mineral, and magnetic anomaly survey work.",
+      "Suitable for field teams that need directional magnetic data."
+    ]
+  },
+  {
+    id: "p37",
+    category: "mineral",
+    slug: "amc-6-single-component-fluxgate-magnetometer",
+    name: "AMC-6 Single Component Fluxgate Magnetometer",
+    text: "Single-component fluxgate magnetometer for high-precision magnetic field survey.",
+    model: "AMC-6 Single Component Fluxgate Magnetometer",
+    application: "Single-component magnetic field measurement",
+    configuration: "Single-component fluxgate",
+    method: "Fluxgate magnetic survey",
+    quickSpecs: ["Fluxgate", "Single component", "Magnetic survey"],
+    highlights: [
+      "Single-component magnetic survey instrument for practical field use.",
+      "Supports mineral exploration and geological magnetic anomaly checks.",
+      "Suitable for survey teams needing compact magnetic measurement equipment."
+    ]
+  },
+  {
+    id: "p42",
+    category: "mineral",
+    slug: "multi-function-resistivity-ip-survey-system",
+    name: "Multi-Function Resistivity & IP Survey System",
+    text: "ADMT-7B multi-function resistivity and IP system for mineral, groundwater, environmental, and engineering surveys.",
+    model: "ADMT-7B Multi-Function Resistivity & IP Survey System",
+    application: "Mineral exploration, water source survey, environmental census, and engineering investigation",
+    configuration: "Multi-function resistivity and IP survey system",
+    method: "DC resistivity and induced polarization",
+    quickSpecs: ["ADMT-7B", "Resistivity & IP", "1000 V / 5 A"],
+    highlights: [
+      "Compact and lightweight system designed to replace traditional bulky resistivity equipment.",
+      "Measures VP, IP, SP, RO, M, TH, Z, D, and polarization decay curve results.",
+      "Supports intelligent analysis, flexible survey modes, and reliable field interpretation."
+    ]
+  },
+  {
+    id: "p43",
+    category: "mineral",
+    slug: "acz-9-automatic-proton-magnetometer",
+    name: "ACZ-9 Automatic Proton Magnetometer",
+    text: "Automatic proton magnetometer with RTK-level GNSS positioning, wireless control, and AI-assisted anomaly interpretation.",
+    model: "ACZ-9 Automatic Proton Magnetometer",
+    application: "Mineral exploration, magnetic survey, geological mapping, engineering survey, and archaeological investigation",
+    configuration: "Automatic proton magnetometer",
+    method: "High-precision total magnetic field measurement",
+    quickSpecs: ["ACZ-9", "0.1 nT", "GPS < 1 m"],
+    highlights: [
+      "High-precision geomagnetic measurement system based on the proton precession principle.",
+      "Supports RTK-level GNSS positioning, wireless intelligent control, and automatic survey path recording.",
+      "Provides real-time data processing, mapping, profile extraction, and AI-assisted anomaly interpretation."
+    ]
+  },
+  {
+    id: "p38",
+    category: "hydro-geo",
+    slug: "multi-function-dc-resistivity-ip-geophysical-instrument",
+    name: "Multi-Function DC Resistivity & IP Geophysical Instrument",
+    text: "Multi-function DC resistivity and IP instrument for electrical geophysical exploration.",
+    model: "Multi-Function DC Resistivity & IP Geophysical Instrument",
+    application: "DC resistivity, IP survey, groundwater, and engineering exploration",
+    configuration: "Multi-function electrical instrument",
+    method: "DC resistivity and induced polarization",
+    quickSpecs: ["DC resistivity", "IP survey", "Multi-function"],
+    highlights: [
+      "Combines DC resistivity and IP functions for broader geophysical applications.",
+      "Useful for groundwater, mineral, engineering, and geological structure survey.",
+      "Suitable for professional exploration teams and project procurement."
+    ]
+  },
+  {
+    id: "p39",
+    category: "hydro-geo",
+    slug: "tt-electromagnetic-probes",
+    name: "TT Electromagnetic probes",
+    text: "TT electromagnetic probes for measurement on rock, concrete, and difficult ground surfaces.",
+    model: "TT Electromagnetic probes",
+    application: "Electromagnetic probe measurement and accessory matching",
+    configuration: "TT probe accessory",
+    method: "Electromagnetic induction measurement",
+    quickSpecs: ["TT probe", "Accessory", "All terrain"],
+    highlights: [
+      "Designed for measurement on surfaces where electrode setup is inconvenient.",
+      "Can support rock, concrete pavement, and infill surface survey scenarios.",
+      "Useful as an accessory for compatible geophysical instruments."
+    ]
+  },
+  {
+    id: "p40",
+    category: "hydro-geo",
+    slug: "electrical-resistivity-meter",
+    name: "Electrical Resistivity Meter",
+    text: "Electrical resistivity meter for standard geophysical survey and groundwater exploration.",
+    model: "Electrical Resistivity Meter",
+    application: "Electrical resistivity survey and groundwater exploration",
+    configuration: "Resistivity meter",
+    method: "Electrical resistivity method",
+    quickSpecs: ["Resistivity", "Geophysical survey", "Groundwater"],
+    highlights: [
+      "Resistivity meter for widely used electrical geophysical survey work.",
+      "Supports groundwater exploration, engineering checks, and geological investigation.",
+      "Suitable for teams needing a classic resistivity measurement workflow."
+    ]
+  },
+  {
+    id: "p41",
+    category: "hydro-geo",
+    slug: "all-terrain-electromagnetic-sensor",
+    name: "All-terrain Electromagnetic Sensor",
+    text: "Portable electromagnetic sensor for field measurement on multiple ground conditions.",
+    model: "All-terrain Electromagnetic Sensor",
+    application: "All-terrain electromagnetic measurement and instrument accessory matching",
+    configuration: "Portable electromagnetic sensor",
+    method: "Electromagnetic induction measurement",
+    quickSpecs: ["All terrain", "EM sensor", "Portable"],
+    highlights: [
+      "Portable sensor designed for different ground conditions and quick field use.",
+      "Helps reduce the inconvenience of traditional electrode layout in difficult terrain.",
+      "Suitable for matching compatible geophysical survey instruments."
+    ]
+  }
+];
+
+function registerReferenceProduct(item) {
+  const mainImage = `${referenceMainImageBase}${item.slug}.webp`;
+  productCatalog[item.id] = {
+    category: item.category,
+    gallery: [mainImage],
+    introImages: [mainImage],
+    techTable: {
+      columns: ["Item", item.model],
+      rows: [
+        ["Product model", item.model],
+        ["Application", item.application],
+        ["Channel / configuration", item.configuration],
+        ["Survey method", item.method],
+        ["Imaging / output", "Field data acquisition, chart output, and interpretation support"],
+        ["Recommended users", "Geophysical survey teams, drilling contractors, engineering projects, and distributors"]
+      ]
+    },
+    en: {
+      name: item.name,
+      summary: `Product model:\n${item.model}\n\n1. ${item.highlights[0]}\n2. ${item.highlights[1]}\n3. ${item.highlights[2]}`,
+      quickSpecs: item.quickSpecs,
+      features: item.highlights,
+      specs: [
+        { label: "Product model", value: item.model },
+        { label: "Application", value: item.application },
+        { label: "Channel / configuration", value: item.configuration },
+        { label: "Survey method", value: item.method },
+        { label: "Recommended users", value: "Geophysical survey teams, drilling contractors, engineering projects, and distributors" }
+      ],
+      videoText: "Product video can be added later. Please contact us for field photos, operation guidance, and model recommendations."
+    }
+  };
+
+  if (!productOrder.includes(item.id)) {
+    productOrder.push(item.id);
+  }
+
+  translations.en[`${item.id}Name`] = item.name;
+  translations.en[`${item.id}Text`] = item.text;
+}
+
+referenceProductAdditions.forEach(registerReferenceProduct);
+
+const referenceGalleryImageBase = "./assets/products/reference-gallery/";
+const referenceGalleryImageCounts = {
+  p22: 9,
+  p24: 10,
+  p26: 9,
+  p28: 9,
+  p35: 9,
+  p36: 9,
+  p37: 9,
+  p23: 8,
+  p25: 8,
+  p29: 7,
+  p30: 9,
+  p31: 9,
+  p32: 9,
+  p38: 9,
+  p39: 6,
+  p40: 9,
+  p41: 6
+};
+
+function setReferenceGallery(productId, imageCount) {
+  const product = productCatalog[productId];
+  if (!product) {
+    return;
+  }
+
+  const currentGallery = Array.isArray(product.gallery) ? product.gallery : [];
+  const mainImage = currentGallery[0];
+  const galleryImages = Array.from(
+    { length: imageCount },
+    (_, index) => `${referenceGalleryImageBase}${productId}-${String(index + 1).padStart(2, "0")}.webp`
+  );
+
+  product.gallery = mainImage ? [mainImage, ...galleryImages] : galleryImages;
+  product.introImages = galleryImages;
+}
+
+Object.entries(referenceGalleryImageCounts).forEach(([productId, imageCount]) => {
+  setReferenceGallery(productId, imageCount);
+});
+
+function setReferenceDetailProduct(productId, slug, imageCount, techTableRows) {
+  const product = productCatalog[productId];
+  if (!product) {
+    return;
+  }
+
+  const mainImage = `${referenceMainImageBase}${slug}.webp`;
+  const detailImages = Array.from(
+    { length: imageCount },
+    (_, index) => `${referenceDetailImageBase}${slug}-${index + 1}.webp`
+  );
+
+  product.gallery = [mainImage, ...detailImages.slice(1)];
+  product.introImages = detailImages;
+  product.techTable = {
+    columns: ["Item", product.en?.specs?.[0]?.value || product.en?.name || "Model"],
+    rows: techTableRows
+  };
+  if (product.en) {
+    product.en.videoText = "Contact us for field photos, operation guidance, model recommendations, and technical documents.";
+  }
+}
+
+setReferenceDetailProduct("p42", "multi-function-resistivity-ip-survey-system", 6, [
+  ["Model", "ADMT-7B"],
+  ["Voltage Resolution", "0.5 μV"],
+  ["SP Compensation Range", "±3000 mV"],
+  ["Voltage Measurement Range", "14000 mV"],
+  ["Input Impedance", "≥50 MΩ"],
+  ["Apparent Resistivity Accuracy", "±0.5% ±1 count"],
+  ["Apparent Chargeability Accuracy", "±1% ±1 count"],
+  ["50 Hz Noise Suppression", "≥80 dB"],
+  ["Maximum Output Voltage", "DC 1000 V"],
+  ["Maximum Output Current", "5 A"],
+  ["Output Waveform", "Pulse width 0.5-60 s, duty cycle 1:1, bipolar"],
+  ["Current Channel", "±5000 mA ±2% ±1 count"],
+  ["Current Resolution", "0.5 μA"],
+  ["Power Supply", "12 V / 6800 mAh lithium battery"],
+  ["Operating Environment", "-10°C to +50°C, 95% RH"],
+  ["Storage Temperature", "-20°C to +60°C"]
+]);
+
+setReferenceDetailProduct("p43", "acz-9-automatic-proton-magnetometer", 5, [
+  ["Parameter", "ACZ-9"],
+  ["Range", "20000 nT-100000 nT"],
+  ["Precision", "±1 nT"],
+  ["Resolution", "0.1 nT"],
+  ["Allow gradient", "≤8000 nT/m"],
+  ["Measuring interval", "3-60 s customizable"],
+  ["Measuring speed", "≤3 s/reading"],
+  ["GPS positioning precision", "<1 m"],
+  ["Operating Temp", "-10°C to +50°C"],
+  ["Number of channels", "1 channel standard configuration, time-sharing gradient measurement; 2 channels optional, simultaneous gradient measurement"],
+  ["Connection", "WiFi"],
+  ["Power supply", "DC 14.8 V 7800 mAh"],
+  ["Main Unit", "170 mm × 130 mm × 130 mm, 1.5 kg"],
+  ["Probe", "Ф74 × 150 mm, 0.8 kg"]
+]);
+
+Object.entries(referenceMainImages).forEach(([productId, slug]) => {
+  const product = productCatalog[productId];
+  if (!product) {
+    return;
+  }
+  const mainImage = `${referenceMainImageBase}${slug}.webp`;
+  const gallery = Array.isArray(product.gallery) ? product.gallery : [];
+  product.gallery = [mainImage, ...gallery.filter((image) => image !== mainImage)];
+});
+
+const productDetailIntroOverrides = {
+  p1: {
+    model: "ADZN300, ADZN600, ADZN1200, ADZN3000",
+    intro: [
+      "Integrates 1-60 channel measurement with AI analysis, automatic imaging, and real-time multi-terminal data sharing.",
+      "Supports automatic channel recognition and multi-function aviation connectors for faster field deployment.",
+      "Built for accurate multi-channel groundwater measurement in high-density survey projects."
+    ]
+  },
+  p4: {
+    model: "Best-selling versions: ADMT-300SX-16D, ADMT-500SX-16D. Other options: ADMT-1200SX-16D, ADMT-2000SX-16D, ADMT-3000SX-16D",
+    intro: [
+      "Provides 16-channel real-time automatic 2D and 3D imaging for groundwater exploration.",
+      "Uses a 10.1-inch Android touch screen for clearer on-site operation.",
+      "Supports MN electrode measurement and TT measurement with a box probe."
+    ]
+  },
+  p5: {
+    model: "Flagship classic version: ADMT-300S-X. Other depths: ADMT-600S-X, ADMT-1200S-X, ADMT-3000S-X",
+    intro: [
+      "Uses a 7-inch touch screen with real-time imaging for intuitive field operation.",
+      "Supports intelligent and precise detection with adjustable depth settings.",
+      "Includes MN electrode measurement, TT measurement with box probe, and rod probe measurement modes."
+    ]
+  },
+  p6: {
+    model: "ADMT-3H, ADMT-3HT2, ADMT-3HT3, ADMT-8HT2, ADMT-8HT3",
+    intro: [
+      "Adds segmented and multi-density scanning for portable groundwater exploration.",
+      "Supports data processing, 2D, 3D, slice imaging, AI interpretation, and offline operation.",
+      "Improves field usability for quick water-source comparison and drilling-point selection."
+    ]
+  },
+  p7: {
+    model: "A1D-C1-CX, A1D-C1, ADMT-C3, ADMT-C5",
+    intro: [
+      "Portable electromagnetic sensor probe designed for easier field carrying and quick deployment.",
+      "Reduces the inconvenience of traditional cable-pulling measurement.",
+      "Suitable for different terrain conditions and compatible with matching instrument interfaces."
+    ]
+  },
+  p8: {
+    model: "120N 60 channels, 120N 120 channels",
+    intro: [
+      "Designed for geological exploration with a wide measurement range from 20,000 nT to 100,000 nT.",
+      "Provides 0.1 nT resolution without special adjustment for different global regions.",
+      "Uses a refined amplification circuit to improve measurement accuracy and field stability."
+    ]
+  },
+  p9: {
+    model: "ADMT-100DX-32D",
+    intro: [
+      "Uses high-performance electromagnetic sensors to detect concrete surfaces without inserting electrodes.",
+      "Supports touch-screen real-time operation without traditional Bluetooth control.",
+      "Provides real-time 2D, 3D, and curve imaging for dam piping and leakage interpretation."
+    ]
+  },
+  p10: {
+    model: "ADMT-60DX-16D",
+    intro: [
+      "Detects internal embankment damage in a non-destructive geophysical mapping workflow.",
+      "Uses touch-screen operation without traditional Bluetooth connection control.",
+      "Provides real-time mapping support for pipings, seepages, and internal erosion checks."
+    ]
+  },
+  p22: {
+    model: "ADMT-400SX-32D, ADMT-600SX-32D, ADMT-1200SX-32D, ADMT-3000SX-32D, ADMT-4000SX-32D",
+    intro: [
+      "Provides 32-channel real-time automatic 2D and 3D imaging.",
+      "Uses a 10.1-inch Android touch screen for field operation.",
+      "Supports MN electrode measurement and TT measurement with a box probe."
+    ]
+  },
+  p23: {
+    model: "AD-120N",
+    intro: [
+      "Combines Electrical Resistivity Tomography and Induced Polarization imaging in one platform.",
+      "Supports intelligent data acquisition for resistivity and IP survey work.",
+      "Suitable for groundwater, engineering, and geological exploration projects."
+    ]
+  },
+  p24: {
+    model: "ADMT-3H, ADMT-3HT2, ADMT-3HT3, ADMT-8HT2, ADMT-8HT3",
+    intro: [
+      "Adds segmented and multi-density scanning for portable groundwater exploration.",
+      "Supports 2D, 3D, slice imaging, AI interpretation, and offline operation.",
+      "Improves field usability for quick water-source comparison and drilling decisions."
+    ]
+  },
+  p25: {
+    model: "ADMT-EH1, ADMT-EH2, ADMT-EH4, ADMT-EH6, ADMT-EH8",
+    intro: [
+      "Uses natural electromagnetic signals with optional artificially enhanced signals.",
+      "Processes signal data intelligently to improve field efficiency.",
+      "Supports AI-assisted image interpretation for deeper geophysical exploration."
+    ]
+  },
+  p26: {
+    model: "Top Selling: ADMT-180ZN, ADMT-300ZN. Other depths: ADMT-600ZN, ADMT-900ZN, ADMT-1200ZN",
+    intro: [
+      "Uses advanced CPU and algorithms for fast groundwater measurement.",
+      "Completes a measurement quickly and supports channel upgrades by adding cables.",
+      "AI analysis support helps improve interpretation accuracy through field feedback."
+    ]
+  },
+  p28: {
+    model: "AMC-10",
+    intro: [
+      "Uses a high-permeability permalloy alloy probe for magnetic data acquisition.",
+      "Applies special heat treatment and high-precision winding to refine sensor performance.",
+      "Suitable for three-component magnetic survey, mineral exploration, and geological mapping."
+    ]
+  },
+  p29: {
+    model: "JYT-C1",
+    intro: [
+      "Innovative electrical array system that does not require traditional multi-core cables.",
+      "Uses power-supply AB wires for remote control and depth switching.",
+      "Suitable for high-density expansion survey and flexible engineering exploration."
+    ]
+  },
+  p30: {
+    model: "ADMT-300AX-32D, ADMT-600AX-32D, ADMT-1200AX-32D, ADMT-3000AX-32D, ADMT-5000AX-32D",
+    intro: [
+      "32-channel mid-density MT instrument with automatic imaging geophysical detection.",
+      "Uses simultaneous multi-channel input to obtain a more stable field source.",
+      "Reduces errors caused by natural electric-field changes over time."
+    ]
+  },
+  p31: {
+    model: "ADMT-300AX-16D, ADMT-600AX-16D",
+    intro: [
+      "Uses a 10.1-inch Android touch screen for real-time imaging.",
+      "Connects by wire to electromagnetic probes for professional MT measurement.",
+      "Suitable for groundwater, geological, and engineering geophysical applications."
+    ]
+  },
+  p32: {
+    model: "Best-selling versions: ADMT-300AX. Other options: ADMT-600AX, ADMT-1200AX, ADMT-3000AX, ADMT-5000AX",
+    intro: [
+      "Supports wired connection to electromagnetic probes or Bluetooth connection to rod-type probes.",
+      "Uses a 7-inch Android touch screen for real-time imaging.",
+      "Suitable for single-channel professional geophysical survey work."
+    ]
+  },
+  p35: {
+    model: "ACZ-8",
+    intro: [
+      "Measures from 20,000 nT to 100,000 nT with 0.1 nT resolution.",
+      "Requires no special global adjustment and supports stable magnetic survey work.",
+      "Uses a high-performance circuit design to improve field accuracy."
+    ]
+  },
+  p36: {
+    model: "AMC-7",
+    intro: [
+      "Three-component fluxgate magnetometer for X, Y, and Z magnetic field measurement.",
+      "Supports directional magnetic data acquisition for clearer geological interpretation.",
+      "Suitable for mineral exploration, structural mapping, and magnetic anomaly surveys."
+    ]
+  },
+  p37: {
+    model: "AMC-6",
+    intro: [
+      "Single-component fluxgate magnetometer for practical magnetic field measurement.",
+      "Supports mineral exploration and geological magnetic anomaly checks.",
+      "Suitable for field teams needing compact magnetic survey equipment."
+    ]
+  },
+  p38: {
+    model: "ADMT-6B",
+    intro: [
+      "Combines DC resistivity and induced polarization functions in one geophysical instrument.",
+      "Uses a compact, lightweight design with intelligent analysis software.",
+      "Suitable for groundwater, mineral, engineering, and geological structure surveys."
+    ]
+  },
+  p39: {
+    model: "ADMT T3/T4/T5",
+    intro: [
+      "Electromagnetic probes for rock, cement surfaces, and filled land surfaces.",
+      "Solves the limitation that electrodes cannot always be inserted into the ground.",
+      "Can be used with compatible intelligent hosts for flexible field measurement."
+    ]
+  },
+  p40: {
+    model: "ADMT-2B",
+    intro: [
+      "Electrical resistivity meter with improved circuitry for higher accuracy.",
+      "Supports wireless control, automatic mapping, and durable ABS waterproof housing.",
+      "Works with Schlumberger and gradient arrays for flexible field surveys."
+    ]
+  },
+  p41: {
+    model: "ADMT-C1H",
+    intro: [
+      "All-terrain electromagnetic sensor for rock, cement, and filled land surfaces.",
+      "Supports measurement where electrode insertion is inconvenient.",
+      "Portable design allows single-walk and stop-and-measure field operation."
+    ]
+  },
+  p42: {
+    model: "ADMT-7B",
+    intro: [
+      "Designed to replace traditional bulky resistivity equipment with a compact and lightweight solution.",
+      "Built-in formulas support VP, IP, SP, RO, M, TH, Z, D, and polarization decay curve results.",
+      "Suitable for iron mineral exploration, water source survey, environmental census, and engineering investigation."
+    ]
+  },
+  p43: {
+    model: "ACZ-9",
+    intro: [
+      "High-precision geomagnetic measurement system based on the proton precession principle.",
+      "Features RTK-level GNSS positioning, wireless intelligent control, automatic survey path recording, and profile extraction.",
+      "Supports real-time data processing, mapping, and AI-assisted anomaly interpretation for mineral exploration and magnetic survey."
+    ]
+  }
+};
+
+function buildProductDetailIntroSummary(detail) {
+  return `Product model:\n${detail.model}\n\n${detail.intro
+    .map((line, index) => `${index + 1}. ${line}`)
+    .join("\n")}`;
+}
+
+Object.entries(productDetailIntroOverrides).forEach(([productId, detail]) => {
+  const product = productCatalog[productId];
+  if (!product?.en) {
+    return;
+  }
+
+  product.en.summary = buildProductDetailIntroSummary(detail);
+  product.en.features = [...detail.intro];
+  const modelSpec = product.en.specs?.find((spec) => spec.label === "Product model");
+  if (modelSpec) {
+    modelSpec.value = detail.model;
+  }
+  const tableModelRow = product.techTable?.rows?.find((row) => row[0] === "Product model");
+  if (tableModelRow) {
+    tableModelRow[1] = detail.model;
+  }
+});
+
+const retiredProductIds = new Set(["p6", "p7", "p8"]);
+retiredProductIds.forEach((productId) => {
+  delete productCatalog[productId];
+  delete productYouTubeVideoIds[productId];
+  delete productYouTubeUploadDates[productId];
+});
+for (let index = productOrder.length - 1; index >= 0; index -= 1) {
+  if (retiredProductIds.has(productOrder[index])) {
+    productOrder.splice(index, 1);
+  }
+}
+
+const importedGroundwaterMedia = {
+  p1: { videoFile: "./media/reference-groundwater/p1.mp4", imageExts: ["jpg", "jpg", "jpg", "jpg", "png", "jpg", "png", "png", "jpg", "jpg", "png", "png", "png", "png", "png", "png", "jpg", "jpg"] },
+  p22: { videoFile: "./media/reference-groundwater/p22.mp4", imageExts: ["jpg", "jpg", "png", "jpg", "png", "jpg", "jpg", "png", "png", "png", "png", "png", "png", "png", "jpg", "jpg", "jpg", "jpg"] },
+  p4: { videoFile: "./media/reference-groundwater/p4.mp4", imageExts: ["jpg", "jpg", "png", "jpg", "png", "jpg", "jpg", "png", "png", "png", "png", "png", "png", "png", "jpg", "jpg", "jpg", "jpg"] },
+  p5: { videoFile: "./media/reference-groundwater/p5.mp4", imageExts: ["jpg", "jpg", "png", "jpg", "png", "jpg", "jpg", "jpg", "png", "png", "png", "png", "png", "png", "png", "jpg", "jpg", "jpg"] },
+  p24: { videoFile: "./media/reference-groundwater/p24.mp4", imageExts: ["jpg", "jpg", "png", "png", "png", "png"] },
+  p26: { videoFile: "./media/reference-groundwater/p26.mp4", imageExts: ["jpg", "jpg", "png", "jpg", "png", "png", "jpg", "jpg", "jpg", "jpg", "jpg", "png", "png", "png", "png", "png", "jpg", "jpg", "jpg"] },
+  p38: { videoFile: "./media/reference-groundwater/p38.mp4", imageExts: ["jpg", "jpg", "png", "jpg", "png", "png", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "png", "png", "png", "jpg"] },
+  p40: { imageExts: ["jpg", "jpg", "png", "jpg", "png", "png", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "png", "png", "png", "jpg"] },
+  p31: { videoFile: "./media/reference-groundwater/p31.mp4", imageExts: ["jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "png", "png", "jpg", "png", "png", "png", "png", "jpg", "jpg", "jpg"] },
+  p32: { videoFile: "./media/reference-groundwater/p32.mp4", imageExts: ["jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "png", "jpg", "jpg", "jpg", "jpg", "png", "png", "jpg", "png", "png", "png", "png", "jpg", "jpg", "jpg"] },
+  p39: { videoFile: "./media/reference-groundwater/p39.mp4", imageExts: ["jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg", "jpg"] },
+  p41: { videoFile: "./media/reference-groundwater/p41.mp4", imageExts: ["jpg", "jpg", "jpg"] }
+};
+
+const importedGroundwaterDetailImageBase = "./assets/products/reference-groundwater-detail/";
+const importedGroundwaterVideoText = {
+  en: "Watch the product demonstration and field operation reference video for model selection and technical review.",
+  zh: "查看产品演示和现场操作参考视频，便于型号选择和技术评估。",
+  ar: "شاهد فيديو العرض التشغيلي والمرجع الميداني للمنتج للمساعدة في اختيار الموديل والمراجعة الفنية.",
+  tr: "Model seçimi ve teknik inceleme için ürün tanıtımı ve saha operasyonu referans videosunu izleyin.",
+  fa: "برای انتخاب مدل و بررسی فنی، ویدیوی نمایش محصول و مرجع عملیات میدانی را مشاهده کنید.",
+  fr: "Regardez la vidéo de démonstration du produit et de référence terrain pour le choix du modèle et l'examen technique.",
+  es: "Vea el video de demostración del producto y la operación en campo para seleccionar el modelo y revisar la información técnica."
+};
+Object.entries(importedGroundwaterMedia).forEach(([productId, media]) => {
+  const product = productCatalog[productId];
+  if (!product) {
+    return;
+  }
+
+  if (media.videoFile) {
+    product.videoFile = media.videoFile;
+    product.videoUploadDate = product.videoUploadDate || "2026-07-10";
+    ["en", "zh", "ar", "tr", "fa", "fr", "es"].forEach((lang) => {
+      if (product[lang]) {
+        product[lang].videoText = importedGroundwaterVideoText[lang] || importedGroundwaterVideoText.en;
+      }
+    });
+  }
+
+  product.introImages = media.imageExts.map(
+    (extension, imageIndex) => `${importedGroundwaterDetailImageBase}${productId}-${String(imageIndex + 1).padStart(2, "0")}.${extension}`
+  );
+});
+
+const referenceCategoryVideoFiles = {
+  p9: "https://www.aiduny.com/upload/file/20210930/3cd41817cdbe2baa00feb7dd8c1a9aae.mp4",
+  p10: "https://www.aiduny.com/upload/file/20210930/01c2cd8074a18e4d0da453a9534823d9.mp4",
+  p23: "https://www.aiduny.com/upload/file/20260209/a6fe852669e74c1a9779c2beb5fbce16.mp4",
+  p25: "https://www.aiduny.com/upload/file/20230915/a3dcdef6483cba68652f62f386f806a6.mp4",
+  p28: "https://www.aiduny.com/upload/file/20230907/cfaa7f29fe2e1e2b66d91c14507e29ab.mp4",
+  p29: "https://www.aiduny.com/upload/file/20230920/8ad942eeb1e6ec52a6556c10f22eb1b3.mp4",
+  p30: "https://www.aiduny.com/upload/file/20211015/830656b7607929a6956e437a0411d3d9.mp4",
+  p31: "https://www.aiduny.com/upload/file/20211015/830656b7607929a6956e437a0411d3d9.mp4",
+  p32: "https://www.aiduny.com/upload/file/20211015/0344c5864ddb47af32ac93e90941cd36.mp4",
+  p35: "https://www.aiduny.com/upload/file/20210930/f79fcd4339b5f8c4d2ad750a7d104f81.mp4",
+  p36: "https://www.aiduny.com/upload/file/20210930/c7e5036fd3d7e0b9f60d4921812fb66f.mp4",
+  p37: "https://www.aiduny.com/upload/file/20210930/48c83af6dc222b63c0b5fb58b9f78da9.mp4",
+  p38: "https://www.aiduny.com/upload/file/20210930/5d4b2b76761dd27b265aa0725bb8698d.mp4",
+  p39: "https://www.aiduny.com/upload/file/20211015/2cf284075f0c984107de3632d709dac8.mp4",
+  p40: "https://www.aiduny.com/upload/file/20211015/9d31524e7517995c45ef5dee6535bd2b.mp4",
+  p41: "https://www.aiduny.com/upload/file/20211015/cd28bdc25f55010b409e719915bc944e.mp4",
+  p42: "https://www.aiduny.com/upload/file/20260209/a6fe852669e74c1a9779c2beb5fbce16.mp4",
+  p43: "https://www.aiduny.com/upload/file/20210930/f79fcd4339b5f8c4d2ad750a7d104f81.mp4"
+};
+
+Object.entries(referenceCategoryVideoFiles).forEach(([productId, videoFile]) => {
+  const product = productCatalog[productId];
+  if (!product || !["hydro-geo", "mineral"].includes(product.category)) {
+    return;
+  }
+
+  product.videoFile = videoFile;
+  product.videoUploadDate = product.videoUploadDate || "2026-07-11";
+  ["en", "zh", "ar", "tr", "fa", "fr", "es"].forEach((lang) => {
+    if (product[lang]) {
+      product[lang].videoText = importedGroundwaterVideoText[lang] || importedGroundwaterVideoText.en;
+    }
+  });
+});
 
 function syncLanguageSelects(lang) {
   if (!languageSelects.length) {
@@ -2971,13 +4234,13 @@ const aboutPageCopy = {
         title: "Who We Are",
         paragraphs: [
           "CYQ Water is a professional supplier focused on groundwater detection, geophysical exploration, and water well locating equipment, dedicated to providing reliable, easy-to-use, high-precision water finders for customers in the Middle East, Africa, and global drilling & agricultural industries.",
-          "We work closely with top R&D and manufacturing sources in China with over 50 years of experience in geophysical instruments, focusing on stable performance, accurate detection, and durable design to help you find water quickly and efficiently in arid and complex geological areas."
+          "We work closely with experienced R&D and production resources in China with over 50 years of experience in geophysical instruments, focusing on stable performance, accurate detection, and durable design to help you find water quickly and efficiently in arid and complex geological areas."
         ]
       },
       {
         kicker: "Our Manufacturing & R&D Strength",
         title: "Our Manufacturing & R&D Strength",
-        intro: "Our partner factory is a national high-tech enterprise and Shanghai \"Specialized, Refined, Differential, Innovative\" enterprise, with:",
+        intro: "Our supply chain and technical resources include experienced geophysical instrument R&D and production partners, with:",
         items: [
           "50+ years of R&D history in geophysical exploration equipment since 1973",
           "Multiple independent intellectual property rights, patents, and software copyrights",
@@ -3021,7 +4284,7 @@ const aboutPageCopy = {
           "Strong anti-interference performance in complex geological conditions",
           "Fast global shipping to all Middle East countries",
           "Professional technical support and lifetime after-sales service",
-          "Long-term stable supply with competitive factory prices"
+          "Long-term stable supply with competitive supply-chain pricing"
         ]
       },
       {
@@ -3706,6 +4969,86 @@ function parsePriceLine(line) {
   };
 }
 
+const productModelPrefixPattern = /^(Model|型号|الموديل|الطراز|مدل|Modele|Modèle|Modelo|Urun|Ürün)\s*[:：]?\s*/i;
+
+const productPriceInfoKeywords = [
+  "Original price",
+  "Discount price",
+  "Offer price",
+  "Price",
+  "RMB",
+  "USD",
+  "原价",
+  "优惠价",
+  "价格",
+  "元",
+  "美元",
+  "السعر الأصلي",
+  "سعر العرض",
+  "السعر",
+  "يوان",
+  "دولار",
+  "قیمت اصلی",
+  "قیمت تخفیفی",
+  "قیمت",
+  "یوان",
+  "دلار",
+  "Orijinal fiyat",
+  "İndirimli fiyat",
+  "Fiyat",
+  "Prix initial",
+  "Prix promotionnel",
+  "Prix",
+  "Precio original",
+  "Precio promocional",
+  "Precio"
+];
+
+const productPriceInfoPattern =
+  /(Original price|Discount price|Offer price|Price|RMB|USD|原价|优惠价|价格|元|美元|السعر الأصلي|سعر العرض|السعر|يوان|دولار|قیمت اصلی|قیمت تخفیفی|قیمت|یوان|دلار|Orijinal fiyat|İndirimli fiyat|Fiyat|Prix initial|Prix promotionnel|Prix|Precio original|Precio promocional|Precio)/i;
+
+const productCurrencyAmountPattern =
+  /(?:RMB|USD)\s*[\d.]+(?:,[\d]{3})*|[\d,.]+(?:\s*万)?\s*(?:元|美元)|(?:元|美元)\s*[\d,.]+|(?:يوان|دولار|یوان|دلار)\s*[\d.]+(?:,[\d]{3})*/gi;
+
+function getFirstPriceInfoIndex(text) {
+  return productPriceInfoKeywords
+    .map((keyword) => text.toLowerCase().indexOf(keyword.toLowerCase()))
+    .filter((index) => index >= 0)
+    .sort((a, b) => a - b)[0];
+}
+
+function stripProductPriceInfo(summary) {
+  return String(summary || "")
+    .split("\n")
+    .map((line) => {
+      const trimmed = line.trim();
+      if (!trimmed) {
+        return "";
+      }
+
+      if (productModelPrefixPattern.test(trimmed) && productPriceInfoPattern.test(trimmed)) {
+        const prefixMatch = trimmed.match(productModelPrefixPattern);
+        const prefix = prefixMatch?.[0]?.trim() || "";
+        const withoutPrefix = trimmed.replace(productModelPrefixPattern, "");
+        const firstPriceInfoIndex = getFirstPriceInfoIndex(withoutPrefix);
+        const model = (firstPriceInfoIndex >= 0 ? withoutPrefix.slice(0, firstPriceInfoIndex) : withoutPrefix)
+          .replace(/[，,、;；:：\s]+$/, "")
+          .trim();
+        return model ? `${prefix} ${model}`.trim() : "";
+      }
+
+      return trimmed
+        .replace(/\s*(?:Original price|Discount price|Offer price|Price|原价|优惠价|价格|السعر الأصلي|سعر العرض|السعر|قیمت اصلی|قیمت تخفیفی|قیمت|Orijinal fiyat|İndirimli fiyat|Fiyat|Prix initial|Prix promotionnel|Prix|Precio original|Precio promocional|Precio)\s*[:：]?\s*[^，,、;；\n]*/gi, "")
+        .replace(productCurrencyAmountPattern, "")
+        .replace(/[，,、;；:：\s]+$/, "")
+        .trim();
+    })
+    .filter(Boolean)
+    .join("\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
 const detailDynamicCopy = {
   en: {
     priceHeaders: ["Model", "Original price", "Offer price", "USD reference"],
@@ -3853,7 +5196,7 @@ function renderPriceTable(rows, lang = "en") {
 }
 
 function formatDetailSummary(summary, lang = "en") {
-  const text = String(summary || "").trim();
+  const text = stripProductPriceInfo(summary);
   if (!text) {
     return "";
   }
@@ -4389,6 +5732,11 @@ function getProductVideoUploadDate(productId, product) {
   return String(configuredDate).trim();
 }
 
+function getProductLocalVideo(product) {
+  const configuredVideo = product?.videoFile || product?.localVideo || "";
+  return String(configuredVideo).trim();
+}
+
 function getYouTubeEmbedUrl(videoId, autoplay = false) {
   const params = new URLSearchParams({
     rel: "0",
@@ -4410,22 +5758,35 @@ function getYouTubeThumbnailUrl(videoId) {
 }
 
 function getProductVideoObject(productId, product, content, descriptionText) {
+  const localVideo = getProductLocalVideo(product);
+  if (localVideo) {
+    const videoUrl = new URL(localVideo, window.location.href).href;
+    const thumbnailUrl = product.gallery?.[0] ? getStructuredDataImage(product.gallery[0]) : "";
+    return {
+      "@type": "VideoObject",
+      name: `${content.name} product demonstration video`,
+      description: descriptionText,
+      ...(thumbnailUrl ? { thumbnailUrl: [thumbnailUrl] } : {}),
+      contentUrl: videoUrl,
+      uploadDate: getProductVideoUploadDate(productId, product) || "2026-07-10"
+    };
+  }
+
   const youtubeId = getProductYouTubeId(productId, product);
-  const fallbackPoster = product.gallery?.[0] ? getStructuredDataImage(product.gallery[0]) : "";
+  if (!youtubeId) {
+    return null;
+  }
+
   const videoName = `${content.name} product demonstration video`;
   const videoObject = {
     "@type": "VideoObject",
     name: videoName,
     description: descriptionText,
-    thumbnailUrl: youtubeId ? [getYouTubeThumbnailUrl(youtubeId)] : (fallbackPoster ? [fallbackPoster] : [])
+    thumbnailUrl: [getYouTubeThumbnailUrl(youtubeId)]
   };
 
-  if (youtubeId) {
-    videoObject.embedUrl = getYouTubeEmbedUrl(youtubeId);
-    videoObject.contentUrl = getYouTubeWatchUrl(youtubeId);
-  } else {
-    videoObject.contentUrl = getYouTubeWatchUrl(youtubeId);
-  }
+  videoObject.embedUrl = getYouTubeEmbedUrl(youtubeId);
+  videoObject.contentUrl = getYouTubeWatchUrl(youtubeId);
 
   const uploadDate = getProductVideoUploadDate(productId, product);
   if (uploadDate) {
@@ -4446,13 +5807,20 @@ function getProductUsdPrice(summary) {
 
 function updateProductSeo(productId, product, content, lang) {
   const copy = getDetailDynamicCopy(lang);
+  const sanitizedSummary = stripProductPriceInfo(content.summary);
   const titleText = `${content.name} | ${copy.seoTitleSuffix}`;
   const descriptionText = summarizeText(
-    copy.seoDescription(content.name, content.summary),
+    copy.seoDescription(content.name, sanitizedSummary),
     155
   );
   const canonicalUrl = getProductDetailUrl(productId, lang);
-  const usdPrice = getProductUsdPrice(content.summary);
+  const usdPrice = getProductUsdPrice(sanitizedSummary);
+  const productCategoryMap = {
+    groundwater: "Groundwater detector",
+    "hydro-geo": "Hydro-geological investigation equipment",
+    mineral: "Mineral detector",
+    treasure: "Treasure detector"
+  };
 
   document.title = titleText;
 
@@ -4488,15 +5856,14 @@ function updateProductSeo(productId, product, content, lang) {
     description: descriptionText,
     brand: {
       "@type": "Brand",
-      name: "AquaScan"
+      name: "Cyqwater"
     },
-    category: "Groundwater detector",
+    category: productCategoryMap[product.category] || "Geophysical survey equipment",
     sku: productId.toUpperCase(),
     offers: {
       "@type": "Offer",
       url: canonicalUrl,
-      priceCurrency: "USD",
-      ...(usdPrice ? { price: usdPrice } : {}),
+      ...(usdPrice ? { priceCurrency: "USD", price: usdPrice } : {}),
       availability: "https://schema.org/InStock",
       itemCondition: "https://schema.org/NewCondition",
       seller: {
@@ -4591,11 +5958,15 @@ function renderProductVideo(productId, product, content) {
     return;
   }
 
-  const youtubeId = getProductYouTubeId(productId, product);
-  const posterImage = getYouTubeThumbnailUrl(youtubeId);
+  const localVideo = getProductLocalVideo(product);
+  const youtubeId = localVideo ? "" : getProductYouTubeId(productId, product);
+  const posterImage = youtubeId ? getYouTubeThumbnailUrl(youtubeId) : product.gallery?.[0] || "";
   const posterAlt = `${content.name} groundwater detector product video`;
+  const hasVideo = Boolean(localVideo || youtubeId);
 
   placeholder.hidden = false;
+  placeholder.disabled = !hasVideo;
+  placeholder.classList.toggle("is-disabled", !hasVideo);
   youtubePlayer.hidden = true;
   localPlayer.hidden = true;
   youtubePlayer.removeAttribute("src");
@@ -4605,15 +5976,23 @@ function renderProductVideo(productId, product, content) {
 
   poster.src = posterImage;
   poster.alt = posterAlt;
-  provider.textContent = youtubeId ? "Watch on YouTube" : "Watch product video";
-  placeholder.setAttribute("aria-label", youtubeId ? `Play ${content.name} video on YouTube` : `Play ${content.name} product video`);
+  provider.textContent = localVideo ? "Watch product video" : youtubeId ? "Watch on YouTube" : "Video to be added";
+  placeholder.setAttribute("aria-label", hasVideo ? `Play ${content.name} product video` : `${content.name} video to be added`);
 
-  placeholder.onclick = () => {
-    placeholder.hidden = true;
-    youtubePlayer.title = `${content.name} product video`;
-    youtubePlayer.src = getYouTubeEmbedUrl(youtubeId, true);
-    youtubePlayer.hidden = false;
-  };
+  placeholder.onclick = hasVideo
+    ? () => {
+        placeholder.hidden = true;
+        if (localVideo) {
+          localPlayer.src = localVideo;
+          localPlayer.hidden = false;
+          localPlayer.play().catch(() => {});
+          return;
+        }
+        youtubePlayer.title = `${content.name} product video`;
+        youtubePlayer.src = getYouTubeEmbedUrl(youtubeId, true);
+        youtubePlayer.hidden = false;
+      }
+    : null;
 }
 
 function normalizeProductDetailDatasets() {
@@ -4729,6 +6108,12 @@ function getFilteredProductIds(category) {
   return productOrder.filter((id) => productCatalog[id]?.category === category);
 }
 
+function getAvailableProductCategories(filterButtons) {
+  return filterButtons
+    .map((button) => button.dataset.category)
+    .filter((category) => category && getFilteredProductIds(category).length > 0);
+}
+
 function normalizeSearchText(value) {
   return String(value || "")
     .toLowerCase()
@@ -4828,31 +6213,27 @@ function renderProductsCatalog(lang) {
     return;
   }
 
+  const availableCategories = getAvailableProductCategories(filterButtons);
+  filterButtons.forEach((button) => {
+    button.hidden = !availableCategories.includes(button.dataset.category);
+  });
+
+  if (!availableCategories.length) {
+    grid.innerHTML = `<div class="product-empty-state">${escapeHtml(translateKey(dict, "productsEmptyText"))}</div>`;
+    pagination.innerHTML = "";
+    return;
+  }
+
+  if (!availableCategories.includes(productListState.category)) {
+    productListState.category = availableCategories[0];
+    productListState.page = 1;
+  }
+
   const ids = getFilteredProductIds(productListState.category);
   const totalPages = Math.max(1, Math.ceil(ids.length / productListState.pageSize));
   productListState.page = Math.min(productListState.page, totalPages);
   const start = (productListState.page - 1) * productListState.pageSize;
   const visibleIds = ids.slice(start, start + productListState.pageSize);
-
-  grid.innerHTML = visibleIds
-    .map((id) => {
-      const product = productCatalog[id];
-      const image = product.gallery[0];
-      const name = translateKey(dict, `${id}Name`);
-      const text = translateKey(dict, `${id}Text`);
-      const action = translateKey(dict, "productAction");
-      return `
-        <article class="product-card">
-          <img src="${image}" alt="${name}" loading="lazy" />
-          <div class="product-body">
-            <h3>${name}</h3>
-            <p>${text}</p>
-            <a href="./product-detail.html?id=${id}">${action}</a>
-          </div>
-        </article>
-      `;
-    })
-    .join("");
 
   filterButtons.forEach((button) => {
     button.classList.toggle("is-active", button.dataset.category === productListState.category);
@@ -4865,6 +6246,33 @@ function renderProductsCatalog(lang) {
       renderProductsCatalog(lang);
     };
   });
+
+  if (!visibleIds.length) {
+    grid.innerHTML = `<div class="product-empty-state">${escapeHtml(translateKey(dict, "productsEmptyText"))}</div>`;
+    pagination.innerHTML = "";
+    return;
+  }
+
+  grid.innerHTML = visibleIds
+    .map((id) => {
+      const product = productCatalog[id];
+      const image = product.gallery[0];
+      const name = translateKey(dict, `${id}Name`);
+      const text = translateKey(dict, `${id}Text`);
+      const action = translateKey(dict, "productAction");
+      const detailUrl = `./product-detail.html?id=${id}`;
+      return `
+        <article class="product-card" data-card-url="${detailUrl}" tabindex="0" role="link">
+          <img src="${image}" alt="${name}" loading="lazy" />
+          <div class="product-body">
+            <h3>${name}</h3>
+            <p>${text}</p>
+            <a href="${detailUrl}">${action}</a>
+          </div>
+        </article>
+      `;
+    })
+    .join("");
 
   if (totalPages <= 1) {
     pagination.innerHTML = "";
@@ -5054,16 +6462,19 @@ function renderProductDetailPage(lang) {
   const videoText = document.querySelector("#detail-video-text");
   const techSection = document.querySelector("#detail-tech-section");
   const techTable = document.querySelector("#detail-tech-table");
-  const introSection = document.querySelector("#detail-intro-section");
-  const introImages = document.querySelector("#detail-intro-images");
   const sectionTabs = Array.from(document.querySelectorAll(".detail-anchor-button[data-target]"));
   if (!title) {
     return;
   }
 
+  const displayContent = {
+    ...content,
+    summary: stripProductPriceInfo(content.summary)
+  };
+
   title.textContent = content.name;
-  summary.innerHTML = formatDetailSummary(content.summary, contentLang);
-  updateProductSeo(id, product, content, contentLang);
+  summary.innerHTML = formatDetailSummary(displayContent.summary, contentLang);
+  updateProductSeo(id, product, displayContent, contentLang);
 
   quickSpecs.innerHTML = content.quickSpecs
     .map((item) => `<span class="detail-pill">${item}</span>`)
@@ -5095,19 +6506,6 @@ function renderProductDetailPage(lang) {
     }
   }
 
-  if (introSection && introImages) {
-    const introImageList = (Array.isArray(product.introImages) && product.introImages.length ? product.introImages : buildFallbackIntroImages(product));
-    if (introImageList?.length) {
-      introSection.hidden = false;
-      introImages.innerHTML = introImageList
-        .map((image, index) => `<img src="${image}" alt="${content.name} groundwater detector product detail image ${index + 1} for Middle East buyers" loading="${index === 0 ? "eager" : "lazy"}" onerror="this.onerror=null;this.src='${product.gallery[0]}';">`)
-        .join("");
-    } else {
-      introSection.hidden = true;
-      introImages.innerHTML = "";
-    }
-  }
-
   renderBuyerFeedbackExamples(content.name, contentLang);
 
   const backToTopButton = document.querySelector("#back-to-top");
@@ -5120,8 +6518,7 @@ function renderProductDetailPage(lang) {
   if (sectionTabs.length) {
     const sectionsById = {
       "detail-video-section": document.querySelector("#detail-video-section"),
-      "detail-tech-section": techSection,
-      "detail-intro-section": introSection
+      "detail-tech-section": techSection
     };
 
     const updateActiveSection = (targetId) => {
@@ -5498,19 +6895,41 @@ document.addEventListener(
 
 function createChatWidget() {
   const whatsappConfig = {
-    phoneDigits: "8618319333114",
-    phoneDisplay: "+86 18319333114",
+    accounts: [
+      {
+        id: "sales",
+        phoneDigits: "8618319333114",
+        phoneDisplay: "+86 18319333114"
+      },
+      {
+        id: "support",
+        phoneDigits: "8615251758384",
+        phoneDisplay: "+86 15251758384"
+      }
+    ],
     avatarSrc: "./service.png",
+    launcherIconSrc: "./assets/icons/chat-whatsapp.svg",
     autoOpenDelayMs: 10000,
-    autoOpenedKey: "aquascan-chat-auto-opened",
-    dismissedKey: "aquascan-chat-dismissed"
+    autoOpenedKey: "cyqwater-chat-auto-opened",
+    dismissedKey: "cyqwater-chat-dismissed"
   };
   const copyByLanguage = {
     en: {
-      launcher: "Chat with us",
-      title: "AquaScan Online Consultant",
+      launcher: "WhatsApp",
+      title: "Cyqwater Online Consultant",
       subtitle: "Our sales engineer can help with model selection, quotation, and delivery.",
       welcome: "Hi, how can we help you? Send your question and our sales engineer will help with model selection, quotation, or delivery support.",
+      contactHint: "Choose the right contact",
+      accounts: {
+        sales: {
+          title: "Sales Inquiry",
+          text: "Product model, quotation, delivery time, and export documents."
+        },
+        support: {
+          title: "Technical Support",
+          text: "Operation guidance, field use, after-sales, and troubleshooting."
+        }
+      },
       inputPlaceholder: "Type your question here...",
       send: "Send on WhatsApp",
       copy: "Copy number",
@@ -5520,10 +6939,21 @@ function createChatWidget() {
       defaultMessage: "Hello, I am interested in your groundwater detector products."
     },
     zh: {
-      launcher: "在线咨询",
-      title: "AquaScan 在线顾问",
+      launcher: "WhatsApp",
+      title: "Cyqwater 在线顾问",
       subtitle: "我们的销售工程师可协助您确认型号、报价和发货方案。",
       welcome: "您好，请问有什么可以帮您？您可以咨询型号选择、报价、发货或售后支持。",
+      contactHint: "请选择咨询类型",
+      accounts: {
+        sales: {
+          title: "销售报价",
+          text: "产品型号、报价、发货时效和出口文件。"
+        },
+        support: {
+          title: "技术支持",
+          text: "设备操作、现场使用、售后指导和问题排查。"
+        }
+      },
       inputPlaceholder: "请输入您的问题...",
       send: "发送到 WhatsApp",
       copy: "复制号码",
@@ -5533,10 +6963,21 @@ function createChatWidget() {
       defaultMessage: "您好，我想咨询地下水探测仪产品。"
     },
     ar: {
-      launcher: "تحدث معنا",
-      title: "مستشار AquaScan",
+      launcher: "WhatsApp",
+      title: "مستشار Cyqwater",
       subtitle: "يمكن لمهندس المبيعات مساعدتك في اختيار الموديل والسعر والشحن.",
       welcome: "مرحباً، كيف يمكننا مساعدتك؟ يمكنك السؤال عن اختيار الموديل أو السعر أو الشحن أو الدعم الفني.",
+      contactHint: "اختر جهة التواصل المناسبة",
+      accounts: {
+        sales: {
+          title: "استفسار المبيعات",
+          text: "الموديل والسعر ووقت الشحن ووثائق التصدير."
+        },
+        support: {
+          title: "الدعم الفني",
+          text: "إرشادات التشغيل والاستخدام الميداني وخدمة ما بعد البيع."
+        }
+      },
       inputPlaceholder: "اكتب سؤالك هنا...",
       send: "إرسال عبر واتساب",
       copy: "نسخ الرقم",
@@ -5546,10 +6987,21 @@ function createChatWidget() {
       defaultMessage: "مرحباً، أريد الاستفسار عن أجهزة كشف المياه الجوفية."
     },
     tr: {
-      launcher: "Bize yazın",
-      title: "AquaScan Satış Danışmanı",
+      launcher: "WhatsApp",
+      title: "Cyqwater Satış Danışmanı",
       subtitle: "Satış mühendisimiz model seçimi, fiyat ve teslimat konusunda yardımcı olur.",
       welcome: "Merhaba, size nasıl yardımcı olabiliriz? Model seçimi, fiyat, teslimat veya destek hakkında yazabilirsiniz.",
+      contactHint: "Doğru kişiyi seçin",
+      accounts: {
+        sales: {
+          title: "Satış Talebi",
+          text: "Ürün modeli, fiyat, teslimat süresi ve ihracat belgeleri."
+        },
+        support: {
+          title: "Teknik Destek",
+          text: "Kullanım, saha uygulaması, satış sonrası ve sorun giderme."
+        }
+      },
       inputPlaceholder: "Sorunuzu buraya yazın...",
       send: "WhatsApp ile gönder",
       copy: "Numarayı kopyala",
@@ -5559,10 +7011,21 @@ function createChatWidget() {
       defaultMessage: "Merhaba, yeraltı suyu dedektörü ürünlerinizle ilgileniyorum."
     },
     fa: {
-      launcher: "با ما گفتگو کنید",
-      title: "مشاور AquaScan",
+      launcher: "WhatsApp",
+      title: "مشاور Cyqwater",
       subtitle: "مهندس فروش ما برای انتخاب مدل، قیمت و ارسال به شما کمک می‌کند.",
       welcome: "سلام، چگونه می‌توانیم کمک کنیم؟ درباره انتخاب مدل، قیمت، ارسال یا پشتیبانی فنی سؤال بپرسید.",
+      contactHint: "مسیر تماس مناسب را انتخاب کنید",
+      accounts: {
+        sales: {
+          title: "استعلام فروش",
+          text: "مدل محصول، قیمت، زمان ارسال و اسناد صادرات."
+        },
+        support: {
+          title: "پشتیبانی فنی",
+          text: "راهنمایی کاربری، استفاده میدانی، خدمات پس از فروش و عیب‌یابی."
+        }
+      },
       inputPlaceholder: "سؤال خود را اینجا بنویسید...",
       send: "ارسال در واتساپ",
       copy: "کپی شماره",
@@ -5572,10 +7035,21 @@ function createChatWidget() {
       defaultMessage: "سلام، می‌خواهم درباره دستگاه‌های تشخیص آب زیرزمینی سؤال کنم."
     },
     fr: {
-      launcher: "Nous contacter",
-      title: "Consultant AquaScan",
+      launcher: "WhatsApp",
+      title: "Consultant Cyqwater",
       subtitle: "Notre ingenieur commercial vous aide pour le modele, le devis et la livraison.",
       welcome: "Bonjour, comment pouvons-nous vous aider ? Posez votre question sur les modeles, prix, livraison ou support.",
+      contactHint: "Choisissez le bon contact",
+      accounts: {
+        sales: {
+          title: "Demande commerciale",
+          text: "Modele, devis, delai de livraison et documents export."
+        },
+        support: {
+          title: "Support technique",
+          text: "Utilisation, terrain, apres-vente et depannage."
+        }
+      },
       inputPlaceholder: "Tapez votre question ici...",
       send: "Envoyer sur WhatsApp",
       copy: "Copier le numero",
@@ -5585,10 +7059,21 @@ function createChatWidget() {
       defaultMessage: "Bonjour, je suis interesse par vos detecteurs d'eau souterraine."
     },
     es: {
-      launcher: "Hablar con nosotros",
-      title: "Consultor AquaScan",
+      launcher: "WhatsApp",
+      title: "Consultor Cyqwater",
       subtitle: "Nuestro ingeniero de ventas le ayuda con modelo, cotizacion y entrega.",
       welcome: "Hola, ¿como podemos ayudarle? Pregunte sobre modelos, precio, entrega o soporte tecnico.",
+      contactHint: "Elija el contacto adecuado",
+      accounts: {
+        sales: {
+          title: "Consulta de ventas",
+          text: "Modelo, cotizacion, tiempo de entrega y documentos de exportacion."
+        },
+        support: {
+          title: "Soporte tecnico",
+          text: "Uso, aplicacion en campo, posventa y solucion de problemas."
+        }
+      },
       inputPlaceholder: "Escriba su pregunta aqui...",
       send: "Enviar por WhatsApp",
       copy: "Copiar numero",
@@ -5599,6 +7084,15 @@ function createChatWidget() {
     }
   };
   const getWidgetCopy = (lang = getCurrentLanguage()) => copyByLanguage[lang] || copyByLanguage.en;
+  const getAccountCopy = (copy, accountId) =>
+    copy.accounts?.[accountId] || copyByLanguage.en.accounts[accountId] || copyByLanguage.en.accounts.sales;
+  const accountIcons = {
+    sales: "./assets/icons/chat-sales.svg",
+    support: "./assets/icons/chat-support.svg"
+  };
+  let activeAccountId = whatsappConfig.accounts[0].id;
+  const getActiveAccount = () =>
+    whatsappConfig.accounts.find((account) => account.id === activeAccountId) || whatsappConfig.accounts[0];
   const copy = getWidgetCopy();
   const widget = document.createElement("div");
   widget.className = "chat-widget";
@@ -5618,8 +7112,26 @@ function createChatWidget() {
       </div>
       <div class="chat-messages" aria-live="polite"></div>
       <div class="chat-contact">
-        <span>WhatsApp</span>
-        <strong>${whatsappConfig.phoneDisplay}</strong>
+        <p class="chat-contact-eyebrow">${copy.contactHint}</p>
+        <div class="chat-contact-options">
+          ${whatsappConfig.accounts
+            .map((account, index) => {
+              const accountCopy = getAccountCopy(copy, account.id);
+              return `
+                <button class="chat-contact-card${index === 0 ? " is-active" : ""}" type="button" data-chat-account="${account.id}" aria-pressed="${index === 0 ? "true" : "false"}">
+                  <span class="chat-contact-icon" aria-hidden="true">
+                    <img src="${accountIcons[account.id] || accountIcons.sales}" alt="" loading="lazy" />
+                  </span>
+                  <span class="chat-contact-body">
+                    <strong>${accountCopy.title}</strong>
+                    <small>${accountCopy.text}</small>
+                    <em>${account.phoneDisplay}</em>
+                  </span>
+                </button>
+              `;
+            })
+            .join("")}
+        </div>
       </div>
       <form class="chat-form-widget">
         <textarea class="chat-input" rows="2" placeholder="${copy.inputPlaceholder}"></textarea>
@@ -5630,7 +7142,9 @@ function createChatWidget() {
       </form>
     </section>
     <button class="chat-launcher" type="button" aria-expanded="false" aria-controls="chat-panel">
-      <span class="chat-launcher-dot" aria-hidden="true"></span>
+      <span class="chat-launcher-icon" aria-hidden="true">
+        <img src="${whatsappConfig.launcherIconSrc}" alt="" loading="lazy" />
+      </span>
       <span class="chat-launcher-label">${copy.launcher}</span>
     </button>
   `;
@@ -5646,6 +7160,8 @@ function createChatWidget() {
     subtitle: widget.querySelector(".chat-panel-subtitle"),
     close: widget.querySelector(".chat-close"),
     messages: widget.querySelector(".chat-messages"),
+    contactHint: widget.querySelector(".chat-contact-eyebrow"),
+    accountCards: Array.from(widget.querySelectorAll(".chat-contact-card")),
     form: widget.querySelector(".chat-form-widget"),
     input: widget.querySelector(".chat-input"),
     copy: widget.querySelector(".chat-copy"),
@@ -5662,7 +7178,20 @@ function createChatWidget() {
 
   const buildWhatsAppUrl = (message) => {
     const text = message || getWidgetCopy().defaultMessage;
-    return `https://wa.me/${whatsappConfig.phoneDigits}?text=${encodeURIComponent(text)}`;
+    return `https://wa.me/${getActiveAccount().phoneDigits}?text=${encodeURIComponent(text)}`;
+  };
+
+  const setActiveAccount = (accountId) => {
+    if (!whatsappConfig.accounts.some((account) => account.id === accountId)) {
+      return;
+    }
+
+    activeAccountId = accountId;
+    chatElements.accountCards.forEach((card) => {
+      const isActive = card.dataset.chatAccount === accountId;
+      card.classList.toggle("is-active", isActive);
+      card.setAttribute("aria-pressed", String(isActive));
+    });
   };
 
   const appendLocalMessage = (role, content, options = {}) => {
@@ -5675,6 +7204,17 @@ function createChatWidget() {
     chatElements.launcherLabel.textContent = nextCopy.launcher;
     chatElements.title.textContent = nextCopy.title;
     chatElements.subtitle.textContent = nextCopy.subtitle;
+    chatElements.contactHint.textContent = nextCopy.contactHint;
+    chatElements.accountCards.forEach((card) => {
+      const account = whatsappConfig.accounts.find((item) => item.id === card.dataset.chatAccount);
+      if (!account) {
+        return;
+      }
+      const accountCopy = getAccountCopy(nextCopy, account.id);
+      card.querySelector("strong").textContent = accountCopy.title;
+      card.querySelector("small").textContent = accountCopy.text;
+      card.querySelector("em").textContent = account.phoneDisplay;
+    });
     chatElements.input.placeholder = nextCopy.inputPlaceholder;
     chatElements.copy.textContent = nextCopy.copy;
     chatElements.submit.textContent = nextCopy.send;
@@ -5701,6 +7241,14 @@ function createChatWidget() {
     setChatOpen(shouldOpen);
   });
 
+  chatElements.accountCards.forEach((card) => {
+    card.addEventListener("click", () => {
+      userInteractedWithChat = true;
+      setActiveAccount(card.dataset.chatAccount);
+      chatElements.input.focus();
+    });
+  });
+
   chatElements.close.addEventListener("click", () => {
     markChatDismissed();
     setChatOpen(false);
@@ -5717,10 +7265,10 @@ function createChatWidget() {
     userInteractedWithChat = true;
     const activeCopy = getWidgetCopy();
     try {
-      await navigator.clipboard.writeText(whatsappConfig.phoneDisplay);
+      await navigator.clipboard.writeText(getActiveAccount().phoneDisplay);
     } catch (error) {
       const tempInput = document.createElement("input");
-      tempInput.value = whatsappConfig.phoneDisplay;
+      tempInput.value = getActiveAccount().phoneDisplay;
       document.body.appendChild(tempInput);
       tempInput.select();
       document.execCommand("copy");
@@ -5907,6 +7455,39 @@ function initMediaProtection() {
   observer.observe(document.body, { childList: true, subtree: true });
 }
 
+function initClickableProductCards() {
+  const interactiveSelector = "a, button, input, select, textarea, label";
+
+  document.addEventListener("click", (event) => {
+    const card = event.target.closest?.(".product-card[data-card-url]");
+    if (!card || event.target.closest?.(interactiveSelector)) {
+      return;
+    }
+
+    const url = card.dataset.cardUrl;
+    if (url) {
+      window.location.href = url;
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (!["Enter", " "].includes(event.key)) {
+      return;
+    }
+
+    const card = event.target.closest?.(".product-card[data-card-url]");
+    if (!card || event.target.closest?.(interactiveSelector)) {
+      return;
+    }
+
+    event.preventDefault();
+    const url = card.dataset.cardUrl;
+    if (url) {
+      window.location.href = url;
+    }
+  });
+}
+
 languageSelects.forEach((select) => {
   select.addEventListener("change", () => {
     localStorage.setItem(languageManualStorageKey, "1");
@@ -5916,6 +7497,7 @@ languageSelects.forEach((select) => {
 
 initializeLanguage();
 initMediaProtection();
+initClickableProductCards();
 initHomeBanner();
 initHomeProductSearch();
 initBannerNavbar();

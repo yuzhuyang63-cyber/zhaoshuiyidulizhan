@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://www.cyqwater.com/</loc>
   </url>
   <url>
-    <loc>https://example.com/about.html</loc>
+    <loc>https://www.cyqwater.com/about.html</loc>
   </url>
   <url>
-    <loc>https://example.com/products.html</loc>
+    <loc>https://www.cyqwater.com/products.html</loc>
   </url>
   <url>
-    <loc>https://example.com/solutions.html</loc>
+    <loc>https://www.cyqwater.com/solutions.html</loc>
   </url>
   <url>
-    <loc>https://example.com/videos.html</loc>
+    <loc>https://www.cyqwater.com/reviews.html</loc>
   </url>
   <url>
-    <loc>https://example.com/contact.html</loc>
+    <loc>https://www.cyqwater.com/contact.html</loc>
   </url>
 </urlset>
