@@ -3907,6 +3907,64 @@ const zhHighlightMap = {
   p43: ["基于质子旋进原理的高精度地磁测量系统。", "支持RTK级GNSS定位、无线智能控制和自动测量路径记录。", "提供实时数据处理、绘图、剖面提取和AI辅助异常解译。"]
 };
 
+const zhTechValues = {
+  p9:  { application: "坝体管涌、渗漏和泄漏调查", channels: "32通道", method: "自然电场和电阻率测量" },
+  p10: { application: "内部侵蚀、管涌、渗漏和堤防风险筛查", channels: "多通道配置", method: "地球物理成像和异常区解译" },
+  p22: { application: "高密度地下水勘探和钻井选址", configuration: "32通道", method: "MT电磁法地下水测量" },
+  p24: { application: "便携式地下水勘探和打井选址", configuration: "棍式地下水探测仪", method: "电磁法地下水测量" },
+  p25: { application: "深层地质构造、地下水和矿产勘探", configuration: "MT测量系统", method: "大地电磁法测量" },
+  p26: { application: "快速地下水勘探和钻井项目筛选", configuration: "全通道快速配置", method: "MT电磁法地下水测量" },
+  p28: { application: "磁法测量、矿产勘探和地质构造调查", configuration: "三分量磁法采集", method: "磁场测量" },
+  p29: { application: "高密度电法排列测量和工程勘探", configuration: "遥控高密度扩展系统", method: "电法排列地球物理测量" },
+  p30: { application: "专业MT地球物理探测和成像测量", configuration: "32通道", method: "MT电磁法测量" },
+  p31: { application: "MT地球物理测量和地下水勘探", configuration: "16通道", method: "MT电磁法测量" },
+  p32: { application: "单通道地球物理和地下水测量", configuration: "单通道", method: "电磁法地球物理测量" },
+  p35: { application: "磁法测量和矿产勘探", configuration: "质子磁力仪", method: "总磁场测量" },
+  p36: { application: "三轴磁场测量和地质调查", configuration: "三分量磁通门", method: "磁通门磁法测量" },
+  p37: { application: "单分量磁场测量", configuration: "单分量磁通门", method: "磁通门磁法测量" },
+  p39: { application: "电磁探头测量和配件匹配", configuration: "TT探头配件", method: "电磁感应测量" },
+  p40: { application: "电阻率测量和地下水勘探", configuration: "电阻率测量仪", method: "电阻率法" },
+  p41: { application: "全地形电磁测量和仪器配件匹配", configuration: "便携式电磁传感器", method: "电磁感应测量" },
+  p42: { application: "矿产勘探、水源调查、环境普查和工程勘察", configuration: "多功能电阻率和激电测量系统", method: "直流电阻率和激发极化法" },
+  p43: { application: "矿产勘探、磁法测量、地质测绘、工程勘察和考古调查", configuration: "自动质子磁力仪", method: "高精度总磁场测量" }
+};
+
+const langSpecLabels = {
+  ar: { model: "موديل المنتج", application: "التطبيق", channels: "القنوات / التكوين", method: "طريقة المسح", users: "فرق المسح الجيوفيزيائي، مقاولي الحفر، المشاريع الهندسية، والموزعين" },
+  tr: { model: "Ürün modeli", application: "Uygulama", channels: "Kanal / yapılandırma", method: "Ölçüm yöntemi", users: "Jeofizik ölçüm ekipleri, sondaj yüklenicileri, mühendislik projeleri ve distribütörler" },
+  fa: { model: "مدل محصول", application: "کاربرد", channels: "کانال / پیکربندی", method: "روش نقشه برداری", users: "تیم‌های نقشه برداری ژئوفیزیکی، پیمانکاران حفاری، پروژه‌های مهندسی و توزیع‌کنندگان" },
+  fr: { model: "Modèle du produit", application: "Application", channels: "Canal / configuration", method: "Méthode de sondage", users: "Équipes de sondage géophysique, entrepreneurs de forage, projets d'ingénierie et distributeurs" },
+  es: { model: "Modelo del producto", application: "Aplicación", channels: "Canal / configuración", method: "Método de sondeo", users: "Equipos de sondeo geofísico, contratistas de perforación, proyectos de ingeniería y distribuidores" }
+};
+
+const langVideoText = {
+  ar: "يمكن إضافة فيديو المنتج لاحقاً. يرجى الاتصال بنا للحصول على الصور الميدانية وإرشادات التشغيل وتوصيات الطراز.",
+  tr: "Ürün videosu daha sonra eklenebilir. Saha fotoğrafları, kullanım kılavuzu ve model önerileri için lütfen bizimle iletişime geçin.",
+  fa: "ویدیوی محصول می‌تواند بعداً اضافه شود. لطفاً برای عکس‌های میدانی، راهنمای عملیات و توصیه‌های مدل با ما تماس بگیرید.",
+  fr: "La vidéo du produit peut être ajoutée ultérieurement. Veuillez nous contacter pour des photos de terrain, des conseils d'utilisation et des recommandations de modèle.",
+  es: "El video del producto se puede añadir más tarde. Contáctenos para fotos de campo, orientación operativa y recomendaciones de modelo."
+};
+
+function buildLangContent(item, lang) {
+  const L = langSpecLabels[lang];
+  const name = (translations[lang] && translations[lang][`${item.id}Name`]) || item.name;
+  const chKey = item.configuration ? "configuration" : "channels";
+  return {
+    name,
+    summary: `Product model:\n${item.model}\n\n1. ${item.highlights[0]}\n2. ${item.highlights[1]}\n3. ${item.highlights[2]}`,
+    quickSpecs: item.quickSpecs,
+    features: item.highlights,
+    specs: [
+      { label: L.model, value: item.model },
+      { label: L.application, value: item.application },
+      { label: L.channels, value: item[chKey] || item.configuration || item.channels || "" },
+      { label: L.method, value: item.method },
+      { label: "Recommended users", value: "Geophysical survey teams, drilling contractors, engineering projects, and distributors" }
+    ],
+    videoText: langVideoText[lang]
+  };
+}
+
 hydroGeoProductDefinitions.forEach((item) => {
   const gallery = buildHydroGeoImages(item.slug, item.slug === "earthquake-advance-prediction-system" ? 3 : 4);
   const zhName = translations.zh[`${item.id}Name`] || item.name;
@@ -3930,9 +3988,9 @@ hydroGeoProductDefinitions.forEach((item) => {
       columns: ["项目", item.model],
       rows: [
         ["产品型号", item.model],
-        ["应用领域", item.application],
-        ["通道/配置", item.channels],
-        ["测量方法", item.method],
+        ["应用领域", (zhTechValues[item.id] && zhTechValues[item.id].application) || item.application],
+        ["通道/配置", (zhTechValues[item.id] && (zhTechValues[item.id].channels || zhTechValues[item.id].configuration)) || item.channels],
+        ["测量方法", (zhTechValues[item.id] && zhTechValues[item.id].method) || item.method],
         ["成像/输出", "2D/3D成像、曲线图和现场解译支持"],
         ["推荐用户", "工程测量团队、水利项目、承包商和经销商"]
       ]
@@ -3958,13 +4016,18 @@ hydroGeoProductDefinitions.forEach((item) => {
       features: zhHighlights,
       specs: [
         { label: "产品型号", value: item.model },
-        { label: "应用领域", value: item.application },
-        { label: "通道/配置", value: item.channels },
-        { label: "测量方法", value: item.method },
+        { label: "应用领域", value: (zhTechValues[item.id] && zhTechValues[item.id].application) || item.application },
+        { label: "通道/配置", value: (zhTechValues[item.id] && (zhTechValues[item.id].channels || zhTechValues[item.id].configuration)) || item.channels },
+        { label: "测量方法", value: (zhTechValues[item.id] && zhTechValues[item.id].method) || item.method },
         { label: "推荐用户", value: "工程测量团队、水利项目、承包商和经销商" }
       ],
       videoText: "产品视频可后续添加。请联系我们获取现场照片、操作指导和型号推荐。"
-    }
+    },
+    ar: buildLangContent(item, "ar"),
+    tr: buildLangContent(item, "tr"),
+    fa: buildLangContent(item, "fa"),
+    fr: buildLangContent(item, "fr"),
+    es: buildLangContent(item, "es")
   };
 
   if (!productOrder.includes(item.id)) {
@@ -4338,9 +4401,9 @@ function registerReferenceProduct(item) {
       columns: ["项目", item.model],
       rows: [
         ["产品型号", item.model],
-        ["应用领域", item.application],
-        ["通道/配置", item.configuration],
-        ["测量方法", item.method],
+        ["应用领域", (zhTechValues[item.id] && zhTechValues[item.id].application) || item.application],
+        ["通道/配置", (zhTechValues[item.id] && (zhTechValues[item.id].channels || zhTechValues[item.id].configuration)) || item.configuration],
+        ["测量方法", (zhTechValues[item.id] && zhTechValues[item.id].method) || item.method],
         ["成像/输出", "现场数据采集、图表输出和解译支持"],
         ["推荐用户", "地球物理测量团队、打井承包商、工程项目和经销商"]
       ]
@@ -4366,13 +4429,18 @@ function registerReferenceProduct(item) {
       features: zhHighlightMap[item.id] || item.highlights,
       specs: [
         { label: "产品型号", value: item.model },
-        { label: "应用领域", value: item.application },
-        { label: "通道/配置", value: item.configuration },
-        { label: "测量方法", value: item.method },
+        { label: "应用领域", value: (zhTechValues[item.id] && zhTechValues[item.id].application) || item.application },
+        { label: "通道/配置", value: (zhTechValues[item.id] && (zhTechValues[item.id].channels || zhTechValues[item.id].configuration)) || item.configuration },
+        { label: "测量方法", value: (zhTechValues[item.id] && zhTechValues[item.id].method) || item.method },
         { label: "推荐用户", value: "地球物理测量团队、打井承包商、工程项目和经销商" }
       ],
       videoText: "产品视频可后续添加。请联系我们获取现场照片、操作指导和型号推荐。"
-    }
+    },
+    ar: buildLangContent(item, "ar"),
+    tr: buildLangContent(item, "tr"),
+    fa: buildLangContent(item, "fa"),
+    fr: buildLangContent(item, "fr"),
+    es: buildLangContent(item, "es")
   };
 
   if (!productOrder.includes(item.id)) {
