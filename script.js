@@ -3889,6 +3889,7 @@ const zhHighlightMap = {
   p9: ["支持多通道野外采集，用于大坝和水库安全检查。", "实时2D、3D和曲线成像，帮助技术人员定位异常渗漏区域。", "适用于堤防、水库、堤坝和水利工程项目。"],
   p10: ["专为堤防结构内部渗漏和侵蚀风险检查设计。", "帮助工程团队在修复前评估管涌、渗漏和薄弱区域分布。", "支持现场成像输出，便于快速报告和项目沟通。"],
   p22: ["专为需要更强成像和更快对比的高密度地下水测量设计。", "支持现场实时2D和3D图像输出，便于解译。", "适用于打井承包商、农场水源项目和专业测量团队。"],
+  p23: ["结合电阻率层析成像和激电成像，适用于更广泛的地球物理应用。", "支持地下水、工程和地质构造调查。", "适用于需要更强电阻率成像工作流的专业团队。"],
   p24: ["便携式棍式工作流，适合快速野外检查和小型团队使用。", "支持分段测量逻辑，便于更清晰的深度对比。", "适用于打井承包商、农场用水户和经销商演示。"],
   p25: ["利用天然电磁信号进行更深层地球物理解译。", "可支持地下水、地热、矿产和地质构造调查项目。", "适用于专业测量团队和机构勘探项目。"],
   p26: ["专为需要提升测量效率的场景设计，快速野外测量。", "支持自动成像输出，缩短钻孔前的决策流程。", "适用于需要更快型号选择和现场验证的承包商。"],
@@ -3900,6 +3901,7 @@ const zhHighlightMap = {
   p35: ["专为需要稳定磁场读数的磁法测量应用设计。", "支持矿产勘探、地质测绘和异常调查。", "适用于专业野外团队和研究项目。"],
   p36: ["多方向测量磁场分量，便于更清晰的解译。", "适用于地质构造、矿产和磁异常测量工作。", "适用于需要方向性磁场数据的野外团队。"],
   p37: ["单分量磁法测量仪器，适用于实际野外使用。", "支持矿产勘探和地质磁异常检查。", "适用于需要紧凑型磁法测量设备的测量团队。"],
+  p38: ["结合直流电阻率和激电功能，适用于更广泛的地球物理应用。", "适用于地下水、矿产、工程和地质构造调查。", "适用于专业勘探团队和项目采购。"],
   p39: ["专为不便布设电极的表面条件设计。", "可支持岩石、混凝土路面和填土表面测量场景。", "可用作兼容地球物理仪器的配件。"],
   p40: ["电阻率测量仪，用于广泛应用的电法地球物理测量。", "支持地下水勘探、工程检查和地质调查。", "适用于需要经典电阻率测量工作流的团队。"],
   p41: ["便携式传感器，专为不同地面条件和快速野外使用设计。", "有助于减少传统电极布设在复杂地形中的不便。", "适用于匹配兼容的地球物理测量仪器。"],
@@ -3907,10 +3909,131 @@ const zhHighlightMap = {
   p43: ["基于质子旋进原理的高精度地磁测量系统。", "支持RTK级GNSS定位、无线智能控制和自动测量路径记录。", "提供实时数据处理、绘图、剖面提取和AI辅助异常解译。"]
 };
 
+const arHighlightMap = {
+  p9:  ["يدعم الاكتساب الميداني متعدد القنوات لفحص سلامة السدود والخزانات.", "تساعد الصور الفورية ثنائية وثلاثية الأبعاد والمنحنيات الفنيين في تحديد مناطق التسرب غير الطبيعية.", "مناسب للسدود الترابية والخزانات والسدود ومشاريع الري."],
+  p10: ["مصمم لفحص مخاطر التسرب الخفي والتآكل الداخلي في هياكل السدود الترابية.", "يساعد فرق الهندسة في تقييم توزيع الأنابيب والتسرب والمناطق الضعيفة قبل الإصلاح.", "يدعم إخراج الصور الميدانية لإعداد تقارير أسرع وتواصل أفضل للمشروع."],
+  p22: ["مصمم لمسوحات المياه الجوفية عالية الكثافة التي تتطلب تصويراً أقوى ومقارنة أسرع.", "يدعم إخراج الصور ثنائية وثلاثية الأبعاد في الوقت الفعلي للتفسير الميداني.", "مناسب لمقاولي الحفر ومشاريع مياه المزارع وفرق المسح المحترفة."],
+  p23: ["يجمع بين تصوير المقاومية المقطعية والاستقطاب المستحث لتطبيقات جيوفيزيائية أوسع.", "يدعم المياه الجوفية والهندسة والتحقيق في البنية الجيولوجية.", "مناسب للفرق المحترفة التي تحتاج إلى سير عمل أقوى لتصوير المقاومية."],
+  p24: ["سير العمل المحمول من النوع القضيبي مناسب للفحص الميداني السريع والفرق الصغيرة.", "يدعم منطق المسح المقطعي لمقارنة أوضح للعمق.", "مفيد لمقاولي الحفر ومستخدمي مياه المزارع وعروض التجار."],
+  p25: ["يستخدم الإشارات الكهرومغناطيسية الطبيعية لتفسير جيوفيزيائي أعمق.", "يمكن أن يدعم مشاريع المياه الجوفية والطاقة الحرارية الأرضية والمعادن والبنية الجيولوجية.", "مناسب لفرق المسح المحترفة وبرامج الاستكشاف المؤسسي."],
+  p26: ["مصمم للسيناريوهات التي تكون فيها كفاءة المسح مهمة، مع قياس ميداني سريع.", "يدعم إخراج الصور التلقائي لتقصير عملية القرار قبل الحفر.", "مناسب للمقاولين الذين يحتاجون إلى اختيار نموذج أسرع وتحقق ميداني."],
+  p28: ["يدعم اكتساب بيانات المجال المغناطيسي للاستكشاف الجيولوجي والمعدني.", "مناسب للفرق الميدانية التي تحتاج إلى معلومات مغناطيسية اتجاهية.", "مفيد لرسم الخرائط الهيكلية وفحص الشذوذ ومقارنة المسوحات."],
+  p29: ["مبني لسيناريوهات المسح بالمصفوفات الكهربائية عالية الكثافة.", "يساعد في تقليل تعقيد الأسلاك التقليدية مع دعم تخطيطات ميدانية موسعة.", "مناسب للاستكشاف الهندسي والمياه الجوفية وأعمال البنية الجيولوجية."],
+  p30: ["أداة MT احترافية متعددة القنوات للكشف الجيوفيزيائي.", "تدعم سير عمل الصور التلقائي للتفسير الميداني.", "مناسبة لمشاريع المياه الجوفية والهندسة والمسح الجيولوجي."],
+  p31: ["تكوين MT بـ 16 قناة لمسح ميداني احترافي فعال.", "يساعد سير عمل الصور بشاشة اللمس الفنيين على مراجعة البيانات في الميدان.", "مناسب لتطبيقات المياه الجوفية والهندسة والجيولوجيا."],
+  p32: ["تكوين احترافي أحادي القناة لأعمال المسح الجيوفيزيائي المدمجة.", "يدعم قياس المسبار الكهرومغناطيسي في الظروف الميدانية المناسبة.", "مفيد للفرق الصغيرة والفحوصات الجيولوجية الأولية."],
+  p35: ["مصمم لتطبيقات المسح المغناطيسي التي تتطلب قراءات ميدانية مستقرة.", "يدعم الاستكشاف المعدني ورسم الخرائط الجيولوجية والتحقيق في الشذوذ.", "مناسب للفرق الميدانية المحترفة وبرامج البحث."],
+  p36: ["يقيس مكونات المجال المغناطيسي في اتجاهات متعددة لتفسير أوضح.", "مفيد للبنية الجيولوجية والمعادن وأعمال مسح الشذوذ المغناطيسي.", "مناسب للفرق الميدانية التي تحتاج إلى بيانات مغناطيسية اتجاهية."],
+  p37: ["أداة مسح مغناطيسي أحادية المكون للاستخدام الميداني العملي.", "تدعم الاستكشاف المعدني وفحوصات الشذوذ المغناطيسي الجيولوجي.", "مناسبة لفرق المسح التي تحتاج إلى معدات قياس مغناطيسي مدمجة."],
+  p38: ["يجمع بين وظائف المقاومية بالتيار المستمر والاستقطاب المستحث لتطبيقات جيوفيزيائية أوسع.", "مفيد للمياه الجوفية والمعادن والهندسة ومسح البنية الجيولوجية.", "مناسب لفرق الاستكشاف المحترفة والمشتريات المشروعية."],
+  p39: ["مصمم للقياس على الأسطح التي يكون فيها إعداد الأقطاب الكهربائية غير مريح.", "يمكن أن يدعم سيناريوهات المسح على الصخور والخرسانة والأسطح المملوءة.", "مفيد كملحق للأدوات الجيوفيزيائية المتوافقة."],
+  p40: ["عداد مقاومية لمسح جيوفيزيائي كهربائي واسع الاستخدام.", "يدعم استكشاف المياه الجوفية والفحوصات الهندسية والتحقيق الجيولوجي.", "مناسب للفرق التي تحتاج إلى سير عمل قياس مقاومية كلاسيكي."],
+  p41: ["مستشعر محمول مصمم لظروف أرضية مختلفة واستخدام ميداني سريع.", "يساعد في تقليل إزعاج تخطيط الأقطاب الكهربائية التقليدية في التضاريس الصعبة.", "مناسب لمطابقة الأدوات الجيوفيزيائية المتوافقة."],
+  p42: ["نظام مدمج وخفيف الوزن يهدف إلى استبدال معدات المقاومية التقليدية الضخمة.", "يقيس VP و IP و SP و RO و M و TH و Z و D ونتائج منحنى الاضمحلال الاستقطابي.", "يدعم التحليل الذكي وأنماط المسح المرنة والتفسير الميداني الموثوق."],
+  p43: ["نظام قياس جيومغناطيسي عالي الدقة يعتمد على مبدأ الحركة البدارية للبروتون.", "يدعم تحديد المواقع GNSS بمستوى RTK والتحكم الذكي اللاسلكي وتسجيل مسار المسح التلقائي.", "يوفر معالجة بيانات في الوقت الفعلي ورسم خرائط واستخراج مقاطع وتفسير شذوذ بمساعدة الذكاء الاصطناعي."]
+};
+
+const trHighlightMap = {
+  p9:  ["Baraj ve rezervuar güvenlik kontrolleri için çok kanallı saha toplamayı destekler.", "Gerçek zamanlı 2B, 3B ve eğri görüntüleme, teknisyenlerin anormal sızıntı bölgelerini bulmasına yardımcı olur.", "Setler, rezervuarlar, bentler ve su koruma projeleri için uygundur."],
+  p10: ["Set yapılarında gizli sızıntı ve iç erozyon risk kontrolleri için tasarlanmıştır.", "Mühendislik ekiplerinin onarımdan önce borulanma, sızıntı ve zayıf bölge dağılımını değerlendirmesine yardımcı olur.", "Daha hızlı raporlama ve proje iletişimi için saha görüntüleme çıktısını destekler."],
+  p22: ["Daha güçlü görüntüleme ve daha hızlı karşılaştırma gerektiren yüksek yoğunluklu yeraltı suyu ölçümleri için tasarlanmıştır.", "Saha yorumlaması için gerçek zamanlı 2B ve 3B görüntü çıktısını destekler.", "Sondaj yüklenicileri, çiftlik suyu projeleri ve profesyonel ölçüm ekipleri için uygundur."],
+  p23: ["Daha geniş jeofizik uygulamalar için rezistivite tomografisi ve IP görüntülemeyi birleştirir.", "Yeraltı suyu, mühendislik ve jeolojik yapı araştırmasını destekler.", "Daha güçlü rezistivite görüntüleme iş akışına ihtiyaç duyan profesyonel ekipler için uygundur."],
+  p24: ["Taşınabilir çubuk tipi iş akışı, hızlı saha kontrolleri ve küçük ekipler için uygundur.", "Daha net derinlik karşılaştırması için parçalı ölçüm mantığını destekler.", "Sondaj yüklenicileri, çiftlik suyu kullanıcıları ve bayi gösterimleri için kullanışlıdır."],
+  p25: ["Daha derin jeofizik yorumlama için doğal elektromanyetik sinyalleri kullanır.", "Yeraltı suyu, jeotermal, mineral ve yapısal araştırma projelerini destekleyebilir.", "Profesyonel ölçüm ekipleri ve kurumsal keşif programları için uygundur."],
+  p26: ["Ölçüm verimliliğinin önemli olduğu senaryolar için tasarlanmıştır, hızlı saha ölçümü.", "Sondaj öncesi karar sürecini kısaltmak için otomatik görüntüleme çıktısını destekler.", "Daha hızlı model seçimi ve saha doğrulamasına ihtiyaç duyan yükleniciler için uygundur."],
+  p28: ["Jeolojik ve mineral keşif için manyetik veri toplamayı destekler.", "Yönlü manyetik bilgiye ihtiyaç duyan saha ekipleri için uygundur.", "Yapısal haritalama, anomali kontrolleri ve ölçüm karşılaştırması için kullanışlıdır."],
+  p29: ["Yüksek yoğunluklu elektrik dizi ölçüm senaryoları için inşa edilmiştir.", "Genişletilmiş saha düzenlerini desteklerken geleneksel kablo karmaşıklığını azaltmaya yardımcı olur.", "Mühendislik keşfi, yeraltı suyu ve jeolojik yapı çalışmaları için uygundur."],
+  p30: ["Jeofizik tespit için profesyonel çok kanallı MT cihazı.", "Saha yorumlaması için otomatik görüntüleme iş akışını destekler.", "Yeraltı suyu, mühendislik ve jeolojik ölçüm projeleri için uygundur."],
+  p31: ["Verimli profesyonel saha ölçümü için 16 kanallı MT yapılandırması.", "Dokunmatik ekran görüntüleme iş akışı, teknisyenlerin sahadaki verileri incelemesine yardımcı olur.", "Yeraltı suyu, jeolojik ve mühendislik uygulamaları için uygundur."],
+  p32: ["Kompakt jeofizik ölçüm çalışmaları için tek kanallı profesyonel yapılandırma.", "Uygun saha koşullarında elektromanyetik prob ölçümünü destekler.", "Küçük ekipler ve ön jeolojik kontroller için kullanışlıdır."],
+  p35: ["Kararlı alan okumaları gerektiren manyetik ölçüm uygulamaları için tasarlanmıştır.", "Mineral keşfi, jeolojik haritalama ve anomali araştırmasını destekler.", "Profesyonel saha ekipleri ve araştırma programları için uygundur."],
+  p36: ["Daha net yorumlama için manyetik alan bileşenlerini birden fazla yönde ölçer.", "Jeolojik yapı, mineral ve manyetik anomali ölçüm çalışmaları için kullanışlıdır.", "Yönlü manyetik veriye ihtiyaç duyan saha ekipleri için uygundur."],
+  p37: ["Pratik saha kullanımı için tek bileşenli manyetik ölçüm cihazı.", "Mineral keşfi ve jeolojik manyetik anomali kontrollerini destekler.", "Kompakt manyetik ölçüm ekipmanına ihtiyaç duyan ölçüm ekipleri için uygundur."],
+  p38: ["Daha geniş jeofizik uygulamalar için DC rezistivite ve IP fonksiyonlarını birleştirir.", "Yeraltı suyu, mineral, mühendislik ve jeolojik yapı ölçümü için kullanışlıdır.", "Profesyonel keşif ekipleri ve proje tedariki için uygundur."],
+  p39: ["Elektrot kurulumunun uygun olmadığı yüzeylerde ölçüm için tasarlanmıştır.", "Kaya, beton kaplama ve dolgu yüzey ölçüm senaryolarını destekleyebilir.", "Uyumlu jeofizik cihazlar için aksesuar olarak kullanışlıdır."],
+  p40: ["Yaygın olarak kullanılan elektrik jeofizik ölçüm çalışmaları için rezistivite ölçer.", "Yeraltı suyu keşfi, mühendislik kontrolleri ve jeolojik araştırmayı destekler.", "Klasik rezistivite ölçüm iş akışına ihtiyaç duyan ekipler için uygundur."],
+  p41: ["Farklı zemin koşulları ve hızlı saha kullanımı için tasarlanmış taşınabilir sensör.", "Zorlu arazide geleneksel elektrot düzeninin zorluğunu azaltmaya yardımcı olur.", "Uyumlu jeofizik ölçüm cihazlarıyla eşleştirme için uygundur."],
+  p42: ["Geleneksel hantal rezistivite ekipmanının yerini alması amaçlanan kompakt ve hafif sistem.", "VP, IP, SP, RO, M, TH, Z, D ve polarizasyon bozunma eğrisi sonuçlarını ölçer.", "Akıllı analiz, esnek ölçüm modları ve güvenilir saha yorumlamasını destekler."],
+  p43: ["Proton presesyon prensibine dayalı yüksek hassasiyetli jeomanyetik ölçüm sistemi.", "RTK seviyesinde GNSS konumlandırma, kablosuz akıllı kontrol ve otomatik ölçüm yolu kaydını destekler.", "Gerçek zamanlı veri işleme, haritalama, profil çıkarma ve yapay zeka destekli anomali yorumlaması sağlar."]
+};
+
+const faHighlightMap = {
+  p9:  ["از جمع‌آوری میدانی چند کاناله برای بررسی ایمنی سد و مخزن پشتیبانی می‌کند.", "تصویربرداری لحظه‌ای دوبعدی، سه بعدی و نمودار منحنی به تکنسین‌ها کمک می‌کند مناطق نشت غیرعادی را پیدا کنند.", "مناسب برای خاکریزها، مخازن، سدها و پروژه‌های حفاظت از آب."],
+  p10: ["برای بررسی خطرات نشت پنهان و فرسایش داخلی در سازه‌های خاکریزی طراحی شده است.", "به تیم‌های مهندسی کمک می‌کند توزیع لوله‌گذاری، نشت و مناطق ضعیف را قبل از تعمیر ارزیابی کنند.", "از خروجی تصویربرداری میدانی برای گزارش‌دهی سریع‌تر و ارتباط پروژه پشتیبانی می‌کند."],
+  p22: ["برای بررسی‌های آب زیرزمینی با چگالی بالا که نیاز به تصویربرداری قوی‌تر و مقایسه سریع‌تر دارند طراحی شده است.", "از خروجی تصویر لحظه‌ای دوبعدی و سه بعدی برای تفسیر میدانی پشتیبانی می‌کند.", "مناسب برای پیمانکاران حفاری، پروژه‌های آب کشاورزی و تیم‌های نقشه‌برداری حرفه‌ای."],
+  p23: ["تصویربرداری توموگرافی مقاومت ویژه و IP را برای کاربردهای ژئوفیزیکی گسترده‌تر ترکیب می‌کند.", "از بررسی آب زیرزمینی، مهندسی و ساختار زمین‌شناسی پشتیبانی می‌کند.", "مناسب برای تیم‌های حرفه‌ای که نیاز به جریان کاری قوی‌تر تصویربرداری مقاومت ویژه دارند."],
+  p24: ["جریان کاری قابل حمل نوع میله‌ای برای بررسی سریع میدانی و تیم‌های کوچک مناسب است.", "از منطق نقشه‌برداری قطعه‌بندی شده برای مقایسه واضح‌تر عمق پشتیبانی می‌کند.", "برای پیمانکاران حفاری، کاربران آب کشاورزی و نمایش‌های فروشنده مفید است."],
+  p25: ["از سیگنال‌های الکترومغناطیسی طبیعی برای تفسیر ژئوفیزیکی عمیق‌تر استفاده می‌کند.", "می‌تواند از پروژه‌های آب زیرزمینی، زمین‌گرمایی، معدنی و ساختاری پشتیبانی کند.", "مناسب برای تیم‌های نقشه‌برداری حرفه‌ای و برنامه‌های اکتشاف سازمانی."],
+  p26: ["برای سناریوهایی که کارایی نقشه‌برداری مهم است طراحی شده، با اندازه‌گیری سریع میدانی.", "از خروجی تصویربرداری خودکار برای کوتاه کردن فرآیند تصمیم‌گیری قبل از حفاری پشتیبانی می‌کند.", "مناسب برای پیمانکارانی که نیاز به انتخاب سریع‌تر مدل و تأیید میدانی دارند."],
+  p28: ["از جمع‌آوری داده‌های مغناطیسی برای اکتشاف زمین‌شناسی و معدنی پشتیبانی می‌کند.", "مناسب برای تیم‌های میدانی که نیاز به اطلاعات مغناطیسی جهت‌دار دارند.", "برای نقشه‌برداری ساختاری، بررسی ناهنجاری و مقایسه نقشه‌برداری مفید است."],
+  p29: ["برای سناریوهای نقشه‌برداری آرایه الکتریکی با چگالی بالا ساخته شده است.", "به کاهش پیچیدگی کابل‌کشی سنتی کمک کرده و از طرح‌های میدانی توسعه‌یافته پشتیبانی می‌کند.", "مناسب برای اکتشاف مهندسی، آب زیرزمینی و کارهای ساختار زمین‌شناسی."],
+  p30: ["ابزار حرفه‌ای MT چند کاناله برای تشخیص ژئوفیزیکی.", "از جریان کاری تصویربرداری خودکار برای تفسیر میدانی پشتیبانی می‌کند.", "مناسب برای پروژه‌های آب زیرزمینی، مهندسی و نقشه‌برداری زمین‌شناسی."],
+  p31: ["پیکربندی MT 16 کاناله برای نقشه‌برداری میدانی حرفه‌ای کارآمد.", "جریان کاری تصویربرداری لمسی به تکنسین‌ها کمک می‌کند داده‌ها را در میدان بررسی کنند.", "مناسب برای کاربردهای آب زیرزمینی، زمین‌شناسی و مهندسی."],
+  p32: ["پیکربندی حرفه‌ای تک کاناله برای کارهای نقشه‌برداری ژئوفیزیکی فشرده.", "از اندازه‌گیری پروب الکترومغناطیسی در شرایط میدانی مناسب پشتیبانی می‌کند.", "برای تیم‌های کوچک و بررسی‌های اولیه زمین‌شناسی مفید است."],
+  p35: ["برای کاربردهای نقشه‌برداری مغناطیسی که نیاز به قرائت‌های میدانی پایدار دارند طراحی شده است.", "از اکتشاف معدنی، نقشه‌برداری زمین‌شناسی و بررسی ناهنجاری پشتیبانی می‌کند.", "مناسب برای تیم‌های میدانی حرفه‌ای و برنامه‌های تحقیقاتی."],
+  p36: ["مولفه‌های میدان مغناطیسی را در جهات مختلف برای تفسیر واضح‌تر اندازه‌گیری می‌کند.", "برای کارهای ساختار زمین‌شناسی، معدنی و نقشه‌برداری ناهنجاری مغناطیسی مفید است.", "مناسب برای تیم‌های میدانی که نیاز به داده‌های مغناطیسی جهت‌دار دارند."],
+  p37: ["ابزار نقشه‌برداری مغناطیسی تک مولفه‌ای برای استفاده عملی میدانی.", "از اکتشاف معدنی و بررسی‌های ناهنجاری مغناطیسی زمین‌شناسی پشتیبانی می‌کند.", "مناسب برای تیم‌های نقشه‌برداری که نیاز به تجهیزات فشرده اندازه‌گیری مغناطیسی دارند."],
+  p38: ["عملکردهای مقاومت ویژه DC و IP را برای کاربردهای ژئوفیزیکی گسترده‌تر ترکیب می‌کند.", "برای نقشه‌برداری آب زیرزمینی، معدنی، مهندسی و ساختار زمین‌شناسی مفید است.", "مناسب برای تیم‌های اکتشاف حرفه‌ای و تأمین پروژه."],
+  p39: ["برای اندازه‌گیری روی سطوحی که نصب الکترود مناسب نیست طراحی شده است.", "می‌تواند از سناریوهای نقشه‌برداری سنگ، بتن و سطح پر شده پشتیبانی کند.", "به عنوان لوازم جانبی برای ابزارهای ژئوفیزیکی سازگار مفید است."],
+  p40: ["مقاومت‌سنج برای کارهای نقشه‌برداری ژئوفیزیکی الکتریکی پرکاربرد.", "از اکتشاف آب زیرزمینی، بررسی‌های مهندسی و تحقیق زمین‌شناسی پشتیبانی می‌کند.", "مناسب برای تیم‌هایی که نیاز به جریان کاری کلاسیک اندازه‌گیری مقاومت ویژه دارند."],
+  p41: ["حسگر قابل حمل طراحی شده برای شرایط مختلف زمین و استفاده سریع میدانی.", "به کاهش دشواری چینش الکترود سنتی در زمین‌های دشوار کمک می‌کند.", "مناسب برای تطبیق با ابزارهای ژئوفیزیکی سازگار."],
+  p42: ["سیستم فشرده و سبک با هدف جایگزینی تجهیزات حجیم مقاومت ویژه سنتی.", "نتایج VP، IP، SP، RO، M، TH، Z، D و منحنی فروپاشی پلاریزاسیون را اندازه‌گیری می‌کند.", "از تحلیل هوشمند، حالت‌های نقشه‌برداری انعطاف‌پذیر و تفسیر میدانی قابل اعتماد پشتیبانی می‌کند."],
+  p43: ["سیستم اندازه‌گیری ژئومغناطیسی با دقت بالا بر اساس اصل حرکت تقدیمی پروتون.", "از موقعیت‌یابی GNSS سطح RTK، کنترل هوشمند بی‌سیم و ثبت خودکار مسیر نقشه‌برداری پشتیبانی می‌کند.", "پردازش داده‌های لحظه‌ای، نقشه‌برداری، استخراج پروفایل و تفسیر ناهنجاری با کمک هوش مصنوعی را ارائه می‌دهد."]
+};
+
+const frHighlightMap = {
+  p9:  ["Prend en charge l'acquisition multicanal sur le terrain pour les contrôles de sécurité des barrages et réservoirs.", "L'imagerie 2D, 3D et les courbes en temps réel aident les techniciens à localiser les zones de suintement anormales.", "Convient aux digues, réservoirs, barrages et projets de conservation de l'eau."],
+  p10: ["Conçu pour les contrôles de risque d'infiltration cachée et d'érosion interne dans les structures de digue.", "Aide les équipes d'ingénierie à évaluer la distribution des renards, suintements et zones faibles avant réparation.", "Prend en charge la sortie d'imagerie de terrain pour des rapports plus rapides et une meilleure communication de projet."],
+  p22: ["Conçu pour les levés d'eau souterraine haute densité nécessitant une imagerie plus forte et une comparaison plus rapide.", "Prend en charge la sortie d'images 2D et 3D en temps réel pour l'interprétation sur le terrain.", "Convient aux entrepreneurs de forage, aux projets d'eau agricole et aux équipes de levé professionnelles."],
+  p23: ["Combine la tomographie de résistivité et l'imagerie IP pour des applications géophysiques plus larges.", "Prend en charge l'investigation des eaux souterraines, de l'ingénierie et des structures géologiques.", "Convient aux équipes professionnelles nécessitant un flux de travail d'imagerie de résistivité plus robuste."],
+  p24: ["Le flux de travail portable de type tige convient aux contrôles rapides sur le terrain et aux petites équipes.", "Prend en charge la logique de levé segmenté pour une comparaison de profondeur plus claire.", "Utile pour les entrepreneurs de forage, les utilisateurs d'eau agricole et les démonstrations de distributeurs."],
+  p25: ["Utilise les signaux électromagnétiques naturels pour une interprétation géophysique plus profonde.", "Peut soutenir les projets d'eau souterraine, de géothermie, de minéraux et de structure géologique.", "Convient aux équipes de levé professionnelles et aux programmes d'exploration institutionnels."],
+  p26: ["Conçu pour les scénarios où l'efficacité du levé est importante, avec mesure rapide sur le terrain.", "Prend en charge la sortie d'imagerie automatique pour raccourcir le processus de décision avant le forage.", "Convient aux entrepreneurs ayant besoin d'une sélection de modèle plus rapide et d'une vérification sur le terrain."],
+  p28: ["Prend en charge l'acquisition de données magnétiques pour l'exploration géologique et minérale.", "Convient aux équipes de terrain ayant besoin d'informations magnétiques directionnelles.", "Utile pour la cartographie structurale, les contrôles d'anomalies et la comparaison de levés."],
+  p29: ["Construit pour les scénarios de levé par réseau électrique haute densité.", "Aide à réduire la complexité du câblage traditionnel tout en prenant en charge des dispositions de terrain étendues.", "Convient à l'exploration technique, aux eaux souterraines et aux travaux de structure géologique."],
+  p30: ["Instrument MT multicanal professionnel pour la détection géophysique.", "Prend en charge le flux de travail d'imagerie automatique pour l'interprétation sur le terrain.", "Convient aux projets d'eau souterraine, d'ingénierie et de levé géologique."],
+  p31: ["Configuration MT 16 canaux pour un levé de terrain professionnel efficace.", "Le flux de travail d'imagerie sur écran tactile aide les techniciens à examiner les données sur le terrain.", "Convient aux applications d'eau souterraine, géologiques et d'ingénierie."],
+  p32: ["Configuration professionnelle monocanal pour les travaux de levé géophysique compacts.", "Prend en charge la mesure par sonde électromagnétique dans des conditions de terrain appropriées.", "Utile pour les petites équipes et les contrôles géologiques préliminaires."],
+  p35: ["Conçu pour les applications de levé magnétique nécessitant des lectures de terrain stables.", "Prend en charge l'exploration minérale, la cartographie géologique et l'investigation d'anomalies.", "Convient aux équipes de terrain professionnelles et aux programmes de recherche."],
+  p36: ["Mesure les composantes du champ magnétique dans plusieurs directions pour une interprétation plus claire.", "Utile pour la structure géologique, les minéraux et les travaux de levé d'anomalies magnétiques.", "Convient aux équipes de terrain ayant besoin de données magnétiques directionnelles."],
+  p37: ["Instrument de levé magnétique à composante unique pour une utilisation pratique sur le terrain.", "Prend en charge l'exploration minérale et les contrôles d'anomalies magnétiques géologiques.", "Convient aux équipes de levé ayant besoin d'équipement de mesure magnétique compact."],
+  p38: ["Combine les fonctions de résistivité DC et IP pour des applications géophysiques plus larges.", "Utile pour les eaux souterraines, les minéraux, l'ingénierie et le levé de structure géologique.", "Convient aux équipes d'exploration professionnelles et aux achats de projets."],
+  p39: ["Conçu pour la mesure sur des surfaces où l'installation d'électrodes n'est pas pratique.", "Peut prendre en charge les scénarios de levé sur roche, béton et surface remblayée.", "Utile comme accessoire pour les instruments géophysiques compatibles."],
+  p40: ["Appareil de mesure de résistivité pour les travaux de levé géophysique électrique largement utilisés.", "Prend en charge l'exploration d'eau souterraine, les contrôles techniques et l'investigation géologique.", "Convient aux équipes nécessitant un flux de travail classique de mesure de résistivité."],
+  p41: ["Capteur portable conçu pour différentes conditions de sol et une utilisation rapide sur le terrain.", "Aide à réduire l'inconvénient de la disposition traditionnelle des électrodes en terrain difficile.", "Convient pour l'association avec des instruments de levé géophysique compatibles."],
+  p42: ["Système compact et léger conçu pour remplacer l'équipement de résistivité traditionnel encombrant.", "Mesure les résultats VP, IP, SP, RO, M, TH, Z, D et courbe de décroissance de polarisation.", "Prend en charge l'analyse intelligente, les modes de levé flexibles et l'interprétation fiable sur le terrain."],
+  p43: ["Système de mesure géomagnétique de haute précision basé sur le principe de précession des protons.", "Prend en charge le positionnement GNSS niveau RTK, le contrôle intelligent sans fil et l'enregistrement automatique du parcours de levé.", "Fournit le traitement des données en temps réel, la cartographie, l'extraction de profils et l'interprétation des anomalies assistée par IA."]
+};
+
+const esHighlightMap = {
+  p9:  ["Admite adquisición multicanal en campo para controles de seguridad de presas y embalses.", "Las imágenes 2D, 3D y curvas en tiempo real ayudan a los técnicos a localizar zonas de filtración anormales.", "Adecuado para terraplenes, embalses, diques y proyectos de conservación de agua."],
+  p10: ["Diseñado para controles de riesgo de filtración oculta y erosión interna en estructuras de terraplén.", "Ayuda a los equipos de ingeniería a evaluar la distribución de tuberías, filtraciones y zonas débiles antes de la reparación.", "Admite salida de imágenes de campo para informes más rápidos y comunicación del proyecto."],
+  p22: ["Diseñado para estudios de agua subterránea de alta densidad que requieren imágenes más potentes y comparación más rápida.", "Admite salida de imágenes 2D y 3D en tiempo real para interpretación en campo.", "Adecuado para contratistas de perforación, proyectos de agua agrícola y equipos de sondeo profesionales."],
+  p23: ["Combina tomografía de resistividad e imágenes IP para aplicaciones geofísicas más amplias.", "Apoya la investigación de aguas subterráneas, ingeniería y estructura geológica.", "Adecuado para equipos profesionales que necesitan un flujo de trabajo de imágenes de resistividad más robusto."],
+  p24: ["El flujo de trabajo portátil tipo varilla es adecuado para controles rápidos de campo y equipos pequeños.", "Admite lógica de sondeo segmentado para una comparación de profundidad más clara.", "Útil para contratistas de perforación, usuarios de agua agrícola y demostraciones de distribuidores."],
+  p25: ["Utiliza señales electromagnéticas naturales para una interpretación geofísica más profunda.", "Puede apoyar proyectos de agua subterránea, geotermia, minerales y estructura geológica.", "Adecuado para equipos de sondeo profesionales y programas de exploración institucional."],
+  p26: ["Diseñado para escenarios donde la eficiencia del sondeo es importante, con medición rápida en campo.", "Admite salida de imágenes automática para acortar el proceso de decisión antes de la perforación.", "Adecuado para contratistas que necesitan selección de modelo más rápida y verificación en campo."],
+  p28: ["Admite adquisición de datos magnéticos para exploración geológica y mineral.", "Adecuado para equipos de campo que necesitan información magnética direccional.", "Útil para mapeo estructural, controles de anomalías y comparación de sondeos."],
+  p29: ["Construido para escenarios de sondeo por arreglo eléctrico de alta densidad.", "Ayuda a reducir la complejidad del cableado tradicional mientras admite diseños de campo expandidos.", "Adecuado para exploración de ingeniería, agua subterránea y trabajos de estructura geológica."],
+  p30: ["Instrumento MT multicanal profesional para detección geofísica.", "Admite flujo de trabajo de imágenes automático para interpretación en campo.", "Adecuado para proyectos de agua subterránea, ingeniería y sondeo geológico."],
+  p31: ["Configuración MT de 16 canales para sondeo de campo profesional eficiente.", "El flujo de trabajo de imágenes con pantalla táctil ayuda a los técnicos a revisar datos en el campo.", "Adecuado para aplicaciones de agua subterránea, geología e ingeniería."],
+  p32: ["Configuración profesional monocanal para trabajos de sondeo geofísico compactos.", "Admite medición con sonda electromagnética en condiciones de campo adecuadas.", "Útil para equipos pequeños y controles geológicos preliminares."],
+  p35: ["Diseñado para aplicaciones de sondeo magnético que requieren lecturas de campo estables.", "Apoya la exploración mineral, el mapeo geológico y la investigación de anomalías.", "Adecuado para equipos de campo profesionales y programas de investigación."],
+  p36: ["Mide componentes del campo magnético en múltiples direcciones para una interpretación más clara.", "Útil para estructura geológica, minerales y trabajos de sondeo de anomalías magnéticas.", "Adecuado para equipos de campo que necesitan datos magnéticos direccionales."],
+  p37: ["Instrumento de sondeo magnético de componente único para uso práctico en campo.", "Apoya la exploración mineral y los controles de anomalías magnéticas geológicas.", "Adecuado para equipos de sondeo que necesitan equipo de medición magnética compacto."],
+  p38: ["Combina funciones de resistividad DC e IP para aplicaciones geofísicas más amplias.", "Útil para agua subterránea, minerales, ingeniería y sondeo de estructura geológica.", "Adecuado para equipos de exploración profesionales y adquisiciones de proyectos."],
+  p39: ["Diseñado para medición en superficies donde la instalación de electrodos es inconveniente.", "Puede apoyar escenarios de sondeo en roca, pavimento de hormigón y superficie de relleno.", "Útil como accesorio para instrumentos geofísicos compatibles."],
+  p40: ["Medidor de resistividad para trabajos de sondeo geofísico eléctrico ampliamente utilizados.", "Apoya la exploración de agua subterránea, controles de ingeniería e investigación geológica.", "Adecuado para equipos que necesitan un flujo de trabajo clásico de medición de resistividad."],
+  p41: ["Sensor portátil diseñado para diferentes condiciones de suelo y uso rápido en campo.", "Ayuda a reducir la molestia del tendido tradicional de electrodos en terrenos difíciles.", "Adecuado para emparejar con instrumentos de sondeo geofísico compatibles."],
+  p42: ["Sistema compacto y ligero diseñado para reemplazar el equipo de resistividad tradicional voluminoso.", "Mide resultados de VP, IP, SP, RO, M, TH, Z, D y curva de decaimiento de polarización.", "Admite análisis inteligente, modos de sondeo flexibles e interpretación de campo confiable."],
+  p43: ["Sistema de medición geomagnética de alta precisión basado en el principio de precesión de protones.", "Admite posicionamiento GNSS nivel RTK, control inteligente inalámbrico y registro automático de ruta de sondeo.", "Proporciona procesamiento de datos en tiempo real, mapeo, extracción de perfiles e interpretación de anomalías asistida por IA."]
+};
+
 const zhTechValues = {
   p9:  { application: "坝体管涌、渗漏和泄漏调查", channels: "32通道", method: "自然电场和电阻率测量" },
   p10: { application: "内部侵蚀、管涌、渗漏和堤防风险筛查", channels: "多通道配置", method: "地球物理成像和异常区解译" },
   p22: { application: "高密度地下水勘探和钻井选址", configuration: "32通道", method: "MT电磁法地下水测量" },
+  p23: { application: "电阻率层析成像、激电成像、地下水和工程测量", configuration: "智能ERT/IP系统", method: "电阻率层析成像和激发极化法" },
   p24: { application: "便携式地下水勘探和打井选址", configuration: "棍式地下水探测仪", method: "电磁法地下水测量" },
   p25: { application: "深层地质构造、地下水和矿产勘探", configuration: "MT测量系统", method: "大地电磁法测量" },
   p26: { application: "快速地下水勘探和钻井项目筛选", configuration: "全通道快速配置", method: "MT电磁法地下水测量" },
@@ -3922,6 +4045,7 @@ const zhTechValues = {
   p35: { application: "磁法测量和矿产勘探", configuration: "质子磁力仪", method: "总磁场测量" },
   p36: { application: "三轴磁场测量和地质调查", configuration: "三分量磁通门", method: "磁通门磁法测量" },
   p37: { application: "单分量磁场测量", configuration: "单分量磁通门", method: "磁通门磁法测量" },
+  p38: { application: "直流电阻率、激电测量、地下水和工程勘探", configuration: "多功能电法仪器", method: "直流电阻率和激发极化法" },
   p39: { application: "电磁探头测量和配件匹配", configuration: "TT探头配件", method: "电磁感应测量" },
   p40: { application: "电阻率测量和地下水勘探", configuration: "电阻率测量仪", method: "电阻率法" },
   p41: { application: "全地形电磁测量和仪器配件匹配", configuration: "便携式电磁传感器", method: "电磁感应测量" },
@@ -3945,15 +4069,19 @@ const langVideoText = {
   es: "El video del producto se puede añadir más tarde. Contáctenos para fotos de campo, orientación operativa y recomendaciones de modelo."
 };
 
+const langHighlightMaps = { ar: arHighlightMap, tr: trHighlightMap, fa: faHighlightMap, fr: frHighlightMap, es: esHighlightMap };
+
 function buildLangContent(item, lang) {
   const L = langSpecLabels[lang];
   const name = (translations[lang] && translations[lang][`${item.id}Name`]) || item.name;
   const chKey = item.configuration ? "configuration" : "channels";
+  const hMap = langHighlightMaps[lang];
+  const highlights = (hMap && hMap[item.id]) || item.highlights;
   return {
     name,
-    summary: `Product model:\n${item.model}\n\n1. ${item.highlights[0]}\n2. ${item.highlights[1]}\n3. ${item.highlights[2]}`,
+    summary: `Product model:\n${item.model}\n\n1. ${highlights[0]}\n2. ${highlights[1]}\n3. ${highlights[2]}`,
     quickSpecs: item.quickSpecs,
-    features: item.highlights,
+    features: highlights,
     specs: [
       { label: L.model, value: item.model },
       { label: L.application, value: item.application },
