@@ -108,10 +108,6 @@ copy_static_files() {
         cd "$PROJECT_DIR"
         sudo mkdir -p "$STATIC_DIR"
         sudo cp ./*.html ./*.css ./*.js robots.txt sitemap.xml "$STATIC_DIR/"
-        if [[ -d reviews ]]; then
-            sudo mkdir -p "$STATIC_DIR/reviews"
-            sudo cp -r reviews/. "$STATIC_DIR/reviews/"
-        fi
         sudo cp -r assets media "$STATIC_DIR/"
     )
 }
