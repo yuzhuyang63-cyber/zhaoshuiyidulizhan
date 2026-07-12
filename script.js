@@ -4069,7 +4069,151 @@ const langVideoText = {
   es: "El video del producto se puede añadir más tarde. Contáctenos para fotos de campo, orientación operativa y recomendaciones de modelo."
 };
 
+const langTechLabels = {
+  ar: { col: "البند", model: "موديل المنتج", app: "التطبيق", ch: "القنوات / التكوين", method: "طريقة المسح", img: "التصوير / الإخراج", imgVal: "تصوير ثنائي وثلاثي الأبعاد، مخطط منحني، ودعم التفسير الميداني", users: "فرق المسح الجيوفيزيائي، مقاولي الحفر، المشاريع الهندسية، والموزعين" },
+  tr: { col: "Öğe", model: "Ürün modeli", app: "Uygulama", ch: "Kanal / yapılandırma", method: "Ölçüm yöntemi", img: "Görüntüleme / çıktı", imgVal: "2B/3B görüntüleme, eğri grafiği ve saha yorumlama desteği", users: "Jeofizik ölçüm ekipleri, sondaj yüklenicileri, mühendislik projeleri ve distribütörler" },
+  fa: { col: "مورد", model: "مدل محصول", app: "کاربرد", ch: "کانال / پیکربندی", method: "روش نقشه برداری", img: "تصویربرداری / خروجی", imgVal: "تصویربرداری دوبعدی و سه بعدی، نمودار منحنی و پشتیبانی تفسیر میدانی", users: "تیم‌های نقشه برداری ژئوفیزیکی، پیمانکاران حفاری، پروژه‌های مهندسی و توزیع‌کنندگان" },
+  fr: { col: "Élément", model: "Modèle du produit", app: "Application", ch: "Canal / configuration", method: "Méthode de sondage", img: "Imagerie / sortie", imgVal: "Imagerie 2D/3D, graphique de courbes et support d'interprétation sur le terrain", users: "Équipes de sondage géophysique, entrepreneurs de forage, projets d'ingénierie et distributeurs" },
+  es: { col: "Elemento", model: "Modelo del producto", app: "Aplicación", ch: "Canal / configuración", method: "Método de sondeo", img: "Imagen / salida", imgVal: "Imágenes 2D/3D, gráfico de curvas y soporte de interpretación en campo", users: "Equipos de sondeo geofísico, contratistas de perforación, proyectos de ingeniería y distribuidores" }
+};
+
+const langTechValues = {
+  ar: {
+    p9:  { app: "تسرب السدود والتسرب والتحقيق في التسرب", ch: "32 قناة", method: "المجال الكهربائي الطبيعي ومسح المقاومية" },
+    p10: { app: "التآكل الداخلي والأنابيب والتسرب وفحص مخاطر السدود", ch: "تكوين متعدد القنوات", method: "التصوير الجيوفيزيائي وتفسير المناطق غير الطبيعية" },
+    p22: { app: "استكشاف المياه الجوفية عالية الكثافة واختيار موقع الحفر", ch: "32 قناة", method: "المسح الكهرومغناطيسي MT للمياه الجوفية" },
+    p23: { app: "تصوير المقاومية المقطعية والاستقطاب المستحث والمياه الجوفية والمسح الهندسي", ch: "نظام ERT / IP ذكي", method: "تصوير المقاومية الكهربائية المقطعية والاستقطاب المستحث" },
+    p24: { app: "استكشاف المياه الجوفية المحمول واختيار موقع حفر البئر", ch: "كاشف مياه جوفية من النوع القضيبي", method: "المسح الكهرومغناطيسي للمياه الجوفية" },
+    p25: { app: "البنية الجيولوجية العميقة والمياه الجوفية والاستكشاف المعدني", ch: "نظام مسح MT", method: "المسح الكهرومغناطيسي المغناطيسوتيلوري" },
+    p26: { app: "استكشاف سريع للمياه الجوفية وفحص مشاريع الحفر", ch: "تكوين سريع جميع القنوات", method: "المسح الكهرومغناطيسي MT للمياه الجوفية" },
+    p28: { app: "المسح المغناطيسي والاستكشاف المعدني والتحقيق في البنية الجيولوجية", ch: "اكتساب مغناطيسي ثلاثي المركبات", method: "مسح المجال المغناطيسي" },
+    p29: { app: "مسح المصفوفة الكهربائية عالية الكثافة والاستكشاف الهندسي", ch: "نظام توسع عالي الكثافة بالتحكم عن بعد", method: "المسح الجيوفيزيائي بالمصفوفة الكهربائية" },
+    p30: { app: "الكشف الجيوفيزيائي MT الاحترافي والمسح التصويري", ch: "32 قناة", method: "المسح الكهرومغناطيسي MT" },
+    p31: { app: "المسح الجيوفيزيائي MT واستكشاف المياه الجوفية", ch: "16 قناة", method: "المسح الكهرومغناطيسي MT" },
+    p32: { app: "المسح الجيوفيزيائي أحادي القناة والمياه الجوفية", ch: "قناة واحدة", method: "المسح الجيوفيزيائي الكهرومغناطيسي" },
+    p35: { app: "المسح المغناطيسي والاستكشاف المعدني", ch: "مقياس مغناطيسية بروتوني", method: "قياس المجال المغناطيسي الكلي" },
+    p36: { app: "قياس المجال المغناطيسي ثلاثي المحاور والمسح الجيولوجي", ch: "مغناطيسي ثلاثي المركبات", method: "المسح المغناطيسي بالبوابة المتدفقة" },
+    p37: { app: "قياس المجال المغناطيسي أحادي المركبة", ch: "مغناطيسي أحادي المركبة", method: "المسح المغناطيسي بالبوابة المتدفقة" },
+    p38: { app: "المقاومية بالتيار المستمر والمسح IP والمياه الجوفية والاستكشاف الهندسي", ch: "أداة كهربائية متعددة الوظائف", method: "المقاومية بالتيار المستمر والاستقطاب المستحث" },
+    p39: { app: "قياس المسبار الكهرومغناطيسي ومطابقة الملحقات", ch: "ملحق مسبار TT", method: "القياس بالحث الكهرومغناطيسي" },
+    p40: { app: "مسح المقاومية الكهربائية واستكشاف المياه الجوفية", ch: "عداد المقاومية", method: "طريقة المقاومية الكهربائية" },
+    p41: { app: "القياس الكهرومغناطيسي لجميع التضاريس ومطابقة ملحقات الأجهزة", ch: "مستشعر كهرومغناطيسي محمول", method: "القياس بالحث الكهرومغناطيسي" },
+    p42: { app: "الاستكشاف المعدني ومسح مصادر المياه والتعداد البيئي والتحقيق الهندسي", ch: "نظام مسح متعدد الوظائف للمقاومية والاستقطاب المستحث", method: "المقاومية بالتيار المستمر والاستقطاب المستحث" },
+    p43: { app: "الاستكشاف المعدني والمسح المغناطيسي ورسم الخرائط الجيولوجية والمسح الهندسي والتحقيق الأثري", ch: "مقياس مغناطيسية بروتوني تلقائي", method: "قياس المجال المغناطيسي الكلي عالي الدقة" }
+  },
+  tr: {
+    p9:  { app: "Baraj sızıntısı, sızma ve kaçak araştırması", ch: "32 kanal", method: "Doğal elektrik alan ve rezistivite ölçümü" },
+    p10: { app: "İç erozyon, borulanma, sızıntı ve set risk taraması", ch: "Çok kanallı yapılandırma", method: "Jeofizik görüntüleme ve anormal bölge yorumlaması" },
+    p22: { app: "Yüksek yoğunluklu yeraltı suyu keşfi ve sondaj yeri seçimi", ch: "32 kanal", method: "MT elektromanyetik yeraltı suyu ölçümü" },
+    p23: { app: "Rezistivite tomografisi, IP görüntüleme, yeraltı suyu ve mühendislik ölçümü", ch: "Akıllı ERT / IP sistemi", method: "Elektrik rezistivite tomografisi ve indüklenmiş polarizasyon" },
+    p24: { app: "Taşınabilir yeraltı suyu keşfi ve kuyu sondaj yeri seçimi", ch: "Çubuk tipi yeraltı suyu dedektörü", method: "Elektromanyetik yeraltı suyu ölçümü" },
+    p25: { app: "Derin jeofizik yapı, yeraltı suyu ve mineral keşfi", ch: "MT ölçüm sistemi", method: "Manyetotellürik elektromanyetik ölçüm" },
+    p26: { app: "Hızlı yeraltı suyu keşfi ve sondaj projesi taraması", ch: "Tüm kanallı hızlı yapılandırma", method: "MT elektromanyetik yeraltı suyu ölçümü" },
+    p28: { app: "Manyetik ölçüm, mineral keşfi ve jeolojik yapı araştırması", ch: "Üç bileşenli manyetik toplama", method: "Manyetik alan ölçümü" },
+    p29: { app: "Yüksek yoğunluklu elektrik dizi ölçümü ve mühendislik keşfi", ch: "Uzaktan kumandalı yüksek yoğunluklu genişletme sistemi", method: "Elektrik dizi jeofizik ölçümü" },
+    p30: { app: "Profesyonel MT jeofizik tespit ve görüntüleme ölçümü", ch: "32 kanal", method: "MT elektromanyetik ölçüm" },
+    p31: { app: "MT jeofizik ölçümü ve yeraltı suyu keşfi", ch: "16 kanal", method: "MT elektromanyetik ölçüm" },
+    p32: { app: "Tek kanallı jeofizik ve yeraltı suyu ölçümü", ch: "Tek kanal", method: "Elektromanyetik jeofizik ölçüm" },
+    p35: { app: "Manyetik ölçüm ve mineral keşfi", ch: "Proton manyetometresi", method: "Toplam manyetik alan ölçümü" },
+    p36: { app: "Üç eksenli manyetik alan ölçümü ve jeolojik ölçüm", ch: "Üç bileşenli fluxgate", method: "Fluxgate manyetik ölçüm" },
+    p37: { app: "Tek bileşenli manyetik alan ölçümü", ch: "Tek bileşenli fluxgate", method: "Fluxgate manyetik ölçüm" },
+    p38: { app: "DC rezistivite, IP ölçümü, yeraltı suyu ve mühendislik keşfi", ch: "Çok fonksiyonlu elektrik cihazı", method: "DC rezistivite ve indüklenmiş polarizasyon" },
+    p39: { app: "Elektromanyetik prob ölçümü ve aksesuar eşleştirme", ch: "TT prob aksesuarı", method: "Elektromanyetik indüksiyon ölçümü" },
+    p40: { app: "Elektrik rezistivite ölçümü ve yeraltı suyu keşfi", ch: "Rezistivite ölçer", method: "Elektrik rezistivite yöntemi" },
+    p41: { app: "Tüm arazi EM ölçümü ve cihaz aksesuarı eşleştirme", ch: "Taşınabilir elektromanyetik sensör", method: "Elektromanyetik indüksiyon ölçümü" },
+    p42: { app: "Mineral keşfi, su kaynağı ölçümü, çevresel sayım ve mühendislik araştırması", ch: "Çok fonksiyonlu rezistivite ve IP ölçüm sistemi", method: "DC rezistivite ve indüklenmiş polarizasyon" },
+    p43: { app: "Mineral keşfi, manyetik ölçüm, jeolojik haritalama, mühendislik ölçümü ve arkeolojik araştırma", ch: "Otomatik proton manyetometresi", method: "Yüksek hassasiyetli toplam manyetik alan ölçümü" }
+  },
+  fa: {
+    p9:  { app: "بررسی نشت سد، تراوش و نشت", ch: "32 کانال", method: "میدان الکتریکی طبیعی و نقشه‌برداری مقاومت ویژه" },
+    p10: { app: "فرسایش داخلی، لوله‌گذاری، تراوش و غربالگری خطر سد", ch: "پیکربندی چند کاناله", method: "تصویربرداری ژئوفیزیکی و تفسیر منطقه غیرعادی" },
+    p22: { app: "اکتشاف آب زیرزمینی با چگالی بالا و انتخاب محل حفاری", ch: "32 کانال", method: "نقشه‌برداری الکترومغناطیسی MT آب زیرزمینی" },
+    p23: { app: "توموگرافی مقاومت ویژه، تصویربرداری IP، آب زیرزمینی و نقشه‌برداری مهندسی", ch: "سیستم هوشمند ERT / IP", method: "توموگرافی مقاومت ویژه الکتریکی و پلاریزاسیون القایی" },
+    p24: { app: "اکتشاف قابل حمل آب زیرزمینی و انتخاب محل حفر چاه", ch: "دستگاه آب‌یاب نوع میله‌ای", method: "نقشه‌برداری الکترومغناطیسی آب زیرزمینی" },
+    p25: { app: "ساختار عمیق ژئوفیزیکی، آب زیرزمینی و اکتشاف معدنی", ch: "سیستم نقشه‌برداری MT", method: "نقشه‌برداری الکترومغناطیسی مگنتوتلوریک" },
+    p26: { app: "اکتشاف سریع آب زیرزمینی و غربالگری پروژه حفاری", ch: "پیکربندی سریع تمام کاناله", method: "نقشه‌برداری الکترومغناطیسی MT آب زیرزمینی" },
+    p28: { app: "نقشه‌برداری مغناطیسی، اکتشاف معدنی و بررسی ساختار زمین‌شناسی", ch: "جمع‌آوری مغناطیسی سه مولفه‌ای", method: "نقشه‌برداری میدان مغناطیسی" },
+    p29: { app: "نقشه‌برداری آرایه الکتریکی با چگالی بالا و اکتشاف مهندسی", ch: "سیستم توسعه چگالی بالا با کنترل از راه دور", method: "نقشه‌برداری ژئوفیزیکی آرایه الکتریکی" },
+    p30: { app: "تشخیص ژئوفیزیکی حرفه‌ای MT و نقشه‌برداری تصویری", ch: "32 کانال", method: "نقشه‌برداری الکترومغناطیسی MT" },
+    p31: { app: "نقشه‌برداری ژئوفیزیکی MT و اکتشاف آب زیرزمینی", ch: "16 کانال", method: "نقشه‌برداری الکترومغناطیسی MT" },
+    p32: { app: "نقشه‌برداری ژئوفیزیکی تک کاناله و آب زیرزمینی", ch: "تک کانال", method: "نقشه‌برداری ژئوفیزیکی الکترومغناطیسی" },
+    p35: { app: "نقشه‌برداری مغناطیسی و اکتشاف معدنی", ch: "مگنتومتر پروتونی", method: "اندازه‌گیری میدان مغناطیسی کل" },
+    p36: { app: "اندازه‌گیری میدان مغناطیسی سه محوره و نقشه‌برداری زمین‌شناسی", ch: "فلاکس گیت سه مولفه‌ای", method: "نقشه‌برداری مغناطیسی فلاکس گیت" },
+    p37: { app: "اندازه‌گیری میدان مغناطیسی تک مولفه‌ای", ch: "فلاکس گیت تک مولفه‌ای", method: "نقشه‌برداری مغناطیسی فلاکس گیت" },
+    p38: { app: "مقاومت ویژه DC، نقشه‌برداری IP، آب زیرزمینی و اکتشاف مهندسی", ch: "ابزار الکتریکی چندمنظوره", method: "مقاومت ویژه DC و پلاریزاسیون القایی" },
+    p39: { app: "اندازه‌گیری پروب الکترومغناطیسی و تطبیق لوازم جانبی", ch: "لوازم جانبی پروب TT", method: "اندازه‌گیری القای الکترومغناطیسی" },
+    p40: { app: "نقشه‌برداری مقاومت ویژه الکتریکی و اکتشاف آب زیرزمینی", ch: "مقاومت‌سنج", method: "روش مقاومت ویژه الکتریکی" },
+    p41: { app: "اندازه‌گیری الکترومغناطیسی تمام عیار و تطبیق لوازم جانبی ابزار", ch: "حسگر الکترومغناطیسی قابل حمل", method: "اندازه‌گیری القای الکترومغناطیسی" },
+    p42: { app: "اکتشاف معدنی، بررسی منبع آب، سرشماری محیطی و تحقیق مهندسی", ch: "سیستم نقشه‌برداری چندمنظوره مقاومت ویژه و IP", method: "مقاومت ویژه DC و پلاریزاسیون القایی" },
+    p43: { app: "اکتشاف معدنی، نقشه‌برداری مغناطیسی، نقشه‌برداری زمین‌شناسی، نقشه‌برداری مهندسی و تحقیق باستان‌شناسی", ch: "مگنتومتر پروتونی خودکار", method: "اندازه‌گیری میدان مغناطیسی کل با دقت بالا" }
+  },
+  fr: {
+    p9:  { app: "Enquête sur les fuites de barrage, suintement et infiltration", ch: "32 canaux", method: "Champ électrique naturel et levé de résistivité" },
+    p10: { app: "Érosion interne, renard, suintement et dépistage des risques de digue", ch: "Configuration multicanal", method: "Imagerie géophysique et interprétation des zones anormales" },
+    p22: { app: "Exploration d'eau souterraine haute densité et sélection de site de forage", ch: "32 canaux", method: "Levé électromagnétique MT pour eau souterraine" },
+    p23: { app: "Tomographie de résistivité, imagerie IP, eau souterraine et levé d'ingénierie", ch: "Système ERT / IP intelligent", method: "Tomographie de résistivité électrique et polarisation induite" },
+    p24: { app: "Exploration portable d'eau souterraine et sélection de site de forage de puits", ch: "Détecteur d'eau souterraine de type tige", method: "Levé électromagnétique d'eau souterraine" },
+    p25: { app: "Structure géophysique profonde, eau souterraine et exploration minérale", ch: "Système de levé MT", method: "Levé électromagnétique magnétotellurique" },
+    p26: { app: "Exploration rapide d'eau souterraine et dépistage de projet de forage", ch: "Configuration rapide tous canaux", method: "Levé électromagnétique MT pour eau souterraine" },
+    p28: { app: "Levé magnétique, exploration minérale et enquête de structure géologique", ch: "Acquisition magnétique à trois composantes", method: "Levé de champ magnétique" },
+    p29: { app: "Levé par réseau électrique haute densité et exploration d'ingénierie", ch: "Système d'expansion haute densité télécommandé", method: "Levé géophysique par réseau électrique" },
+    p30: { app: "Détection géophysique MT professionnelle et levé d'imagerie", ch: "32 canaux", method: "Levé électromagnétique MT" },
+    p31: { app: "Levé géophysique MT et exploration d'eau souterraine", ch: "16 canaux", method: "Levé électromagnétique MT" },
+    p32: { app: "Levé géophysique monocanal et eau souterraine", ch: "Canal unique", method: "Levé géophysique électromagnétique" },
+    p35: { app: "Levé magnétique et exploration minérale", ch: "Magnétomètre à protons", method: "Mesure du champ magnétique total" },
+    p36: { app: "Mesure de champ magnétique triaxial et levé géologique", ch: "Fluxgate à trois composantes", method: "Levé magnétique fluxgate" },
+    p37: { app: "Mesure de champ magnétique à composante unique", ch: "Fluxgate à composante unique", method: "Levé magnétique fluxgate" },
+    p38: { app: "Résistivité DC, levé IP, eau souterraine et exploration d'ingénierie", ch: "Instrument électrique multifonction", method: "Résistivité DC et polarisation induite" },
+    p39: { app: "Mesure par sonde électromagnétique et correspondance d'accessoires", ch: "Accessoire de sonde TT", method: "Mesure par induction électromagnétique" },
+    p40: { app: "Levé de résistivité électrique et exploration d'eau souterraine", ch: "Appareil de mesure de résistivité", method: "Méthode de résistivité électrique" },
+    p41: { app: "Mesure EM tout-terrain et correspondance d'accessoires d'instrument", ch: "Capteur électromagnétique portable", method: "Mesure par induction électromagnétique" },
+    p42: { app: "Exploration minérale, enquête sur les sources d'eau, recensement environnemental et investigation d'ingénierie", ch: "Système de levé multifonction résistivité et IP", method: "Résistivité DC et polarisation induite" },
+    p43: { app: "Exploration minérale, levé magnétique, cartographie géologique, levé d'ingénierie et investigation archéologique", ch: "Magnétomètre à protons automatique", method: "Mesure du champ magnétique total de haute précision" }
+  },
+  es: {
+    p9:  { app: "Investigación de fugas en presas, filtración y escape", ch: "32 canales", method: "Campo eléctrico natural y sondeo de resistividad" },
+    p10: { app: "Erosión interna, tuberías, filtración y cribado de riesgos de terraplenes", ch: "Configuración multicanal", method: "Imagen geofísica e interpretación de zonas anormales" },
+    p22: { app: "Exploración de agua subterránea de alta densidad y selección de sitio de perforación", ch: "32 canales", method: "Sondeo electromagnético MT de agua subterránea" },
+    p23: { app: "Tomografía de resistividad, imagen IP, agua subterránea y sondeo de ingeniería", ch: "Sistema inteligente ERT / IP", method: "Tomografía de resistividad eléctrica y polarización inducida" },
+    p24: { app: "Exploración portátil de agua subterránea y selección de sitio de perforación de pozo", ch: "Detector de agua subterránea tipo varilla", method: "Sondeo electromagnético de agua subterránea" },
+    p25: { app: "Estructura geofísica profunda, agua subterránea y exploración mineral", ch: "Sistema de sondeo MT", method: "Sondeo electromagnético magnetotelúrico" },
+    p26: { app: "Exploración rápida de agua subterránea y cribado de proyectos de perforación", ch: "Configuración rápida todos los canales", method: "Sondeo electromagnético MT de agua subterránea" },
+    p28: { app: "Sondeo magnético, exploración mineral e investigación de estructura geológica", ch: "Adquisición magnética de tres componentes", method: "Sondeo de campo magnético" },
+    p29: { app: "Sondeo por arreglo eléctrico de alta densidad y exploración de ingeniería", ch: "Sistema de expansión de alta densidad con control remoto", method: "Sondeo geofísico por arreglo eléctrico" },
+    p30: { app: "Detección geofísica MT profesional y sondeo de imágenes", ch: "32 canales", method: "Sondeo electromagnético MT" },
+    p31: { app: "Sondeo geofísico MT y exploración de agua subterránea", ch: "16 canales", method: "Sondeo electromagnético MT" },
+    p32: { app: "Sondeo geofísico monocanal y agua subterránea", ch: "Canal único", method: "Sondeo geofísico electromagnético" },
+    p35: { app: "Sondeo magnético y exploración mineral", ch: "Magnetómetro de protones", method: "Medición de campo magnético total" },
+    p36: { app: "Medición de campo magnético triaxial y sondeo geológico", ch: "Fluxgate de tres componentes", method: "Sondeo magnético fluxgate" },
+    p37: { app: "Medición de campo magnético de componente único", ch: "Fluxgate de componente único", method: "Sondeo magnético fluxgate" },
+    p38: { app: "Resistividad DC, sondeo IP, agua subterránea y exploración de ingeniería", ch: "Instrumento eléctrico multifunción", method: "Resistividad DC y polarización inducida" },
+    p39: { app: "Medición con sonda electromagnética y emparejamiento de accesorios", ch: "Accesorio de sonda TT", method: "Medición por inducción electromagnética" },
+    p40: { app: "Sondeo de resistividad eléctrica y exploración de agua subterránea", ch: "Medidor de resistividad", method: "Método de resistividad eléctrica" },
+    p41: { app: "Medición EM todo terreno y emparejamiento de accesorios de instrumentos", ch: "Sensor electromagnético portátil", method: "Medición por inducción electromagnética" },
+    p42: { app: "Exploración mineral, estudio de fuentes de agua, censo ambiental e investigación de ingeniería", ch: "Sistema de sondeo multifunción de resistividad e IP", method: "Resistividad DC y polarización inducida" },
+    p43: { app: "Exploración mineral, sondeo magnético, mapeo geológico, sondeo de ingeniería e investigación arqueológica", ch: "Magnetómetro de protones automático", method: "Medición de campo magnético total de alta precisión" }
+  }
+};
+
 const langHighlightMaps = { ar: arHighlightMap, tr: trHighlightMap, fa: faHighlightMap, fr: frHighlightMap, es: esHighlightMap };
+
+function buildTechTable(item, lang) {
+  const L = langTechLabels[lang];
+  const V = langTechValues[lang];
+  const chKey = item.configuration ? "configuration" : "channels";
+  const chVal = (V && V[item.id] && (V[item.id].ch || V[item.id][chKey])) || item[chKey] || item.configuration || item.channels || "";
+  return {
+    columns: [L.col, item.model],
+    rows: [
+      [L.model, item.model],
+      [L.app, (V && V[item.id] && V[item.id].app) || item.application],
+      [L.ch, chVal],
+      [L.method, (V && V[item.id] && V[item.id].method) || item.method],
+      [L.img, L.imgVal],
+      [L.users, L.users]
+    ]
+  };
+}
 
 function buildLangContent(item, lang) {
   const L = langSpecLabels[lang];
@@ -4151,6 +4295,11 @@ hydroGeoProductDefinitions.forEach((item) => {
       ],
       videoText: "产品视频可后续添加。请联系我们获取现场照片、操作指导和型号推荐。"
     },
+    techTableAr: buildTechTable(item, "ar"),
+    techTableTr: buildTechTable(item, "tr"),
+    techTableFa: buildTechTable(item, "fa"),
+    techTableFr: buildTechTable(item, "fr"),
+    techTableEs: buildTechTable(item, "es"),
     ar: buildLangContent(item, "ar"),
     tr: buildLangContent(item, "tr"),
     fa: buildLangContent(item, "fa"),
@@ -4564,6 +4713,11 @@ function registerReferenceProduct(item) {
       ],
       videoText: "产品视频可后续添加。请联系我们获取现场照片、操作指导和型号推荐。"
     },
+    techTableAr: buildTechTable(item, "ar"),
+    techTableTr: buildTechTable(item, "tr"),
+    techTableFa: buildTechTable(item, "fa"),
+    techTableFr: buildTechTable(item, "fr"),
+    techTableEs: buildTechTable(item, "es"),
     ar: buildLangContent(item, "ar"),
     tr: buildLangContent(item, "tr"),
     fa: buildLangContent(item, "fa"),
@@ -7398,8 +7552,9 @@ function renderProductDetailPage(lang) {
   }
 
   if (techSection && techTable) {
+    const langTechKey = `techTable${lang.charAt(0).toUpperCase() + lang.slice(1)}`;
     const tableData =
-      (lang === "zh" && product.techTableZh ? product.techTableZh : product.techTable) ||
+      (product[langTechKey] || (lang === "zh" && product.techTableZh) || product.techTable) ||
       buildFallbackTechTable(product, content, lang);
     const localizedTableData = localizeTechTable(tableData, lang);
     if (localizedTableData?.columns?.length && localizedTableData?.rows?.length) {
