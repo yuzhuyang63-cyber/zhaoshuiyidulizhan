@@ -1,7 +1,7 @@
 const translations = {
   en: {
     toplineEmail: "Email: cyqfactory@cyqwater.com",
-    toplinePhone: "WhatsApp: +86 18319333114",
+    toplinePhone: "WhatsApp: +86 15251758384",
     brandTag: "Groundwater Detector Supply & Support",
     navHome: "Home",
     navAbout: "About",
@@ -334,7 +334,7 @@ const translations = {
   },
   zh: {
     toplineEmail: "邮箱：cyqfactory@cyqwater.com",
-    toplinePhone: "WhatsApp：+86 18319333114",
+    toplinePhone: "WhatsApp：+86 15251758384",
     brandTag: "地下水探测设备供应与支持",
     navHome: "首页",
     navAbout: "关于我们",
@@ -635,7 +635,7 @@ const translations = {
 const extraTranslations = {
   ar: {
     toplineEmail: "البريد الإلكتروني: cyqfactory@cyqwater.com",
-    toplinePhone: "واتساب: +86 18319333114",
+    toplinePhone: "واتساب: +86 15251758384",
     brandTag: "أنظمة كشف المياه الجوفية",
     navHome: "الرئيسية",
     navAbout: "من نحن",
@@ -895,7 +895,7 @@ const extraTranslations = {
   },
   tr: {
     toplineEmail: "E-posta: cyqfactory@cyqwater.com",
-    toplinePhone: "WhatsApp: +86 18319333114",
+    toplinePhone: "WhatsApp: +86 15251758384",
     brandTag: "Yer Alti Suyu Tespit Sistemleri",
     navHome: "Ana Sayfa",
     navAbout: "Hakkimizda",
@@ -1150,7 +1150,7 @@ const extraTranslations = {
   },
   fa: {
     toplineEmail: "ایمیل: cyqfactory@cyqwater.com",
-    toplinePhone: "واتساپ: +86 18319333114",
+    toplinePhone: "واتساپ: +86 15251758384",
     brandTag: "سیستم های تشخیص آب زیرزمینی",
     navHome: "خانه",
     navAbout: "درباره ما",
@@ -1405,7 +1405,7 @@ const extraTranslations = {
   },
   fr: {
     toplineEmail: "E-mail : cyqfactory@cyqwater.com",
-    toplinePhone: "WhatsApp : +86 18319333114",
+    toplinePhone: "WhatsApp : +86 15251758384",
     brandTag: "Systemes de detection d'eau souterraine",
     navHome: "Accueil",
     navAbout: "A propos",
@@ -1660,7 +1660,7 @@ const extraTranslations = {
   },
   es: {
     toplineEmail: "Correo: cyqfactory@cyqwater.com",
-    toplinePhone: "WhatsApp: +86 18319333114",
+    toplinePhone: "WhatsApp: +86 15251758384",
     brandTag: "Sistemas de deteccion de agua subterranea",
     navHome: "Inicio",
     navAbout: "Nosotros",
@@ -3265,6 +3265,296 @@ Object.entries(duplicatedRodProductTranslations).forEach(([lang, copy]) => {
   };
 });
 
+const duplicatedNewProductTranslations = {
+  en: {
+    p9Name: "32 Channels Dam Piping Leakage Detector",
+    p9Text: "Multi-channel dam piping and leakage detector for embankment safety inspection.",
+    p10Name: "16 Channels Embankment Internal Erosions Detection Equipment",
+    p10Text: "16-channel geophysical mapping equipment for embankment internal erosion inspection.",
+    p22Name: "32-Channel High Density Groundwater Detector",
+    p22Text: "32-channel real-time 2D/3D imaging groundwater detector with Android touch operation.",
+    p24Name: "Golden Rod Groundwater Detector (New Generation 2024)",
+    p24Text: "New generation rod-type groundwater detector for segmented and mobile water exploration.",
+    p25Name: "Magnetotelluric (MT) Survey System",
+    p25Text: "MT survey system using natural electromagnetic signals for deep geophysical exploration.",
+    p26Name: "ADMT ZN All-Channel Speedy Groundwater Detector",
+    p26Text: "Speedy all-channel groundwater detector for fast field measurement and automatic imaging.",
+    p28Name: "Three-component Magnetometer",
+    p28Text: "Three-component magnetic survey instrument for geological and mineral exploration tasks.",
+    p29Name: "Borrowing-line Telecontrol High-density Expansion Survey System",
+    p29Text: "High-density expansion survey system for flexible electrical array field work.",
+    p30Name: "32-Channel Professional MT Electrometer",
+    p30Text: "32-channel professional MT electrometer for mid-density geophysical survey work.",
+    p31Name: "16 Channel Professional MT Electromagnetic Geophysical Equipment",
+    p31Text: "16-channel professional MT electromagnetic equipment with touch-screen imaging workflow.",
+    p32Name: "ADMT 300AX Single-Channel Professional Geophysical Survey Equipment",
+    p32Text: "Single-channel professional geophysical equipment for electromagnetic probe measurement.",
+    p35Name: "ACZ-8 Proton Magnetometer (Broadband Low Disturbance)",
+    p35Text: "Proton magnetometer for broadband low-disturbance magnetic survey applications.",
+    p36Name: "AMC-7 Three-component Fluxgate Magnetometer",
+    p36Text: "Three-component fluxgate magnetometer for X, Y, Z magnetic field measurement.",
+    p37Name: "AMC-6 Single Component Fluxgate Magnetometer",
+    p37Text: "Single-component fluxgate magnetometer for high-precision magnetic field survey.",
+    p39Name: "TT Electromagnetic Probes",
+    p39Text: "TT electromagnetic probes for measurement on rock, concrete, and difficult ground surfaces.",
+    p40Name: "Electrical Resistivity Meter",
+    p40Text: "Electrical resistivity meter for standard geophysical survey and groundwater exploration.",
+    p41Name: "All-terrain Electromagnetic Sensor",
+    p41Text: "Portable electromagnetic sensor for field measurement on multiple ground conditions.",
+    p42Name: "Multi-Function Resistivity & IP Survey System",
+    p42Text: "ADMT-7B multi-function resistivity and IP system for mineral, groundwater, environmental, and engineering surveys.",
+    p43Name: "ACZ-9 Automatic Proton Magnetometer",
+    p43Text: "Automatic proton magnetometer with RTK-level GNSS positioning, wireless control, and AI-assisted anomaly interpretation."
+  },
+  ar: {
+    p9Name: "جهاز كشف تسرب السدود 32 قناة",
+    p9Text: "جهاز متعدد القنوات للكشف عن تسرب السدود وفحص سلامة السدود الترابية.",
+    p10Name: "معدات كشف التآكل الداخلي للسدود 16 قناة",
+    p10Text: "معدات مسح جيوفيزيائي 16 قناة لفحص التآكل الداخلي للسدود.",
+    p22Name: "جهاز كشف المياه الجوفية عالي الكثافة 32 قناة",
+    p22Text: "جهاز كشف مياه جوفية بتصوير ثنائي وثلاثي الأبعاد في الوقت الفعلي مع شاشة تعمل باللمس بنظام أندرويد.",
+    p24Name: "جهاز كشف المياه الجوفية الذهبي (الجيل الجديد 2024)",
+    p24Text: "جهاز كشف مياه جوفية عصري من النوع القضيبي للاستكشاف المقطعي والمتحرك للمياه.",
+    p25Name: "نظام المسح المغناطيسي التيلوري (MT)",
+    p25Text: "نظام مسح MT يستخدم الإشارات الكهرومغناطيسية الطبيعية للاستكشاف الجيوفيزيائي العميق.",
+    p26Name: "جهاز ADMT ZN لكشف المياه الجوفية السريع متعدد القنوات",
+    p26Text: "جهاز سريع متعدد القنوات لكشف المياه الجوفية مع قياس ميداني سريع وتصوير تلقائي.",
+    p28Name: "مقياس المغناطيسية ثلاثي المركبات",
+    p28Text: "جهاز مسح مغناطيسي ثلاثي المركبات لمهام الاستكشاف الجيولوجي والمعدني.",
+    p29Name: "نظام المسح عالي الكثافة بالتحكم عن بعد بخط الاستعارة",
+    p29Text: "نظام مسح تمددي عالي الكثافة للعمل الميداني المرن بالمصفوفات الكهربائية.",
+    p30Name: "مقياس MT الكهرومغناطيسي الاحترافي 32 قناة",
+    p30Text: "مقياس MT كهرومغناطيسي احترافي 32 قناة لأعمال المسح الجيوفيزيائي متوسط الكثافة.",
+    p31Name: "معدات MT الجيوفيزيائية الكهرومغناطيسية الاحترافية 16 قناة",
+    p31Text: "معدات MT كهرومغناطيسية احترافية 16 قناة مع سير عمل تصوير بشاشة تعمل باللمس.",
+    p32Name: "معدات المسح الجيوفيزيائي الاحترافية أحادية القناة ADMT 300AX",
+    p32Text: "معدات جيوفيزيائية احترافية أحادية القناة للقياس بالمسبار الكهرومغناطيسي.",
+    p35Name: "مقياس المغناطيسية البروتوني ACZ-8 (عريض النطاق منخفض التشويش)",
+    p35Text: "مقياس مغناطيسية بروتوني لتطبيقات المسح المغناطيسي عريض النطاق منخفض التشويش.",
+    p36Name: "مقياس المغناطيسية ثلاثي المركبات AMC-7",
+    p36Text: "مقياس مغناطيسية ثلاثي المركبات لقياس المجال المغناطيسي في المحاور X و Y و Z.",
+    p37Name: "مقياس المغناطيسية أحادي المركبة AMC-6",
+    p37Text: "مقياس مغناطيسية أحادي المركبة للمسح المغناطيسي عالي الدقة.",
+    p39Name: "مجسات TT الكهرومغناطيسية",
+    p39Text: "مجسات TT الكهرومغناطيسية للقياس على الصخور والخرسانة والأسطح الأرضية الصعبة.",
+    p40Name: "جهاز قياس المقاومية الكهربائية",
+    p40Text: "جهاز قياس المقاومية الكهربائية للمسح الجيوفيزيائي القياسي واستكشاف المياه الجوفية.",
+    p41Name: "مستشعر كهرومغناطيسي لجميع التضاريس",
+    p41Text: "مستشعر كهرومغناطيسي محمول للقياس الميداني على ظروف أرضية متعددة.",
+    p42Name: "نظام المسح متعدد الوظائف للمقاومية والاستقطاب المستحث",
+    p42Text: "نظام ADMT-7B متعدد الوظائف للمقاومية والاستقطاب المستحث للمسوحات المعدنية والمياه الجوفية والبيئية والهندسية.",
+    p43Name: "مقياس المغناطيسية البروتوني التلقائي ACZ-9",
+    p43Text: "مقياس مغناطيسية بروتوني تلقائي مع تحديد مواقع GNSS بمستوى RTK وتحكم لاسلكي وتفسير anomalies بمساعدة الذكاء الاصطناعي."
+  },
+  tr: {
+    p9Name: "32 Kanallı Baraj Sızıntı Tespit Cihazı",
+    p9Text: "Set güvenliği denetimi için çok kanallı baraj sızıntı tespit cihazı.",
+    p10Name: "16 Kanallı Set İç Erozyon Tespit Ekipmanı",
+    p10Text: "Set iç erozyon denetimi için 16 kanallı jeofizik haritalama ekipmanı.",
+    p22Name: "32 Kanallı Yüksek Yoğunluklu Yeraltı Suyu Dedektörü",
+    p22Text: "Android dokunmatik ekranlı, gerçek zamanlı 2B/3B görüntülemeli 32 kanallı yeraltı suyu dedektörü.",
+    p24Name: "Altın Çubuk Yeraltı Suyu Dedektörü (Yeni Nesil 2024)",
+    p24Text: "Parçalı ve mobil su arama için yeni nesil çubuk tipi yeraltı suyu dedektörü.",
+    p25Name: "Manyetotellürik (MT) Ölçüm Sistemi",
+    p25Text: "Derin jeofizik keşif için doğal elektromanyetik sinyalleri kullanan MT ölçüm sistemi.",
+    p26Name: "ADMT ZN Tüm Kanallı Hızlı Yeraltı Suyu Dedektörü",
+    p26Text: "Hızlı saha ölçümü ve otomatik görüntüleme için tüm kanallı hızlı yeraltı suyu dedektörü.",
+    p28Name: "Üç Bileşenli Manyetometre",
+    p28Text: "Jeolojik ve maden arama görevleri için üç bileşenli manyetik ölçüm cihazı.",
+    p29Name: "Ödünç Hat Uzaktan Kumandalı Yüksek Yoğunluklu Genişletme Ölçüm Sistemi",
+    p29Text: "Esnek elektrik dizilim saha çalışması için yüksek yoğunluklu genişletme ölçüm sistemi.",
+    p30Name: "32 Kanallı Profesyonel MT Elektrometre",
+    p30Text: "Orta yoğunluklu jeofizik ölçüm çalışmaları için 32 kanallı profesyonel MT elektrometre.",
+    p31Name: "16 Kanallı Profesyonel MT Elektromanyetik Jeofizik Ekipman",
+    p31Text: "Dokunmatik ekranlı görüntüleme iş akışına sahip 16 kanallı profesyonel MT elektromanyetik ekipman.",
+    p32Name: "ADMT 300AX Tek Kanallı Profesyonel Jeofizik Ölçüm Ekipmanı",
+    p32Text: "Elektromanyetik prob ölçümü için tek kanallı profesyonel jeofizik ekipman.",
+    p35Name: "ACZ-8 Proton Manyetometresi (Geniş Bant Düşük Gürültü)",
+    p35Text: "Geniş bant düşük gürültülü manyetik ölçüm uygulamaları için proton manyetometresi.",
+    p36Name: "AMC-7 Üç Bileşenli Fluxgate Manyetometre",
+    p36Text: "X, Y, Z manyetik alan ölçümü için üç bileşenli fluxgate manyetometre.",
+    p37Name: "AMC-6 Tek Bileşenli Fluxgate Manyetometre",
+    p37Text: "Yüksek hassasiyetli manyetik alan ölçümü için tek bileşenli fluxgate manyetometre.",
+    p39Name: "TT Elektromanyetik Problar",
+    p39Text: "Kaya, beton ve zorlu zemin yüzeylerinde ölçüm için TT elektromanyetik problar.",
+    p40Name: "Elektrik Rezistivite Ölçer",
+    p40Text: "Standart jeofizik ölçüm ve yeraltı suyu keşfi için elektrik rezistivite ölçer.",
+    p41Name: "Tüm Arazi Elektromanyetik Sensörü",
+    p41Text: "Çoklu zemin koşullarında saha ölçümü için taşınabilir elektromanyetik sensör.",
+    p42Name: "Çok Fonksiyonlu Rezistivite ve IP Ölçüm Sistemi",
+    p42Text: "Maden, yeraltı suyu, çevresel ve mühendislik ölçümleri için ADMT-7B çok fonksiyonlu rezistivite ve IP sistemi.",
+    p43Name: "ACZ-9 Otomatik Proton Manyetometresi",
+    p43Text: "RTK seviyesinde GNSS konumlandırma, kablosuz kontrol ve yapay zeka destekli anomali yorumlamalı otomatik proton manyetometresi."
+  },
+  fa: {
+    p9Name: "دستگاه تشخیص نشت سد 32 کاناله",
+    p9Text: "دستگاه چند کاناله تشخیص نشت سد برای بازرسی ایمنی خاکریز.",
+    p10Name: "تجهیزات تشخیص فرسایش داخلی خاکریز 16 کاناله",
+    p10Text: "تجهیزات نقشه برداری ژئوفیزیکی 16 کاناله برای بازرسی فرسایش داخلی خاکریز.",
+    p22Name: "دستگاه آب یاب چگالی بالا 32 کاناله",
+    p22Text: "دستگاه آب یاب 32 کاناله با تصویربرداری لحظه ای دوبعدی و سه بعدی و صفحه نمایش لمسی اندروید.",
+    p24Name: "دستگاه آب یاب میله طلایی (نسل جدید 2024)",
+    p24Text: "دستگاه آب یاب نسل جدید از نوع میله ای برای اکتشاف قطعه بندی شده و متحرک آب.",
+    p25Name: "سیستم نقشه برداری مگنتوتلوریک (MT)",
+    p25Text: "سیستم نقشه برداری MT با استفاده از سیگنال های الکترومغناطیسی طبیعی برای اکتشاف عمیق ژئوفیزیکی.",
+    p26Name: "دستگاه آب یاب سریع تمام کاناله ADMT ZN",
+    p26Text: "دستگاه آب یاب سریع تمام کاناله برای اندازه گیری سریع میدانی و تصویربرداری خودکار.",
+    p28Name: "مگنتومتر سه مولفه ای",
+    p28Text: "دستگاه نقشه برداری مغناطیسی سه مولفه ای برای وظایف اکتشاف زمین شناسی و معدنی.",
+    p29Name: "سیستم نقشه برداری توسعه ای چگالی بالا با کنترل از راه دور خط قرضی",
+    p29Text: "سیستم نقشه برداری توسعه ای چگالی بالا برای کار میدانی آرایه الکتریکی انعطاف پذیر.",
+    p30Name: "الکترومتر حرفه ای MT 32 کاناله",
+    p30Text: "الکترومتر حرفه ای MT 32 کاناله برای کار نقشه برداری ژئوفیزیکی با چگالی متوسط.",
+    p31Name: "تجهیزات ژئوفیزیکی الکترومغناطیسی حرفه ای MT 16 کاناله",
+    p31Text: "تجهیزات الکترومغناطیسی حرفه ای MT 16 کاناله با جریان کاری تصویربرداری لمسی.",
+    p32Name: "تجهیزات نقشه برداری ژئوفیزیکی حرفه ای تک کاناله ADMT 300AX",
+    p32Text: "تجهیزات ژئوفیزیکی حرفه ای تک کاناله برای اندازه گیری با پروب الکترومغناطیسی.",
+    p35Name: "مگنتومتر پروتونی ACZ-8 (پهن باند با اغتشاش کم)",
+    p35Text: "مگنتومتر پروتونی برای کاربردهای نقشه برداری مغناطیسی پهن باند با اغتشاش کم.",
+    p36Name: "مگنتومتر فلاکس گیت سه مولفه ای AMC-7",
+    p36Text: "مگنتومتر فلاکس گیت سه مولفه ای برای اندازه گیری میدان مغناطیسی X، Y، Z.",
+    p37Name: "مگنتومتر فلاکس گیت تک مولفه ای AMC-6",
+    p37Text: "مگنتومتر فلاکس گیت تک مولفه ای برای نقشه برداری میدان مغناطیسی با دقت بالا.",
+    p39Name: "پروب های الکترومغناطیسی TT",
+    p39Text: "پروب های الکترومغناطیسی TT برای اندازه گیری بر روی سطوح سنگی، بتنی و زمین های دشوار.",
+    p40Name: "مقاومت سنج الکتریکی",
+    p40Text: "مقاومت سنج الکتریکی برای نقشه برداری ژئوفیزیکی استاندارد و اکتشاف آب زیرزمینی.",
+    p41Name: "حسگر الکترومغناطیسی تمام عیار",
+    p41Text: "حسگر الکترومغناطیسی قابل حمل برای اندازه گیری میدانی در شرایط مختلف زمین.",
+    p42Name: "سیستم نقشه برداری چندمنظوره مقاومت ویژه و IP",
+    p42Text: "سیستم چندمنظوره مقاومت ویژه و IP مدل ADMT-7B برای بررسی های معدنی، آب زیرزمینی، محیط زیستی و مهندسی.",
+    p43Name: "مگنتومتر پروتونی خودکار ACZ-9",
+    p43Text: "مگنتومتر پروتونی خودکار با موقعیت یابی GNSS سطح RTK، کنترل بی سیم و تفسیر ناهنجاری با کمک هوش مصنوعی."
+  },
+  fr: {
+    p9Name: "Détecteur de fuite de barrage 32 canaux",
+    p9Text: "Détecteur multicanal de fuite de barrage pour l'inspection de sécurité des digues.",
+    p10Name: "Équipement de détection d'érosion interne de digue 16 canaux",
+    p10Text: "Équipement de cartographie géophysique 16 canaux pour l'inspection de l'érosion interne des digues.",
+    p22Name: "Détecteur d'eau souterraine haute densité 32 canaux",
+    p22Text: "Détecteur d'eau souterraine 32 canaux avec imagerie 2D/3D en temps réel et écran tactile Android.",
+    p24Name: "Détecteur d'eau souterraine Golden Rod (Nouvelle génération 2024)",
+    p24Text: "Détecteur d'eau souterraine de type tige nouvelle génération pour l'exploration segmentée et mobile de l'eau.",
+    p25Name: "Système de sondage magnétotellurique (MT)",
+    p25Text: "Système de sondage MT utilisant les signaux électromagnétiques naturels pour l'exploration géophysique profonde.",
+    p26Name: "Détecteur d'eau souterraine rapide tous canaux ADMT ZN",
+    p26Text: "Détecteur d'eau souterraine rapide tous canaux pour mesure rapide sur le terrain et imagerie automatique.",
+    p28Name: "Magnétomètre à trois composantes",
+    p28Text: "Instrument de sondage magnétique à trois composantes pour les travaux d'exploration géologique et minérale.",
+    p29Name: "Système de sondage extensif haute densité à télécommande par ligne empruntée",
+    p29Text: "Système de sondage extensif haute densité pour le travail de terrain flexible avec réseau électrique.",
+    p30Name: "Électromètre MT professionnel 32 canaux",
+    p30Text: "Électromètre MT professionnel 32 canaux pour les travaux de sondage géophysique moyenne densité.",
+    p31Name: "Équipement géophysique électromagnétique MT professionnel 16 canaux",
+    p31Text: "Équipement électromagnétique MT professionnel 16 canaux avec flux de travail d'imagerie sur écran tactile.",
+    p32Name: "Équipement de sondage géophysique professionnel monocanal ADMT 300AX",
+    p32Text: "Équipement géophysique professionnel monocanal pour la mesure par sonde électromagnétique.",
+    p35Name: "Magnétomètre à protons ACZ-8 (large bande faible perturbation)",
+    p35Text: "Magnétomètre à protons pour applications de sondage magnétique large bande à faible perturbation.",
+    p36Name: "Magnétomètre fluxgate à trois composantes AMC-7",
+    p36Text: "Magnétomètre fluxgate à trois composantes pour la mesure du champ magnétique X, Y, Z.",
+    p37Name: "Magnétomètre fluxgate à composante unique AMC-6",
+    p37Text: "Magnétomètre fluxgate à composante unique pour le sondage magnétique de haute précision.",
+    p39Name: "Sondes électromagnétiques TT",
+    p39Text: "Sondes électromagnétiques TT pour la mesure sur roche, béton et surfaces de sol difficiles.",
+    p40Name: "Appareil de mesure de résistivité électrique",
+    p40Text: "Appareil de mesure de résistivité électrique pour le sondage géophysique standard et l'exploration d'eau souterraine.",
+    p41Name: "Capteur électromagnétique tout-terrain",
+    p41Text: "Capteur électromagnétique portable pour la mesure de terrain sur conditions de sol multiples.",
+    p42Name: "Système de sondage multifonction résistivité et IP",
+    p42Text: "Système multifonction résistivité et IP ADMT-7B pour les études minières, hydrogéologiques, environnementales et techniques.",
+    p43Name: "Magnétomètre à protons automatique ACZ-9",
+    p43Text: "Magnétomètre à protons automatique avec positionnement GNSS niveau RTK, contrôle sans fil et interprétation des anomalies assistée par IA."
+  },
+  es: {
+    p9Name: "Detector de fugas en presas de 32 canales",
+    p9Text: "Detector multicanal de fugas en presas para inspección de seguridad de terraplenes.",
+    p10Name: "Equipo de detección de erosión interna en terraplenes de 16 canales",
+    p10Text: "Equipo de mapeo geofísico de 16 canales para inspección de erosión interna en terraplenes.",
+    p22Name: "Detector de agua subterránea de alta densidad de 32 canales",
+    p22Text: "Detector de agua subterránea de 32 canales con imágenes 2D/3D en tiempo real y pantalla táctil Android.",
+    p24Name: "Detector de agua subterránea Golden Rod (Nueva generación 2024)",
+    p24Text: "Detector de agua subterránea tipo varilla de nueva generación para exploración segmentada y móvil de agua.",
+    p25Name: "Sistema de sondeo magnetotelúrico (MT)",
+    p25Text: "Sistema de sondeo MT que utiliza señales electromagnéticas naturales para exploración geofísica profunda.",
+    p26Name: "Detector de agua subterránea rápido multicanal ADMT ZN",
+    p26Text: "Detector de agua subterránea rápido multicanal para medición rápida en campo e imágenes automáticas.",
+    p28Name: "Magnetómetro de tres componentes",
+    p28Text: "Instrumento de sondeo magnético de tres componentes para tareas de exploración geológica y mineral.",
+    p29Name: "Sistema de sondeo expansivo de alta densidad con telecontrol por línea prestada",
+    p29Text: "Sistema de sondeo expansivo de alta densidad para trabajo de campo flexible con arreglo eléctrico.",
+    p30Name: "Electrómetro MT profesional de 32 canales",
+    p30Text: "Electrómetro MT profesional de 32 canales para trabajos de sondeo geofísico de densidad media.",
+    p31Name: "Equipo geofísico electromagnético MT profesional de 16 canales",
+    p31Text: "Equipo electromagnético MT profesional de 16 canales con flujo de trabajo de imágenes en pantalla táctil.",
+    p32Name: "Equipo de sondeo geofísico profesional monocanal ADMT 300AX",
+    p32Text: "Equipo geofísico profesional monocanal para medición con sonda electromagnética.",
+    p35Name: "Magnetómetro de protones ACZ-8 (banda ancha baja perturbación)",
+    p35Text: "Magnetómetro de protones para aplicaciones de sondeo magnético de banda ancha con baja perturbación.",
+    p36Name: "Magnetómetro fluxgate de tres componentes AMC-7",
+    p36Text: "Magnetómetro fluxgate de tres componentes para medición de campo magnético X, Y, Z.",
+    p37Name: "Magnetómetro fluxgate de componente único AMC-6",
+    p37Text: "Magnetómetro fluxgate de componente único para sondeo magnético de alta precisión.",
+    p39Name: "Sondas electromagnéticas TT",
+    p39Text: "Sondas electromagnéticas TT para medición en roca, hormigón y superficies de terreno difíciles.",
+    p40Name: "Medidor de resistividad eléctrica",
+    p40Text: "Medidor de resistividad eléctrica para sondeo geofísico estándar y exploración de agua subterránea.",
+    p41Name: "Sensor electromagnético todo terreno",
+    p41Text: "Sensor electromagnético portátil para medición en campo en múltiples condiciones de terreno.",
+    p42Name: "Sistema de sondeo multifunción de resistividad e IP",
+    p42Text: "Sistema multifunción de resistividad e IP ADMT-7B para estudios mineros, hidrogeológicos, ambientales e ingenieriles.",
+    p43Name: "Magnetómetro de protones automático ACZ-9",
+    p43Text: "Magnetómetro de protones automático con posicionamiento GNSS nivel RTK, control inalámbrico e interpretación de anomalías asistida por IA."
+  },
+  zh: {
+    p9Name: "32通道坝体管涌渗漏检测仪",
+    p9Text: "多通道坝体管涌渗漏检测仪，用于堤防安全检测与隐患筛查。",
+    p10Name: "16通道堤防内部侵蚀检测设备",
+    p10Text: "16通道地球物理测绘设备，用于堤防内部侵蚀与管涌检测。",
+    p22Name: "32通道高密度地下水探测仪",
+    p22Text: "32通道实时2D/3D成像地下水探测仪，支持安卓触屏操作。",
+    p24Name: "金箍棒地下水探测仪（2024新一代）",
+    p24Text: "新一代棍式地下水探测仪，支持分段测量和移动式找水勘探。",
+    p25Name: "大地电磁（MT）测量系统",
+    p25Text: "MT测量系统，利用天然电磁信号进行深层地球物理勘探。",
+    p26Name: "ADMT ZN全通道快速地下水探测仪",
+    p26Text: "快速全通道地下水探测仪，支持快速野外测量和自动成像。",
+    p28Name: "三分量磁力仪",
+    p28Text: "三分量磁法测量仪器，用于地质构造与矿产勘探任务。",
+    p29Name: "借线遥控高密度扩展测量系统",
+    p29Text: "高密度扩展测量系统，用于灵活的电法排列野外作业。",
+    p30Name: "32通道专业MT电磁仪",
+    p30Text: "32通道专业MT电磁仪，用于中密度地球物理测量作业。",
+    p31Name: "16通道专业MT电磁法地球物理设备",
+    p31Text: "16通道专业MT电磁设备，支持触屏成像现场判读。",
+    p32Name: "ADMT 300AX单通道专业地球物理测量设备",
+    p32Text: "单通道专业地球物理设备，用于电磁探头测量。",
+    p35Name: "ACZ-8质子磁力仪（宽带低干扰）",
+    p35Text: "质子磁力仪，用于宽带低干扰磁法测量应用。",
+    p36Name: "AMC-7三分量磁通门磁力仪",
+    p36Text: "三分量磁通门磁力仪，用于X、Y、Z三轴磁场分量测量。",
+    p37Name: "AMC-6单分量磁通门磁力仪",
+    p37Text: "单分量磁通门磁力仪，用于高精度磁场测量。",
+    p39Name: "TT电磁探头",
+    p39Text: "TT电磁探头，适用于岩石、混凝土及复杂地面条件下的测量。",
+    p40Name: "电阻率测量仪",
+    p40Text: "电阻率测量仪，用于标准地球物理测量和地下水勘探。",
+    p41Name: "全地形电磁传感器",
+    p41Text: "便携式电磁传感器，适用于多种地面条件下的野外测量。",
+    p42Name: "多功能电阻率与激电测量系统",
+    p42Text: "ADMT-7B多功能电阻率与激电系统，用于矿产、地下水、环境和工程测量。",
+    p43Name: "ACZ-9自动质子磁力仪",
+    p43Text: "自动质子磁力仪，支持RTK级GNSS定位、无线控制和AI辅助异常解译。"
+  }
+};
+
+Object.entries(duplicatedNewProductTranslations).forEach(([lang, copy]) => {
+  translations[lang] = {
+    ...(translations[lang] || translations.en),
+    ...copy
+  };
+});
+
 function cloneProductData(product) {
   return JSON.parse(JSON.stringify(product));
 }
@@ -3595,8 +3885,32 @@ function buildHydroGeoImages(slug, count = 4) {
   return Array.from({ length: count }, (_, index) => `${hydroGeoImageBase}${slug}-${index + 1}.webp`);
 }
 
+const zhHighlightMap = {
+  p9: ["支持多通道野外采集，用于大坝和水库安全检查。", "实时2D、3D和曲线成像，帮助技术人员定位异常渗漏区域。", "适用于堤防、水库、堤坝和水利工程项目。"],
+  p10: ["专为堤防结构内部渗漏和侵蚀风险检查设计。", "帮助工程团队在修复前评估管涌、渗漏和薄弱区域分布。", "支持现场成像输出，便于快速报告和项目沟通。"],
+  p22: ["专为需要更强成像和更快对比的高密度地下水测量设计。", "支持现场实时2D和3D图像输出，便于解译。", "适用于打井承包商、农场水源项目和专业测量团队。"],
+  p24: ["便携式棍式工作流，适合快速野外检查和小型团队使用。", "支持分段测量逻辑，便于更清晰的深度对比。", "适用于打井承包商、农场用水户和经销商演示。"],
+  p25: ["利用天然电磁信号进行更深层地球物理解译。", "可支持地下水、地热、矿产和地质构造调查项目。", "适用于专业测量团队和机构勘探项目。"],
+  p26: ["专为需要提升测量效率的场景设计，快速野外测量。", "支持自动成像输出，缩短钻孔前的决策流程。", "适用于需要更快型号选择和现场验证的承包商。"],
+  p28: ["支持磁场数据采集，用于地质和矿产勘探。", "适用于需要方向性磁场信息的野外团队。", "适用于构造测绘、异常检查和测量对比。"],
+  p29: ["专为高密度电法排列测量场景打造。", "有助于减少传统布线复杂性，支持扩展野外布局。", "适用于工程勘探、地下水和地质构造工作。"],
+  p30: ["专业多通道MT仪器，用于地球物理探测。", "支持现场自动成像工作流，便于解译。", "适用于地下水、工程和地质测量项目。"],
+  p31: ["16通道MT配置，用于高效专业野外测量。", "触屏成像工作流帮助技术人员现场查看数据。", "适用于地下水、地质和工程应用。"],
+  p32: ["单通道专业配置，用于紧凑型地球物理测量作业。", "支持在合适的野外条件下进行电磁探头测量。", "适用于小型团队和初步地质检查。"],
+  p35: ["专为需要稳定磁场读数的磁法测量应用设计。", "支持矿产勘探、地质测绘和异常调查。", "适用于专业野外团队和研究项目。"],
+  p36: ["多方向测量磁场分量，便于更清晰的解译。", "适用于地质构造、矿产和磁异常测量工作。", "适用于需要方向性磁场数据的野外团队。"],
+  p37: ["单分量磁法测量仪器，适用于实际野外使用。", "支持矿产勘探和地质磁异常检查。", "适用于需要紧凑型磁法测量设备的测量团队。"],
+  p39: ["专为不便布设电极的表面条件设计。", "可支持岩石、混凝土路面和填土表面测量场景。", "可用作兼容地球物理仪器的配件。"],
+  p40: ["电阻率测量仪，用于广泛应用的电法地球物理测量。", "支持地下水勘探、工程检查和地质调查。", "适用于需要经典电阻率测量工作流的团队。"],
+  p41: ["便携式传感器，专为不同地面条件和快速野外使用设计。", "有助于减少传统电极布设在复杂地形中的不便。", "适用于匹配兼容的地球物理测量仪器。"],
+  p42: ["紧凑轻便系统，旨在替代传统笨重的电阻率设备。", "可测量VP、IP、SP、RO、M、TH、Z、D及极化衰减曲线结果。", "支持智能分析、灵活的测量模式和可靠的现场解译。"],
+  p43: ["基于质子旋进原理的高精度地磁测量系统。", "支持RTK级GNSS定位、无线智能控制和自动测量路径记录。", "提供实时数据处理、绘图、剖面提取和AI辅助异常解译。"]
+};
+
 hydroGeoProductDefinitions.forEach((item) => {
   const gallery = buildHydroGeoImages(item.slug, item.slug === "earthquake-advance-prediction-system" ? 3 : 4);
+  const zhName = translations.zh[`${item.id}Name`] || item.name;
+  const zhHighlights = zhHighlightMap[item.id] || item.highlights;
   productCatalog[item.id] = {
     category: "hydro-geo",
     gallery,
@@ -3612,6 +3926,17 @@ hydroGeoProductDefinitions.forEach((item) => {
         ["Recommended users", "Engineering survey teams, water conservancy projects, contractors, and distributors"]
       ]
     },
+    techTableZh: {
+      columns: ["项目", item.model],
+      rows: [
+        ["产品型号", item.model],
+        ["应用领域", item.application],
+        ["通道/配置", item.channels],
+        ["测量方法", item.method],
+        ["成像/输出", "2D/3D成像、曲线图和现场解译支持"],
+        ["推荐用户", "工程测量团队、水利项目、承包商和经销商"]
+      ]
+    },
     en: {
       name: item.name,
       summary: `Product model:\n${item.model}\n\n1. ${item.highlights[0]}\n2. ${item.highlights[1]}\n3. ${item.highlights[2]}`,
@@ -3625,6 +3950,20 @@ hydroGeoProductDefinitions.forEach((item) => {
         { label: "Recommended users", value: "Engineering survey teams, contractors, water conservancy projects, and distributors" }
       ],
       videoText: "Product video can be added later. Please contact us for field photos, operation guidance, and model recommendations."
+    },
+    zh: {
+      name: zhName,
+      summary: `产品型号：\n${item.model}\n\n产品优势：\n1. ${zhHighlights[0]}\n2. ${zhHighlights[1]}\n3. ${zhHighlights[2]}`,
+      quickSpecs: item.quickSpecs,
+      features: zhHighlights,
+      specs: [
+        { label: "产品型号", value: item.model },
+        { label: "应用领域", value: item.application },
+        { label: "通道/配置", value: item.channels },
+        { label: "测量方法", value: item.method },
+        { label: "推荐用户", value: "工程测量团队、水利项目、承包商和经销商" }
+      ],
+      videoText: "产品视频可后续添加。请联系我们获取现场照片、操作指导和型号推荐。"
     }
   };
 
@@ -3634,6 +3973,11 @@ hydroGeoProductDefinitions.forEach((item) => {
 
   translations.en[`${item.id}Name`] = item.name;
   translations.en[`${item.id}Text`] = item.shortText;
+  ["zh", "ar", "tr", "fa", "fr", "es"].forEach((lang) => {
+    translations[lang] = translations[lang] || {};
+    translations[lang][`${item.id}Name`] = translations[lang][`${item.id}Name`] || item.name;
+    translations[lang][`${item.id}Text`] = translations[lang][`${item.id}Text`] || item.shortText;
+  });
 });
 
 const referenceMainImageBase = "./assets/products/reference-main/";
@@ -3971,6 +4315,8 @@ const referenceProductAdditions = [
   }
 ];
 
+const zhReferenceSpecs = {};
+
 function registerReferenceProduct(item) {
   const mainImage = `${referenceMainImageBase}${item.slug}.webp`;
   productCatalog[item.id] = {
@@ -3988,6 +4334,17 @@ function registerReferenceProduct(item) {
         ["Recommended users", "Geophysical survey teams, drilling contractors, engineering projects, and distributors"]
       ]
     },
+    techTableZh: {
+      columns: ["项目", item.model],
+      rows: [
+        ["产品型号", item.model],
+        ["应用领域", item.application],
+        ["通道/配置", item.configuration],
+        ["测量方法", item.method],
+        ["成像/输出", "现场数据采集、图表输出和解译支持"],
+        ["推荐用户", "地球物理测量团队、打井承包商、工程项目和经销商"]
+      ]
+    },
     en: {
       name: item.name,
       summary: `Product model:\n${item.model}\n\n1. ${item.highlights[0]}\n2. ${item.highlights[1]}\n3. ${item.highlights[2]}`,
@@ -4001,6 +4358,20 @@ function registerReferenceProduct(item) {
         { label: "Recommended users", value: "Geophysical survey teams, drilling contractors, engineering projects, and distributors" }
       ],
       videoText: "Product video can be added later. Please contact us for field photos, operation guidance, and model recommendations."
+    },
+    zh: {
+      name: translations.zh[`${item.id}Name`] || item.name,
+      summary: `产品型号：\n${item.model}\n\n产品优势：\n1. ${zhHighlightMap[item.id]?.[0] || item.highlights[0]}\n2. ${zhHighlightMap[item.id]?.[1] || item.highlights[1]}\n3. ${zhHighlightMap[item.id]?.[2] || item.highlights[2]}`,
+      quickSpecs: item.quickSpecs,
+      features: zhHighlightMap[item.id] || item.highlights,
+      specs: [
+        { label: "产品型号", value: item.model },
+        { label: "应用领域", value: item.application },
+        { label: "通道/配置", value: item.configuration },
+        { label: "测量方法", value: item.method },
+        { label: "推荐用户", value: "地球物理测量团队、打井承包商、工程项目和经销商" }
+      ],
+      videoText: "产品视频可后续添加。请联系我们获取现场照片、操作指导和型号推荐。"
     }
   };
 
@@ -4010,6 +4381,11 @@ function registerReferenceProduct(item) {
 
   translations.en[`${item.id}Name`] = item.name;
   translations.en[`${item.id}Text`] = item.text;
+  ["zh", "ar", "tr", "fa", "fr", "es"].forEach((lang) => {
+    translations[lang] = translations[lang] || {};
+    translations[lang][`${item.id}Name`] = translations[lang][`${item.id}Name`] || item.name;
+    translations[lang][`${item.id}Text`] = translations[lang][`${item.id}Text`] || item.text;
+  });
 }
 
 referenceProductAdditions.forEach(registerReferenceProduct);
@@ -7078,8 +7454,8 @@ async function submitInquiry(payload) {
   throw lastError;
 }
 
-const WHATSAPP_DIGITS = "8618319333114";
-const WHATSAPP_DISPLAY = "+86 18319333114";
+const WHATSAPP_DIGITS = "8615251758384";
+const WHATSAPP_DISPLAY = "+86 15251758384";
 
 function renderInquirySuccess(form, copy) {
   form.reset();
@@ -7238,8 +7614,8 @@ function createChatWidget() {
     accounts: [
       {
         id: "sales",
-        phoneDigits: "8618319333114",
-        phoneDisplay: "+86 18319333114"
+        phoneDigits: "8615251758384",
+        phoneDisplay: "+86 15251758384"
       },
       {
         id: "support",
