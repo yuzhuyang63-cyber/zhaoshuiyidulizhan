@@ -1,7 +1,7 @@
 const translations = {
   en: {
     toplineEmail: "Email: cyqfactory@cyqwater.com",
-    toplinePhone: "WhatsApp: +86 18319333114",
+    toplinePhone: "WhatsApp: +86 15251758384",
     brandTag: "Groundwater Detector Supply & Support",
     navHome: "Home",
     navAbout: "About",
@@ -334,7 +334,7 @@ const translations = {
   },
   zh: {
     toplineEmail: "邮箱：cyqfactory@cyqwater.com",
-    toplinePhone: "WhatsApp：+86 18319333114",
+    toplinePhone: "WhatsApp：+86 15251758384",
     brandTag: "地下水探测设备供应与支持",
     navHome: "首页",
     navAbout: "关于我们",
@@ -635,7 +635,7 @@ const translations = {
 const extraTranslations = {
   ar: {
     toplineEmail: "البريد الإلكتروني: cyqfactory@cyqwater.com",
-    toplinePhone: "واتساب: +86 18319333114",
+    toplinePhone: "واتساب: +86 15251758384",
     brandTag: "أنظمة كشف المياه الجوفية",
     navHome: "الرئيسية",
     navAbout: "من نحن",
@@ -895,7 +895,7 @@ const extraTranslations = {
   },
   tr: {
     toplineEmail: "E-posta: cyqfactory@cyqwater.com",
-    toplinePhone: "WhatsApp: +86 18319333114",
+    toplinePhone: "WhatsApp: +86 15251758384",
     brandTag: "Yer Alti Suyu Tespit Sistemleri",
     navHome: "Ana Sayfa",
     navAbout: "Hakkimizda",
@@ -1150,7 +1150,7 @@ const extraTranslations = {
   },
   fa: {
     toplineEmail: "ایمیل: cyqfactory@cyqwater.com",
-    toplinePhone: "واتساپ: +86 18319333114",
+    toplinePhone: "واتساپ: +86 15251758384",
     brandTag: "سیستم های تشخیص آب زیرزمینی",
     navHome: "خانه",
     navAbout: "درباره ما",
@@ -1405,7 +1405,7 @@ const extraTranslations = {
   },
   fr: {
     toplineEmail: "E-mail : cyqfactory@cyqwater.com",
-    toplinePhone: "WhatsApp : +86 18319333114",
+    toplinePhone: "WhatsApp : +86 15251758384",
     brandTag: "Systemes de detection d'eau souterraine",
     navHome: "Accueil",
     navAbout: "A propos",
@@ -1660,7 +1660,7 @@ const extraTranslations = {
   },
   es: {
     toplineEmail: "Correo: cyqfactory@cyqwater.com",
-    toplinePhone: "WhatsApp: +86 18319333114",
+    toplinePhone: "WhatsApp: +86 15251758384",
     brandTag: "Sistemas de deteccion de agua subterranea",
     navHome: "Inicio",
     navAbout: "Nosotros",
@@ -7888,8 +7888,8 @@ async function submitInquiry(payload) {
   throw lastError;
 }
 
-const WHATSAPP_DIGITS = "8618319333114";
-const WHATSAPP_DISPLAY = "+86 18319333114";
+const WHATSAPP_DIGITS = "8615251758384";
+const WHATSAPP_DISPLAY = "+86 15251758384";
 
 function renderInquirySuccess(form, copy) {
   form.reset();
@@ -8051,13 +8051,13 @@ function createChatWidget() {
     accounts: [
       {
         id: "sales",
-        phoneDigits: "8618319333114",
-        phoneDisplay: "+86 18319333114"
+        phoneDigits: "8615251758384",
+        phoneDisplay: "+86 15251758384"
       },
       {
         id: "support",
-        phoneDigits: "8618319333114",
-        phoneDisplay: "+86 18319333114"
+        phoneDigits: "8615251758384",
+        phoneDisplay: "+86 15251758384"
       }
     ],
     avatarSrc: "./service.png",
