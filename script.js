@@ -1,7 +1,7 @@
 const translations = {
   en: {
     toplineEmail: "Email: cyqfactory@cyqwater.com",
-    toplinePhone: "WhatsApp: +86 15251758384",
+    toplinePhone: "WhatsApp: +86 18319333114",
     brandTag: "Groundwater Detector Supply & Support",
     navHome: "Home",
     navAbout: "About",
@@ -334,7 +334,7 @@ const translations = {
   },
   zh: {
     toplineEmail: "邮箱：cyqfactory@cyqwater.com",
-    toplinePhone: "WhatsApp：+86 15251758384",
+    toplinePhone: "WhatsApp：+86 18319333114",
     brandTag: "地下水探测设备供应与支持",
     navHome: "首页",
     navAbout: "关于我们",
@@ -635,7 +635,7 @@ const translations = {
 const extraTranslations = {
   ar: {
     toplineEmail: "البريد الإلكتروني: cyqfactory@cyqwater.com",
-    toplinePhone: "واتساب: +86 15251758384",
+    toplinePhone: "واتساب: +86 18319333114",
     brandTag: "أنظمة كشف المياه الجوفية",
     navHome: "الرئيسية",
     navAbout: "من نحن",
@@ -895,7 +895,7 @@ const extraTranslations = {
   },
   tr: {
     toplineEmail: "E-posta: cyqfactory@cyqwater.com",
-    toplinePhone: "WhatsApp: +86 15251758384",
+    toplinePhone: "WhatsApp: +86 18319333114",
     brandTag: "Yer Alti Suyu Tespit Sistemleri",
     navHome: "Ana Sayfa",
     navAbout: "Hakkimizda",
@@ -1150,7 +1150,7 @@ const extraTranslations = {
   },
   fa: {
     toplineEmail: "ایمیل: cyqfactory@cyqwater.com",
-    toplinePhone: "واتساپ: +86 15251758384",
+    toplinePhone: "واتساپ: +86 18319333114",
     brandTag: "سیستم های تشخیص آب زیرزمینی",
     navHome: "خانه",
     navAbout: "درباره ما",
@@ -1405,7 +1405,7 @@ const extraTranslations = {
   },
   fr: {
     toplineEmail: "E-mail : cyqfactory@cyqwater.com",
-    toplinePhone: "WhatsApp : +86 15251758384",
+    toplinePhone: "WhatsApp : +86 18319333114",
     brandTag: "Systemes de detection d'eau souterraine",
     navHome: "Accueil",
     navAbout: "A propos",
@@ -1660,7 +1660,7 @@ const extraTranslations = {
   },
   es: {
     toplineEmail: "Correo: cyqfactory@cyqwater.com",
-    toplinePhone: "WhatsApp: +86 15251758384",
+    toplinePhone: "WhatsApp: +86 18319333114",
     brandTag: "Sistemas de deteccion de agua subterranea",
     navHome: "Inicio",
     navAbout: "Nosotros",
@@ -7758,6 +7758,89 @@ function appendChatMessage(role, content, options = {}) {
   scrollChatToBottom();
 }
 
+const googleAdsConversionConfig = {
+  conversionId: "AW-18266116157",
+  labels: {
+    contactInquiry: window.CYQ_GOOGLE_ADS_CONVERSIONS?.contactInquiry || "_9OvCOSmstocEL2g-4VE",
+    whatsappSend: window.CYQ_GOOGLE_ADS_CONVERSIONS?.whatsappSend || "P6AyCOemstocEL2g-4VE"
+  },
+  values: {
+    contactInquiry: 120,
+    whatsappSend: {
+      home: 45,
+      products: 65,
+      "product-detail": 85,
+      contact: 80,
+      other: 45
+    }
+  }
+};
+
+function getGoogleAdsPageSource() {
+  const page = document.body?.dataset?.page || "";
+  const path = window.location.pathname || "/";
+
+  if (page) {
+    return page;
+  }
+  if (path === "/" || /index\.html?$/.test(path)) {
+    return "home";
+  }
+  if (/contact\.html?$/.test(path)) {
+    return "contact";
+  }
+  if (/product-detail\.html?$/.test(path)) {
+    return "product-detail";
+  }
+  if (/products\.html?$/.test(path)) {
+    return "products";
+  }
+  return "other";
+}
+
+function getGoogleAdsConversionValue(conversionName, pageSource) {
+  const valueConfig = googleAdsConversionConfig.values[conversionName];
+  if (typeof valueConfig === "number") {
+    return valueConfig;
+  }
+  if (valueConfig && typeof valueConfig === "object") {
+    return valueConfig[pageSource] || valueConfig.other || 0;
+  }
+  return 0;
+}
+
+function getGoogleAdsSendTo(conversionName) {
+  const label = googleAdsConversionConfig.labels[conversionName];
+  if (!label) {
+    return "";
+  }
+  if (label.startsWith("AW-")) {
+    return label;
+  }
+  return `${googleAdsConversionConfig.conversionId}/${label}`;
+}
+
+function trackGoogleAdsConversion(conversionName, options = {}) {
+  const sendTo = getGoogleAdsSendTo(conversionName);
+  if (!sendTo || typeof window.gtag !== "function") {
+    return false;
+  }
+
+  const pageSource = getGoogleAdsPageSource();
+  const eventParams = {
+    send_to: sendTo,
+    value: options.value ?? getGoogleAdsConversionValue(conversionName, pageSource),
+    currency: "USD",
+    event_category: "lead",
+    event_label: options.eventLabel || conversionName,
+    page_path: window.location.pathname || "/",
+    page_source: pageSource
+  };
+
+  window.gtag("event", "conversion", eventParams);
+  return true;
+}
+
 function setChatOpen(isOpen) {
   if (!chatElements) {
     return;
@@ -7805,8 +7888,8 @@ async function submitInquiry(payload) {
   throw lastError;
 }
 
-const WHATSAPP_DIGITS = "8615251758384";
-const WHATSAPP_DISPLAY = "+86 15251758384";
+const WHATSAPP_DIGITS = "8618319333114";
+const WHATSAPP_DISPLAY = "+86 18319333114";
 
 function renderInquirySuccess(form, copy) {
   form.reset();
@@ -7948,6 +8031,9 @@ document.addEventListener(
 
     try {
       await submitInquiry(payload);
+      trackGoogleAdsConversion("contactInquiry", {
+        eventLabel: "CONTACT - Send Inquiry"
+      });
       renderInquirySuccess(form, copy);
     } catch (error) {
       const detail = error instanceof Error ? error.message : String(error);
@@ -7965,13 +8051,13 @@ function createChatWidget() {
     accounts: [
       {
         id: "sales",
-        phoneDigits: "8615251758384",
-        phoneDisplay: "+86 15251758384"
+        phoneDigits: "8618319333114",
+        phoneDisplay: "+86 18319333114"
       },
       {
         id: "support",
-        phoneDigits: "8615251758384",
-        phoneDisplay: "+86 15251758384"
+        phoneDigits: "8618319333114",
+        phoneDisplay: "+86 18319333114"
       }
     ],
     avatarSrc: "./service.png",
@@ -8363,6 +8449,9 @@ function createChatWidget() {
       chatElements.input.value = "";
       appendLocalMessage("assistant", activeCopy.ready, { status: true });
     }
+    trackGoogleAdsConversion("whatsappSend", {
+      eventLabel: `WhatsApp Send - ${getGoogleAdsPageSource()}`
+    });
     window.open(buildWhatsAppUrl(message), "_blank", "noopener");
     scrollChatToBottom();
   });
