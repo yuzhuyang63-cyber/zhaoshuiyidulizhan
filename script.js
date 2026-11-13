@@ -8084,9 +8084,15 @@ function createChatWidget() {
         }
       },
       inputPlaceholder: "Type your question here...",
+      namePlaceholder: "Your name *",
+      emailPlaceholder: "Email (or enter WhatsApp below)",
+      whatsappPlaceholder: "Your WhatsApp number (or enter email above)",
       send: "Send on WhatsApp",
       copy: "Copy number",
       copied: "WhatsApp number copied.",
+      saving: "Saving your inquiry...",
+      invalidLead: "Please enter your name and at least an email or WhatsApp number.",
+      saveError: "We could not save your inquiry. Please try again.",
       ready: "Your message is ready. Continue on WhatsApp, or copy the number and add us from your phone.",
       close: "Close",
       defaultMessage: "Hello, I am interested in your groundwater detector products."
@@ -8108,9 +8114,15 @@ function createChatWidget() {
         }
       },
       inputPlaceholder: "请输入您的问题...",
+      namePlaceholder: "您的姓名 *",
+      emailPlaceholder: "邮箱（或在下方填写 WhatsApp）",
+      whatsappPlaceholder: "您的 WhatsApp 号码（或在上方填写邮箱）",
       send: "发送到 WhatsApp",
       copy: "复制号码",
       copied: "WhatsApp 号码已复制。",
+      saving: "正在保存您的询盘...",
+      invalidLead: "请填写姓名，并至少填写邮箱或 WhatsApp 号码。",
+      saveError: "询盘保存失败，请重试。",
       ready: "消息已准备好。请继续在 WhatsApp 沟通，或复制号码后用手机添加我们。",
       close: "关闭",
       defaultMessage: "您好，我想咨询地下水探测仪产品。"
@@ -8132,9 +8144,15 @@ function createChatWidget() {
         }
       },
       inputPlaceholder: "اكتب سؤالك هنا...",
+      namePlaceholder: "اسمك *",
+      emailPlaceholder: "البريد الإلكتروني (أو أدخل واتساب أدناه)",
+      whatsappPlaceholder: "رقم واتساب (أو أدخل البريد الإلكتروني أعلاه)",
       send: "إرسال عبر واتساب",
       copy: "نسخ الرقم",
       copied: "تم نسخ رقم واتساب.",
+      saving: "جارٍ حفظ استفسارك...",
+      invalidLead: "يرجى إدخال اسمك وبريد إلكتروني أو رقم واتساب واحد على الأقل.",
+      saveError: "تعذر حفظ استفسارك. يرجى المحاولة مرة أخرى.",
       ready: "رسالتك جاهزة. تابع عبر واتساب أو انسخ الرقم وأضفنا من هاتفك.",
       close: "إغلاق",
       defaultMessage: "مرحباً، أريد الاستفسار عن أجهزة كشف المياه الجوفية."
@@ -8156,9 +8174,15 @@ function createChatWidget() {
         }
       },
       inputPlaceholder: "Sorunuzu buraya yazın...",
+      namePlaceholder: "Adınız *",
+      emailPlaceholder: "E-posta (veya aşağıya WhatsApp yazın)",
+      whatsappPlaceholder: "WhatsApp numaranız (veya yukarıya e-posta yazın)",
       send: "WhatsApp ile gönder",
       copy: "Numarayı kopyala",
       copied: "WhatsApp numarası kopyalandı.",
+      saving: "Talebiniz kaydediliyor...",
+      invalidLead: "Lütfen adınızı ve en az bir e-posta veya WhatsApp numarası girin.",
+      saveError: "Talebiniz kaydedilemedi. Lütfen tekrar deneyin.",
       ready: "Mesajınız hazır. WhatsApp'ta devam edin veya numarayı kopyalayıp telefonunuzdan ekleyin.",
       close: "Kapat",
       defaultMessage: "Merhaba, yeraltı suyu dedektörü ürünlerinizle ilgileniyorum."
@@ -8180,9 +8204,15 @@ function createChatWidget() {
         }
       },
       inputPlaceholder: "سؤال خود را اینجا بنویسید...",
+      namePlaceholder: "نام شما *",
+      emailPlaceholder: "ایمیل (یا واتساپ را در پایین وارد کنید)",
+      whatsappPlaceholder: "شماره واتساپ (یا ایمیل را در بالا وارد کنید)",
       send: "ارسال در واتساپ",
       copy: "کپی شماره",
       copied: "شماره واتساپ کپی شد.",
+      saving: "در حال ذخیره درخواست شما...",
+      invalidLead: "لطفاً نام و حداقل یک ایمیل یا شماره واتساپ وارد کنید.",
+      saveError: "درخواست شما ذخیره نشد. لطفاً دوباره تلاش کنید.",
       ready: "پیام شما آماده است. در واتساپ ادامه دهید یا شماره را کپی کرده و از گوشی اضافه کنید.",
       close: "بستن",
       defaultMessage: "سلام، می‌خواهم درباره دستگاه‌های تشخیص آب زیرزمینی سؤال کنم."
@@ -8204,9 +8234,15 @@ function createChatWidget() {
         }
       },
       inputPlaceholder: "Tapez votre question ici...",
+      namePlaceholder: "Votre nom *",
+      emailPlaceholder: "E-mail (ou WhatsApp ci-dessous)",
+      whatsappPlaceholder: "Votre numero WhatsApp (ou e-mail ci-dessus)",
       send: "Envoyer sur WhatsApp",
       copy: "Copier le numero",
       copied: "Numero WhatsApp copie.",
+      saving: "Enregistrement de votre demande...",
+      invalidLead: "Indiquez votre nom et au moins un e-mail ou un numero WhatsApp.",
+      saveError: "Impossible d'enregistrer votre demande. Veuillez reessayer.",
       ready: "Votre message est pret. Continuez sur WhatsApp ou copiez le numero depuis votre telephone.",
       close: "Fermer",
       defaultMessage: "Bonjour, je suis interesse par vos detecteurs d'eau souterraine."
@@ -8228,9 +8264,15 @@ function createChatWidget() {
         }
       },
       inputPlaceholder: "Escriba su pregunta aqui...",
+      namePlaceholder: "Su nombre *",
+      emailPlaceholder: "Correo (o WhatsApp abajo)",
+      whatsappPlaceholder: "Su numero de WhatsApp (o correo arriba)",
       send: "Enviar por WhatsApp",
       copy: "Copiar numero",
       copied: "Numero de WhatsApp copiado.",
+      saving: "Guardando su consulta...",
+      invalidLead: "Ingrese su nombre y al menos un correo o numero de WhatsApp.",
+      saveError: "No pudimos guardar su consulta. Intentelo de nuevo.",
       ready: "Su mensaje esta listo. Continue en WhatsApp o copie el numero y agreguenos desde su telefono.",
       close: "Cerrar",
       defaultMessage: "Hola, estoy interesado en sus detectores de agua subterranea."
@@ -8287,6 +8329,11 @@ function createChatWidget() {
         </div>
       </div>
       <form class="chat-form-widget">
+        <div class="chat-lead-fields">
+          <input class="chat-lead-name" name="name" type="text" autocomplete="name" required placeholder="${copy.namePlaceholder}" />
+          <input class="chat-lead-email" name="email" type="email" autocomplete="email" placeholder="${copy.emailPlaceholder}" />
+          <input class="chat-lead-whatsapp" name="whatsapp" type="tel" autocomplete="tel" placeholder="${copy.whatsappPlaceholder}" />
+        </div>
         <textarea class="chat-input" rows="2" placeholder="${copy.inputPlaceholder}"></textarea>
         <div class="chat-actions">
           <button class="button ghost chat-copy" type="button">${copy.copy}</button>
@@ -8316,6 +8363,9 @@ function createChatWidget() {
     contactHint: widget.querySelector(".chat-contact-eyebrow"),
     accountCards: Array.from(widget.querySelectorAll(".chat-contact-card")),
     form: widget.querySelector(".chat-form-widget"),
+    name: widget.querySelector(".chat-lead-name"),
+    email: widget.querySelector(".chat-lead-email"),
+    whatsapp: widget.querySelector(".chat-lead-whatsapp"),
     input: widget.querySelector(".chat-input"),
     copy: widget.querySelector(".chat-copy"),
     submit: widget.querySelector(".chat-submit")
@@ -8368,6 +8418,9 @@ function createChatWidget() {
       card.querySelector("small").textContent = accountCopy.text;
       card.querySelector("em").textContent = account.phoneDisplay;
     });
+    chatElements.name.placeholder = nextCopy.namePlaceholder;
+    chatElements.email.placeholder = nextCopy.emailPlaceholder;
+    chatElements.whatsapp.placeholder = nextCopy.whatsappPlaceholder;
     chatElements.input.placeholder = nextCopy.inputPlaceholder;
     chatElements.copy.textContent = nextCopy.copy;
     chatElements.submit.textContent = nextCopy.send;
@@ -8438,22 +8491,74 @@ function createChatWidget() {
     }
   });
 
-  chatElements.form.addEventListener("submit", (event) => {
+  chatElements.form.addEventListener("submit", async (event) => {
     event.preventDefault();
     userInteractedWithChat = true;
 
+    const name = chatElements.name.value.trim();
+    const email = chatElements.email.value.trim();
+    const whatsapp = chatElements.whatsapp.value.trim();
     const message = chatElements.input.value.trim();
     const activeCopy = getWidgetCopy();
-    if (message) {
-      appendLocalMessage("user", message);
-      chatElements.input.value = "";
-      appendLocalMessage("assistant", activeCopy.ready, { status: true });
+    if (!name || (!email && !whatsapp)) {
+      appendLocalMessage("assistant", activeCopy.invalidLead, { status: true });
+      (!name ? chatElements.name : chatElements.email).focus();
+      return;
     }
-    trackGoogleAdsConversion("whatsappSend", {
-      eventLabel: `WhatsApp Send - ${getGoogleAdsPageSource()}`
+    if (!chatElements.form.reportValidity()) {
+      return;
+    }
+
+    const inquiryMessage = message || activeCopy.defaultMessage;
+    const accountCopy = getAccountCopy(activeCopy, activeAccountId);
+    const whatsappUrl = buildWhatsAppUrl(inquiryMessage);
+    const whatsappWindow = window.open("about:blank", "_blank");
+    if (whatsappWindow) {
+      whatsappWindow.opener = null;
+    }
+
+    const controls = [chatElements.name, chatElements.email, chatElements.whatsapp, chatElements.input, chatElements.submit];
+    controls.forEach((control) => {
+      control.disabled = true;
     });
-    window.open(buildWhatsAppUrl(message), "_blank", "noopener");
-    scrollChatToBottom();
+    appendLocalMessage("assistant", activeCopy.saving, { status: true, transient: true });
+
+    try {
+      await submitInquiry({
+        name,
+        company: "",
+        email,
+        whatsapp,
+        interest: `WhatsApp - ${accountCopy.title}`,
+        message: inquiryMessage,
+        language: getCurrentLanguage(),
+        source_page: `${window.location.pathname || "/"}#whatsapp-widget`
+      });
+
+      appendLocalMessage("user", inquiryMessage);
+      chatElements.form.reset();
+      appendLocalMessage("assistant", activeCopy.ready, { status: true });
+      trackGoogleAdsConversion("whatsappSend", {
+        eventLabel: `WhatsApp Send - ${getGoogleAdsPageSource()}`
+      });
+
+      if (whatsappWindow) {
+        whatsappWindow.location.replace(whatsappUrl);
+      } else {
+        window.location.assign(whatsappUrl);
+      }
+    } catch (error) {
+      if (whatsappWindow) {
+        whatsappWindow.close();
+      }
+      const detail = error instanceof Error ? error.message : String(error);
+      appendLocalMessage("assistant", `${activeCopy.saveError} ${detail}`.trim(), { status: true });
+    } finally {
+      controls.forEach((control) => {
+        control.disabled = false;
+      });
+      scrollChatToBottom();
+    }
   });
 
   chatElements.messages.textContent = "";

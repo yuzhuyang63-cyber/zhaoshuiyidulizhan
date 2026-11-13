@@ -2419,16 +2419,29 @@ body.rtl .chat-contact-card {
   background: white;
 }
 
+.chat-lead-fields {
+  display: grid;
+  gap: 8px;
+}
+
+.chat-lead-fields input,
 .chat-input {
   width: 100%;
-  min-height: 72px;
-  max-height: 112px;
-  resize: none;
   border: 1px solid rgba(29, 42, 51, 0.12);
   border-radius: 16px;
   padding: 11px 14px;
   background: #fffdf9;
   color: var(--text);
+}
+
+.chat-lead-fields input {
+  min-height: 44px;
+}
+
+.chat-input {
+  min-height: 72px;
+  max-height: 112px;
+  resize: none;
 }
 
 .chat-actions {
@@ -2486,6 +2499,7 @@ body.rtl .chat-contact-card {
 
 .chat-close:disabled,
 .chat-actions .button:disabled,
+.chat-lead-fields input:disabled,
 .chat-input:disabled {
   cursor: not-allowed;
   opacity: 0.7;
