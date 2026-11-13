@@ -196,6 +196,7 @@ class ChatRequestHandler(BaseHTTPRequestHandler):
                         "inquiry_ready": True,
                         "email_configured": self.app_context.inquiry_service.email_is_configured(),
                         "feishu_configured": self.app_context.feishu_service.is_configured(),
+                        "feishu_whatsapp_configured": self.app_context.feishu_service.is_whatsapp_tracking_configured(),
                     }
                 )
                 return
@@ -239,6 +240,8 @@ class ChatRequestHandler(BaseHTTPRequestHandler):
                 email_error = ""
                 feishu_synced = False
                 feishu_error = ""
+                feishu_whatsapp_synced = False
+                feishu_whatsapp_error = ""
                 try:
                     validated = self.app_context.inquiry_service.validate_payload(payload)
                     inquiry = self.app_context.inquiry_service.persist(validated, self)
@@ -291,6 +294,23 @@ class ChatRequestHandler(BaseHTTPRequestHandler):
                     )
 
                 try:
+                    whatsapp_result = self.app_context.feishu_service.create_whatsapp_event_record(inquiry)
+                    feishu_whatsapp_synced = not bool(whatsapp_result.get("skipped"))
+                except Exception as exc:
+                    feishu_whatsapp_error = str(exc)
+                    log_event(
+                        self.logger,
+                        logging.ERROR,
+                        "inquiry_feishu_whatsapp_sync_failed",
+                        "WhatsApp inquiry was saved but Feishu click tracking sync failed",
+                        exc_info=exc,
+                        request_id=request_id,
+                        path=path,
+                        inquiry_id=inquiry["id"],
+                        error_type=type(exc).__name__,
+                    )
+
+                try:
                     feishu_result = self.app_context.feishu_service.create_customer_record(inquiry)
                     feishu_synced = not bool(feishu_result.get("skipped"))
                 except Exception as exc:
@@ -317,6 +337,7 @@ class ChatRequestHandler(BaseHTTPRequestHandler):
                     country=inquiry.get("country", ""),
                     email_sent=email_sent,
                     feishu_synced=feishu_synced,
+                    feishu_whatsapp_synced=feishu_whatsapp_synced,
                 )
                 response_payload = {
                     "status": "ok",
@@ -326,11 +347,15 @@ class ChatRequestHandler(BaseHTTPRequestHandler):
                     "email_configured": self.app_context.inquiry_service.email_is_configured(),
                     "feishu_synced": feishu_synced,
                     "feishu_configured": self.app_context.feishu_service.is_configured(),
+                    "feishu_whatsapp_synced": feishu_whatsapp_synced,
+                    "feishu_whatsapp_configured": self.app_context.feishu_service.is_whatsapp_tracking_configured(),
                 }
                 if email_error:
                     response_payload["email_error"] = email_error
                 if feishu_error:
                     response_payload["feishu_error"] = feishu_error
+                if feishu_whatsapp_error:
+                    response_payload["feishu_whatsapp_error"] = feishu_whatsapp_error
                 self.send_json(response_payload, status=201)
                 return
         except Exception as exc:

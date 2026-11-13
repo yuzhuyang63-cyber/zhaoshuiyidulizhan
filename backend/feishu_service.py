@@ -32,6 +32,15 @@ class FeishuService:
             and self.config.feishu_customer_table_id
         )
 
+    def is_whatsapp_tracking_configured(self) -> bool:
+        return bool(
+            self.config.feishu_enabled
+            and self.config.feishu_app_id
+            and self.config.feishu_app_secret
+            and self.config.feishu_bitable_app_token
+            and self.config.feishu_whatsapp_table_id
+        )
+
     def api_url(self, path: str) -> str:
         return f"{self.config.feishu_api_base_url.rstrip('/')}{path}"
 
@@ -122,19 +131,54 @@ class FeishuService:
             "访客IP": visitor_ip,
         }
 
-    def create_customer_record(self, inquiry: dict[str, Any]) -> dict[str, Any]:
-        if not self.is_configured():
-            return {"skipped": True, "reason": "feishu_not_configured"}
+    def is_whatsapp_inquiry(self, inquiry: dict[str, Any]) -> bool:
+        source_page = str(inquiry.get("source_page") or "").strip().lower()
+        interest = str(inquiry.get("interest") or "").strip().lower()
+        return "#whatsapp-widget" in source_page or interest.startswith("whatsapp -")
 
+    def build_whatsapp_event_fields(self, inquiry: dict[str, Any]) -> dict[str, Any]:
+        clicked_at = parse_inquiry_time(str(inquiry.get("created_at") or ""))
+        return {
+            "事件ID": f"WA-{str(inquiry.get('id') or '')}",
+            "点击时间": int(clicked_at.timestamp() * 1000),
+            "日期": clicked_at.strftime("%Y-%m-%d"),
+            "月份": clicked_at.strftime("%Y-%m"),
+            "年份": clicked_at.strftime("%Y"),
+            "事件类型": "WhatsApp询盘",
+        }
+
+    def create_record(self, table_id: str, fields: dict[str, Any]) -> dict[str, Any]:
         token = self.get_tenant_access_token()
         url = self.api_url(
             "/open-apis/bitable/v1/apps/"
             f"{self.config.feishu_bitable_app_token}/tables/"
-            f"{self.config.feishu_customer_table_id}/records"
+            f"{table_id}/records"
         )
         result = self.post_json(
             url,
-            {"fields": self.build_customer_fields(inquiry)},
+            {"fields": fields},
             headers={"Authorization": f"Bearer {token}"},
         )
-        return {"skipped": False, "record": result.get("data", {}).get("record", {})}
+        return result.get("data", {}).get("record", {})
+
+    def create_customer_record(self, inquiry: dict[str, Any]) -> dict[str, Any]:
+        if not self.is_configured():
+            return {"skipped": True, "reason": "feishu_not_configured"}
+
+        record = self.create_record(
+            self.config.feishu_customer_table_id,
+            self.build_customer_fields(inquiry),
+        )
+        return {"skipped": False, "record": record}
+
+    def create_whatsapp_event_record(self, inquiry: dict[str, Any]) -> dict[str, Any]:
+        if not self.is_whatsapp_inquiry(inquiry):
+            return {"skipped": True, "reason": "not_whatsapp_inquiry"}
+        if not self.is_whatsapp_tracking_configured():
+            return {"skipped": True, "reason": "feishu_whatsapp_not_configured"}
+
+        record = self.create_record(
+            self.config.feishu_whatsapp_table_id,
+            self.build_whatsapp_event_fields(inquiry),
+        )
+        return {"skipped": False, "record": record}

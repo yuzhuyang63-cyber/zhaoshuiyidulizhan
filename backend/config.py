@@ -129,6 +129,7 @@ class AppConfig:
     feishu_app_secret: str
     feishu_bitable_app_token: str
     feishu_customer_table_id: str
+    feishu_whatsapp_table_id: str
     feishu_api_base_url: str
 
     @classmethod
@@ -182,6 +183,7 @@ class AppConfig:
             feishu_app_secret=os.getenv("FEISHU_APP_SECRET", "").strip(),
             feishu_bitable_app_token=os.getenv("FEISHU_BITABLE_APP_TOKEN", "").strip(),
             feishu_customer_table_id=os.getenv("FEISHU_CUSTOMER_TABLE_ID", "").strip(),
+            feishu_whatsapp_table_id=os.getenv("FEISHU_WHATSAPP_TABLE_ID", "").strip(),
             feishu_api_base_url=os.getenv("FEISHU_API_BASE_URL", "https://open.feishu.cn").strip()
             or "https://open.feishu.cn",
         )
