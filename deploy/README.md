@@ -230,7 +230,25 @@ FEISHU_APP_ID=
 FEISHU_APP_SECRET=
 FEISHU_BITABLE_APP_TOKEN=
 FEISHU_CUSTOMER_TABLE_ID=
+FEISHU_WHATSAPP_TABLE_ID=
 ```
+
+`FEISHU_WHATSAPP_TABLE_ID` is optional. When configured, a successful inquiry
+submitted from the WhatsApp widget is also appended to the WhatsApp click
+statistics table with these fields:
+
+```text
+事件ID
+点击时间
+日期
+月份
+年份
+事件类型
+```
+
+Use a date/time field for `点击时间` and text fields for the other columns. The
+event is recorded only after the inquiry has been accepted by the backend, so
+opening or closing the widget alone does not create a statistics row.
 
 If Feishu sync fails, the inquiry is still saved locally and email reporting
 continues; the failure is written to the backend log.
